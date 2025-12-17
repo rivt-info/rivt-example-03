@@ -1,5 +1,3 @@
-// ========================================================================== //
-// top
 {
     "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
     "settings.cycle": [
@@ -32,7 +30,7 @@
     "fsdeploy.nodes": [
         {
             "source": "C:/git/rivt-treehouse-structural-design-git",
-            "target": "E:/OneDrive/StL-Proj2/2025/rivt-treehouse-structural-design",
+            "target": "E:/OneDrive/StL-rivt/rivt-treehouse-structural-design",
             "include": "**/*.*",
             "exclude": "",
             "deleteTargetOnDeploy": true,
@@ -313,7 +311,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": false,
     "editor.parameterHints.cycle": false,
-    "editor.hover.enabled": false,
+    "editor.hover.enabled": "off",
     "editor.tabCompletion": "on",
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
@@ -337,10 +335,6 @@
     "ShortcutMenuBar.newFile": true,
     "latex-workshop.message.warning.show": false,
     "accessibility.verbosity.notification": false,
-    "gutterpreview.imagePreviewMaxHeight": 0,
-    "gutterpreview.imagePreviewMaxWidth": 0,
-    "gutterpreview.enableReferenceLookup": true,
-    "gutterpreview.sourceFolder": "",
     "git.postCommitCommand": "sync",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
@@ -362,5 +356,3 @@
         "yapf"
     ],
 }
-// ========================================================================== //
-// bottom
