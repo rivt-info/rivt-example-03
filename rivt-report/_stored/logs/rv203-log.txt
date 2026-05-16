@@ -1,0 +1,11 @@
+05-15 22:58  rv203-test1   INFO     Doc start
+05-15 22:58  rv203-test1   INFO     rivtlib version: 1.0.0a5
+05-15 22:58  rv203-test1   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\_stored\logs\rv203-test1.bak
+05-15 22:58  rv203-test1   INFO     Table 2
+05-15 22:58  rv203-test1   INFO     SECTION 1 - type V
+05-15 22:58  rv203-test1   INFO     tag : _[T]
+05-15 22:58  rv203-test1   INFO     SECTION : Publish Doc
+05-15 22:58  rv203-test1   INFO     block tag : METADATA]]
+write rst for each rivt file: Treehouse Design Report
+aggregate rst files: Treehouse Design Report
+write report: Treehouse Design Report

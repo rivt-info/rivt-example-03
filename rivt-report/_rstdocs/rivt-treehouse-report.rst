@@ -1,3 +1,37 @@
+.. |s| unicode:: 0xA0 
+
+
+
+.. |blklogo| image:: ../StL
+:height: 100px
+:alt: logo
+
+
+
+.. header::
+.. list-table::
+    :class: header-box
+    :align: left
+    :widths: 90 10
+    
+    * - **Treehouse Design Report** - v1.0.0a11 |s| |s| |s| |s| Sect: **###Section###**
+        - p. **###Page###**   
+
+        
+
+.. footer:: 
+.. list-table::
+    :class: footer-box
+    :align: left
+    :widths: 84 22 16
+    
+    * - 2026-05-15 |s| |s| |s| **|** |s| |s| |s| R Holland        
+        - **rivt**        
+        - |blklogo|
+
+                
+
+
 
 Doc 1
 ======================================================================
@@ -42,8 +76,8 @@ Equation No.    Load Combination
 =============   ==============================================
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/src/img/tree1.png
-    :width: 0.3%
+.. figure:: c:/git/rivt-example-03-git/rivt-report/src/img/tree3d.png
+    :width: 40%
     :align: center
 
     **Fig. 1** - Treehouse 
@@ -120,22 +154,21 @@ Doc 4
 
 
 
-**2-2**.1 Introduction
+**2-2**.1 Table
 --------------------------------------------------------------------------------
  
-Successive value definitions are formatted as a table. Variable
-values are defined with the define operator. The line tag [T] labels and
-numbers the table.
  
 
 **Table 1**: Define Unit Loads
 
 
-==========  ========  =========  =============
-variable    value     [value]    description
-==========  ========  =========  =============
-D_1         3.80 psf  0.18 kPA   joists DL
-D_2         2.10 psf  0.10 kPA   plywood DL
-==========  ========  =========  =============
+==========  =========  ==========  ==================
+variable    value      [value]     description
+==========  =========  ==========  ==================
+D_1         3.80 psf   0.18 kPA    joists DL
+D_2         2.10 psf   0.10 kPA    plywood DL
+D_3         10.00 psf  0.48 kPA    partitions DL
+D_4         3.00 klf   43.78 kN_m  fixed machinery DL
+==========  =========  ==========  ==================
  
  

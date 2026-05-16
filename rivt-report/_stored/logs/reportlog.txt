@@ -1,7 +1,4 @@
-05-15 19:26  rivt-report-1   INFO     Report : Example rivt Report
-05-15 19:26  rivt-report-1   INFO     Report : Example rivt Report
-05-15 19:26  rivt-report-1   INFO     Report : Example rivt Report
-05-15 19:26  rivt-report-1   INFO     Report : Example rivt Report
-05-15 19:26  rivt-report-1   INFO     Report : Example rivt Report
-05-15 19:26  rivt-report-1   INFO     README report : Example rivt Report
-05-15 19:26  rivt-report-1   INFO     Report : Example rivt Report
+05-15 23:33  rivt-report-1   INFO     write rst files: Treehouse Design Report
+05-15 23:33  rivt-report-1   INFO     aggregate rst files into report: Treehouse Design Report
+05-15 23:33  rivt-report-1   INFO     README report : Treehouse Design Report
+05-15 23:33  rivt-report-1   INFO     Report : Treehouse Design Report

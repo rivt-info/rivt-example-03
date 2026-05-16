@@ -1,17 +1,11 @@
-05-15 19:22  rv202-connections   INFO     Doc start
-05-15 19:22  rv202-connections   INFO     rivtlib version: 1.0.0a5
-05-15 19:22  rv202-connections   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\_stored\logs\rv202-connections.bak
-05-15 19:22  rv202-connections   INFO     Introduction
-05-15 19:22  rv202-connections   INFO     SECTION 1 - type V
-05-15 19:22  rv202-connections   INFO     tag : _[T]
-05-15 19:22  rv202-connections   INFO     SECTION : Publish Doc
-05-15 19:22  rv202-connections   INFO     block tag : METADATA]]
-write report: Example rivt Report
-write report: Example rivt Report
-write report: Example rivt Report
-write report: Example rivt Report
-write report: Example rivt Report
-write report: Example rivt Report
-write report: Example rivt Report
-write report: Example rivt Report
-write report: Example rivt Report
+05-15 23:33  rv202-connections   INFO     Doc start
+05-15 23:33  rv202-connections   INFO     rivtlib version: 1.0.0a5
+05-15 23:33  rv202-connections   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\_stored\logs\rv202-connections.bak
+05-15 23:33  rv202-connections   INFO     Table
+05-15 23:33  rv202-connections   INFO     SECTION 1 - type V
+05-15 23:33  rv202-connections   INFO     tag : _[T]
+05-15 23:33  rv202-connections   INFO     SECTION : Publish Doc
+05-15 23:33  rv202-connections   INFO     block tag : METADATA]]
+write rst for each rivt file: Treehouse Design Report
+aggregate rst files: Treehouse Design Report
+write report: Treehouse Design Report

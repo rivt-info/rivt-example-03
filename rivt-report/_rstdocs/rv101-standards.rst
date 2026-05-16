@@ -41,8 +41,8 @@ Equation No.    Load Combination
 =============   ==============================================
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/src/img/tree1.png
-    :width: 0.3%
+.. figure:: c:/git/rivt-example-03-git/rivt-report/src/img/tree3d.png
+    :width: 40%
     :align: center
 
     **Fig. 1** - Treehouse 

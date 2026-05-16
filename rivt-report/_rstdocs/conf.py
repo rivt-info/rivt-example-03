@@ -4,8 +4,8 @@ from pathlib import Path
 
 sys.path.append(str(Path(".").resolve()))
 
-project = "rivt-report-example.pdf"
-copyright = "--
+project = "rivt-treehouse-report.pdf"
+copyright = "StL"
 author = "R Holland"
 release = "1.0.0a11"
 
@@ -33,7 +33,7 @@ html_title = " "
 html_theme = "pydata_sphinx_theme"
 html_context = {"default_mode": "dark"}
 html_sidebars = {"**": ["sidebar-nav-bs.html"]}
-html_static_path = ["_static", "_static/img", "../src"]
+html_static_path = ["_static", "_static/img", "../"]
 html_css_files = ["css/custom.css"]
 html_theme_options = {
     "pygments_light_style": "tango",
@@ -49,8 +49,8 @@ html_theme_options = {
     "footer_end": ["rv-date"],
     "logo": {
             "text": "rivt",
-        "image_dark": "--",
-        "image_light": "--",
+        "image_dark": "StL",
+        "image_light": "StL",
     },
 }
 favicons = [
@@ -69,7 +69,7 @@ favicons = [
 # source start file, target name, title, author, options
 # options: ('index', 'MyProject', 'My Project', 'Author Name', {"pdf_compressed": True})
 # More than one author : \r'Guido van Rossum\Fred L. Drake, Jr., editor'
-pdf_documents = [("rivt-report-example.pdf", "rivt-report-example.pdf", "rivt-report-example.pdf", 
+pdf_documents = [("rivt-treehouse-report", "rivt-treehouse-report", "rivt-treehouse-report", 
             "R Holland")]
 # Label to use as a prefix for the subtitle on the cover page
 subtitle_prefix = "User Manual"
@@ -92,7 +92,7 @@ pdf_use_coverpage = True
 # Name of the cover page template to use
 pdf_cover_template = "_templates/pdfcover.rst"
 # Show Table Of Contents at the beginning?
-pdf_use_toc = False
+pdf_use_toc = True
 # Page template name for "regular" pages
 pdf_page_template = 'mainPage'
 # How many levels deep should the table of contents be?

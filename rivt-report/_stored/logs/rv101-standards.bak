@@ -31,7 +31,7 @@ rv.I("""Load Combinations and Geometry
     16-3            1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
     =============   ==============================================
 
-    | IMAGE | src/img/tree1.png | Treehouse, 0.3, num
+    | IMAGE | src/img/tree3d.png | Treehouse, 40, num
     
     """)
 
@@ -53,7 +53,7 @@ rv.D("""Publish Doc
 
     [layout]
     coverlogo = src/img/tree3d.png
-    runninglogo = logo2.png
+    runninglogo = src/img/logo2.png
     runninglabel = rivt
     subtitle =  -
     copyright = -

@@ -3,9 +3,9 @@
 """generate rivt report
 
 Run this Pyton file to generate a rivt report. Copy and rename the file
-(starting with rivt-report-) to save custom report settings. The
-setting file must be stored in the rivt folder (root folder). The report file
-is published to the _published folder.
+(starting with rivt-report- ...) to save custom report settings. The
+setting file is stored in the rivt folder (root folder) and published
+to the _published folder.
 
 For PDF and text reports the script re-reads and formats each rivt file but
 does not rewrite the individual PDF and text doc files unless specified in the
@@ -20,34 +20,38 @@ See https://www.rivt.info for more details.
 iniS = """
 [report]
 ; ---------- report settings -------------------------------------
-; comma separated list of excludeddoc numbers eg. rv102, rv204
+; - comma separated list of excluded doc numbers eg. rv102, rv204
 exclude = -- 
-; re-generate pdf and text doc files - true or false
+;
+; - regenerate pdf and text doc files - true or false
 regen = false 
-; report name with extension (pdf, html, txt)
-repname = rivt-report-example.pdf 
+;
+; - report name with extension (pdf, html, txt)
+repname = rivt-treehouse-report.pdf 
+;
 ; --------------cover format ---------------------------------------------------
 ; include report cover page - true or false
 cover = true 
-; logo path starts in rivt folder
-coverlogo = src/img/tree3d.png 
-title = Example rivt Report
-subtitle =  --
+; - logo path starts in rivt folder
+;
+coverlogo = src/img/tree1.png 
+title = Treehouse Design Report
+subtitle = example rivt report
 client = user example
 projectref = proj. 0001
-; separate multiple authors with commas
+; - separate multiple authors with commas
 authors = R Holland 
-copyright = --
+copyright = StL
 ; ------------- running typography settings -----------------------------------
 version = 1.0.0a11
-; logo path starts in rivt folder
-running_logo = logo2.png 
+; - logo path starts in rivt folder
+running_logo = src/img/logo2.png 
 running_label = rivt
-; letter, legal, A4
+; - letter, legal, A4
 pdf_pagesize = letter 
-; top, right, bottom, left
+; - top, right, bottom, left
 pdf_margins = 1in, 1in, 1in, 1in 
-; underline links in PDF - true or false
+; - underline links in PDF - true or false
 pdf_link = true 
 """
 # ============================================================================

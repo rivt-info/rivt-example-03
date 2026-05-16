@@ -1,9 +1,9 @@
 
-Doc 2 | R Holland | 2026-05-15 - 07:27AM | v-1.0.0a11
+Doc 4 | R Holland | 2026-05-15 - 08:48PM | v-1.0.0a11
 ================================================================================
 
 
-[1] Loads and Geometry
+2-2.1  Introduction
 --------------------------------------------------------------------------------
  
 Successive value definitions are formatted as a table. Variable
