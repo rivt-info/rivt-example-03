@@ -1,192 +1,214 @@
 {
-    "cell (cel}": {
-        "prefix": "cel",
-        "description": "insert cell label",
-        "scope": "python",
-        "body": [
-            "# %% ${0:paste}"
-        ]
-    },
-    "rivtlib ( rvapi )": {
-        "prefix": "rvapi",
+    "import API (api)": {
+        "prefix": "api",
         "description": "import rivt api",
         "scope": "python",
         "body": [
             "import rivtlib.api as rv"
         ]
     },
-    "R method { rvr )": {
+    "Meta API (rvm)": {
+        "prefix": "rvm",
+        "description": "Meta API method",
+        "scope": "python",
+        "body": [
+            "rv.M(\"\"\"${1:section-label} | ${2|private,public|}, ${3|hide,show|}, ${4|merge,section|} ",
+            "",
+            "    ${0:text}",
+            "    \"\"\")"
+        ]
+    },
+    "Run API (rvr)": {
         "prefix": "rvr",
-        "description": "Run method",
+        "description": "Run API method",
         "scope": "python",
         "body": [
-            "rv.R(\"\"\"${1:run-section} | ${2:color} ${3:none} | ${4:oss} ${0:private} ",
+            "rv.R(\"\"\"${1:section-label} | ${2|private,public|}, ${3|hide,show|}, ${4|merge,section|} ",
             "",
-            "    # run",
-            "    ",
+            "    ${0:text}",
             "    \"\"\")"
         ]
     },
-    "I method ( rvl )": {
+    "Insert API (rvi)": {
         "prefix": "rvi",
-        "description": "Insert method",
+        "description": "API method",
         "scope": "python",
         "body": [
-            "rv.I(\"\"\"${1:insert-section} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
-            "    ",
-            "    # insert",
-            "    ",
-            "    \"\"\")"
-        ]
-    },
-    "V method ( rvv )": {
-        "prefix": "rvv",
-        "description": "Value method",
-        "scope": "python",
-        "body": [
-            "rv.V(\"\"\"${1:values-section} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
-            "    ",
-            "    # values",
-            "    ",
-            "    \"\"\")",
-            ""
-        ]
-    },
-    "T section ( rvt )": {
-        "prefix": "rvt",
-        "description": "Tools method",
-        "scope": "python",
-        "body": [
-            "rv.T(\"\"\"${1:tool-section} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
-            "    ",
-            "    # import function",
-            "    # for i in range(5): print(i)",
-            "    ",
-            "    \"\"\")"
-        ]
-    },
-    "P section [rvp]": {
-        "prefix": "rvp",
-        "description": "publish method",
-        "scope": "python",
-        "body": [
-            "rv.P(\"\"\"${1:write-settings} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
-            "    ",
+            "rv.I(\"\"\"${1:section-label} | ${2|private,public|}, ${3|show,hide|}, ${4|section,merge|} ",
             "",
+            "    ${0:text}",
             "    ",
             "    \"\"\")"
         ]
     },
-    "cmd text ( |x )": {
-        "prefix": "|x",
-        "description": "insert text from file",
+    "Values API (rv.I)": {
+        "prefix": "rvv",
+        "description": "Values API method",
         "scope": "python",
         "body": [
-            "| text | ${2: filename} | ${1:plain}  ${0:rivt} "
+            "rv.V(\"\"\"${1:section-label} | ${2|private,public|}, ${3|show,hide|}, ${4|section,merge|} ",
+            "",
+            "    ${0:text}",
+            "    ",
+            "    \"\"\")"
         ]
     },
-    "cmd image ( |i )": {
-        "prefix": "|i",
-        "description": "insert image from file",
+    "Tools API (rv.T)": {
+        "prefix": "rvt",
+        "description": "Tools API method",
         "scope": "python",
         "body": [
-            "| image | ${3: rel path}, ${2: rel path} | ${1:1,0}, ${0:1.0} "
+            "rv.T(\"\"\"${1:section-label} | ${2|private,public|}, ${3|hide,show|}, ${4|merge,section|} ",
+            "",
+            "    ${0:text} ",
+            "    \"\"\")"
         ]
     },
-    "cmd table [ |t ]": {
-        "prefix": "|t",
-        "description": "insert table from file",
+    "Doc API (rv.D)": {
+        "prefix": "rvd",
+        "description": "Doc API method",
         "scope": "python",
         "body": [
-            "| table | ${3:rel-path} | ${2:20}, [${1:0},${0:0}]  "
+            "rv.D(\"\"\"${1:section-label} | ${2|private,public|}, ${3|hide,show|}, ${4|merge,section|} ",
+            "",
+            "    ${0:text}",
+            "    \"\"\")"
         ]
     },
-    "cmd append [ |a ]": {
-        "prefix": "|a",
-        "description": "append pdf file",
+    "cmd attach ( |at )": {
+        "prefix": "|at",
+        "description": "attach pdf file - D api",
         "scope": "python",
         "body": [
-            "| append | ${2: rel-path} | ${1:number}  ${0:nonumber} "
+            "| attachpdf | src/${1:path} | ${0:cover title} "
         ]
     },
-    "tag figure [ _f }": {
-        "prefix": "_f",
-        "description": "figure caption",
+    "cmd image ( |im )": {
+        "prefix": "|im",
+        "description": "insert image",
         "scope": "python",
         "body": [
-            "_[f]"
+            "| IMAGE | src/${1:path} | ${2:scale}, ${3:caption} ${0:_[I]} "
         ]
     },
-    "tag equation [ _e }": {
-        "prefix": "_e",
-        "description": "equation label tag",
+    "cmd image ( |i2 )": {
+        "prefix": "|i2",
+        "description": "insert side by side images",
         "scope": "python",
         "body": [
-            "_[e]"
+            "| IMAGE | src/${1:path},src/${2:path} | ${3:scale},${4:scale},${5:caption},${6:caption} ${0:_[I]} "
         ]
     },
-    "tag table [ _t ]": {
-        "prefix": "_t",
-        "description": "table title tag",
+    "cmd publish ( |pu )": {
+        "prefix": "|pu",
+        "description": "publish doc - API rv.D",
         "scope": "python",
         "body": [
-            "_[t]"
+            "| publish | ${1|pdf,html,txt,pdftex|} | ${0:parameters} "
         ]
     },
-    "tag sympy [ _s ]": {
-        "prefix": "_s",
-        "description": "sympy equation tag",
+    "cmd table ( |ta )": {
+        "prefix": "|ta",
+        "description": "insert table from file - API rv.I and rv.V",
         "scope": "python",
         "body": [
-            "_[s]"
+            "| table | src/${1:rel-path} | ${2:max-row-length}, [${3:start-row}:${4:end-row}] ${0:_[T]} "
         ]
     },
-    "tag center [ _c ]": {
-        "prefix": "_c",
-        "description": "center line",
+    "cmd text ( |te )": {
+        "prefix": "|te",
+        "description": "insert text from file - API rv.I",
+        "scope": "python",
+        "body": [
+            "| text | src/${1:rel-path} | ${0|plain, literal, rivt|}"
+        ]
+    },
+    "tag center ( _ce )": {
+        "prefix": "_ce",
+        "description": "tag center line",
         "scope": "python",
         "body": [
             "_[c]"
         ]
     },
-    "tag footnote [ _# ]": {
-        "prefix": "_#",
+    "tag right ( _ri )1": {
+        "prefix": "_ri",
+        "description": "tag right justify",
+        "scope": "python",
+        "body": [
+            "_[r]"
+        ]
+    },
+    "tag ascii math  ( _as )": {
+        "prefix": "_as",
+        "description": "tag ascii equation",
+        "scope": "python",
+        "body": [
+            "_[a]"
+        ]
+    },
+    "tag equation ( _eq }": {
+        "prefix": "_eq",
+        "description": "tag equation label and number",
+        "scope": "python",
+        "body": [
+            "_[e]"
+        ]
+    },
+    "tag figure ( _fi  }": {
+        "prefix": "_fi",
+        "description": "tag figure caption and number",
+        "scope": "python",
+        "body": [
+            "_[f]"
+        ]
+    },
+    "tag table ( _ta  )": {
+        "prefix": "_ta",
+        "description": "tag table title and number",
+        "scope": "python",
+        "body": [
+            "_[t]"
+        ]
+    },
+    "tag footnote [  _fo  ]": {
+        "prefix": "_fo",
         "description": "tag a footnote ",
         "scope": "python",
         "body": [
             "_[#]"
         ]
     },
-    "tag footnote description [ _d ]": {
-        "prefix": "_d",
-        "description": "tag footnote description",
-        "scope": "python",
-        "body": [
-            "_[D]"
-        ]
-    },
-    "tag horizontal line  _[ h ]": {
-        "prefix": "_-",
-        "description": "insert horizontal line",
-        "scope": "python",
-        "body": [
-            "_[H]"
-        ]
-    },
-    "tag new page [ _n ]": {
-        "prefix": "_n",
-        "description": "start a new page",
-        "scope": "python",
-        "body": [
-            "_[n]"
-        ]
-    },
-    "tag url [ _u ]": {
-        "prefix": "_u",
+    "tag url ( _ur )": {
+        "prefix": "_[u",
         "description": "tag url",
         "scope": "python",
         "body": [
-            "_[ https://${1: url} ${0: url label} url]"
+            "_[u] https://${1: url}, ${0: url label}"
+        ]
+    },
+    "tag new page ( === )": {
+        "prefix": "===",
+        "description": "start a new page",
+        "scope": "python",
+        "body": [
+            "==============="
+        ]
+    },
+    "tag horizontal line  ---": {
+        "prefix": "---",
+        "description": "insert horizontal line",
+        "scope": "python",
+        "body": [
+            "---------------"
+        ]
+    },
+    "block tag center ( _[c )": {
+        "prefix": "_[c",
+        "description": "block tag center",
+        "scope": "python",
+        "body": [
+            "_[[c]]"
         ]
     },
     "block tag latex ( _[l )": {
@@ -221,17 +243,9 @@
             "_[[i]]"
         ]
     },
-    "block tag center ( _[c )": {
-        "prefix": "_[c",
-        "description": "block tag center",
-        "scope": "python",
-        "body": [
-            "_[[c]]"
-        ]
-    },
-    "block tag quit [ _[q ]": {
-        "prefix": "__q",
-        "description": "tag block quit",
+    "block tag quit ( _[q  )": {
+        "prefix": "__[q",
+        "description": "block tag quit",
         "scope": "python",
         "body": [
             "__[[q]]"

@@ -1,0 +1,246 @@
+
+Example 1 - rivt Doc | R Holland | 2026-05-11 - 12:24PM | v-1.0.0a11
+================================================================================
+
+
+[ 1 ] Summary
+--------------------------------------------------------------------------------
+ 
+This rivt file example calculates the maximum stress and deflection in a
+simply supported, uniformly loaded beam. It also serves as an annotated
+example of a rivt doc with multiple sections that is not part of a report.
+ 
+The example illustrates the use of some of the most common API functions,
+commands and tags. Further details are provided in the 
+rivt user manual, https://www.rivt.info .
+ 
+The file may be formatted as a text, PDF or HTML doc by changing the type
+parameter in the PUBLISH command in the Doc-API *(rv.D)* at the end of each
+rivt file. Published files are found in the sub-folders of the *_published*
+folder.
+ 
+ 
+
+[ 2 ] Load Combinations
+--------------------------------------------------------------------------------
+ 
+ 
+Table 1: ASCE 7-05 Load Effects (saved as csv in _stored folder)
+============= ================================================ 
+Equation No.    Load Combination 
+============= ================================================ 
+16-1           1.4(D+F) 
+16-2           1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R) 
+16-3           1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W) 
+============= ================================================ 
+
+ 
+ 
+
+[ 3 ] Loads and Geometry
+--------------------------------------------------------------------------------
+ 
+Successive value definitions are formatted as a table. Variable
+values are defined with the define operator. The line tag [T] labels and
+numbers the table.
+ 
+
+Table 2: Define Unit Loads
+==========  ===============  =============  =====================
+variable    value            [value]        description
+==========  ===============  =============  =====================
+D_1         3.80 psf         0.18 kPA       joists DL
+D_2         2.10 psf         0.10 kPA       plywood DL
+D_3         10.00 psf        0.48 kPA       partitions DL
+D_4         3.00 klf         43.78 kN_m     fixed machinery DL
+L_1         40.00 psf        1.92 kPA       ASCE7-O5 LL
+b_1         10.00 inch       254.00 mm      beam width
+h_1         18.00 inch       457.20 mm      beam depth
+E_1         29000.00 ksi     199947.96 MPA  modulus of elasticity
+Fb_1        20000.00 lb_in2  137.90 MPA     allowable stress
+==========  ===============  =============  =====================
+ 
+The VALTABLE command reads variable values from a file in the src
+folder. The description is used as the table title. The range specifies the
+starting and ending line to be read from the file (0:0 means all lines).
+ 
+
+Table 3: Beam Geometry from file: src/beam1.csv
+==========  ========  =========  =============
+variable    value     [value]    description
+==========  ========  =========  =============
+spc_1       2.00 ft   0.61 m     beam spacing
+spn_1       16.00 ft  4.88 m     beam span
+==========  ========  =========  =============
+
+
+ 
+          ----------------------------------------
+Fig. 1 -  [file: src/beam1.png ] 
+          ----------------------------------------
+
+ 
+                           Uniform Distributed Loads                            
+
+
+┌  Eq-1 | Dead load [ASCE7-05 2.3.2]
+│
+│     dl₁ = 1.2⋅(D₄ + spc₁⋅(D₁ + D₂ + D₃))
+└
+=============  ==========  =========  ==================  ============
+D₃             D₂          D₁         D₄                  spc₁
+=============  ==========  =========  ==================  ============
+10.00 psf      2.10 psf    3.80 psf   3.00 klf            2.00 ft
+—————          —————       —————      —————               —————
+partitions DL  plywood DL  joists DL  fixed machinery DL  beam spacing
+=============  ==========  =========  ==================  ============
+ 
+
+┌  Eq-2 | Live load [ASCE7-05 2.3.2]
+│
+│     ll₁ = 1.6⋅L₁⋅spc₁
+└
+===========  ============
+L₁           spc₁
+===========  ============
+40.00 psf    2.00 ft
+—————        —————
+ASCE7-O5 LL  beam spacing
+===========  ============
+ 
+
+┌  Eq-3 | Total load [ASCE7-05 2.3.2]
+│
+│     ω₁ = dl₁ + ll₁
+└
+===================  ===================
+ll₁                  dl₁
+===================  ===================
+128.00 ft·psf        3.64 klf
+—————                —————
+Live load [ASCE7-05  Dead load [ASCE7-05
+2.3.2]               2.3.2]
+===================  ===================
+ 
+ 
+
+[ 4 ] Beam Response
+--------------------------------------------------------------------------------
+ 
+The following lines import the beam geometry from an external file, 
+calculate section properties from imported functions and calculate 
+the maximum moment, bending stress and mid-span deflection. 
+ 
+
+Table 4: Beam functions from file: src/sectprop.py
+==========================  =====================================================
+Function                    Docstring
+==========================  =====================================================
+rectsect(b, d)              section modulus of rectangle
+rectinertia(b, d)           moment of inertia of rectangle
+midspan_delta(ln, w, e, i)  mid-span deflection of simply supported beam with UDL
+==========================  =====================================================
+
+ 
+
+┌  Eq-4 | rectangle - S (sectprop.py)
+│
+│     section₁ = rectsect(b₁, h₁)
+└
+==========  ==========
+h₁          b₁
+==========  ==========
+18.00 inch  10.00 inch
+—————       —————
+beam depth  beam width
+==========  ==========
+ 
+
+┌  Eq-5 | rectangle - I (sectprop.py)
+│
+│     inertia₁ = rectinertia(b₁, h₁)
+└
+==========  ==========
+h₁          b₁
+==========  ==========
+18.0 inch   10.0 inch
+—————       —————
+beam depth  beam width
+==========  ==========
+ 
+          ----------------------------------------
+Fig. 2 - Moment diagram  | Fig. 3 - Deflection diagram   
+files: src/ss-beam2.png, src/ss-beam1.png
+          ----------------------------------------
+
+ 
+┌  Eq-6 |   Maximum bending stress  formula
+│
+│          M₁
+│     σ₁ = ──
+│          S₁
+└
+
+
+ 
+
+┌  Eq-7 | Mid-span UDL moment
+│
+│                 2
+│          ω₁⋅spn₁ 
+│     m₁ = ────────
+│             8    
+└
+====================  =========
+ω₁                    spn₁
+====================  =========
+3.77 klf              16.00 ft
+—————                 —————
+Total load [ASCE7-05  beam span
+2.3.2]                -
+====================  =========
+ 
+
+┌  Eq-8 | Bending stress
+│
+│              m₁   
+│     fb₁ = ────────
+│           section₁
+└
+=============  ===================
+section₁       m₁
+=============  ===================
+540.0 inch3    120.5 ft2·klf
+—————          —————
+rectangle - S  Mid-span UDL moment
+(sectprop.py)  -
+=============  ===================
+ 
+┌  Eq-9 | Stress ratio
+│
+│     fb_1 < Fb_1
+└
+
+▮ ========  =========  ========  =======  ============
+▮ fb₁       Fb₁        ratio     check    reference
+▮ ========  =========  ========  =======  ============
+▮ 2.68 ksi  20.00 ksi  0.133908  OK       Stress ratio
+▮ ========  =========  ========  =======  ============
+
+
+ 
+
+┌  Eq-10 | mid-span deflection (sectprop.py)
+│
+│     δ₁ = midspan_δ(spn₁, ω₁, E₁, inertia₁)
+└
+====================  =============  =====================  =========
+ω₁                    inertia₁       E₁                     spn₁
+====================  =============  =====================  =========
+3.77 klf              4860.00 inch4  29000.00 ksi           16.00 ft
+—————                 —————          —————                  —————
+Total load [ASCE7-05  rectangle - I  modulus of elasticity  beam span
+2.3.2]                (sectprop.py)  -                      -
+====================  =============  =====================  =========
+ 
+ 

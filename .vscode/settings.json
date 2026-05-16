@@ -1,5 +1,5 @@
 {
-    "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
+    "window.title": "${dirty}${activeEditorLong}${separator}${separator} profile: ${profileName}${separator} repo: ${activeRepositoryName}",
     "settings.cycle": [
         {
             "id": "explorerSort2", // must be unique
@@ -17,6 +17,9 @@
             ]
         }
     ],
+    "python.terminal.activateEnvironment": true,
+    "python.defaultInterpreterPath": "C:/Users/rhh2/Python314",
+    "editor.colorDecoratorsActivatedOn": "clickAndHover",
     "files.associations": {
         "*.py": "python"
     },
@@ -26,13 +29,19 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "fsdeploy.deployOnSave": true,
-    "fsdeploy.deployWorkspaceOnSave": false,
     "fsdeploy.nodes": [
         {
-            "source": "C:/git/rivt-treehouse-structural-design-git",
-            "target": "E:/OneDrive/StL-rivt/rivt-treehouse-structural-design",
+            "source": "C:/git/rivt-example-01-git",
+            "target": "E:/OneDrive/StL-rivt/rivt-example-01",
             "include": "**/*.*",
-            "exclude": "",
+            "exclude": ".git,.gitignore",
+            "deleteTargetOnDeploy": true,
+        },
+        {
+            "source": "C:/git/rivt-example-01-git",
+            "target": "E:/OneDrive/StL-rivt/rivt-example-01",
+            "include": "**/*.*",
+            "exclude": ".git,.gitignore",
             "deleteTargetOnDeploy": true,
         }
     ],
@@ -136,34 +145,85 @@
     },
     "todohighlight.keywords": [
         {
-            "text": "rv.R",
+            "text": "# %%",
+            "color": "#a19e6d",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.R(",
             "color": "#e8c468",
             "isWholeLine": true,
         },
         {
-            "text": "rv.I",
+            "text": "rv.I(",
             "color": "#e8c468",
             "isWholeLine": true,
         },
         {
-            "text": "rv.V",
+            "text": "rv.V(",
             "color": "#e8c468",
             "isWholeLine": true,
         },
         {
-            "text": "rv.T",
+            "text": "rv.T(",
             "color": "#e8c468",
             "isWholeLine": true,
         },
         {
-            "text": "rv.W",
+            "text": "rv.D(",
             "color": "#e8c468",
             "isWholeLine": true,
         },
         {
-            "text": "rv.M",
-            "color": "#e8c468",
+            "text": "rv.S(",
+            "color": "darkorange",
             "isWholeLine": true,
+        },
+        {
+            "text": "rv.X(",
+            "color": "darkorange",
+            "isWholeLine": true,
+        },
+        {
+            "text": "##",
+            "color": "darkorange",
+            "isWholeLine": true,
+        },
+        {
+            "text": " ==: ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " :=: ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " <=: ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " < ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " > ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " <= ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " => ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " != ",
+            "color": "#e76e50",
+        },
+        {
+            "text": " == ",
+            "color": "#e76e50",
         },
         {
             "text": "\"\"\")",
@@ -171,16 +231,11 @@
             "isWholeLine": true,
         },
         {
-            "text": "rv.S",
-            "color": "#f3ffbd",
-            "isWholeLine": true,
-        },
-        {
-            "text": "| IMG |",
+            "text": "| IMAGE |",
             "color": "#0f8f69",
         },
         {
-            "text": "| IMG2 |",
+            "text": "| IMAGE2 |",
             "color": "#0f8f69",
         },
         {
@@ -192,31 +247,35 @@
             "color": "#0f8f69",
         },
         {
-            "text": "| VALUE |",
+            "text": "| VALTABLE |",
             "color": "#0f8f69",
         },
         {
-            "text": "| DOC |",
-            "color": "#f4a462",
+            "text": "| PUBLISH |",
+            "color": "#0f8f69",
         },
         {
-            "text": "| ATTACH |",
-            "color": "#f4a462",
+            "text": "| ATTACHPDF |",
+            "color": "#0f8f69",
         },
         {
-            "text": ":=",
-            "color": "#e76e50",
+            "text": "| PYTHON |",
+            "color": "#0f8f69",
         },
         {
-            "text": "_[T]",
+            "text": "| MARKUP |",
+            "color": "#0f8f69",
+        },
+        {
+            "text": "_[#]",
             "color": "#4989a2",
         },
         {
-            "text": "_[F]",
+            "text": "_[B]",
             "color": "#4989a2",
         },
         {
-            "text": "_[E]",
+            "text": "_[I]",
             "color": "#4989a2",
         },
         {
@@ -224,26 +283,119 @@
             "color": "#4989a2",
         },
         {
+            "text": "_[R]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[T]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[E]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[F]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[M]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[L]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[D]",
+            "color": "#4989a2",
+        },
+        {
             "text": "_[S]",
             "color": "#4989a2",
         },
         {
-            "text": "_[[V]]",
+            "text": "_[U]",
             "color": "#4989a2",
         },
         {
-            "text": "_[[Q]]",
+            "text": "_[[SHELL]]",
             "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[BOX]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[TABLE]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[TOPIC]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[INDENT]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[ITALLIC]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[TEXT]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[PYTHON]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[SCRIPT]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[LAYOUT]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[METADATA]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[ENDNOTES]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[END]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[NEWPAGE]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
         },
     ],
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.scrollback": 5000,
-    "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.empty.hint": "hidden",
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorTheme": "Dark Modern",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",
         "tab.inactiveBackground": "#606068",
@@ -280,8 +432,10 @@
     "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
     "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
     "insertDateString.formatDate": "MM-DD-YYYY",
-    "seito-openfile.notFoundTriggerQuickOpen": true,
+    "seito-openfile.searchSubFoldersOfWorkspaceFolders": [],
     "seito-openfile.openNewTab": true,
+    "seito-openfile.searchPaths": [],
+    "seito-openfile.notFoundTriggerQuickOpen": false,
     "editor.parameterHints.enabled": false,
     "editor.foldingStrategy": "auto",
     "editor.tokenColorCustomizations": {
@@ -312,7 +466,6 @@
     "editor.formatOnType": false,
     "editor.parameterHints.cycle": false,
     "editor.hover.enabled": "off",
-    "editor.tabCompletion": "on",
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
     "editor.renderWhitespace": "none",
@@ -322,6 +475,16 @@
     "editor.inlayHints.enabled": "off",
     "editor.formatOnPaste": false,
     "editor.codeLens": true,
+    "editor.defaultColorDecorators": "always",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.snippetSuggestions": "top",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "on",
+        "strings": "on"
+    },
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
     "ShortcutMenuBar.saveAll": true,
     "ShortcutMenuBar.beautify": false,
     "ShortcutMenuBar.showCommands": false,
@@ -332,7 +495,6 @@
     "ShortcutMenuBar.openFilesList": true,
     "ShortcutMenuBar.findReplace": false,
     "ShortcutMenuBar.openSettings": false,
-    "ShortcutMenuBar.newFile": true,
     "latex-workshop.message.warning.show": false,
     "accessibility.verbosity.notification": false,
     "git.postCommitCommand": "sync",
@@ -355,4 +517,8 @@
         "stds",
         "yapf"
     ],
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": [],
+    "python.analysis.autoImportCompletions": false,
+    "window.zoomLevel": 1,
 }
