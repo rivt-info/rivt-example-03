@@ -1,4 +1,5 @@
 {
+    "workbench.editor.tabSizing": "shrink",
     "window.title": "${dirty}${activeEditorLong}${separator}${separator} profile: ${profileName}${separator} repo: ${activeRepositoryName}",
     "settings.cycle": [
         {

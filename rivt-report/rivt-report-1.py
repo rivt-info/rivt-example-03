@@ -42,9 +42,9 @@ projectref = proj. 0001
 ; - separate multiple authors with commas
 authors = R Holland 
 copyright = StL
-; ------------- running typography settings -----------------------------------
 version = 1.0.0a11
-; - logo path starts in rivt folder
+; ------------- running typography settings -----------------------------------
+; - paths start in rivt folder
 running_logo = src/img/logo2.png 
 running_label = rivt
 ; - letter, legal, A4
@@ -53,6 +53,15 @@ pdf_pagesize = letter
 pdf_margins = 1in, 1in, 1in, 1in 
 ; - underline links in PDF - true or false
 pdf_link = true 
+; ------------- division settings -----------------------------------
+; - 
+div1 = Standards
+div2 = Design
+div3 = --
+div4 = --
+div5 = --
+div6 = --
+
 """
 # ============================================================================
 

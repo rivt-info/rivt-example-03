@@ -1,26 +1,9 @@
 
-Doc 4 | R Holland | 2026-05-17 - 08:30AM | v-1.0.0a11
+Doc 1 | R Holland | 2026-05-17 - 08:30AM | v-1.0.0a11
 ================================================================================
 
 
-2-2.1  Table
---------------------------------------------------------------------------------
- 
- 
-
-Table 1: Define Unit Loads
-==========  =========  ==========  ==================
-variable    value      [value]     description
-==========  =========  ==========  ==================
-D_1         3.80 psf   0.18 kPA    joists DL
-D_2         2.10 psf   0.10 kPA    plywood DL
-D_3         10.00 psf  0.48 kPA    partitions DL
-D_4         3.00 klf   43.78 kN_m  fixed machinery DL
-==========  =========  ==========  ==================
- 
- 
-
-2-2.2  Summary
+1-1.1  Summary
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -36,13 +19,13 @@ safety and compliance with building codes.
  
  
 
-2-2.3  Load Combinations and Geometry
+1-1.2  Load Combinations and Geometry
 --------------------------------------------------------------------------------
  
 Dead and live load contributions to beam UDL.
  
 
-Table 2: ASCE 7-05 Load Effects
+Table 1: ASCE 7-05 Load Effects
 =============   ==============================================
 Equation No.    Load Combination
 =============   ==============================================

@@ -69,7 +69,7 @@ favicons = [
 # source start file, target name, title, author, options
 # options: ('index', 'MyProject', 'My Project', 'Author Name', {"pdf_compressed": True})
 # More than one author : \r'Guido van Rossum\Fred L. Drake, Jr., editor'
-pdf_documents = [("rivt-treehouse-report", "rivt-treehouse-report", "rivt-treehouse-report", 
+pdf_documents = [("rv101-standards.py", "rivt-treehouse-report", "rivt-treehouse-report", 
             "R Holland")]
 # Label to use as a prefix for the subtitle on the cover page
 subtitle_prefix = "User Manual"
@@ -96,7 +96,7 @@ pdf_use_toc = True
 # Page template name for "regular" pages
 pdf_page_template = 'mainPage'
 # How many levels deep should the table of contents be?
-pdf_toc_depth = 9999
+pdf_toc_depth = 1
 # Insert footnotes where they are defined 
 pdf_inline_footnotes = False
 # If false, no index is generated.

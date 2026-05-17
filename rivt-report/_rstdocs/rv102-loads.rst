@@ -3,7 +3,7 @@ Doc 2
 
 
 
-**1-2**.1 Loads and Geometry
+**1-2.1** Loads and Geometry
 --------------------------------------------------------------------------------
  
 Successive value definitions are formatted as a table. Variable

@@ -1,9 +1,43 @@
+.. |s| unicode:: 0xA0 
+
+
+
+.. |blklogo| image:: ./StL
+    :height: 100px
+    :alt: logo
+
+
+
+.. header::
+.. list-table::
+    :class: header-box
+    :align: left
+    :widths: 90 10
+    
+    * - **Treehouse Design Report** - v1.0.0a11 |s| |s| |s| |s| Sect: **###Section###**
+        - p. **###Page###**   
+
+        
+
+.. footer:: 
+.. list-table::
+    :class: footer-box
+    :align: left
+    :widths: 84 22 16
+    
+    * - 2026-05-17 |s| |s| |s| **|** |s| |s| |s| R Holland        
+        - **rivt**        
+        - |blklogo|
+
+                
+
+
 Doc 1
 ======================================================================
 
 
 
-**1-1**.1 Summary
+**1-1.1** Summary
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -23,7 +57,7 @@ safety and compliance with building codes.
 
 ------------
 
-**1-1**.2 Load Combinations and Geometry
+**1-1.2** Load Combinations and Geometry
 --------------------------------------------------------------------------------
  
 Dead and live load contributions to beam UDL.
@@ -50,3 +84,12 @@ Equation No.    Load Combination
 
  
  
+
+
+.. toctree::
+    :maxdepth: 
+    :hidden:
+
+    rv102-loads.rst
+  
+  
