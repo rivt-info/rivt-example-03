@@ -1,9 +1,9 @@
-Doc 3
+**|D.2|** Doc B-1
 ======================================================================
 
 
 
-**2-1.1** Introduction
+**1.1** Intro
 --------------------------------------------------------------------------------
  
 Successive value definitions are formatted as a table. Variable
@@ -30,12 +30,3 @@ Fb_1        20000.00 lb_in2  137.90 MPA     allowable stress
  
  
  
-
-
-.. toctree::
-    :maxdepth: 
-    :hidden:
-
-    rv202-connections.rst
-  
-  

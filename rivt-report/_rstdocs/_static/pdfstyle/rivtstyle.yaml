@@ -14,23 +14,16 @@ fontsAlias:
   fontSansItalic: DejaVuSans-Oblique
 pageSetup:
   firstTemplate: coverPage
-  height: null
-  margin-bottom: 4mm
-  margin-gutter: 1mm
+  size: letter
+  margin-bottom: .5cm
+  margin-gutter: 0cm 
   margin-left: 1.5cm
   margin-right: 1.5cm
-  margin-top: 4mm
-  size: letter
+  margin-top: .5cm
   spacing-footer: 10mm
   spacing-header: 10mm
-  width: null
 pageTemplates:
   coverPage:
-    showFooter: true
-    showHeader: false
-    underline: false
-  noHead:
-    frames: [[0%,0%,100%,100%]]
     showFooter: true
     showHeader: false
     underline: false
@@ -62,8 +55,8 @@ styles:
     leftIndent: 0
     parent: null
     rightIndent: 0
-    spaceAfter: 1
-    spaceBefore: 1
+    spaceAfter: 5
+    spaceBefore: 5
     strike: false
     textColor: black
     wordWrap: null
@@ -82,7 +75,7 @@ styles:
     alignment: TA_JUSTIFY
     hyphenation: true
     parent: normal
-    spaceBefore: 6
+    spaceBefore: 5
   align-center:
     alignment: TA_CENTER
     parent: bodytext
@@ -90,8 +83,8 @@ styles:
     alignment: TA_RIGHT
     parent: bodytext
   code:
-    spaceBefore: 6
-    spaceAfter: 6
+    spaceBefore: 5
+    spaceAfter: 5
     backColor: "#d1dede"
     borderColor: darkgray
     borderPadding: 6
@@ -145,10 +138,11 @@ styles:
         - - -1
           - -1
         - 0.25
-        - white
+        - transparent
   header-box:
     alignment: TA_RIGHT
     fontName: fontSans
+    spaceAfter: 0 
     commands:
       - - BOX
         - - 0
@@ -156,11 +150,11 @@ styles:
         - - -1
           - -1
         - 0.25
-        - white
+        - transparent
   heading:
     keepWithNext: true
     parent: normal
-    spaceAfter: 1
+    spaceAfter: 6
     spaceBefore: 10
     fontName: fontSerif
     textColor: "#222222"
@@ -205,7 +199,7 @@ styles:
     parent: bodytext
   line:
     parent: lineblock
-    spaceBefore: 0
+    spaceBefore: 2
   lineblock:
     parent: bodytext
   linenumber:
@@ -263,8 +257,8 @@ styles:
     spaceBefore: 12
   table:
     alignment: TA_LEFT
-    spaceBefore: 1
-    spaceAfter: 1
+    spaceBefore: 5
+    spaceAfter: 5
     borderPadding: 5
     leftPadding: 6
     rightPadding: 6
@@ -296,7 +290,7 @@ styles:
     borderPadding: 0
     backColor: "#c5d1c5"
     borderColor: darkgray
-    fontName: fontMonoBold
+    fontName: fontSansBold
   tip-heading:
     parent: admonition-heading
   title:
@@ -305,7 +299,8 @@ styles:
     keepWithNext: false
     parent: heading
     fontName: fontSansBold
-    spaceAfter: 36
+    spaceBefore: 5
+    spaceAfter: 5
   title-reference:
     fontName: fontSansItalic
     parent: normal

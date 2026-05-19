@@ -1,9 +1,9 @@
 
-rivt-treehouse-report.pdf | R Holland | 2026-05-17 | 1.0.0a11
+rivt-treehouse-report.pdf | R Holland | 2026-05-18 | 1.0.0a12
 ================================================================================
 
 
-1-1.1  Summary
+1.1  Summary
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -19,7 +19,7 @@ safety and compliance with building codes.
  
  
 
-1-1.2  Load Combinations and Geometry
+1.2  Load Combinations and Geometry
 --------------------------------------------------------------------------------
  
 Dead and live load contributions to beam UDL.
@@ -42,7 +42,7 @@ Fig. 1 -  [file: src/img/tree3d.png ]
  
 
 
-1-2.1  Loads and Geometry
+2.1  Loads
 --------------------------------------------------------------------------------
  
 Successive value definitions are formatted as a table. Variable
@@ -69,7 +69,7 @@ Fb_1        20000.00 lb_in2  137.90 MPA     allowable stress
  
 
 
-2-1.1  Introduction
+1.1  Intro
 --------------------------------------------------------------------------------
  
 Successive value definitions are formatted as a table. Variable
@@ -96,7 +96,7 @@ Fb_1        20000.00 lb_in2  137.90 MPA     allowable stress
  
 
 
-2-2.1  Table
+2.1  Table test
 --------------------------------------------------------------------------------
  
  
@@ -113,7 +113,7 @@ D_4         3.00 klf   43.78 kN_m  fixed machinery DL
  
  
 
-2-2.2  Summary
+2.2  overview
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -129,7 +129,7 @@ safety and compliance with building codes.
  
  
 
-2-2.3  Load Combinations and Geometry
+2.3  Load Combinations
 --------------------------------------------------------------------------------
  
 Dead and live load contributions to beam UDL.

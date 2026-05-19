@@ -139,3 +139,10 @@ hr {
     font-size: 100%;
     color: hwb(200 15% 27%);
 }
+
+/* Adjust the top margin of the first paragraph following a header */
+h1+p,
+h2+p,
+h3+p {
+    margin-top: 0 !important;
+}

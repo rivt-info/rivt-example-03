@@ -53,6 +53,7 @@ rv.D("""Publish Doc
 
     [layout]
     coverlogo = src/img/tree3d.png
+    coverlogo_size = 50
     runninglogo = src/img/logo2.png
     runninglabel = rivt
     subtitle =  -
@@ -65,5 +66,5 @@ rv.D("""Publish Doc
     text_width = 80
     _[[END]]
 
-    | PUBLISH | Doc 1 | text
+    | PUBLISH | Doc A-1 | text
     """)

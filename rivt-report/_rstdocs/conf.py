@@ -7,7 +7,7 @@ sys.path.append(str(Path(".").resolve()))
 project = "rivt-treehouse-report.pdf"
 copyright = "StL"
 author = "R Holland"
-release = "1.0.0a11"
+release = "1.0.0a12"
 
 extensions = [
     "sphinx.ext.githubpages",
@@ -49,8 +49,8 @@ html_theme_options = {
     "footer_end": ["rv-date"],
     "logo": {
             "text": "rivt",
-        "image_dark": "StL",
-        "image_light": "StL",
+        "image_dark": "src/img/rivt02.png",
+        "image_light": "src/img/rivt02.png",
     },
 }
 favicons = [
@@ -65,16 +65,20 @@ favicons = [
         "href": "favicon-32x32.png",
     },
 ]
+#
 # -- Options for PDF output -------------------------------------------------
+#
 # source start file, target name, title, author, options
 # options: ('index', 'MyProject', 'My Project', 'Author Name', {"pdf_compressed": True})
 # More than one author : \r'Guido van Rossum\Fred L. Drake, Jr., editor'
-pdf_documents = [("rv101-standards.py", "rivt-treehouse-report", "rivt-treehouse-report", 
+pdf_documents = [("index", "rivt-treehouse-report", "rivt-treehouse-report", 
             "R Holland")]
 # Label to use as a prefix for the subtitle on the cover page
-subtitle_prefix = "User Manual"
+subtitle_prefix = ""
 # A list of folders to search for stylesheets.
 pdf_style_path = ["./_rstdocs/_static/pdfstyle"]
+# A comma-separated list of custom stylesheets.
+pdf_stylesheets = ["rivtstyle.yaml"]
 # A colon-separated list of folders to search for fonts.
 pdf_font_path = ["./_rstdocs/_static/fonts"]
 # Example: compressed=True
@@ -84,19 +88,19 @@ pdf_language = "en_US"
 # literal blocks wider than the frame overflow, shrink or truncate
 pdf_fit_mode = "shrink"
 # 1 means top-level sections start in a new page 0 disabled
-pdf_break_level = 0
+pdf_break_level = 1
 # When a section starts in a new page, force it to be 'even', 'odd', 'any
 pdf_breakside = "any"
 # If false, no coverpage is generated.
 pdf_use_coverpage = True
 # Name of the cover page template to use
-pdf_cover_template = "_templates/pdfcover.rst"
+pdf_cover_template = "./_templates/pdfcover.rst"
 # Show Table Of Contents at the beginning?
 pdf_use_toc = True
+# How many levels deep should the table of contents be?
+pdf_toc_depth = 2
 # Page template name for "regular" pages
 pdf_page_template = 'mainPage'
-# How many levels deep should the table of contents be?
-pdf_toc_depth = 1
 # Insert footnotes where they are defined 
 pdf_inline_footnotes = False
 # If false, no index is generated.
@@ -122,6 +126,4 @@ pdf_smartquotes = 0
 # pdf_default_dpi = 72
 # Enable rst2pdf extension modules
 # pdf_extensions = []
-# A comma-separated list of custom stylesheets.
-pdf_stylesheets = ["./_rstdocs/_static/pdfstyle/rivtstyle.yaml"]
     

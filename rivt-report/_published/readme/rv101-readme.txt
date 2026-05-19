@@ -1,5 +1,5 @@
 
-1-1.1  Summary
+1.1  Summary
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -15,7 +15,7 @@ safety and compliance with building codes.
  
  
 
-1-1.2  Load Combinations and Geometry
+1.2  Load Combinations and Geometry
 --------------------------------------------------------------------------------
  
 Dead and live load contributions to beam UDL.

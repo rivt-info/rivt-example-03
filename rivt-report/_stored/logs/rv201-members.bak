@@ -1,7 +1,7 @@
 # %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
-rv.V("""Introduction
+rv.V("""Intro
     
     Successive value definitions are formatted as a table. Variable
     values are defined with the define operator. The line tag [T] labels and
@@ -37,6 +37,7 @@ rv.D("""Publish Doc
 
     [layout]
     coverlogo = src/img/tree3d.png
+    coverlogo_size = 50
     runninglogo = logo2.png
     runninglabel = rivt
     subtitle =  -
@@ -49,5 +50,5 @@ rv.D("""Publish Doc
     text_width = 80
     _[[END]]
 
-    | PUBLISH | Doc 3 | text
+    | PUBLISH | Doc B-1 | text
     """)

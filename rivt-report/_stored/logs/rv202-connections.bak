@@ -1,7 +1,7 @@
 # %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
-rv.V("""Table
+rv.V("""Table test
     
 
     Define Unit Loads _[T]
@@ -12,7 +12,7 @@ rv.V("""Table
     
     """)
 
-rv.I("""Summary
+rv.I("""overview
 
     This report covers the structural design of a treehouse in Novato,
     California. The design follows the requirements of the California Building
@@ -28,7 +28,7 @@ rv.I("""Summary
     """)
 
 
-rv.I("""Load Combinations and Geometry 
+rv.I("""Load Combinations
 
     Dead and live load contributions to beam UDL.
 
@@ -62,6 +62,7 @@ rv.D("""Publish Doc
 
     [layout]
     coverlogo = src/img/tree3d.png
+    coverlogo_size = 50
     runninglogo = logo2.png
     runninglabel = rivt
     subtitle =  -
@@ -74,5 +75,5 @@ rv.D("""Publish Doc
     text_width = 80
     _[[END]]
 
-    | PUBLISH | Doc 4 | text
+    | PUBLISH | Doc B-2 | text
     """)

@@ -1,11 +1,17 @@
 
+
 .. role:: big-text
+    
+.. raw:: pdf
+
+   PageBreak coverPage
+    
 
 |
 |
         
 .. image:: ../src/img/tree1.png
-   :width: 700px
+   :width: 50%
    :align: center
 
 |
@@ -13,38 +19,37 @@
 |
 
 
-.. class:: center
+.. rst-class:: center
 
-    :big-text:`rivt treehouse report`
+    :big-text:`Treehouse Design`
+    
+    example rivt report
+    
 
+|
 |
 |
 |
 |
 |
-|
 
-.. class:: center
+.. rst-class:: center
 
-   Attn: **user example**
-
-|
-
-.. class:: center
-
-   project: **proj. 0001**
+    Attn: **user example**
 
    
+|
 
+.. rst-class:: center
+
+    project: **proj. 0001**
+
+|    
 
 .. raw:: pdf
 
-   PageBreak noHead
-   
+    PageBreak mainPage
+    SetPageCounter 1
 
-.. raw:: pdf
 
-   PageBreak mainPage
-   SetPageCounter 1
 
-   

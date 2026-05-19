@@ -1,8 +1,8 @@
-05-17 09:09  rv102-loads   INFO     Doc start
-05-17 09:09  rv102-loads   INFO     rivtlib version: 1.0.0a5
-05-17 09:09  rv102-loads   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\_stored\logs\rv102-loads.bak
-05-17 09:09  rv102-loads   INFO     Loads and Geometry 
-05-17 09:09  rv102-loads   INFO     SECTION 1 - type V
-05-17 09:09  rv102-loads   INFO     tag : _[T]
-05-17 09:09  rv102-loads   INFO     SECTION : Publish Doc
-05-17 09:09  rv102-loads   INFO     block tag : METADATA]]
+05-18 13:35  rv102-loads   INFO     Doc start
+05-18 13:35  rv102-loads   INFO     rivtlib version: 1.0.0a5
+05-18 13:35  rv102-loads   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\_stored\logs\rv102-loads.bak
+05-18 13:35  rv102-loads   INFO     Loads 
+05-18 13:35  rv102-loads   INFO     SECTION 1 - type V
+05-18 13:35  rv102-loads   INFO     tag : _[T]
+05-18 13:35  rv102-loads   INFO     SECTION : Publish Doc
+05-18 13:35  rv102-loads   INFO     block tag : METADATA]]

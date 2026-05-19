@@ -1,5 +1,5 @@
 
-2-2.1  Table
+2.1  Table test
 --------------------------------------------------------------------------------
  
  
@@ -16,7 +16,7 @@ D_4         3.00 klf   43.78 kN_m  fixed machinery DL
  
  
 
-2-2.2  Summary
+2.2  overview
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -32,7 +32,7 @@ safety and compliance with building codes.
  
  
 
-2-2.3  Load Combinations and Geometry
+2.3  Load Combinations
 --------------------------------------------------------------------------------
  
 Dead and live load contributions to beam UDL.
