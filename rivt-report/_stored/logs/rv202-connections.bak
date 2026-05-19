@@ -65,6 +65,7 @@ rv.D("""Publish Doc
     coverlogo_size = 50
     runninglogo = logo2.png
     runninglabel = rivt
+    title = Treehouse Design
     subtitle =  -
     copyright = -
     client = user example
@@ -73,6 +74,7 @@ rv.D("""Publish Doc
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = true
     text_width = 80
+    clean_publish = false
     _[[END]]
 
     | PUBLISH | Doc B-2 | text

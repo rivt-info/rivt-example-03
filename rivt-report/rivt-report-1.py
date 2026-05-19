@@ -17,14 +17,13 @@ Modify the report settings between the double lines where needed.
 See https://www.rivt.info for more details.
 """
 
-# ========= Modify the report settings between the double lines ==============
+# ========= Modify report settings between the double lines ==============
 iniS = """
 [report]
-; ---------- report settings --------------------------------------------------
 ;
-;           report name including extension (pdf, html, txt)
+;           report file name including extension (pdf, html, txt)
 ;
-repname = rivt-treehouse-report.pdf
+repname = rivt-treehouse-report.html
 ;
 ;           comma separated list of excluded doc numbers eg. rv102, rv204
 ;
@@ -34,22 +33,22 @@ exclude = --
 ;
 regen = false 
 ;
-;           clear _restpdf, docs, pdfdocs and textdocs folders before new report   
-;
-;clean_published = false
-;
 ;           include report cover page - true or false
 ;
 cover = true 
+;
+;           initialize/clear the _restpdf, docs, pdfdocs and textdocs folders
+;
+clean_publish = false
 ;
 ;           logo path starts in rivt-folder, logo size in % page width
 ;
 coverlogo = src/img/tree1.png
 coverlogo_size = 50
 title = Treehouse Design 
-subtitle = example rivt report
-client = user example
-projectref = proj. 0001
+subtitle =rivt Report
+client = Example report
+projectref = Proj. 0001
 authors = R Holland 
 copyright = StL
 version = 1.0.0a12
@@ -70,8 +69,6 @@ pdf_margins = 1in, 1in, 1in, 1in
 ;         underline links in PDF - true or false
 ;
 pdf_link = true 
-;
-; ------------- end settings --------------------------------------------------
 ;
 """
 # ============================================================================

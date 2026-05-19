@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.append(str(Path(".").resolve()))
 
-project = "rivt-treehouse-report.pdf"
+project = "rivt-treehouse-report.html"
 copyright = "StL"
 author = "R Holland"
 release = "1.0.0a12"
@@ -33,7 +33,7 @@ html_title = " "
 html_theme = "pydata_sphinx_theme"
 html_context = {"default_mode": "dark"}
 html_sidebars = {"**": ["sidebar-nav-bs.html"]}
-html_static_path = ["_static", "_static/img", "../"]
+html_static_path = ["_static", "_static/img"]
 html_css_files = ["css/custom.css"]
 html_theme_options = {
     "pygments_light_style": "tango",
