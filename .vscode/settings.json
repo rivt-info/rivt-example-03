@@ -1,4 +1,6 @@
 {
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.mouseWheelZoom": true,
     "workbench.editor.tabSizing": "shrink",
     "window.title": "${dirty}${activeEditorLong}${separator}${separator} profile: ${profileName}${separator} repo: ${activeRepositoryName}",
     "settings.cycle": [
@@ -468,7 +470,6 @@
     "editor.parameterHints.cycle": false,
     "editor.hover.enabled": "off",
     "editor.minimap.enabled": false,
-    "editor.mouseWheelZoom": true,
     "editor.renderWhitespace": "none",
     "editor.suggest.showTypeParameters": false,
     "editor.fontSize": 16,

@@ -2,6 +2,15 @@
 
 import rivtlib.rvapi as rv
 
+# the following inital settings are only needed if defaults are overridden
+# The leading hash and semicolon are required
+# rv setwidth = 80  ; set width of text output (default 80 characters)
+# rv setpublic = false ; heading changed to public (default false - private)
+# rv addtag = false ; API tag is added to each section number (default false)
+# rv makefolders = true ; generate rivt folders if needed (default true)
+# rv cleanfolders = false ; clean rivt folders (default false)
+# rv updateconfig = true ; update config files from rivt file (default true)
+
 rv.I("""Summary
 
     This report covers the structural design of a treehouse in Novato,
@@ -13,7 +22,6 @@ rv.I("""Summary
     from the treehouse floor and live load from occupants. The design includes
     calculations for the required beam size and material properties to ensure
     safety and compliance with building codes.
-
 
     """)
 
