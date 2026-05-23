@@ -3,7 +3,7 @@
 
 
 
-**1.1** Summary
+**01.1** Summary
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -17,13 +17,12 @@ calculations for the required beam size and material properties to ensure
 safety and compliance with building codes.
  
  
- 
 
 
 
 ------------
 
-**1.2** Load Combinations and Geometry
+**01.2** Load Combinations and Geometry
 --------------------------------------------------------------------------------
  
 Dead and live load contributions to beam UDL.
@@ -41,7 +40,7 @@ Equation No.    Load Combination
 =============   ==============================================
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/src/img/tree3d.png
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/tree3d.png
     :width: 40%
     :align: center
 
@@ -51,12 +50,11 @@ Equation No.    Load Combination
  
  
 
-    
 .. toctree::
     :maxdepth: 2
 
 
+
     rv102-loads.rst
 
-        
     

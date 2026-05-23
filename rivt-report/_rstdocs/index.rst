@@ -1,65 +1,16 @@
 
 
-.. role:: btext
-   :class: big-text
+.. toctree::
+    :hidden:
 
-.. role:: mtext
-    :class: medium-text
+    pdfcover.rst    
 
-.. role:: stext
-    :class: small-text
-
-
-.. raw:: html
-
-    <div style="height: 0; visibility: hidden;">
-
-    Home
-    ========
-
-   </div>
-
-|
-|
-
-.. image:: ../src/img/tree1.png
-    :width: 50%
-    :align: center        
-    :alt: rivt logo
-
-.. raw:: html
-
-    <hr>
- 
-
-.. rst-class:: center
-
-    :btext:`Treehouse Design`
     
-    :mtext:`rivt Report`
-    
-|
-    
-.. rst-class:: center
-
-    :mtext:`Example report`
-
-   
-|
-|
-
-.. rst-class:: center
-
-    :stext:`Proj. 0001`
-
-   
 .. toctree::
     :maxdepth: 3
-    :hidden:
 
 
     rv101-standards.rst
     rv201-members.rst
-
 
     

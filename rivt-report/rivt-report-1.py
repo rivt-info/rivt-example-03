@@ -1,77 +1,61 @@
 #! python
 
-"""generate
-rivt report
+"""generate rivt report
 
-Run this Python file to generate a rivt report. Copy and rename the file
-(starting with rivt-report- ...) to save custom report settings. The
-setting file is stored in the rivt folder (root folder) and published
-to the _published folder.
+Run this Python script in the rivt-report folder to write reports to the
+_published folder. Copy and rename this file to save custom report settings
+(e.g. rivt-folder-newscript.py).
 
-For PDF and text reports the script re-reads and formats each rivt file but
-does not rewrite the individual files unless specified in the
-settings (note: rewriting docs adds execution time). HTML docs are always
-rewritten.
+For PDF reports the script reads and generates each rivt file as a
+restructured text file (rst) but does not regenerate individual docs
+unless specified in the settings (HTML and text docs are always regenerated).
+Note that regenerating individual PDF docs adds execution time.
 
-Modify the report settings between the double lines where needed.
 See https://www.rivt.info for more details.
 """
 
 # ========= Modify report settings between the double lines ==============
 iniS = """
 [report]
+;----- report file name including extension (pdf, html, txt)
+rept_filename = rivt-treehouse-report.pdf
 ;
-;           report file name including extension (pdf, html, txt)
-;
-repname = rivt-treehouse-report.html
-;
-;           comma separated list of excluded doc numbers eg. rv102, rv204
-;
-exclude = -- 
-;
-;           regenerate pdf or text doc files - true or false
-;
+;----- regenerate pdf or text doc files - true or false
 regen = false 
 ;
-;           include report cover page - true or false
+;----- comma separated list of excluded doc numbers eg. rv102, rv204
+exclude = -- 
 ;
-cover = true 
+;----- initialize/clear the _restpdf, docs, pdfdocs and txtdocs folders
+keep_files = true
 ;
-;           initialize/clear the _restpdf, docs, pdfdocs and textdocs folders
+; update the configuration files from rivt before publishing
+auto_cfg = true
 ;
-clean_publish = false
-;
-;           logo path starts in rivt-folder, logo size in % page width
-;
-coverlogo = src/img/tree1.png
-coverlogo_size = 50
+;----- logo path starts in rivt-folder, logo size is in % page width
 title = Treehouse Design 
 subtitle =rivt Report
+coverlogo = rvsrc/img/tree1.png
+coverlogo_size = 50
 client = Example report
-projectref = Proj. 0001
+project_ref = Proj. 0001
 authors = R Holland 
 copyright = StL
 version = 1.0.0a12
 ;
-;           logo paths start in rivt folder
-;
-running_logo = src/img/rivt02.png 
+;----- logo and labels for header and footer
+running_logo = rvsrc/img/rivt02.png 
 running_label = rivt
 ;
-;          letter, legal, A4
-;
-pdf_pagesize = letter 
-;
-;          margin values for top, right, bottom and left
-;
+;----- letter, legal, A4 - margins top, right, bottom and left
+pdf_pagesize = letter
 pdf_margins = 1in, 1in, 1in, 1in 
 ;
-;         underline links in PDF - true or false
-;
+;----- underline links in PDF - true or false
 pdf_link = true 
 ;
 """
 # ============================================================================
 
-# the following line is required after the settings
+# the following line is required after settings
 import rivtlib.rvreport  # noqa: E402, F401

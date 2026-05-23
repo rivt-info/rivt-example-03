@@ -1,0 +1,8 @@
+05-22 23:52  rv201-members   INFO     Doc start
+05-22 23:52  rv201-members   INFO     rivtlib version: 1.0.0a5
+05-22 23:52  rv201-members   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv201-members.bak
+05-22 23:52  rv201-members   INFO     Intro
+05-22 23:52  rv201-members   INFO     SECTION 1 - type V
+05-22 23:52  rv201-members   INFO     tag : _[T]
+05-22 23:52  rv201-members   INFO     SECTION : Publish Doc
+05-22 23:52  rv201-members   INFO     block tag : METADATA]]

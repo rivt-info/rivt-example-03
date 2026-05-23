@@ -1,5 +1,5 @@
 
-1.1  Summary
+01.1  Summary
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -13,9 +13,8 @@ calculations for the required beam size and material properties to ensure
 safety and compliance with building codes.
  
  
- 
 
-1.2  Load Combinations and Geometry
+01.2  Load Combinations and Geometry
 --------------------------------------------------------------------------------
  
 Dead and live load contributions to beam UDL.
@@ -31,7 +30,7 @@ Equation No.    Load Combination
 =============   ==============================================
  
           ----------------------------------------
-Fig. 1 -  [file: src/img/tree3d.png ] 
+Fig. 1 -  [file: rvsrc/img/tree3d.png ] 
           ----------------------------------------
 
  

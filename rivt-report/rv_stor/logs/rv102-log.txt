@@ -1,0 +1,8 @@
+05-22 23:52  rv102-loads   INFO     Doc start
+05-22 23:52  rv102-loads   INFO     rivtlib version: 1.0.0a5
+05-22 23:52  rv102-loads   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv102-loads.bak
+05-22 23:52  rv102-loads   INFO     Loads 
+05-22 23:52  rv102-loads   INFO     SECTION 1 - type V
+05-22 23:52  rv102-loads   INFO     tag : _[T]
+05-22 23:52  rv102-loads   INFO     SECTION : Publish Doc
+05-22 23:52  rv102-loads   INFO     block tag : METADATA]]
