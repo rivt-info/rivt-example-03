@@ -1,6 +1,35 @@
-**| D.2 |** Doc B-2
-================================================================================
+.. |s| unicode:: 0xA0 
 
+
+
+.. |blklogo| image:: ../rvsrc/img/logo2.png
+   :height: 100px
+   :alt: logo
+
+
+    
+.. header::
+    .. list-table::
+        :class: header-box
+        :align: left
+        :widths: 90 10
+        
+        * - **|D.2|** Doc B-2 - v1.0.0a11 |s| |s| |s| |s|  **###Section###**
+          - p. **###Page###**   
+
+          
+
+.. footer:: 
+    .. list-table::
+        :class: footer-box
+        :align: left
+        :widths: 84 22 16
+        
+        * - 2026-05-23 |s| |s| |s| **|** |s| |s| |s| R Holland        
+          - **rivt**        
+          - |blklogo|
+
+                  
 
 
 **02.1** Table test
