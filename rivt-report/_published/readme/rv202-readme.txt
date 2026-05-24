@@ -1,5 +1,10 @@
 
-02.1  Table test
+--------------------------------------------------------------------------------
+Doc B-2 | R Holland | v-1.0.0a11 | 2026-05-23 - 08:02PM
+--------------------------------------------------------------------------------
+
+
+2.1  Table test
 --------------------------------------------------------------------------------
  
  
@@ -16,7 +21,7 @@ D_4         3.00 klf   43.78 kN_m  fixed machinery DL
  
  
 
-02.2  overview
+2.2  overview
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -32,7 +37,7 @@ safety and compliance with building codes.
  
  
 
-02.3  Load Combinations
+2.3  Load Combinations
 --------------------------------------------------------------------------------
  
 Dead and live load contributions to beam UDL.
@@ -48,7 +53,7 @@ Equation No.    Load Combination
 =============   ==============================================
  
           ----------------------------------------
-Fig. 1 -  [file: rvsrc/img/tree3d.png ] 
+Fig. 1 - Treehouse [file: rvsrc/img/tree3d.png ] 
           ----------------------------------------
 
  

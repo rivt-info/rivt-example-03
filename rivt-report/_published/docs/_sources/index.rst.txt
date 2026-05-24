@@ -1,14 +1,5 @@
 
 
-.. role:: btext
-   :class: big-text
-
-.. role:: mtext
-    :class: medium-text
-
-.. role:: stext
-    :class: small-text
-
 
 .. raw:: html
 
@@ -19,47 +10,47 @@
 
    </div>
 
-|
-|
+|    
 
-.. image:: ../src/img/tree1.png
+.. image:: ../rvsrc/img/tree1.png
     :width: 50%
     :align: center        
     :alt: rivt logo
 
+    
 .. raw:: html
 
-    <hr>
- 
+    <br>
+    <hr style="height: 3px; border-width: 0; color: hwb(200 15% 27%); background-color: hwb(200 15% 27%)">
+    <br> 
 
-.. rst-class:: center
+    <div style="text-align: center;">
 
-    :btext:`Treehouse Design`
     
-    :mtext:`rivt Report`
+    rivt Report
     
-|
+    <br><br>
+
+    <p class="big-text">Treehouse Design</p>
+        
+    <br><br><br>
     
-.. rst-class:: center
-
-    :mtext:`Example report`
-
+    <p class="medium-text">Example report</p>
    
-|
-|
+    <br><br><br>
 
-.. rst-class:: center
+    Proj. 0001
+            
+    
+    </div>
+    
 
-    :stext:`Proj. 0001`
-
-   
 .. toctree::
-    :maxdepth: 3
     :hidden:
+    :maxdepth: 3
 
 
     rv101-standards.rst
     rv201-members.rst
-
 
     

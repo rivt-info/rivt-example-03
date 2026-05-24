@@ -1,5 +1,5 @@
-**| D.1 |** Doc A-1
-================================================================================
+D.1 Doc A-1 
+======================================================================
 
 
 
@@ -15,7 +15,6 @@ between two trees. The beam supports a uniformly distributed load (UDL)
 from the treehouse floor and live load from occupants. The design includes
 calculations for the required beam size and material properties to ensure
 safety and compliance with building codes.
- 
  
  
 
@@ -41,7 +40,7 @@ Equation No.    Load Combination
 =============   ==============================================
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/src/img/tree3d.png
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/tree3d.png
     :width: 40%
     :align: center
 
@@ -51,12 +50,11 @@ Equation No.    Load Combination
  
  
 
-    
 .. toctree::
     :maxdepth: 2
 
 
+
     rv102-loads.rst
 
-        
     

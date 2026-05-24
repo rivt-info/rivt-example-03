@@ -1,38 +1,10 @@
-.. |s| unicode:: 0xA0 
+
+--------------------------------------------------------------------------------
+Doc A-2 | R Holland | v-1.0.0a11 | 2026-05-23 - 08:02PM
+--------------------------------------------------------------------------------
 
 
-
-.. |blklogo| image:: ../rvsrc/img/logo2.png
-   :height: 100px
-   :alt: logo
-
-
-    
-.. header::
-    .. list-table::
-        :class: header-box
-        :align: left
-        :widths: 90 10
-        
-        * - **|D.1|** Doc A-2 - v1.0.0a11 |s| |s| |s| |s|  **###Section###**
-          - p. **###Page###**   
-
-          
-
-.. footer:: 
-    .. list-table::
-        :class: footer-box
-        :align: left
-        :widths: 84 22 16
-        
-        * - 2026-05-23 |s| |s| |s| **|** |s| |s| |s| R Holland        
-          - **rivt**        
-          - |blklogo|
-
-                  
-
-
-**02.1** Loads
+2.1  Loads
 --------------------------------------------------------------------------------
  
 Successive value definitions are formatted as a table. Variable
@@ -40,9 +12,7 @@ values are defined with the define operator. The line tag [T] labels and
 numbers the table.
  
 
-**Table 1**: Define Unit Loads
-
-
+Table 1: Define Unit Loads
 ==========  ===============  =============  =====================
 variable    value            [value]        description
 ==========  ===============  =============  =====================

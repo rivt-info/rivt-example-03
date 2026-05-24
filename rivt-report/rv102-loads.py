@@ -1,4 +1,3 @@
-# %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
 rv.V("""Loads 

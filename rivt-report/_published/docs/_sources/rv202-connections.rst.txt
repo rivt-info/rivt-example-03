@@ -1,5 +1,5 @@
-**| D.2 |** Doc B-2
-================================================================================
+D.2 Doc B-2 
+======================================================================
 
 
 
@@ -64,7 +64,7 @@ Equation No.    Load Combination
 =============   ==============================================
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/src/img/tree3d.png
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/tree3d.png
     :width: 40%
     :align: center
 

@@ -43,7 +43,7 @@ endobj
 endobj
 6 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 23 0 R /XYZ 48.51969 733.078 0 ] /Rect [ 51.35433 718.555 124.7166 729.355 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 23 0 R /XYZ 48.51969 733.078 0 ] /Rect [ 51.35433 718.555 118.4544 729.355 ] /Subtype /Link /Type /Annot
 >>
 endobj
 7 0 obj
@@ -53,7 +53,7 @@ endobj
 endobj
 8 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 23 0 R /XYZ 48.51969 596.7715 0 ] /Rect [ 51.35433 701.755 248.7215 712.555 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 23 0 R /XYZ 48.51969 596.7715 0 ] /Rect [ 51.35433 701.755 242.4593 712.555 ] /Subtype /Link /Type /Annot
 >>
 endobj
 9 0 obj
@@ -63,7 +63,7 @@ endobj
 endobj
 10 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 23 0 R /XYZ 48.51969 193.2366 0 ] /Rect [ 71.35433 684.955 122.8582 695.755 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 23 0 R /XYZ 48.51969 193.2366 0 ] /Rect [ 71.35433 684.955 116.596 695.755 ] /Subtype /Link /Type /Annot
 >>
 endobj
 11 0 obj
@@ -73,7 +73,7 @@ endobj
 endobj
 12 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 24 0 R /XYZ 51.35433 578.078 0 ] /Rect [ 51.35433 668.155 101.3729 678.955 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 24 0 R /XYZ 51.35433 578.078 0 ] /Rect [ 51.35433 668.155 95.11068 678.955 ] /Subtype /Link /Type /Annot
 >>
 endobj
 13 0 obj
@@ -83,7 +83,7 @@ endobj
 endobj
 14 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 24 0 R /XYZ 51.35433 324.118 0 ] /Rect [ 71.35433 651.355 141.3285 662.155 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 24 0 R /XYZ 51.35433 324.118 0 ] /Rect [ 71.35433 651.355 135.0662 662.155 ] /Subtype /Link /Type /Annot
 >>
 endobj
 15 0 obj
@@ -93,7 +93,7 @@ endobj
 endobj
 16 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 24 0 R /XYZ 51.35433 161.8915 0 ] /Rect [ 71.35433 634.555 137.2152 645.355 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 24 0 R /XYZ 51.35433 161.8915 0 ] /Rect [ 71.35433 634.555 130.953 645.355 ] /Subtype /Link /Type /Annot
 >>
 endobj
 17 0 obj
@@ -103,7 +103,7 @@ endobj
 endobj
 18 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 25 0 R /XYZ 48.51969 694.7315 0 ] /Rect [ 71.35433 617.755 182.9491 628.555 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 25 0 R /XYZ 48.51969 694.7315 0 ] /Rect [ 71.35433 617.755 176.6869 628.555 ] /Subtype /Link /Type /Annot
 >>
 endobj
 19 0 obj
@@ -2187,7 +2187,7 @@ endobj
 endobj
 43 0 obj
 <<
-/Author () /CreationDate (D:20260523002037-07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260523002037-07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author () /CreationDate (D:20260523074923-07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260523074923-07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
@@ -2198,39 +2198,39 @@ endobj
 endobj
 45 0 obj
 <<
-/Dest [ 23 0 R /XYZ 48.51969 733.078 0 ] /Next 46 0 R /Parent 44 0 R /Title (01.1 Summary)
+/Dest [ 23 0 R /XYZ 48.51969 733.078 0 ] /Next 46 0 R /Parent 44 0 R /Title (1.1 Summary)
 >>
 endobj
 46 0 obj
 <<
 /Count 1 /Dest [ 23 0 R /XYZ 48.51969 596.7715 0 ] /First 47 0 R /Last 47 0 R /Next 48 0 R /Parent 44 0 R 
-  /Prev 45 0 R /Title (01.2 Load Combinations and Geometry)
+  /Prev 45 0 R /Title (1.2 Load Combinations and Geometry)
 >>
 endobj
 47 0 obj
 <<
-/Dest [ 23 0 R /XYZ 48.51969 193.2366 0 ] /Parent 46 0 R /Title (02.1 Loads)
+/Dest [ 23 0 R /XYZ 48.51969 193.2366 0 ] /Parent 46 0 R /Title (2.1 Loads)
 >>
 endobj
 48 0 obj
 <<
 /Count 3 /Dest [ 24 0 R /XYZ 51.35433 578.078 0 ] /First 49 0 R /Last 51 0 R /Parent 44 0 R /Prev 46 0 R 
-  /Title (01.1 Intro)
+  /Title (1.1 Intro)
 >>
 endobj
 49 0 obj
 <<
-/Dest [ 24 0 R /XYZ 51.35433 324.118 0 ] /Next 50 0 R /Parent 48 0 R /Title (02.1 Table test)
+/Dest [ 24 0 R /XYZ 51.35433 324.118 0 ] /Next 50 0 R /Parent 48 0 R /Title (2.1 Table test)
 >>
 endobj
 50 0 obj
 <<
-/Dest [ 24 0 R /XYZ 51.35433 161.8915 0 ] /Next 51 0 R /Parent 48 0 R /Prev 49 0 R /Title (02.2 overview)
+/Dest [ 24 0 R /XYZ 51.35433 161.8915 0 ] /Next 51 0 R /Parent 48 0 R /Prev 49 0 R /Title (2.2 overview)
 >>
 endobj
 51 0 obj
 <<
-/Dest [ 25 0 R /XYZ 48.51969 694.7315 0 ] /Parent 48 0 R /Prev 50 0 R /Title (02.3 Load Combinations)
+/Dest [ 25 0 R /XYZ 48.51969 694.7315 0 ] /Parent 48 0 R /Prev 50 0 R /Title (2.3 Load Combinations)
 >>
 endobj
 52 0 obj
@@ -2470,7 +2470,7 @@ endstream
 endobj
 54 0 obj
 <<
-/Length 3208
+/Length 3199
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -2488,8 +2488,8 @@ q
 1 0 0 1 0 103.8 cm
 q
 0 .4 .6 RG
-n 0 .675 m 73.3623 .675 l S
-BT 1 0 0 1 0 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (01.1 Summary) Tj T* ET
+n 0 .675 m 67.1001 .675 l S
+BT 1 0 0 1 0 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (1.1 Summary) Tj T* ET
 Q
 Q
 q
@@ -2505,8 +2505,8 @@ q
 1 0 0 1 0 87 cm
 q
 0 .4 .6 RG
-n 0 .675 m 197.3672 .675 l S
-BT 1 0 0 1 0 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (01.2 Load Combinations and Geometry) Tj T* ET
+n 0 .675 m 191.105 .675 l S
+BT 1 0 0 1 0 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (1.2 Load Combinations and Geometry) Tj T* ET
 Q
 Q
 q
@@ -2522,8 +2522,8 @@ q
 1 0 0 1 0 70.2 cm
 q
 0 .4 .6 RG
-n 20 .675 m 71.50391 .675 l S
-BT 1 0 0 1 20 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (02.1) Tj /F1+0 9 Tf 10.8 TL ( Loads) Tj T* ET
+n 20 .675 m 65.2417 .675 l S
+BT 1 0 0 1 20 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (2.1) Tj /F1+0 9 Tf 10.8 TL ( Loads) Tj T* ET
 Q
 Q
 q
@@ -2539,8 +2539,8 @@ q
 1 0 0 1 0 53.4 cm
 q
 0 .4 .6 RG
-n 0 .675 m 50.01855 .675 l S
-BT 1 0 0 1 0 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (01.1 Intro) Tj T* ET
+n 0 .675 m 43.75635 .675 l S
+BT 1 0 0 1 0 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (1.1 Intro) Tj T* ET
 Q
 Q
 q
@@ -2556,8 +2556,8 @@ q
 1 0 0 1 0 36.6 cm
 q
 0 .4 .6 RG
-n 20 .675 m 89.97412 .675 l S
-BT 1 0 0 1 20 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (02.1) Tj /F1+0 9 Tf 10.8 TL ( Table test) Tj T* ET
+n 20 .675 m 83.71191 .675 l S
+BT 1 0 0 1 20 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (2.1) Tj /F1+0 9 Tf 10.8 TL ( Table test) Tj T* ET
 Q
 Q
 q
@@ -2573,8 +2573,8 @@ q
 1 0 0 1 0 19.8 cm
 q
 0 .4 .6 RG
-n 20 .675 m 85.86084 .675 l S
-BT 1 0 0 1 20 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (02.2) Tj /F1+0 9 Tf 10.8 TL ( overview) Tj T* ET
+n 20 .675 m 79.59863 .675 l S
+BT 1 0 0 1 20 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (2.2) Tj /F1+0 9 Tf 10.8 TL ( overview) Tj T* ET
 Q
 Q
 q
@@ -2590,8 +2590,8 @@ q
 1 0 0 1 0 3 cm
 q
 0 .4 .6 RG
-n 20 .675 m 131.5947 .675 l S
-BT 1 0 0 1 20 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (02.3) Tj /F1+0 9 Tf 10.8 TL ( Load Combinations) Tj T* ET
+n 20 .675 m 125.3325 .675 l S
+BT 1 0 0 1 20 1.8 Tm 10.8 TL 0 .4 .6 rg /F2+0 9 Tf 10.8 TL (2.3) Tj /F1+0 9 Tf 10.8 TL ( Load Combinations) Tj T* ET
 Q
 Q
 q
@@ -2660,14 +2660,14 @@ endstream
 endobj
 55 0 obj
 <<
-/Length 6852
+/Length 6848
 >>
 stream
 1 0 0 1 0 0 cm 
 q
 1 0 0 1 48.51969 720.118 cm
 q
-BT 1 0 0 1 0 2.16 Tm 12.96 TL .133333 .133333 .133333 rg /F2+0 10.8 Tf 12.96 TL (01.1 Summary) Tj T* ET
+BT 1 0 0 1 0 2.16 Tm 12.96 TL .133333 .133333 .133333 rg /F2+0 10.8 Tf 12.96 TL (1.1 Summary) Tj T* ET
 Q
 Q
 q
@@ -2692,7 +2692,7 @@ Q
 q
 1 0 0 1 48.51969 583.8115 cm
 q
-BT 1 0 0 1 0 2.16 Tm 12.96 TL .133333 .133333 .133333 rg /F2+0 10.8 Tf 12.96 TL (01.2 Load Combinations and Geometry) Tj T* ET
+BT 1 0 0 1 0 2.16 Tm 12.96 TL .133333 .133333 .133333 rg /F2+0 10.8 Tf 12.96 TL (1.2 Load Combinations and Geometry) Tj T* ET
 Q
 Q
 q
@@ -2835,7 +2835,7 @@ Q
 q
 1 0 0 1 48.51969 181.3566 cm
 q
-BT 1 0 0 1 0 1.98 Tm 11.88 TL .133333 .133333 .133333 rg /F2+0 9.9 Tf 11.88 TL (02.1 Loads) Tj T* ET
+BT 1 0 0 1 0 1.98 Tm 11.88 TL .133333 .133333 .133333 rg /F2+0 9.9 Tf 11.88 TL (2.1 Loads) Tj T* ET
 Q
 Q
 q
@@ -2988,7 +2988,7 @@ q
 q
 1 0 0 1 6 3 cm
 q
-BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (|D.2|) Tj /F1+0 9 Tf 12 TL ( Doc B-2 - v1.0.0a11         ) Tj /F2+0 9 Tf 12 TL (01.1 Summary) Tj T* ET
+BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (|D.2|) Tj /F1+0 9 Tf 12 TL ( Doc B-2 - v1.0.0a11         ) Tj /F2+0 9 Tf 12 TL (1.1 Summary) Tj T* ET
 Q
 Q
 q
@@ -3087,7 +3087,7 @@ endstream
 endobj
 56 0 obj
 <<
-/Length 14413
+/Length 14409
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -3374,7 +3374,7 @@ Q
 q
 1 0 0 1 51.35433 565.118 cm
 q
-BT 1 0 0 1 0 2.16 Tm 12.96 TL .133333 .133333 .133333 rg /F2+0 10.8 Tf 12.96 TL (01.1 Intro) Tj T* ET
+BT 1 0 0 1 0 2.16 Tm 12.96 TL .133333 .133333 .133333 rg /F2+0 10.8 Tf 12.96 TL (1.1 Intro) Tj T* ET
 Q
 Q
 q
@@ -3734,7 +3734,7 @@ Q
 q
 1 0 0 1 51.35433 312.238 cm
 q
-BT 1 0 0 1 0 1.98 Tm 11.88 TL .133333 .133333 .133333 rg /F2+0 9.9 Tf 11.88 TL (02.1 Table test) Tj T* ET
+BT 1 0 0 1 0 1.98 Tm 11.88 TL .133333 .133333 .133333 rg /F2+0 9.9 Tf 11.88 TL (2.1 Table test) Tj T* ET
 Q
 Q
 q
@@ -3942,7 +3942,7 @@ Q
 q
 1 0 0 1 51.35433 150.0115 cm
 q
-BT 1 0 0 1 0 1.98 Tm 11.88 TL .133333 .133333 .133333 rg /F2+0 9.9 Tf 11.88 TL (02.2 overview) Tj T* ET
+BT 1 0 0 1 0 1.98 Tm 11.88 TL .133333 .133333 .133333 rg /F2+0 9.9 Tf 11.88 TL (2.2 overview) Tj T* ET
 Q
 Q
 q
@@ -3969,7 +3969,7 @@ q
 q
 1 0 0 1 6 3 cm
 q
-BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (|D.2|) Tj /F1+0 9 Tf 12 TL ( Doc B-2 - v1.0.0a11         ) Tj /F2+0 9 Tf 12 TL (01.1 Intro) Tj T* ET
+BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (|D.2|) Tj /F1+0 9 Tf 12 TL ( Doc B-2 - v1.0.0a11         ) Tj /F2+0 9 Tf 12 TL (1.1 Intro) Tj T* ET
 Q
 Q
 q
@@ -4068,7 +4068,7 @@ endstream
 endobj
 57 0 obj
 <<
-/Length 3686
+/Length 3684
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -4080,7 +4080,7 @@ Q
 q
 1 0 0 1 48.51969 682.8515 cm
 q
-BT 1 0 0 1 0 1.98 Tm 11.88 TL .133333 .133333 .133333 rg /F2+0 9.9 Tf 11.88 TL (02.3 Load Combinations) Tj T* ET
+BT 1 0 0 1 0 1.98 Tm 11.88 TL .133333 .133333 .133333 rg /F2+0 9.9 Tf 11.88 TL (2.3 Load Combinations) Tj T* ET
 Q
 Q
 q
@@ -4230,7 +4230,7 @@ q
 q
 1 0 0 1 6 3 cm
 q
-BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (|D.2|) Tj /F1+0 9 Tf 12 TL ( Doc B-2 - v1.0.0a11         ) Tj /F2+0 9 Tf 12 TL (02.3 Load Combinations) Tj T* ET
+BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (|D.2|) Tj /F1+0 9 Tf 12 TL ( Doc B-2 - v1.0.0a11         ) Tj /F2+0 9 Tf 12 TL (2.3 Load Combinations) Tj T* ET
 Q
 Q
 q
@@ -4370,63 +4370,63 @@ xref
 0003562957 00000 n 
 0003563123 00000 n 
 0003563287 00000 n 
-0003563454 00000 n 
-0003563619 00000 n 
-0003563785 00000 n 
-0003563949 00000 n 
-0003564115 00000 n 
-0003564279 00000 n 
-0003564446 00000 n 
-0003564611 00000 n 
-0003564778 00000 n 
-0003564943 00000 n 
-0003565311 00000 n 
-0003629499 00000 n 
-0003630017 00000 n 
-0003630325 00000 n 
-0003630584 00000 n 
-0003630892 00000 n 
-0003632826 00000 n 
-0003668358 00000 n 
-0003668617 00000 n 
-0003669956 00000 n 
-0003671905 00000 n 
-0003707101 00000 n 
-0003707371 00000 n 
-0003708725 00000 n 
-0003710686 00000 n 
-0003735670 00000 n 
-0003735942 00000 n 
-0003737316 00000 n 
-0003739262 00000 n 
-0003765226 00000 n 
-0003765489 00000 n 
-0003766858 00000 n 
-0003766964 00000 n 
-0003767219 00000 n 
-0003767293 00000 n 
-0003767406 00000 n 
-0003767595 00000 n 
-0003767694 00000 n 
-0003767844 00000 n 
-0003767960 00000 n 
-0003768088 00000 n 
-0003768212 00000 n 
-0003768300 00000 n 
-0003771293 00000 n 
-0003774553 00000 n 
-0003781457 00000 n 
-0003795923 00000 n 
-0003799661 00000 n 
-0003799738 00000 n 
-0003799772 00000 n 
-0003799806 00000 n 
-0003799840 00000 n 
-0003799874 00000 n 
+0003563453 00000 n 
+0003563618 00000 n 
+0003563784 00000 n 
+0003563948 00000 n 
+0003564114 00000 n 
+0003564278 00000 n 
+0003564444 00000 n 
+0003564609 00000 n 
+0003564776 00000 n 
+0003564941 00000 n 
+0003565309 00000 n 
+0003629497 00000 n 
+0003630015 00000 n 
+0003630323 00000 n 
+0003630582 00000 n 
+0003630890 00000 n 
+0003632824 00000 n 
+0003668356 00000 n 
+0003668615 00000 n 
+0003669954 00000 n 
+0003671903 00000 n 
+0003707099 00000 n 
+0003707369 00000 n 
+0003708723 00000 n 
+0003710684 00000 n 
+0003735668 00000 n 
+0003735940 00000 n 
+0003737314 00000 n 
+0003739260 00000 n 
+0003765224 00000 n 
+0003765487 00000 n 
+0003766856 00000 n 
+0003766962 00000 n 
+0003767217 00000 n 
+0003767291 00000 n 
+0003767403 00000 n 
+0003767591 00000 n 
+0003767689 00000 n 
+0003767838 00000 n 
+0003767953 00000 n 
+0003768080 00000 n 
+0003768203 00000 n 
+0003768291 00000 n 
+0003771284 00000 n 
+0003774535 00000 n 
+0003781435 00000 n 
+0003795897 00000 n 
+0003799633 00000 n 
+0003799710 00000 n 
+0003799744 00000 n 
+0003799778 00000 n 
+0003799812 00000 n 
+0003799846 00000 n 
 trailer
 <<
 /ID 
-[<ecf093b9857c725502de3bea10955a9d><ecf093b9857c725502de3bea10955a9d>]
+[<92d711002a9ea75830b6e49ba09ca759><92d711002a9ea75830b6e49ba09ca759>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 43 0 R
@@ -4434,5 +4434,5 @@ trailer
 /Size 64
 >>
 startxref
-3799908
+3799880
 %%EOF

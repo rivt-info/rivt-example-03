@@ -1,2 +1,5 @@
-05-23 00:20  rivt-report-1   INFO     write rst files: Treehouse Design
-05-23 00:20  rivt-report-1   INFO     README report : Treehouse Design
+05-23 20:02  rivt-report-1   INFO     txt files written: Treehouse Design
+05-23 20:02  rivt-report-1   INFO     txt files written: Treehouse Design
+05-23 20:02  rivt-report-1   INFO     txt files written: Treehouse Design
+05-23 20:02  rivt-report-1   INFO     txt files written: Treehouse Design
+05-23 20:02  rivt-report-1   INFO     README report : Treehouse Design
