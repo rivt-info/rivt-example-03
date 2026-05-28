@@ -11,7 +11,7 @@
 |
 |
         
-.. image:: ./_static/tree3d.png
+.. image:: _static/tree3d.png
    :width: 50%
    :align: center
 
