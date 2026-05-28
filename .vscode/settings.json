@@ -93,7 +93,7 @@
                 "name": "FoldAll",
                 "color": "orange",
                 "useVsCodeApi": true,
-                "command": "editor.foldLevel2"
+                "command": "editor.foldAll"
             },
             {
                 "name": "Unfold",

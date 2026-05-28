@@ -1,10 +1,39 @@
-
---------------------------------------------------------------------------------
-Doc A-1 | R Holland | v-1.0.0a11 | 2026-05-28 - 02:56PM
---------------------------------------------------------------------------------
+.. |s| unicode:: 0xA0 
 
 
-1.1  Summary
+
+.. |blklogo| image:: ./_static/logo2.png
+   :height: 100px
+   :alt: logo
+
+
+    
+.. header::
+    .. list-table::
+        :class: header-box
+        :align: left
+        :widths: 90 10
+        
+        * - **|D.1|** Doc A-1 - v1.0.0a11 |s| |s| |s| |s|  **###Section###**
+          - p. **###Page###**   
+
+          
+
+.. footer:: 
+    .. list-table::
+        :class: footer-box
+        :align: left
+        :widths: 84 22 16
+        
+        * - 2026-05-28 |s| |s| |s| **|** |s| |s| |s| R Holland        
+          - **rivt**        
+          - |blklogo|
+
+
+                  
+
+
+**1.1** Summary
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -19,13 +48,19 @@ safety and compliance with building codes.
  
  
 
-1.2  Load Combinations and Geometry
+
+
+------------
+
+**1.2** Load Combinations and Geometry
 --------------------------------------------------------------------------------
  
 Dead and live load contributions to beam UDL.
  
 
-Table 1: ASCE 7-05 Load Effects
+**Table 1**: ASCE 7-05 Load Effects
+
+
 =============   ==============================================
 Equation No.    Load Combination
 =============   ==============================================
@@ -34,20 +69,30 @@ Equation No.    Load Combination
 16-3            1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
 =============   ==============================================
  
-          ----------------------------------------
-Fig. 1 - Treehouse [file: rvsrc/img/tree3d.png ] 
-          ----------------------------------------
+
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/tree3d.png
+    :width: 40%
+    :align: center
+
+    **Fig. 1** - Treehouse 
+    
 
  
  
 
-1.3  Symbols
+
+
+------------
+
+**1.3** Symbols
 --------------------------------------------------------------------------------
  
  
  
 
-Table 2: **Math Symbols**
+**Table 2**: **Math Symbols**
+
+
 ================== ============================================================
 Abbreviation        Definition
 ================== ============================================================
@@ -89,7 +134,9 @@ W                   wind load / seismic weight of structure
  
  
 
-Table 3: **Drawing Abbreviations**
+**Table 3**: **Drawing Abbreviations**
+
+
 ============ ==============================================
 Abbreviation   Definition
 ============ ==============================================
