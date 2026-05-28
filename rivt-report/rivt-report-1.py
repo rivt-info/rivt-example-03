@@ -26,7 +26,7 @@ auto_cfg = true
 ;----- paths start in report-folder, logo size is % page width
 title = Treehouse Design 
 subtitle =rivt report
-coverlogo = rvsrc/img/tree1.png
+coverlogo = tree1.png
 coverlogo_size = 50
 client = Example
 project_ref = Proj. 0001
@@ -34,7 +34,7 @@ authors = R Holland
 copyright = StL
 version = 1.0.0a12
 ;----- logo and labels for header and footer
-running_logo = rvsrc/img/rivt02.png 
+running_logo = rivt02.png 
 running_label = rivt
 ;----- page size letter, legal, A4 - margins top, right, bottom and left
 pdf_pagesize = letter

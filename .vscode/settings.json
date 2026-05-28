@@ -397,7 +397,7 @@
     "terminal.integrated.scrollback": 5000,
     "workbench.editor.empty.hint": "hidden",
     "workbench.startupEditor": "none",
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
     "workbench.colorTheme": "Dark Modern",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",
