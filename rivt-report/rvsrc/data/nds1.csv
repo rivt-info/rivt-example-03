@@ -1,0 +1,31 @@
+Symbol,Description
+F_b,Reference bending design value
+F_t,Reference tension design value
+F_v,Reference shear design value
+F_{c\perp},Reference compression perpendicular to grain design value
+F_c,Reference compression parallel to grain design value
+E,Modulus of elasticity
+E_{min},Reference modulus of elasticity for stability and stiffness
+G,Specific gravity
+C_D,Load duration factor
+C_M,Wet service factor
+C_F,Size factor
+C_{fu},Flat use factor
+C_i,Incising factor
+C_r,Repetitive member factor
+C_t,Temperature factor
+C_c,Curvature factor
+C_l,Column stability factor
+C_L,Beam stability factor
+C_p,Column stability factor
+C_b,Bearing area factor
+C_T,Buckling stiffness factor
+C_{s},Slenderness factor
+C_{T},Buckling stiffness factor
+F'_b,Adjusted bending design value
+F'_t,Adjusted tension design value
+F'_v,Adjusted shear design value
+F'_{c\perp},Adjusted compression perpendicular to grain design value
+F'_c,Adjusted compression parallel to grain design value
+E',Adjusted modulus of elasticity
+E'_{min},Adjusted modulus of elasticity for stability and stiffness

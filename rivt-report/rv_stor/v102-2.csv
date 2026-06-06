@@ -1,0 +1,6 @@
+D_1 = 2.0 * plf,plf,klf,2,2x6 planks DL
+D_2 = 2.6 * plf,plf,klf,2,2x8 joists DL
+D_3 = 2.9 * plf,plf,klf,2,4x4 posts and struts
+E_1 = 29000 * ksi,ksi,MPA,2,modulus of elasticity
+LL_1 = 40 * psf,psf,kPA,2,ASCE7-05 floor LL
+HL_1 = 20 * psf,psf,kPA,2,ASCE7-05 HL
