@@ -7,17 +7,6 @@
             "import rivtlib.api as rv"
         ]
     },
-    "Meta API (rvm)": {
-        "prefix": "rvm",
-        "description": "Meta API method",
-        "scope": "python",
-        "body": [
-            "rv.M(\"\"\"${1:section-label} | ${2|private,public|}, ${3|hide,show|}, ${4|merge,section|} ",
-            "",
-            "    ${0:text}",
-            "    \"\"\")"
-        ]
-    },
     "Run API (rvr)": {
         "prefix": "rvr",
         "description": "Run API method",
@@ -80,7 +69,7 @@
         "description": "attach pdf file - D api",
         "scope": "python",
         "body": [
-            "| attachpdf | src/${1:path} | ${0:cover title} "
+            "| ATTACHPDF | rvsrc/${1:filename} | ${0:cover title} "
         ]
     },
     "cmd image ( |im )": {
@@ -88,7 +77,7 @@
         "description": "insert image",
         "scope": "python",
         "body": [
-            "| IMAGE | src/${1:path} | ${2:scale}, ${3:caption} ${0:_[I]} "
+            "| IMAGE | rvsrc/${1:filename} | ${2:caption}, ${3:scale}, ${4|num,nonum|} $0"
         ]
     },
     "cmd image ( |i2 )": {
@@ -96,7 +85,7 @@
         "description": "insert side by side images",
         "scope": "python",
         "body": [
-            "| IMAGE | src/${1:path},src/${2:path} | ${3:scale},${4:scale},${5:caption},${6:caption} ${0:_[I]} "
+            "| IMAGE2 | rvsrc/${1:filename}, rvsrc/${2:filename} | ${3:caption1},${4:caption2},${5:scale1},${6:scale1},${7|num,nonum|},${8|num,nonum|} $0  "
         ]
     },
     "cmd publish ( |pu )": {
@@ -104,7 +93,7 @@
         "description": "publish doc - API rv.D",
         "scope": "python",
         "body": [
-            "| publish | ${1|pdf,html,txt,pdftex|} | ${0:parameters} "
+            "| PUBLISH | ${1: doc title} | ${2|pdf,html,txt,pdftex|} $0"
         ]
     },
     "cmd table ( |ta )": {
@@ -112,31 +101,23 @@
         "description": "insert table from file - API rv.I and rv.V",
         "scope": "python",
         "body": [
-            "| table | src/${1:rel-path} | ${2:max-row-length}, [${3:start-row}:${4:end-row}] ${0:_[T]} "
+            "| TABLE | rvsrc/${1:filename} | ${2:title}, ${3:cell-wrap-length}, ${4|head,nohead|}, ${5|num,nonum|} $0"
         ]
     },
-    "cmd text ( |te )": {
-        "prefix": "|te",
-        "description": "insert text from file - API rv.I",
+    "cmd table ( |ta )1": {
+        "prefix": "|vt",
+        "description": "insert values from csv vile - rv.V",
         "scope": "python",
         "body": [
-            "| text | src/${1:rel-path} | ${0|plain, literal, rivt|}"
+            "| VALTABLE | ${1|rvsrc,rv_stor|}/${2:filename} | ${3:title}, ${0:cell-wrap-length} "
         ]
     },
     "tag center ( _ce )": {
         "prefix": "_ce",
-        "description": "tag center line",
+        "description": "tag - bold and center line of text",
         "scope": "python",
         "body": [
-            "_[c]"
-        ]
-    },
-    "tag right ( _ri )1": {
-        "prefix": "_ri",
-        "description": "tag right justify",
-        "scope": "python",
-        "body": [
-            "_[r]"
+            "_[C]"
         ]
     },
     "tag ascii math  ( _as )": {
@@ -145,14 +126,6 @@
         "scope": "python",
         "body": [
             "_[a]"
-        ]
-    },
-    "tag equation ( _eq }": {
-        "prefix": "_eq",
-        "description": "tag equation label and number",
-        "scope": "python",
-        "body": [
-            "_[e]"
         ]
     },
     "tag figure ( _fi  }": {
@@ -171,84 +144,31 @@
             "_[t]"
         ]
     },
-    "tag footnote [  _fo  ]": {
-        "prefix": "_fo",
-        "description": "tag a footnote ",
-        "scope": "python",
-        "body": [
-            "_[#]"
-        ]
-    },
     "tag url ( _ur )": {
-        "prefix": "_[u",
+        "prefix": "_ur",
         "description": "tag url",
         "scope": "python",
         "body": [
             "_[u] https://${1: url}, ${0: url label}"
         ]
     },
-    "tag new page ( === )": {
-        "prefix": "===",
-        "description": "start a new page",
+    "block tag italic ( _[m)": {
+        "prefix": "_[m",
+        "description": "markup block tag",
         "scope": "python",
         "body": [
-            "==============="
+            "_[[MARKUP]] ${1|italic, bold, bolditalic, latex, html, reST, literal, box|} $0",
+            "",
+            "",
+            "_[[END]]"
         ]
     },
-    "tag horizontal line  ---": {
-        "prefix": "---",
-        "description": "insert horizontal line",
+    "block tag quit ( _[e )": {
+        "prefix": "__[e",
+        "description": "block tag end",
         "scope": "python",
         "body": [
-            "---------------"
-        ]
-    },
-    "block tag center ( _[c )": {
-        "prefix": "_[c",
-        "description": "block tag center",
-        "scope": "python",
-        "body": [
-            "_[[c]]"
-        ]
-    },
-    "block tag latex ( _[l )": {
-        "prefix": "_[x",
-        "description": "tag latex block",
-        "scope": "python",
-        "body": [
-            "_[[l]]"
-        ]
-    },
-    "block tag plain ( _[p )": {
-        "prefix": "_[p",
-        "description": "tag plain text block",
-        "scope": "python",
-        "body": [
-            "_[[p]]"
-        ]
-    },
-    "block tag bold ( _[b )": {
-        "prefix": "_[b",
-        "description": "block tag bold",
-        "scope": "python",
-        "body": [
-            "_[[b]]"
-        ]
-    },
-    "block tag italic ( _[i )": {
-        "prefix": "_[i",
-        "description": "block tag italic",
-        "scope": "python",
-        "body": [
-            "_[[i]]"
-        ]
-    },
-    "block tag quit ( _[q  )": {
-        "prefix": "__[q",
-        "description": "block tag quit",
-        "scope": "python",
-        "body": [
-            "__[[q]]"
+            "__[[END]]"
         ]
     }
 }

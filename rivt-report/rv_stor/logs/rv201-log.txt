@@ -1,8 +1,19 @@
-05-28 11:12  rv201-members   INFO     Doc start
-05-28 11:12  rv201-members   INFO     rivtlib version: 1.0.0a5
-05-28 11:12  rv201-members   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv201-members.bak
-05-28 11:12  rv201-members   INFO     Intro
-05-28 11:12  rv201-members   INFO     SECTION 1.1  - type V
-05-28 11:12  rv201-members   INFO     tag : _[T]
-05-28 11:12  rv201-members   INFO     SECTION : Publish Doc
-05-28 11:12  rv201-members   INFO     block tag : METADATA]]
+06-03 18:03  rv201-deck   INFO     Doc start
+06-03 18:03  rv201-deck   INFO     rivtlib version: 1.0.0a5
+06-03 18:03  rv201-deck   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv201-deck.bak
+06-03 18:03  rv201-deck   INFO     Design Properties
+06-03 18:03  rv201-deck   INFO     SECTION 2.1.1  - type V
+06-03 18:03  rv201-deck   INFO     command : IMAGE
+06-03 18:03  rv201-deck   DEBUG    STREAM b'IHDR' 16 13
+06-03 18:03  rv201-deck   DEBUG    STREAM b'eXIf' 41 14
+06-03 18:03  rv201-deck   DEBUG    STREAM b'oFFs' 67 9
+06-03 18:03  rv201-deck   DEBUG    b'oFFs' 67 9 (unknown)
+06-03 18:03  rv201-deck   DEBUG    STREAM b'IDAT' 88 8192
+06-03 18:03  rv201-deck   INFO     command : VALTABLE
+06-03 18:03  rv201-deck   INFO     command : PYTHON
+06-03 18:03  rv201-deck   INFO     Deck Design Summary
+06-03 18:03  rv201-deck   INFO     SECTION 2.1.2  - type V
+06-03 18:03  rv201-deck   INFO     tag : _[[ARGS]]
+06-03 18:03  rv201-deck   INFO     command : FUNCTION
+06-03 18:03  rv201-deck   INFO     SECTION : Publish Doc 
+06-03 18:03  rv201-deck   INFO     block tag : METADATA]]

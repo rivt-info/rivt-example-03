@@ -1,21 +1,35 @@
 import rivtlib.rvapi as rv
 
-rv.V("""Loads 
+rv.I("""Load Combinations and Geometry 
+
+
+    | IMAGE | rvsrc/img/tree3d.png | Treehouse, 40, num
+
+
+    ASCE 7-05 Load Effects _[T]
+    =============   ==============================================
+    Equation No.    Load Combination
+    =============   ==============================================
+    16-1            1.4(D+F)
+    16-2            1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)
+    16-3            1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
+    =============   ==============================================
+    """)
+
+
+rv.V("""Unit Loads 
+
+  
+    | TABLE | rvsrc/data/df-wts.csv | Unit Weights - Doug Fir, 25, head, num 
     
-    Successive value definitions are formatted as a table. Variable
-    values are defined with the define operator. The line tag [T] labels and
-    numbers the table.
-    
-    Define Unit Loads _[T]
-    D_1 ==: 3.8 * psf | psf, kPA, 2 | joists DL         
-    D_2 ==: 2.1 * psf | psf, kPA, 2 | plywood DL          
-    D_3 ==: 10.0 * psf | psf, kPA, 2 | partitions DL       
-    D_4 ==: 2 * 1.5 * klf | klf, kN_m, 2 | fixed machinery DL
-    L_1 ==: 40 * psf | psf, kPA, 2 | ASCE7-O5 LL
-    b_1 ==: 10 * inch | inch, mm, 2 | beam width
-    h_1 ==: 18 * inch | inch, mm, 2 | beam depth
+
+    Member Nominal Loads and Properties _[T]
+    D_1 ==: 2.0 * plf | plf, klf, 2 | 2x6 planks DL         
+    D_2 ==: 2.6 * plf | plf, klf, 2 | 2x8 joists DL         
+    D_3 ==: 2.9 * plf | plf, klf, 2 | 4x4 posts and struts
     E_1 ==: 29000 * ksi | ksi, MPA, 2 | modulus of elasticity
-    Fb_1 ==: 20000 * psqin | psqin, MPA, 2 | allowable stress   
+    LL_1 ==: 40 * psf | psf, kPA, 2 | ASCE7-05 floor LL
+    HL_1 ==: 20 * psf | psf, kPA, 2 | ASCE7-05 HL
     
     
     """)
@@ -35,26 +49,23 @@ rv.D("""Publish Doc
     fork1_license = https://opensource.org/license/mit/
 
     [layout]
-    coverlogo = rvsrc/img/tree3d.png
-    coverlogo_size = 50
-    runninglogo = rvsrc/img/logo2.png
+    coverlogo = tree1.png
+    coverlogo_size = 70
+    runninglogo = logo2.png
     runninglabel = rivt
-    title = Treehouse Design
-    subtitle =  -
-    copyright = -
-    client = user example
-    project_ref = 0001
+    coverpage = false
+    subtitle =  Doc Example
+    copyright = --
+    client = user manual
+    project_ref = proj. 0001
     pdf_pagesize = letter
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = true
-
+    
     [process]
     private_heading = true ; if false, default heading changed to public
-    keep_files = true ; if false, files in folders with leading "_" are deleted
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 
-
-
-    | PUBLISH | Doc A-2 | text
+    | PUBLISH | Loads | pdf
     """)

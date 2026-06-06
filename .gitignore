@@ -7,6 +7,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+
 .Python
 build/
 develop-eggs/
@@ -143,6 +144,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+rivt-report/rvsrc/mermaidnpm/
 
 # Spyder project settings
 .spyderproject

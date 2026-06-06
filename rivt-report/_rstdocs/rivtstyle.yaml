@@ -13,7 +13,7 @@ fontsAlias:
   fontSansBoldItalic: DejaVuSans-BoldOblique
   fontSansItalic: DejaVuSans-Oblique
 pageSetup:
-  firstTemplate: coverPage
+  firstTemplate: noHead
   height: null
   margin-bottom: 4mm
   margin-gutter: 1mm

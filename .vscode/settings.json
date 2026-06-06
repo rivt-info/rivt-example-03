@@ -262,6 +262,10 @@
             "color": "#0f8f69",
         },
         {
+            "text": "| FUNCTION |",
+            "color": "#0f8f69",
+        },
+        {
             "text": "| PYTHON |",
             "color": "#0f8f69",
         },
@@ -327,7 +331,7 @@
             "isWholeLine": true,
         },
         {
-            "text": "_[[BOX]]",
+            "text": "_[[MARKUP]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
@@ -337,37 +341,7 @@
             "isWholeLine": true,
         },
         {
-            "text": "_[[TOPIC]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
-            "text": "_[[INDENT]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
-            "text": "_[[ITALLIC]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
-            "text": "_[[TEXT]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
             "text": "_[[PYTHON]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
-            "text": "_[[SCRIPT]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
-            "text": "_[[LAYOUT]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
@@ -387,7 +361,7 @@
             "isWholeLine": true,
         },
         {
-            "text": "_[[NEWPAGE]]",
+            "text": "_[[ARGS]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
@@ -395,6 +369,7 @@
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.scrollback": 5000,
+    "terminal.integrated.defaultLocation": "editor",
     "workbench.editor.empty.hint": "hidden",
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "left",
@@ -420,6 +395,7 @@
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.stickyScroll.enabled": false,
     },
+    "ruff.format.preview": true,
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "jupyter.askForKernelRestart": false,
     "python.analysis.enablePytestSupport": false,

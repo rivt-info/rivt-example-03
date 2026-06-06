@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.append(str(Path(".").resolve()))
 
-project = "Treehouse Design"
+project = "Standards and Loads"
 copyright = "--"
 author = "self.R Holland"
 release = "1.0.0a11"
@@ -21,6 +21,7 @@ extensions = [
     "sphinx_design",
     "sphinx_new_tab_link",
     "rst2pdf.pdfbuilder",
+    "sphinxcontrib.mermaid"
 ]
 root_doc = "index"
 duration_write_json = ""
@@ -69,7 +70,7 @@ favicons = [
 # source start file, target name, title, author, options
 # options: ('index', 'MyProject', 'My Project', 'Author Name', {"pdf_compressed": True})
 # More than one author : \r'Guido van Rossum\Fred L. Drake, Jr., editor'
-pdf_documents = [("rv101-standards", "rv101-standards", "Treehouse Design", 
+pdf_documents = [("rv100-stdlds", "rv100-stdlds", "Standards and Loads", 
             "R Holland")]
 # Label to use as a prefix for the subtitle on the cover page
 subtitle_prefix = "User Manual"
@@ -80,11 +81,11 @@ pdf_font_path = ["./_rstdocs/_static/fonts"]
 # A comma-separated list of custom stylesheets.
 pdf_stylesheets = ["./_rstdocs/rivtstyle.yaml"]
 # If false, no coverpage is generated.
-pdf_use_coverpage = True
+pdf_use_coverpage = False
 # Name of the cover page template to use
-pdf_cover_template = "./_static/pdfcover.rst"
+pdf_cover_template = ""
 # Show Table Of Contents at the beginning?
-pdf_use_toc = True
+pdf_use_toc = False
 # Page template name for "regular" pages
 pdf_page_template = 'mainPage'
 # Example: compressed=True

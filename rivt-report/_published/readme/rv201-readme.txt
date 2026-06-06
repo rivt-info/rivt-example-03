@@ -1,31 +1,97 @@
 
---------------------------------------------------------------------------------
-Doc B-1 | R Holland | v-1.0.0a11 | 2026-05-28 - 11:12AM
---------------------------------------------------------------------------------
-
-
-1.1  Intro
+2.1.1  Design Properties
 --------------------------------------------------------------------------------
  
-Successive value definitions are formatted as a table. Variable
-values are defined with the define operator. The line tag [T] labels and
-numbers the table.
+ 
+ 
+          ----------------------------------------
+Fig. 1 - Member Designations [file: rvsrc/img/members1.png ] 
+          ----------------------------------------
+
+ 
+ 
+Import deck loads and functions.
+
+Table 1: Load values from rv102-loads.py (rv_stor/v102-2.csv)
+==========  ============  =============  =====================
+variable    value         [value]        description
+==========  ============  =============  =====================
+D_1         2.00 plf      0.00 klf       2x6 planks DL
+D_2         2.60 plf      0.00 klf       2x8 joists DL
+D_3         2.90 plf      0.00 klf       4x4 posts and struts
+E_1         29000.00 ksi  199947.96 MPA  modulus of elasticity
+LL_1        40.00 psf     1.92 kPA       ASCE7-05 floor LL
+HL_1        20.00 psf     0.96 kPA       ASCE7-05 HL
+==========  ============  =============  =====================
+
+
  
 
-Table 1: Define Unit Loads
-==========  ===============  =============  =====================
-variable    value            [value]        description
-==========  ===============  =============  =====================
-D_1         3.80 psf         0.18 kPA       joists DL
-D_2         2.10 psf         0.10 kPA       plywood DL
-D_3         10.00 psf        0.48 kPA       partitions DL
-D_4         3.00 klf         43.78 kN_m     fixed machinery DL
-L_1         40.00 psf        1.92 kPA       ASCE7-O5 LL
-b_1         10.00 inch       254.00 mm      beam width
-h_1         18.00 inch       457.20 mm      beam depth
-E_1         29000.00 ksi     199947.96 MPA  modulus of elasticity
-Fb_1        20000.00 lb_in2  137.90 MPA     allowable stress
-==========  ===============  =============  =====================
+Table 2: Import Functions (rvsrc/scripts/sectprop2.py)
+
+===============================  ============================================
+Function                         Docstring
+===============================  ============================================
+rectsect(b, d)                   section modulus of rectangle
+rectinertia(b, d)                moment of inertia of rectangle
+midspan_delta(ln, w, e, i)       mid-span deflection of simply supported beam
+                                 with UDL
+bending_stress_udl(ln, w, b, d)  Maximum bending stress in a simply supported
+                                 beam with UDL.
+nds_beam_check(** kwargs)        Check stress and deflection for a simply
+                                 supported wood beam using NDS.
+nds_post_check(** kwargs)        Check stress at cantilever post
+===============================  ============================================
+
  
+ 
+
+2.1.2  Deck Design Summary
+--------------------------------------------------------------------------------
+ 
+Design properties.
+ 
+    Function Arguments Dictionary : beam1 (units: inch, pounds)
+    ===========================================================================
+    ln_1 = 4*12.  # beam span 
+    w_1 = 45*.5/12  # uniform linear load  
+    b_1 = 5.5  # beam width 
+    d_1 = 1.5  # beam depth 
+    E_1 = 1.5*(10**6)  # modulus of elasticity 
+    F_b = 1000 # allowable bending stress 
+    C_D = 1.0  # load duration factor 
+    C_M = 0.85 # wet service factor 
+    C_F = 1.0  # size factor 
+    C_t = 1.0  # temperature factor 
+    C_i = 0.8  # incising factor 
+    C_r = 1.0  # repetitive member factor 
+    C_c = 1.0  # curvature factor 
+    C_L = 1.0  # beam stability factor 
+    C_b = 1.0  # bearing area factor 
+    deflect_limit = 240.0 # max allowable deflection ln_1/deflect_limit
+    ===========================================================================
+
+
+ 
+ 
+Design Results
+┌  Eq-1 | Check Deck Beam
+│
+│       nds_beam_check | units: inch, pounds
+└
+
+
+Beam Check Results:
+===============================    
+total UDL: 1.88
+fb: 261.82
+Fb_prime: 680.00
+E_prime: 1275000.00
+stress_ratio: 0.39
+deflection: 0.07
+deflection_ratio:  0.20
+
+
+
  
  
