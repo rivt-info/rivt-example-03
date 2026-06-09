@@ -274,6 +274,18 @@
             "color": "#0f8f69",
         },
         {
+            "text": "| SHELL |",
+            "color": "#0f8f69",
+        },
+        {
+            "text": "| READ |",
+            "color": "#0f8f69",
+        },
+        {
+            "text": "| COPY |",
+            "color": "#0f8f69",
+        },
+        {
             "text": "_[#]",
             "color": "#4989a2",
         },
@@ -362,6 +374,11 @@
         },
         {
             "text": "_[[ARGS]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[WRITE]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },

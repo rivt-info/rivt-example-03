@@ -1,0 +1,23 @@
+06-08 19:40  rv302-opensees   INFO     Doc start
+06-08 19:40  rv302-opensees   INFO     rivtlib version: 1.0.0a5
+06-08 19:40  rv302-opensees   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv302-opensees.bak
+06-08 19:40  rv302-opensees   INFO     OpenSees Analysis
+06-08 19:40  rv302-opensees   INFO     SECTION 3.2.1 - type I
+06-08 19:40  rv302-opensees   INFO     tag : _[[MARKUP]]
+06-08 19:40  rv302-opensees   INFO     osp-mod1 Model values
+06-08 19:40  rv302-opensees   INFO     SECTION 3.2.2 - type V
+06-08 19:40  rv302-opensees   INFO     Insert ops-mod1 Output
+06-08 19:40  rv302-opensees   INFO     SECTION 3.2.3 - type I
+06-08 19:40  rv302-opensees   INFO     command : MARKUP
+06-08 19:40  rv302-opensees   INFO     command : IMAGE2
+06-08 19:40  rv302-opensees   DEBUG    STREAM b'IHDR' 16 13
+06-08 19:40  rv302-opensees   DEBUG    STREAM b'tEXt' 41 58
+06-08 19:40  rv302-opensees   DEBUG    STREAM b'pHYs' 111 9
+06-08 19:40  rv302-opensees   DEBUG    STREAM b'IDAT' 132 32616
+06-08 19:40  rv302-opensees   DEBUG    STREAM b'IHDR' 16 13
+06-08 19:40  rv302-opensees   DEBUG    STREAM b'tEXt' 41 58
+06-08 19:40  rv302-opensees   DEBUG    STREAM b'pHYs' 111 9
+06-08 19:40  rv302-opensees   DEBUG    STREAM b'IDAT' 132 33048
+06-08 19:40  rv302-opensees   INFO     command : MARKUP
+06-08 19:40  rv302-opensees   INFO     SECTION : Publish Doc
+06-08 19:40  rv302-opensees   INFO     block tag : METADATA]]

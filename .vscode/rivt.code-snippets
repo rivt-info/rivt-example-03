@@ -4,7 +4,7 @@
         "description": "import rivt api",
         "scope": "python",
         "body": [
-            "import rivtlib.api as rv"
+            "import rivtlib.rvapi as rv"
         ]
     },
     "Run API (rvr)": {
@@ -77,7 +77,7 @@
         "description": "insert image",
         "scope": "python",
         "body": [
-            "| IMAGE | rvsrc/${1:filename} | ${2:caption}, ${3:scale}, ${4|num,nonum|} $0"
+            "| IMAGE | rvsrc/${1:filename} | ${2:caption}, ${3:scale}, ${4|num,nonum|}, ${5|time,notime|} $0"
         ]
     },
     "cmd image ( |i2 )": {
@@ -169,6 +169,43 @@
         "scope": "python",
         "body": [
             "__[[END]]"
+        ]
+    },
+    "met": {
+        "prefix": "_[d",
+        "description": "add metadata to doc",
+        "scope": "python",
+        "body": [
+            "    _[[METADATA]] ",
+            "    [doc]",
+            "    authors = R Holland",
+            "    version = 1.0.0a11",
+            "    repo = https://github.com/rivt-info/rivt-single-doc",
+            "    license = https://opensource.org/license/mit/",
+            "    copyright = --",
+            "    fork1_authors = --",
+            "    fork1_version = --",
+            "    fork1_repo = --",
+            "    fork1_license = https://opensource.org/license/mit/",
+            "",
+            "    [layout]",
+            "    coverlogo = tree1.png",
+            "    coverlogo_size = 70",
+            "    coverpage = false",
+            "    subtitle =  Doc Example",
+            "    client = user manual",
+            "    project_ref = proj. 0001",
+            "    copyright = --",
+            "    runninglogo = logo2.png",
+            "    runninglabel = rivt",
+            "    pdf_pagesize = letter",
+            "    pdf_margins = 1in, 1in, 1in, 1in ",
+            "    pdf_link_underline = true",
+            "    ",
+            "    [process]",
+            "    private_heading = true ; if false, default heading changed to public",
+            "    auto_cfg = true ; if false, config files are not updated from rivt file",
+            "    _[[END]]"
         ]
     }
 }

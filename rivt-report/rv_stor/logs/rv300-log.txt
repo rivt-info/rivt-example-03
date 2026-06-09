@@ -1,0 +1,13 @@
+06-06 09:55  rv300-analysis   INFO     Doc start
+06-06 09:55  rv300-analysis   INFO     rivtlib version: 1.0.0a5
+06-06 09:55  rv300-analysis   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv300-analysis.bak
+06-06 09:55  rv300-analysis   INFO     Summary  
+06-06 09:55  rv300-analysis   INFO     SECTION 3.0.1  - type I
+06-06 09:55  rv300-analysis   INFO     tag : _[U]
+06-06 09:55  rv300-analysis   INFO     tag : _[U]
+06-06 09:55  rv300-analysis   INFO     command : IMAGE
+06-06 09:55  rv300-analysis   DEBUG    STREAM b'IHDR' 16 13
+06-06 09:55  rv300-analysis   DEBUG    STREAM b'tRNS' 41 6
+06-06 09:55  rv300-analysis   DEBUG    STREAM b'IDAT' 59 8192
+06-06 09:55  rv300-analysis   INFO     SECTION : Publish  
+06-06 09:55  rv300-analysis   INFO     block tag : METADATA]]

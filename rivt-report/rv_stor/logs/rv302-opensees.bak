@@ -1,0 +1,226 @@
+import rivtlib.rvapi as rv
+
+
+rv.I("""OpenSees Analysis
+
+    This section analyzes the period of the tree - tree fort system. The
+    OpenSees model is schematically shown below:
+
+    _[[MARKUP]]  literal 
+            y
+            ^
+            |
+        m2  o  Node 3 (Top mass)
+            |
+        k2  |   Spring 2 (Between m1 and m2)
+            |
+        m1  o  Node 2 (Middle mass)
+            |
+        k1  |   Spring 1 (Between base and m1)
+            |
+            o  Node 1 (Fixed Base)
+        -----------
+        (Ground)
+    _[[END]]
+
+    """)
+
+
+rv.V("""osp-mod1 Model values
+
+
+    mass1 ==: 1.5 | --, --, 2 |  mass of tree fort, kN/g
+    mass2 ==: 3.5 | --, --, 2 |  mass of branches, kN/g
+    trk1 ==: 1100.0 | --, --, 2 |  lower tree trunk stiffness, kN/cm
+    trk2 ==: 2100.0 | --, --, 2 |  upper tree trunk stiffness, kN/cm
+
+    """)
+
+rv.T("""OpenSees ops-mod1 Model
+
+    This section writes the OpenSees input file based on rivt calculations and
+    runs a shell command in a virtual Python environment for version 3.12 - the
+    version compatible with OpenSeesPy.
+    
+    _[[WRITE]] rvsrc/scripts/opsmod1.py
+    f'''
+    import openseespy.opensees as ops
+    import numpy as np
+    import math
+    import matplotlib.pyplot as plt
+    import opsvis as opsv
+    # ---------------------------------------------------------------------
+    # 1. Model Initialization
+    # ---------------------------------------------------------------------
+    ops.wipe()
+    ops.model("BasicBuilder", "-ndm", 2, "-ndf", 2)
+
+    # ---------------------------------------------------------------------
+    # 2. Define Parameters
+    # ---------------------------------------------------------------------
+    # Mass values (e.g., in tons)
+    m1 = {mass1}
+    m2 = {mass2}
+
+    # Stiffness values (e.g., in kN/m)
+    k1 = {trk1}
+    k2 = {trk2}
+
+    # ---------------------------------------------------------------------
+    # 3. Create Nodes
+    # ---------------------------------------------------------------------
+    # Base node (fixed)
+    ops.node(1, 0.0, 0.0)
+
+    # Node 1
+    ops.node(2, 0.0, 2.0)
+
+    # Node 2
+    ops.node(3, 0.0, 4.0)
+
+    # Fix the base node in both X and Y directions
+    ops.fix(1, 1, 1)
+    # Restrain vertical (Y) displacement and rotation at mass nodes
+    # to represent a pure 2D shear/lateral lollipop system
+    ops.fix(2, 0, 1)  # Free in X, Fixed in Y
+    ops.fix(3, 0, 1)  # Free in X, Fixed in Y
+    # ---------------------------------------------------------------------
+    # 4. Assign Masses
+    # ---------------------------------------------------------------------
+    
+    ops.mass(2, m1, 0.0)
+    ops.mass(3, m2, 0.0)
+
+    # ---------------------------------------------------------------------
+    # 5. Define Elements
+    # ---------------------------------------------------------------------
+    # Use elastic truss elements to represent the lateral springs
+    # Assign high axial stiffness (E * A) and 0.0 length
+    EA = 1e8
+
+    # Spring 1 between Node 1 and Node 2
+    ops.uniaxialMaterial("Elastic", 1, {trk1})
+    ops.element("Truss", 1, 1, 2, EA, 1)
+
+    # Spring 2 between Node 2 and Node 3
+    ops.uniaxialMaterial("Elastic", 2, {trk2})
+    ops.element("Truss", 2, 2, 3, EA, 2)
+
+    # ---------------------------------------------------------------------
+    # 6. Eigenvalue Analysis & Results Output
+    # ---------------------------------------------------------------------
+    num_modes = 1
+    eigenvalues = ops.eigen(num_modes)
+
+    periods = []
+    frequencies = []
+    outL = []
+    for i in range(num_modes):
+        lamb = eigenvalues[i]
+        omega = math.sqrt(lamb)
+        freq = omega / (2 * math.pi)
+        period = 2 * math.pi / omega
+        periods.append(period)
+        frequencies.append(freq)
+        resS = f'Mode {{i + 1}}: Period = {{period:.4f}} s | Frequency = {{freq:.4f}} Hz'
+        outL.append(resS)
+    outS = chr(10).join(item for item in outL)
+    with open("output.txt", 'w') as f1:
+        f1.write(outS)
+    print("text output written")
+    # ---------------------------------------------------------------------
+    # 7. Model Visualization
+    # ---------------------------------------------------------------------
+
+    # Plot the defined model to check geometry (this is an axes mdoel)
+    mod1 = opsv.plot_model()
+    fig1 = mod1.get_figure()
+    plt.title("2-DOF Lollipop Model Geometry")
+    fig1.savefig("figure1.png", dpi=200)
+    print("figure 1 written")
+    plt.show(block=False)
+
+    # Plot the mode shape for the first mode (this is a figure)
+    fig2 = opsv.plot_mode_shape(1, 2.0)  # Scaling factor of 2.0 for visibility
+    plt.title("Mode Shape 1")
+    plt.savefig("figure2.png", dpi=200)
+    print("figure 2 written")
+    plt.show()
+    '''
+    _[[END]]
+
+    
+    _[[WRITE]] rvsrc/scripts/ops1.cmd
+    cd "%USERPROFILE%"
+    cd py312
+    call scripts\\activate
+    python opsmod1.py
+    _[[END]]
+
+    Copy command to OpenSees folder
+
+    | COPY |  -rvsrc-/scripts | %userprofile%/py312/ | opsmod1.py
+
+    | SHELL | rvsrc/scripts | ops1.cmd
+
+    Copy images and text from OpenSees analysis
+
+    | COPY | %userprofile%/py312/ | -rvsrc-/img | *.png
+
+    | COPY | %userprofile%/py312/ | -rvsrc- | *.txt
+
+    """)
+
+rv.I("""Insert ops-mod1 Output
+
+    **Model Input**
+
+    | MARKUP | rvsrc/scripts/opsmod1.py | python
+
+    
+    **Model Plots**
+
+    | IMAGE2 | rvsrc/img/figure1.png, rvsrc/img/figure2.png | OPS Model, OPS First Mode,45,45,num,num
+
+    **Model Text**
+
+    | MARKUP | rvsrc/output.txt | literal
+
+    """)
+
+# %% rv.D("""Publish Doc
+rv.D("""Publish Doc
+
+    _[[METADATA]] 
+    [doc]
+    authors = R Holland
+    version = 1.0.0a11
+    repo = https://github.com/rivt-info/rivt-single-doc
+    license = https://opensource.org/license/mit/
+    copyright = --
+    fork1_authors = --
+    fork1_version = --
+    fork1_repo = --
+    fork1_license = https://opensource.org/license/mit/
+
+    [layout]
+    coverlogo = tree1.png
+    coverlogo_size = 70
+    coverpage = false
+    subtitle =  Doc Example
+    client = user manual
+    project_ref = proj. 0001
+    copyright = --
+    runninglogo = logo2.png
+    runninglabel = rivt
+    pdf_pagesize = letter
+    pdf_margins = 1in, 1in, 1in, 1in 
+    pdf_link_underline = true
+    
+    [process]
+    auto_cfg = true ; if false, config files are not updated from rivt file
+    _[[END]]
+
+    | PUBLISH | Standards and Loads | pdf
+
+    """)

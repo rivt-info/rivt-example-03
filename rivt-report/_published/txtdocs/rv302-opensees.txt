@@ -1,0 +1,62 @@
+
+--------------------------------------------------------------------------------
+Standards and Loads | R Holland | v-1.0.0a11 | 2026-06-08 - 07:33PM
+--------------------------------------------------------------------------------
+
+
+3.2.1 | OpenSees Analysis
+--------------------------------------------------------------------------------
+ 
+This section analyzes the period of the tree - tree fort system. The
+OpenSees model is schematically shown below:
+ 
+        y 
+        ^ 
+        | 
+    m2  o  Node 3 (Top mass) 
+        | 
+    k2  |   Spring 2 (Between m1 and m2) 
+        | 
+    m1  o  Node 2 (Middle mass) 
+        | 
+    k1  |   Spring 1 (Between base and m1) 
+        | 
+        o  Node 1 (Fixed Base) 
+    ----------- 
+    (Ground) 
+
+ 
+ 
+
+3.2.2 | osp-mod1 Model values
+--------------------------------------------------------------------------------
+ 
+ 
+==========  =======  =========  =================================
+variable    value    [value]    description
+==========  =======  =========  =================================
+mass1       1.5      1.5        mass of tree fort, kN/g
+mass2       3.5      3.5        mass of branches, kN/g
+trk1        1100     1100       lower tree trunk stiffness, kN/cm
+trk2        2100     2100       upper tree trunk stiffness, kN/cm
+==========  =======  =========  =================================
+ 
+ 
+
+3.2.3 | Insert ops-mod1 Output
+--------------------------------------------------------------------------------
+ 
+Model Plots
+ 
+          ----------------------------------------
+Fig. 1 - OPS Model  | Fig. 2 - OPS First Mode 
+          ----------------------------------------
+
+ 
+Model Text
+ 
+
+Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
+
+ 
+ 

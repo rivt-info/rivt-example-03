@@ -70,7 +70,7 @@ favicons = [
 # source start file, target name, title, author, options
 # options: ('index', 'MyProject', 'My Project', 'Author Name', {"pdf_compressed": True})
 # More than one author : \r'Guido van Rossum\Fred L. Drake, Jr., editor'
-pdf_documents = [("rv100-stdlds", "rv100-stdlds", "Standards and Loads", 
+pdf_documents = [("rv302-opensees", "rv302-opensees", "Standards and Loads", 
             "R Holland")]
 # Label to use as a prefix for the subtitle on the cover page
 subtitle_prefix = "User Manual"

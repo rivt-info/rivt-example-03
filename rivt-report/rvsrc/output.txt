@@ -1,0 +1,1 @@
+Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
