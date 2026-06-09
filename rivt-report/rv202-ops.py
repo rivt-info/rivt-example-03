@@ -1,4 +1,35 @@
+# %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
+
+
+rv.I("""Introduction
+
+    Under the California Building Code (CBC), handrails and guards (railings)
+    must resist a uniform load of 50 plf and a concentrated point load of 200
+    lbs, both applied horizontally to the top rail. Intermediate rails,
+    balusters, and infill panels must separately withstand a concentrated load
+    of 50 lbs.
+
+    _[[MARKUP]] literal
+
+      =======  <-- Top Rail
+         |     <-- Lateral Load (P)
+         | 
+         |
+         |
+         |  Height (h)
+         |
+         |
+         |
+         |
+    ===========  <-- Fixed Support / Deck Surface
+    
+    Structural Schematic of Railing and Loads
+    
+    _[[END]]
+
+
+    """)
 
 
 rv.I("""OpenSees Analysis
@@ -188,13 +219,13 @@ rv.I("""Insert ops-mod1 Output
 
     """)
 
-# %% rv.D("""Publish Doc
+
 rv.D("""Publish Doc
 
     _[[METADATA]] 
     [doc]
     authors = R Holland
-    version = 1.0.0a11
+    version = 1.0.0a12
     repo = https://github.com/rivt-info/rivt-single-doc
     license = https://opensource.org/license/mit/
     copyright = --
@@ -206,13 +237,13 @@ rv.D("""Publish Doc
     [layout]
     coverlogo = tree1.png
     coverlogo_size = 70
-    coverpage = false
-    subtitle =  Doc Example
-    client = user manual
-    project_ref = proj. 0001
-    copyright = --
     runninglogo = logo2.png
     runninglabel = rivt
+    coverpage = false
+    subtitle =  Doc Example
+    copyright = --
+    client = user manual
+    project_ref = proj. 0001
     pdf_pagesize = letter
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = true
@@ -221,6 +252,5 @@ rv.D("""Publish Doc
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 
-    | PUBLISH | Standards and Loads | pdf
-
+    | PUBLISH | Open Sees Analysis | text
     """)

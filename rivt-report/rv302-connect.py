@@ -1,23 +1,35 @@
-# %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
-rv.V("""Summary
+
+rv.I("""Strut to Tree Connection
+
+    Use Simpson Strong Tie online tool
+
+    | IMAGE | rvsrc/img/ss12.jpg | Option 1, 100, num, time 
     
-    This report division covers the design of 
-    
-    - guard rails
-    - decking
-    
-    | IMAGE | rvsrc/img/dim1.png | Tree Fort Dimensions, 80, num 
-    
+    | IMAGE | rvsrc/img/ss14.jpg | Option 2, 100, num, time 
+
     """)
 
+rv.I("""Top rail Corner
+
+    Use AWC online connection tool.
+
+    | IMAGE | rvsrc/img/awc4.jpg | Top Rail - Corner Plate Input, 100, num, not 
+
+    | IMAGE | rvsrc/img/awc5.jpg | Top Rail - Corner Plate Capacity, 100, num, not
+ 
+    Use 4-#8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
+
+    """)
+
+# %% rv.D("""Publish Doc
 rv.D("""Publish Doc
 
     _[[METADATA]] 
     [doc]
     authors = R Holland
-    version = 1.0.0a12
+    version = 1.0.0a11
     repo = https://github.com/rivt-info/rivt-single-doc
     license = https://opensource.org/license/mit/
     copyright = --
@@ -29,21 +41,21 @@ rv.D("""Publish Doc
     [layout]
     coverlogo = tree1.png
     coverlogo_size = 70
-    runninglogo = logo2.png
-    runninglabel = rivt
     coverpage = false
     subtitle =  Doc Example
-    copyright = --
     client = user manual
     project_ref = proj. 0001
+    copyright = --
+    runninglogo = logo2.png
+    runninglabel = rivt
     pdf_pagesize = letter
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = true
     
     [process]
-    private_heading = true ; if false, default heading changed to public
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 
-    | PUBLISH | Deck Design | pdf
+    | PUBLISH | Connection Design | pdf
+
     """)

@@ -63,7 +63,6 @@ rv.D("""Publish Doc
     pdf_link_underline = true
     
     [process]
-    private_heading = true ; if false, default heading changed to public
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 

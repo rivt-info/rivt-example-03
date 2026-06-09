@@ -7,7 +7,7 @@ import rivtlib.rvapi as rv
 
 # rv set_width = 80  ; character width of text output (80)
 # rv no_tag = true ; if false, the API type is added to section number (true)
-
+# rv private = true ; if false, default heading changed to public (private)
 
 # %% rv.I("""Summary
 rv.I("""Summary
@@ -19,7 +19,7 @@ rv.I("""Summary
     
     The design report is organized into the following sections:
 
-    | IMAGE | rvsrc/img/reportflow.png | Treehouse Report - Flow Chart, 65, num, time
+    | IMAGE | rvsrc/img/outputa.jpg | Report Flow Chart, 65, num, not
 
     """)
 
@@ -123,19 +123,18 @@ rv.D("""Publish Doc
     [layout]
     coverlogo = tree1.png
     coverlogo_size = 70
-    runninglogo = logo2.png
-    runninglabel = rivt
     coverpage = false
     subtitle =  Doc Example
-    copyright = --
     client = user manual
     project_ref = proj. 0001
+    copyright = --
+    runninglogo = logo2.png
+    runninglabel = rivt
     pdf_pagesize = letter
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = true
     
     [process]
-    private_heading = true ; if false, default heading changed to public
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 

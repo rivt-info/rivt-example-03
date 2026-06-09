@@ -1,10 +1,10 @@
 
 --------------------------------------------------------------------------------
-Standards and Loads | R Holland | v-1.0.0a11 | 2026-06-05 - 05:59PM
+Standards and Loads | R Holland | v-1.0.0a11 | 2026-06-09 - 04:05AM
 --------------------------------------------------------------------------------
 
 
-1.0.1  | Summary
+1.0.1 | Summary
 --------------------------------------------------------------------------------
  
 This report covers the structural design of a treehouse in Novato,
@@ -15,13 +15,13 @@ California Building Code (CBC).
 The design report is organized into the following sections:
  
           ----------------------------------------
-Fig. 1 - Treehouse Report - Flow Chart [file: rvsrc/img/reportflow.png  | time: no time ]
+Fig. 1 - Report Flow Chart [file: rvsrc/img/outputa.jpg   ]
           ----------------------------------------
 
  
  
 
-1.0.2  | Drawing Symbols
+1.0.2 | Drawing Symbols
 --------------------------------------------------------------------------------
  
 

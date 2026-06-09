@@ -1,16 +1,11 @@
-06-05 17:59  rv100-stdlds   INFO     Doc start
-06-05 17:59  rv100-stdlds   INFO     rivtlib version: 1.0.0a5
-06-05 17:59  rv100-stdlds   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv100-stdlds.bak
-06-05 17:59  rv100-stdlds   INFO     Summary
-06-05 17:59  rv100-stdlds   INFO     SECTION 1.0.1  - type I
-06-05 17:59  rv100-stdlds   INFO     command : IMAGE
-06-05 17:59  rv100-stdlds   DEBUG    STREAM b'IHDR' 16 13
-06-05 17:59  rv100-stdlds   DEBUG    STREAM b'IDAT' 41 4096
-06-05 17:59  rv100-stdlds   DEBUG    STREAM b'IHDR' 16 13
-06-05 17:59  rv100-stdlds   DEBUG    STREAM b'IDAT' 41 4096
-06-05 17:59  rv100-stdlds   DEBUG    STREAM b'IDAT' 65847 6
-06-05 17:59  rv100-stdlds   INFO     Drawing Symbols | pdfpage
-06-05 17:59  rv100-stdlds   INFO     SECTION 1.0.2  - type I
-06-05 17:59  rv100-stdlds   INFO     tag : _[T]
-06-05 17:59  rv100-stdlds   INFO     SECTION : Publish Doc
-06-05 17:59  rv100-stdlds   INFO     block tag : METADATA]]
+06-09 04:05  rv100-stdlds   INFO     Doc start
+06-09 04:05  rv100-stdlds   INFO     rivtlib version: 1.0.0a5
+06-09 04:05  rv100-stdlds   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv100-stdlds.bak
+06-09 04:05  rv100-stdlds   INFO     Summary
+06-09 04:05  rv100-stdlds   INFO     SECTION 1.0.1 - type I
+06-09 04:05  rv100-stdlds   INFO     command : IMAGE
+06-09 04:05  rv100-stdlds   INFO     Drawing Symbols | pdfpage
+06-09 04:05  rv100-stdlds   INFO     SECTION 1.0.2 - type I
+06-09 04:05  rv100-stdlds   INFO     tag : _[T]
+06-09 04:05  rv100-stdlds   INFO     SECTION : Publish Doc
+06-09 04:05  rv100-stdlds   INFO     block tag : METADATA]]

@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.append(str(Path(".").resolve()))
 
-project = "Standards and Loads"
+project = "Connection Design"
 copyright = "--"
 author = "self.R Holland"
 release = "1.0.0a11"
@@ -70,7 +70,7 @@ favicons = [
 # source start file, target name, title, author, options
 # options: ('index', 'MyProject', 'My Project', 'Author Name', {"pdf_compressed": True})
 # More than one author : \r'Guido van Rossum\Fred L. Drake, Jr., editor'
-pdf_documents = [("rv302-opensees", "rv302-opensees", "Standards and Loads", 
+pdf_documents = [("rv302-connect", "rv302-connect", "Connection Design", 
             "R Holland")]
 # Label to use as a prefix for the subtitle on the cover page
 subtitle_prefix = "User Manual"

@@ -1,26 +1,26 @@
+# %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
-rv.I("""Summary  
+rv.I("""RISA Model
 
-    The following analysis programs are used in the tree fort design:
-
-    - _[U] RISA-3D, https://risa.com/products/risa-3d | for determining connections forces 
+    | IMAGE | rvsrc/risa4.png | Risa Model, 70, num, not
 
 
-    - _[U] OpenSees, https://opensees.berkeley.edu | for determing the period of the tree fort system.
-      
+    | IMAGE | rvsrc/risa6.png | Strut Axial Forces, 70, num, not
 
-    | IMAGE | rvsrc/img/reportflow3.png | Analysis Steps, 60, num, notime    
+
+    | IMAGE | rvsrc/risa9.png | Rail Lateral Forces, 70, num, not
+
     
     """)
 
 
-rv.D("""Publish  
+rv.D("""Publish Doc 
 
     _[[METADATA]] 
     [doc]
     authors = R Holland
-    version = 1.0.0a11
+    version = 1.0.0a12
     repo = https://github.com/rivt-info/rivt-single-doc
     license = https://opensource.org/license/mit/
     copyright = --
@@ -32,13 +32,13 @@ rv.D("""Publish
     [layout]
     coverlogo = tree1.png
     coverlogo_size = 70
-    coverpage = false
-    subtitle =  Doc Example
-    client = user manual
-    project_ref = proj. 0001
-    copyright = --
     runninglogo = logo2.png
     runninglabel = rivt
+    coverpage = false
+    subtitle =  Doc Example
+    copyright = --
+    client = user manual
+    project_ref = proj. 0001
     pdf_pagesize = letter
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = true
@@ -46,8 +46,7 @@ rv.D("""Publish
     [process]
     private_heading = true ; if false, default heading changed to public
     auto_cfg = true ; if false, config files are not updated from rivt file
-    _[[END]]]
+    _[[END]]
 
-    | PUBLISH | Analysis Programs | pdf
-
+    | PUBLISH | Deck Design | pdf
     """)

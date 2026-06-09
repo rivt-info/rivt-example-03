@@ -19,7 +19,7 @@ rv.I("""Summary
     
     The design report is organized into the following sections:
 
-    | IMAGE | rvsrc/img/reportflow.png | Treehouse Report - Flow Chart, 65, num, time
+    | IMAGE | rvsrc/img/outputa.jpg | Report Flow Chart, 65, num, not
 
     """)
 

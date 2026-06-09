@@ -1,12 +1,15 @@
-# %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
-rv.V("""Design Properties
+rv.I("""RISA-3D Analysis 
+
+    The RISA-3D geometry was generated using a centerline dxf from a Sketchup
+    Model.
     
+    """)
 
 
-    | IMAGE | rvsrc/img/members1.png | Member Designations, 80, num 
-
+rv.V("""Deck Design Properties
+    
 
     Import deck loads and functions.
     | VALTABLE | rv_stor/v102-2.csv | Load values from rv102-loads.py, 40
@@ -45,6 +48,15 @@ rv.V("""Deck Design Summary
 
 """)
 
+rv.I("""section-label | private, show, section 
+
+    Check strut D/C ratio.
+
+    | IMAGE | rvsrc/bmck1.jpg | Strut Check, 80, num, not
+    
+    """)
+
+
 rv.D("""Publish Doc 
 
     _[[METADATA]] 
@@ -74,9 +86,9 @@ rv.D("""Publish Doc
     pdf_link_underline = true
     
     [process]
-    private_heading = true ; if false, default heading changed to public
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 
-    | PUBLISH | Deck Design | pdf
+    | PUBLISH | Member Design | pdf
+
     """)

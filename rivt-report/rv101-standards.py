@@ -123,8 +123,6 @@ rv.D("""Publish Doc
     pdf_link_underline = true
     
     [process]
-    private_heading = true ; if false, default heading changed to public
-    keep_files = true ; if false, files in folders with leading "_" are deleted
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 

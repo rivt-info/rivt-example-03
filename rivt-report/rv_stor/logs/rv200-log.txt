@@ -1,11 +1,8 @@
-06-03 18:03  rv200-plates   INFO     Doc start
-06-03 18:03  rv200-plates   INFO     rivtlib version: 1.0.0a5
-06-03 18:03  rv200-plates   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv200-plates.bak
-06-03 18:03  rv200-plates   INFO     Summary
-06-03 18:03  rv200-plates   INFO     SECTION 2.0.1  - type V
-06-03 18:03  rv200-plates   INFO     command : IMAGE
-06-03 18:03  rv200-plates   DEBUG    STREAM b'IHDR' 16 13
-06-03 18:03  rv200-plates   DEBUG    STREAM b'tRNS' 41 6
-06-03 18:03  rv200-plates   DEBUG    STREAM b'IDAT' 59 8192
-06-03 18:03  rv200-plates   INFO     SECTION : Publish Doc
-06-03 18:03  rv200-plates   INFO     block tag : METADATA]]
+06-09 04:15  rv200-programs   INFO     Doc start
+06-09 04:15  rv200-programs   INFO     rivtlib version: 1.0.0a5
+06-09 04:15  rv200-programs   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv200-programs.bak
+06-09 04:15  rv200-programs   INFO     Summary
+06-09 04:15  rv200-programs   INFO     SECTION 2.0.1 - type V
+06-09 04:15  rv200-programs   INFO     command : IMAGE
+06-09 04:15  rv200-programs   INFO     SECTION : Publish Doc
+06-09 04:15  rv200-programs   INFO     block tag : METADATA]]
