@@ -3,7 +3,7 @@ import rivtlib.rvapi as rv
 rv.I("""Load Combinations and Geometry 
 
 
-    | IMAGE | rvsrc/img/tree3d.png | Treehouse, 40, num
+    | IMAGE | rvsrc/img/tree4.png | Tree Fort Plan, 50, num, not
 
 
     ASCE 7-05 Load Effects _[T]
@@ -19,9 +19,13 @@ rv.I("""Load Combinations and Geometry
 
 rv.V("""Unit Loads 
 
-  
+
+    Unit weights imported from csv file created by AI. _[B]
+
     | TABLE | rvsrc/data/df-wts.csv | Unit Weights - Doug Fir, 25, head, num 
-    
+
+
+    Variables assigned by inline definitions. _[B]
 
     Member Nominal Loads and Properties _[T]
     D_1 ==: 2.0 * plf | plf, klf, 2 | 2x6 planks DL         
@@ -63,7 +67,6 @@ rv.D("""Publish Doc
     pdf_link_underline = true
     
     [process]
-    private_heading = true ; if false, default heading changed to public
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 

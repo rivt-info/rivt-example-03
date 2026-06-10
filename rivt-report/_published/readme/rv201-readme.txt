@@ -1,97 +1,54 @@
 
-2.1.1  Design Properties
+2.1.1 | Applied deck forces - RISA model
 --------------------------------------------------------------------------------
  
  
- 
           ----------------------------------------
-Fig. 1 - Member Designations [file: rvsrc/img/members1.png ] 
+Fig. 1 - Risa Model [file: rvsrc/img/risa4.png |   ]
           ----------------------------------------
 
  
  
-Import deck loads and functions.
 
-Table 1: Load values from rv102-loads.py (rv_stor/v102-2.csv)
-==========  ============  =============  =====================
-variable    value         [value]        description
-==========  ============  =============  =====================
-D_1         2.00 plf      0.00 klf       2x6 planks DL
-D_2         2.60 plf      0.00 klf       2x8 joists DL
-D_3         2.90 plf      0.00 klf       4x4 posts and struts
-E_1         29000.00 ksi  199947.96 MPA  modulus of elasticity
-LL_1        40.00 psf     1.92 kPA       ASCE7-05 floor LL
-HL_1        20.00 psf     0.96 kPA       ASCE7-05 HL
-==========  ============  =============  =====================
-
-
- 
-
-Table 2: Import Functions (rvsrc/scripts/sectprop2.py)
-
-===============================  ============================================
-Function                         Docstring
-===============================  ============================================
-rectsect(b, d)                   section modulus of rectangle
-rectinertia(b, d)                moment of inertia of rectangle
-midspan_delta(ln, w, e, i)       mid-span deflection of simply supported beam
-                                 with UDL
-bending_stress_udl(ln, w, b, d)  Maximum bending stress in a simply supported
-                                 beam with UDL.
-nds_beam_check(** kwargs)        Check stress and deflection for a simply
-                                 supported wood beam using NDS.
-nds_post_check(** kwargs)        Check stress at cantilever post
-===============================  ============================================
-
- 
- 
-
-2.1.2  Deck Design Summary
+2.1.2 | Resultant axial forces - RISA model
 --------------------------------------------------------------------------------
  
-Design properties.
- 
-    Function Arguments Dictionary : beam1 (units: inch, pounds)
-    ===========================================================================
-    ln_1 = 4*12.  # beam span 
-    w_1 = 45*.5/12  # uniform linear load  
-    b_1 = 5.5  # beam width 
-    d_1 = 1.5  # beam depth 
-    E_1 = 1.5*(10**6)  # modulus of elasticity 
-    F_b = 1000 # allowable bending stress 
-    C_D = 1.0  # load duration factor 
-    C_M = 0.85 # wet service factor 
-    C_F = 1.0  # size factor 
-    C_t = 1.0  # temperature factor 
-    C_i = 0.8  # incising factor 
-    C_r = 1.0  # repetitive member factor 
-    C_c = 1.0  # curvature factor 
-    C_L = 1.0  # beam stability factor 
-    C_b = 1.0  # bearing area factor 
-    deflect_limit = 240.0 # max allowable deflection ln_1/deflect_limit
-    ===========================================================================
-
+          ----------------------------------------
+Fig. 2 - Strut Axial Forces [file: rvsrc/img/risa6.png |   ]
+          ----------------------------------------
 
  
  
-Design Results
-┌  Eq-1 | Check Deck Beam
-│
-│       nds_beam_check | units: inch, pounds
-└
 
+2.1.3 | Top rail shear reactions - RISA model
+--------------------------------------------------------------------------------
+ 
+Under the California Building Code (CBC), handrails and guards (railings)
+must resist a uniform load of 50 plf and a concentrated point load of 200
+lbs, both applied horizontally to the top rail. Intermediate rails,
+balusters, and infill panels must separately withstand a concentrated load
+of 50 lbs.
+ 
+  =======  <-- Top Rail 
+     |     <-- Lateral Load (P) 
+     |  
+     | 
+     | 
+     |  Height (h) 
+     | 
+     | 
+     | 
+     | 
+===========  <-- Fixed Support / Deck Surface 
+ 
+ 
+Structural Schematic of Railing and Loads Drawn by AI 
 
-Beam Check Results:
-===============================    
-total UDL: 1.88
-fb: 261.82
-Fb_prime: 680.00
-E_prime: 1275000.00
-stress_ratio: 0.39
-deflection: 0.07
-deflection_ratio:  0.20
-
-
+ 
+ 
+          ----------------------------------------
+Fig. 3 - Rail Lateral Forces [file: rvsrc/img/risa9.png |   ]
+          ----------------------------------------
 
  
  

@@ -1,9 +1,9 @@
 
-1.1.1  Summary
+1.1.1 | Summary
 --------------------------------------------------------------------------------
  
-The design of the treehouse is based on the requirements and standards of
-the California Building Code (CBC) outlined below.
+The design loads are based on the standards of the California Building
+Code (CBC) outlined below.  Standard math symbols are profided for reference.
  
 
 Table 1: California Building Standards
@@ -37,12 +37,9 @@ AWPA U1 / M4      American Wood Protection Association      Standards for preser
 
  
  
-
-1.1.2  Math Symbols
---------------------------------------------------------------------------------
  
 
-Table 2: **Math Abbreviations**
+Table 2: Math Abbreviations
 ================== ============================================================
 Abbreviation        Definition
 ================== ============================================================
@@ -110,6 +107,5 @@ Abbreviation        Definition
 :math:`E'`          NDS - Adjusted modulus of elasticity
 :math:`E'_{min}`    NDS - Adjusted modulus ofor stability and stiffness
 ================== ============================================================
- 
  
  

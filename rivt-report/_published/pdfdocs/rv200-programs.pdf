@@ -7,12 +7,12 @@
 endobj
 2 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 9 0 R /XYZ 51.35433 733.078 0 ] /Rect [ 48.51969 646.2085 131.7213 657.0085 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 9 0 R /XYZ 51.35433 718.678 0 ] /Rect [ 48.51969 646.2085 177.9342 657.0085 ] /Subtype /Link /Type /Annot
 >>
 endobj
 3 0 obj
 <<
-/Border [ 0 0 0 ] /Contents () /Dest [ 9 0 R /XYZ 51.35433 733.078 0 ] /Rect [ 554.3835 646.8835 560.6457 657.6835 ] /Subtype /Link /Type /Annot
+/Border [ 0 0 0 ] /Contents () /Dest [ 9 0 R /XYZ 51.35433 718.678 0 ] /Rect [ 554.3835 646.8835 560.6457 657.6835 ] /Subtype /Link /Type /Annot
 >>
 endobj
 4 0 obj
@@ -39,14 +39,14 @@ endobj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://risa.com/products/risa-3d)
->> /Border [ 0 0 0 ] /Rect [ 137.7279 669.318 285.1336 680.118 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 74.35433 654.918 111.0355 665.718 ] /Subtype /Link /Type /Annot
 >>
 endobj
 7 0 obj
 <<
 /A <<
 /S /URI /Type /Action /URI (https://opensees.berkeley.edu)
->> /Border [ 0 0 0 ] /Rect [ 146.5609 652.318 283.4725 663.118 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 74.35433 637.918 119.8685 648.718 ] /Subtype /Link /Type /Annot
 >>
 endobj
 8 0 obj
@@ -1684,7 +1684,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author () /CreationDate (D:20260609041508-07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260609041508-07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author () /CreationDate (D:20260609231317-07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260609231317-07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
@@ -1695,7 +1695,7 @@ endobj
 endobj
 25 0 obj
 <<
-/Dest [ 9 0 R /XYZ 51.35433 733.078 0 ] /Parent 24 0 R /Title (2.0.1 | Summary)
+/Dest [ 9 0 R /XYZ 51.35433 718.678 0 ] /Parent 24 0 R /Title (2.0.1 | Analysis Programs)
 >>
 endobj
 26 0 obj
@@ -1705,14 +1705,14 @@ endobj
 endobj
 27 0 obj
 <<
-/Length 1595
+/Length 1596
 >>
 stream
 1 0 0 1 0 0 cm 
 q
 1 0 0 1 48.51969 734.315 cm
 q
-BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F1+0 9 Tf 12 TL (Analysis Programs) Tj /F2+0 9 Tf 12 TL ( - v1.0.0a12) Tj T* ET
+BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F1+0 9 Tf 12 TL (Analysis) Tj /F2+0 9 Tf 12 TL ( - v1.0.0a12) Tj T* ET
 Q
 Q
 q
@@ -1747,8 +1747,8 @@ q
 1 0 0 1 0 3 cm
 q
 0 .4 .6 RG
-n 0 .675 m 83.20166 .675 l S
-BT 1 0 0 1 0 1.8 Tm 10.8 TL 0 .4 .6 rg /F1+0 9 Tf 10.8 TL (2.0.1 | Summary) Tj T* ET
+n 0 .675 m 129.4146 .675 l S
+BT 1 0 0 1 0 1.8 Tm 10.8 TL 0 .4 .6 rg /F1+0 9 Tf 10.8 TL (2.0.1 | Analysis Programs) Tj T* ET
 Q
 Q
 q
@@ -1768,10 +1768,10 @@ q
 1 0 0 1 48.51969 643.2085 cm
 Q
 q
-1 0 0 1 42.51969 30.33858 cm
+1 0 0 1 42.51969 39.33858 cm
 Q
 q
-1 0 0 1 42.51969 12.33858 cm
+1 0 0 1 42.51969 21.33858 cm
 q
 0 0 0 rg
 q
@@ -1817,57 +1817,31 @@ endstream
 endobj
 28 0 obj
 <<
-/Length 3148
+/Length 3035
 >>
 stream
 1 0 0 1 0 0 cm 
 q
-1 0 0 1 51.35433 720.118 cm
+1 0 0 1 51.35433 705.718 cm
 q
-BT 1 0 0 1 0 2.16 Tm 12.96 TL .133333 .133333 .133333 rg /F1+0 10.8 Tf 12.96 TL (2.0.1 | Summary) Tj T* ET
+BT 1 0 0 1 0 2.16 Tm 12.96 TL .133333 .133333 .133333 rg /F1+0 10.8 Tf 12.96 TL (2.0.1 | Analysis Programs) Tj T* ET
 Q
 Q
 q
-1 0 0 1 51.35433 690.118 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 15 Tm 2.057304 Tw /F2+0 9 Tf 12 TL (This report division includes RISA and OpenSees analysis and illustrates methods for running and including) Tj T* 0 Tw (outputs from external programs.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 51.35433 683.118 cm
-Q
-q
-1 0 0 1 51.35433 683.118 cm
-Q
-q
-1 0 0 1 51.35433 671.118 cm
+1 0 0 1 51.35433 675.718 cm
 q
 0 0 0 rg
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 3 Tm 8.581543 0 Td /F3+0 9 Tf 12 TL (\001) Tj T* -8.581543 0 Td ET
+BT 1 0 0 1 0 15 Tm 1.868339 Tw /F2+0 9 Tf 12 TL (This report division includes RISA and OpenSees analysis and illustrates methods for running and importing) Tj T* 0 Tw (outputs from external programs.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 23 -3 cm
-q
-0 .4 .6 RG
-n 63.37354 1.875 m 210.7793 1.875 l S
-BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (_[U] RISA-3D, ) Tj 0 .4 .6 rg (https://risa.com/products/risa-3d) Tj 0 0 0 rg ( | for determining connections forces) Tj T* ET
-Q
+1 0 0 1 51.35433 668.718 cm
 Q
 q
-Q
-Q
-Q
-q
-1 0 0 1 51.35433 666.118 cm
+1 0 0 1 51.35433 668.718 cm
 Q
 q
-1 0 0 1 51.35433 654.118 cm
+1 0 0 1 51.35433 656.718 cm
 q
 0 0 0 rg
 q
@@ -1881,8 +1855,8 @@ q
 1 0 0 1 23 -3 cm
 q
 0 .4 .6 RG
-n 72.20654 1.875 m 209.1182 1.875 l S
-BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (_[U] OpenSees, ) Tj 0 .4 .6 rg (https://opensees.berkeley.edu) Tj 0 0 0 rg ( | for determing the period of the tree fort system.) Tj T* ET
+n 0 1.875 m 36.68115 1.875 l S
+BT 1 0 0 1 0 3 Tm 12 TL 0 .4 .6 rg /F2+0 9 Tf 12 TL (RISA-3D) Tj 0 0 0 rg ( for determining connections forces) Tj T* ET
 Q
 Q
 q
@@ -1890,13 +1864,39 @@ Q
 Q
 Q
 q
-1 0 0 1 51.35433 653.118 cm
+1 0 0 1 51.35433 651.718 cm
 Q
 q
-1 0 0 1 51.35433 635.118 cm
+1 0 0 1 51.35433 639.718 cm
+q
+0 0 0 rg
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm 8.581543 0 Td /F3+0 9 Tf 12 TL (\001) Tj T* -8.581543 0 Td ET
+Q
 Q
 q
-1 0 0 1 51.35433 211.0172 cm
+1 0 0 1 23 -3 cm
+q
+0 .4 .6 RG
+n 0 1.875 m 45.51416 1.875 l S
+BT 1 0 0 1 0 3 Tm 12 TL 0 .4 .6 rg /F2+0 9 Tf 12 TL (OpenSees) Tj 0 0 0 rg ( for determing the period of the tree fort system.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 51.35433 638.718 cm
+Q
+q
+1 0 0 1 51.35433 620.718 cm
+Q
+q
+1 0 0 1 51.35433 196.6172 cm
 q
 0 0 0 rg
 q
@@ -1917,19 +1917,19 @@ Q
 Q
 Q
 q
-1 0 0 1 51.35433 199.0172 cm
+1 0 0 1 51.35433 184.6172 cm
 Q
 q
-1 0 0 1 45.35433 779.6614 cm
+1 0 0 1 45.35433 776.6614 cm
 Q
 q
-1 0 0 1 45.35433 754.6614 cm
+1 0 0 1 45.35433 751.6614 cm
 q
 0 0 0 rg
 q
 1 0 0 1 6 3 cm
 q
-BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F1+0 9 Tf 12 TL (Analysis Programs) Tj /F2+0 9 Tf 12 TL ( - v1.0.0a12         ) Tj /F1+0 9 Tf 12 TL (2.0.1 | Summary) Tj T* ET
+BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F1+0 9 Tf 12 TL (Analysis) Tj /F2+0 9 Tf 12 TL ( - v1.0.0a12         ) Tj /F1+0 9 Tf 12 TL (2.0.1 | Analysis Programs) Tj T* ET
 Q
 Q
 q
@@ -1976,13 +1976,13 @@ Q
 Q
 Q
 q
-1 0 0 1 45.35433 753.6614 cm
+1 0 0 1 45.35433 741.6614 cm
 Q
 q
-1 0 0 1 45.35433 30.33858 cm
+1 0 0 1 45.35433 39.33858 cm
 Q
 q
-1 0 0 1 45.35433 12.33858 cm
+1 0 0 1 45.35433 21.33858 cm
 q
 0 0 0 rg
 q
@@ -2069,16 +2069,16 @@ xref
 0000422959 00000 n 
 0000423214 00000 n 
 0000423288 00000 n 
-0000423390 00000 n 
-0000423456 00000 n 
-0000425103 00000 n 
-0000428303 00000 n 
-0000428353 00000 n 
-0000428387 00000 n 
+0000423400 00000 n 
+0000423466 00000 n 
+0000425114 00000 n 
+0000428201 00000 n 
+0000428251 00000 n 
+0000428285 00000 n 
 trailer
 <<
 /ID 
-[<e2422ece55db38fa50f965b31f9ac4f9><e2422ece55db38fa50f965b31f9ac4f9>]
+[<ac58f549142723d38a15411cd01c41e8><ac58f549142723d38a15411cd01c41e8>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 23 0 R
@@ -2086,5 +2086,5 @@ trailer
 /Size 32
 >>
 startxref
-428421
+428319
 %%EOF

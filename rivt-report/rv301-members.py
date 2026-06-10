@@ -1,27 +1,20 @@
 import rivtlib.rvapi as rv
 
-rv.I("""RISA-3D Analysis 
-
-    The RISA-3D geometry was generated using a centerline dxf from a Sketchup
-    Model.
-    
-    """)
-
-
 rv.V("""Deck Design Properties
     
+    Import deck loads and functions. _[B]
 
-    Import deck loads and functions.
     | VALTABLE | rv_stor/v102-2.csv | Load values from rv102-loads.py, 40
      
-    | PYTHON | rvsrc/scripts/sectprop2.py | Import Functions
+
+    | PYTHON | rvsrc/scripts/checks.py | Import Functions
 
     """)
 
 
 rv.V("""Deck Design Summary
 
-    Design properties.
+    Design properties as dictionary for checking function nds_beam_chk
 
     _[[ARGS]] beam1 | units: inch, pounds
     ln_1 = 4*12.  # beam span
@@ -43,16 +36,17 @@ rv.V("""Deck Design Summary
     _[[END]]
 
 
-    Design Results
+    Design Results _[B]
+    
     | FUNCTION | nds_beam_check, beam1, beamchk1, str | Check Deck Beam
 
 """)
 
-rv.I("""section-label | private, show, section 
+rv.I("""Strut
 
-    Check strut D/C ratio.
+    Check strut D/C ratio with BeamChek 2023
 
-    | IMAGE | rvsrc/bmck1.jpg | Strut Check, 80, num, not
+    | IMAGE | rvsrc/img/bmck1.jpg | Strut Check, 80, num, not
     
     """)
 

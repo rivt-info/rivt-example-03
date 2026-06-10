@@ -1,13 +1,20 @@
-06-06 09:55  rv300-analysis   INFO     Doc start
-06-06 09:55  rv300-analysis   INFO     rivtlib version: 1.0.0a5
-06-06 09:55  rv300-analysis   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv300-analysis.bak
-06-06 09:55  rv300-analysis   INFO     Summary  
-06-06 09:55  rv300-analysis   INFO     SECTION 3.0.1  - type I
-06-06 09:55  rv300-analysis   INFO     tag : _[U]
-06-06 09:55  rv300-analysis   INFO     tag : _[U]
-06-06 09:55  rv300-analysis   INFO     command : IMAGE
-06-06 09:55  rv300-analysis   DEBUG    STREAM b'IHDR' 16 13
-06-06 09:55  rv300-analysis   DEBUG    STREAM b'tRNS' 41 6
-06-06 09:55  rv300-analysis   DEBUG    STREAM b'IDAT' 59 8192
-06-06 09:55  rv300-analysis   INFO     SECTION : Publish  
-06-06 09:55  rv300-analysis   INFO     block tag : METADATA]]
+06-10 00:35  rv300-design   INFO     Doc start
+06-10 00:35  rv300-design   INFO     rivtlib version: 1.0.0a5
+06-10 00:35  rv300-design   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv300-design.bak
+06-10 00:35  rv300-design   INFO     Component Design
+06-10 00:35  rv300-design   INFO     SECTION 3.0.1 - type I
+06-10 00:35  rv300-design   INFO     command : IMAGE
+06-10 00:35  rv300-design   INFO     Geometry and Components | pdfpage
+06-10 00:35  rv300-design   INFO     SECTION 3.0.2 - type I
+06-10 00:35  rv300-design   INFO     command : IMAGE
+06-10 00:35  rv300-design   DEBUG    STREAM b'IHDR' 16 13
+06-10 00:35  rv300-design   DEBUG    STREAM b'eXIf' 41 14
+06-10 00:35  rv300-design   DEBUG    STREAM b'oFFs' 67 9
+06-10 00:35  rv300-design   DEBUG    b'oFFs' 67 9 (unknown)
+06-10 00:35  rv300-design   DEBUG    STREAM b'IDAT' 88 8192
+06-10 00:35  rv300-design   INFO     command : IMAGE
+06-10 00:35  rv300-design   DEBUG    STREAM b'IHDR' 16 13
+06-10 00:35  rv300-design   DEBUG    STREAM b'tRNS' 41 6
+06-10 00:35  rv300-design   DEBUG    STREAM b'IDAT' 59 8192
+06-10 00:35  rv300-design   INFO     SECTION : Publish Doc 
+06-10 00:35  rv300-design   INFO     block tag : METADATA]]

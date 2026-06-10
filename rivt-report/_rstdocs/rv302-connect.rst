@@ -1,62 +1,12 @@
-.. |s| unicode:: 0xA0 
 
 
 
-.. |blklogo| image:: ./_static/logo2.png
-   :height: 100px
-   :alt: logo
-
-
-    
-.. header::
-    .. list-table::
-        :class: header-box
-        :align: left
-        :widths: 90 10
-        
-        * - **Connection Design** - v1.0.0a11 |s| |s| |s| |s|  **###Section###**
-          - p. **###Page###**   
-
-          
-
-.. footer:: 
-    .. list-table::
-        :class: footer-box
-        :align: left
-        :widths: 84 22 16
-        
-        * - 2026-06-09 |s| |s| |s| **|** |s| |s| |s| R Holland        
-          - **rivt**        
-          - |blklogo|
-
-
-                  
-
-.. raw:: pdf
-
-   PageBreak noHead
-      
-**Connection Design** - v1.0.0a11
-
---------------------
-
-|
-
-.. contents:: Table of Contents
-  :depth: 2
-
-  
-.. raw:: pdf
- 
-   PageBreak mainPage
-   SetPageCounter 1
-
-
+.. _Strut to Tree Connection:
 
 **3.2.1** | Strut to Tree Connection
 --------------------------------------------------------------------------------
  
-Use Simpson Strong Tie online tool
+Use Simpson Strong Tie online selection tool.
  
 
 .. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/ss12.jpg
@@ -84,6 +34,15 @@ Use Simpson Strong Tie online tool
 --------------
 
 
+
+.. raw:: pdf
+
+   PageBreak
+
+
+
+.. _Top rail Corner:
+
 **3.2.2** | Top rail Corner
 --------------------------------------------------------------------------------
  
@@ -94,7 +53,7 @@ Use AWC online connection tool.
    :width: 100%
    :align: center
 
-   **Fig. 3** - Corner Plate Input   
+   **Fig. 3** - Top Rail - Corner Plate Input   
     
 
 
@@ -104,7 +63,7 @@ Use AWC online connection tool.
    :width: 100%
    :align: center
 
-   **Fig. 4** - Corner Plate Capacity   
+   **Fig. 4** - Top Rail - Corner Plate Capacity   
     
 
 

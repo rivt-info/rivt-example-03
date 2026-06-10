@@ -1,13 +1,27 @@
-06-03 18:18  rv202-railings   INFO     Doc start
-06-03 18:18  rv202-railings   INFO     rivtlib version: 1.0.0a5
-06-03 18:18  rv202-railings   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv202-railings.bak
-06-03 18:18  rv202-railings   INFO     Introduction
-06-03 18:18  rv202-railings   INFO     SECTION 2.2.1  - type I
-06-03 18:18  rv202-railings   INFO     tag : _[[MARKUP]]
-06-03 18:18  rv202-railings   INFO     Railing Design 
-06-03 18:18  rv202-railings   INFO     SECTION 2.2.2  - type V
-06-03 18:18  rv202-railings   INFO     command : PYTHON
-06-03 18:18  rv202-railings   INFO     tag : _[[ARGS]]
-06-03 18:18  rv202-railings   INFO     command : FUNCTION
-06-03 18:18  rv202-railings   INFO     SECTION : Publish Doc
-06-03 18:18  rv202-railings   INFO     block tag : METADATA]]
+06-10 00:34  rv202-ops   INFO     Doc start
+06-10 00:34  rv202-ops   INFO     rivtlib version: 1.0.0a5
+06-10 00:34  rv202-ops   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv202-ops.bak
+06-10 00:34  rv202-ops   INFO     OpenSees Analysis
+06-10 00:34  rv202-ops   INFO     SECTION 2.2.1 - type I
+06-10 00:34  rv202-ops   INFO     tag : _[[MARKUP]]
+06-10 00:34  rv202-ops   INFO     osp-mod1 Model values
+06-10 00:34  rv202-ops   INFO     SECTION 2.2.2 - type V
+06-10 00:34  rv202-ops   INFO     Insert ops-mod1 Output
+06-10 00:34  rv202-ops   INFO     SECTION 2.2.3 - type I
+06-10 00:34  rv202-ops   INFO     command : MARKUP
+06-10 00:34  rv202-ops   INFO     Model plots and output | pdfpage
+06-10 00:34  rv202-ops   INFO     SECTION 2.2.4 - type I
+06-10 00:34  rv202-ops   INFO     tag : _[B]
+06-10 00:34  rv202-ops   INFO     command : IMAGE2
+06-10 00:34  rv202-ops   DEBUG    STREAM b'IHDR' 16 13
+06-10 00:34  rv202-ops   DEBUG    STREAM b'tEXt' 41 58
+06-10 00:34  rv202-ops   DEBUG    STREAM b'pHYs' 111 9
+06-10 00:34  rv202-ops   DEBUG    STREAM b'IDAT' 132 32616
+06-10 00:34  rv202-ops   DEBUG    STREAM b'IHDR' 16 13
+06-10 00:34  rv202-ops   DEBUG    STREAM b'tEXt' 41 58
+06-10 00:34  rv202-ops   DEBUG    STREAM b'pHYs' 111 9
+06-10 00:34  rv202-ops   DEBUG    STREAM b'IDAT' 132 33048
+06-10 00:34  rv202-ops   INFO     tag : _[B]
+06-10 00:34  rv202-ops   INFO     command : MARKUP
+06-10 00:34  rv202-ops   INFO     SECTION : Publish Doc
+06-10 00:34  rv202-ops   INFO     block tag : METADATA]]

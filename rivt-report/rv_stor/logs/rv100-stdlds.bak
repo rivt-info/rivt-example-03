@@ -2,21 +2,40 @@
 
 import rivtlib.rvapi as rv
 
-# The following settings are needed if defaults need to be changed (defaults
-# in parenthesis). A leading hash (#) and trailing semicolon (;) are required.
-
+# The following settings change defaults (in parenthesis) for each doc.
+# A leading hash (#) and trailing semicolon (;) are required.
 # rv set_width = 80  ; character width of text output (80)
 # rv no_tag = true ; if false, the API type is added to section number (true)
-# rv private = true ; if false, default heading changed to public (private)
+# rv private = true ; if false, default section heading changed to public (private)
 
 # %% rv.I("""Summary
-rv.I("""Summary
+rv.I("""Report Summary
 
-    This report covers the structural design of a treehouse in Novato,
-    California. The treehouse is supported by a mature maple tree with an
-    24-inch diameter trunk. The design is based on the requirements of the
-    California Building Code (CBC).
-    
+    This report covers the structural design of a tree fort in Novato,
+    California, following the California Building Code (CBC). The fort is
+    supported by a mature tree with a 24-inch diameter trunk.
+
+    The report illustrates the use of tags, commands and scripts including:
+
+    - a rivt-report.py script that assembles the report.
+
+    - shell commands that _[S] run an external program, OpenSees Analysis |.
+
+    - external urls and section links between documents.
+
+    - various forms of math symbols.
+
+    - external function importing and processing.
+
+    - the use of AI in preparing
+
+    | IMAGE | rvsrc/img/iso1.png | Tree Fort, 100, num, not
+
+    """)
+
+# %% rv.I("""Design Sections | pdfpage
+rv.I("""Design Sections | pdfpage
+
     The design report is organized into the following sections:
 
     | IMAGE | rvsrc/img/outputa.jpg | Report Flow Chart, 65, num, not
@@ -27,7 +46,7 @@ rv.I("""Summary
 # %% rv.I("""Drawing Symbols | pdfpage
 rv.I("""Drawing Symbols | pdfpage
 
-    **Drawing Abbreviations** _[T]
+    Drawing Abbreviations _[T]
     ============ ==============================================
     Abbreviation   Definition
     ============ ==============================================

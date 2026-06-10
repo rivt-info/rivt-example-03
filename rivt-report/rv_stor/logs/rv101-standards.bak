@@ -2,25 +2,16 @@
 
 import rivtlib.rvapi as rv
 
-# The following settings are needed if defaults need to be changed (defaults
-# in parenthesis). A leading hash (#) and trailing semicolon (;) are required.
-
-# rv set_width = 80  ; character width of text output (80)
-# rv no_tag = true ; if false, an API tag is added to section number (true)
-
-
 rv.I("""Summary
 
-    The design of the treehouse is based on the requirements and standards of
-    the California Building Code (CBC) outlined below.
+    The design loads are based on the standards of the California Building
+    Code (CBC) outlined below.  Standard math symbols are profided for reference.
 
     | TABLE | rvsrc/data/bldgstd.csv | California Building Standards, 40, head, num 
     
-    """)
 
-rv.I("""Math Symbols | pdfpage
 
-    **Math Abbreviations** _[T]
+    Math Abbreviations _[T]
     ================== ============================================================
     Abbreviation        Definition
     ================== ============================================================
@@ -88,7 +79,6 @@ rv.I("""Math Symbols | pdfpage
     :math:`E'`          NDS - Adjusted modulus of elasticity
     :math:`E'_{min}`    NDS - Adjusted modulus ofor stability and stiffness
     ================== ============================================================
-
     
     """)
 
@@ -123,8 +113,6 @@ rv.D("""Publish Doc
     pdf_link_underline = true
     
     [process]
-    private_heading = true ; if false, default heading changed to public
-    keep_files = true ; if false, files in folders with leading "_" are deleted
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 

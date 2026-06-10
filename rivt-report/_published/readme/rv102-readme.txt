@@ -1,10 +1,10 @@
 
-1.2.1  Load Combinations and Geometry
+1.2.1 | Load Combinations and Geometry
 --------------------------------------------------------------------------------
  
  
           ----------------------------------------
-Fig. 1 - Treehouse [file: rvsrc/img/tree3d.png ] 
+Fig. 1 - Tree Fort Plan [file: rvsrc/img/tree4.png |   ]
           ----------------------------------------
 
  
@@ -20,9 +20,13 @@ Equation No.    Load Combination
 =============   ==============================================
  
 
-1.2.2  Unit Loads
+1.2.2 | Unit Loads
 --------------------------------------------------------------------------------
  
+ 
+Unit weights imported from csv file created by AI.
+
+
  
 
 Table 2: Unit Weights - Doug Fir
@@ -40,6 +44,10 @@ Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Volume_ft3_per_ft    
 =========  ================  ================  ==========  ===================  ====================  ==================
 
  
+ 
+Variables assigned by inline definitions.
+
+
  
 
 Table 3: Member Nominal Loads and Properties

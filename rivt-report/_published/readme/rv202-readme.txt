@@ -1,105 +1,189 @@
 
---------------------------------------------------------------------------------
-Railing Design | R Holland | v-1.0.0a12 | 2026-06-03 - 06:18PM
---------------------------------------------------------------------------------
-
-
-2.2.1  Introduction
+2.2.1 | OpenSees Analysis
 --------------------------------------------------------------------------------
  
-Under the California Building Code (CBC), handrails and guards (railings)
-must resist a uniform load of 50 plf and a concentrated point load of 200
-lbs, both applied horizontally to the top rail. Intermediate rails,
-balusters, and infill panels must separately withstand a concentrated load
-of 50 lbs.
+This section analyzes the period of the tree and tree fort system. The
+OpenSees model is schematically shown below:
+ 
+        y 
+        ^ 
+        | 
+    m2  o  Node 3 (Top mass) 
+        | 
+    k2  |   Spring 2 (Between m1 and m2) 
+        | 
+    m1  o  Node 2 (Middle mass) 
+        | 
+    k1  |   Spring 1 (Between base and m1) 
+        | 
+        o  Node 1 (Fixed Base) 
+    ----------- 
+    (Ground) 
  
  
- 
-  =======  <-- Top Rail 
-     |     <-- Lateral Load (P) 
-     |  
-     | 
-     | 
-     |  Height (h) 
-     | 
-     | 
-     | 
-     | 
-===========  <-- Fixed Support / Deck Surface 
- 
- 
-Structural Schematic of Railing and Loads 
- 
- 
+Schematic model of tree and tree-fort system by AI 
 
  
  
- 
 
-2.2.2  Railing Design
+2.2.2 | osp-mod1 Model values
 --------------------------------------------------------------------------------
  
+ 
+==========  =======  =========  =================================
+variable    value    [value]    description
+==========  =======  =========  =================================
+mass1       1.5      1.5        mass of tree fort, kN/g
+mass2       3.5      3.5        mass of branches, kN/g
+trk1        1100     1100       lower tree trunk stiffness, kN/cm
+trk2        2100     2100       upper tree trunk stiffness, kN/cm
+==========  =======  =========  =================================
+ 
+ 
 
-Table 1: Import Functions (rvsrc/scripts/sectprop2.py)
+2.2.3 | Insert ops-mod1 Output
+--------------------------------------------------------------------------------
+ 
+Model Input
+ 
 
-===============================  ============================================
-Function                         Docstring
-===============================  ============================================
-rectsect(b, d)                   section modulus of rectangle
-rectinertia(b, d)                moment of inertia of rectangle
-midspan_delta(ln, w, e, i)       mid-span deflection of simply supported beam
-                                 with UDL
-bending_stress_udl(ln, w, b, d)  Maximum bending stress in a simply supported
-                                 beam with UDL.
-nds_beam_check(** kwargs)        Check stress and deflection for a simply
-                                 supported wood beam using NDS.
-nds_post_check(** kwargs)        Check stress at cantilever post
-===============================  ============================================
+ [file: rvsrc/scripts/opsmod1.py]
+
+
+
+import openseespy.opensees as ops
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+import opsvis as opsv
+# ---------------------------------------------------------------------
+# 1. Model Initialization
+# ---------------------------------------------------------------------
+ops.wipe()
+ops.model("BasicBuilder", "-ndm", 2, "-ndf", 2)
+
+# ---------------------------------------------------------------------
+# 2. Define Parameters
+# ---------------------------------------------------------------------
+# Mass values (e.g., in tons)
+m1 = 1.5
+m2 = 3.5
+
+# Stiffness values (e.g., in kN/m)
+k1 = 1100.0
+k2 = 2100.0
+
+# ---------------------------------------------------------------------
+# 3. Create Nodes
+# ---------------------------------------------------------------------
+# Base node (fixed)
+ops.node(1, 0.0, 0.0)
+
+# Node 1
+ops.node(2, 0.0, 2.0)
+
+# Node 2
+ops.node(3, 0.0, 4.0)
+
+# Fix the base node in both X and Y directions
+ops.fix(1, 1, 1)
+# Restrain vertical (Y) displacement and rotation at mass nodes
+# to represent a pure 2D shear/lateral lollipop system
+ops.fix(2, 0, 1)  # Free in X, Fixed in Y
+ops.fix(3, 0, 1)  # Free in X, Fixed in Y
+# ---------------------------------------------------------------------
+# 4. Assign Masses
+# ---------------------------------------------------------------------
+
+ops.mass(2, m1, 0.0)
+ops.mass(3, m2, 0.0)
+
+# ---------------------------------------------------------------------
+# 5. Define Elements
+# ---------------------------------------------------------------------
+# Use elastic truss elements to represent the lateral springs
+# Assign high axial stiffness (E * A) and 0.0 length
+EA = 1e8
+
+# Spring 1 between Node 1 and Node 2
+ops.uniaxialMaterial("Elastic", 1, 1100.0)
+ops.element("Truss", 1, 1, 2, EA, 1)
+
+# Spring 2 between Node 2 and Node 3
+ops.uniaxialMaterial("Elastic", 2, 2100.0)
+ops.element("Truss", 2, 2, 3, EA, 2)
+
+# ---------------------------------------------------------------------
+# 6. Eigenvalue Analysis & Results Output
+# ---------------------------------------------------------------------
+num_modes = 1
+eigenvalues = ops.eigen(num_modes)
+
+periods = []
+frequencies = []
+outL = []
+for i in range(num_modes):
+    lamb = eigenvalues[i]
+    omega = math.sqrt(lamb)
+    freq = omega / (2 * math.pi)
+    period = 2 * math.pi / omega
+    periods.append(period)
+    frequencies.append(freq)
+    resS = f'Mode {i + 1}: Period = {period:.4f} s | Frequency = {freq:.4f} Hz'
+    outL.append(resS)
+outS = chr(10).join(item for item in outL)
+with open("output.txt", 'w') as f1:
+    f1.write(outS)
+print("text output written")
+# ---------------------------------------------------------------------
+# 7. Model Visualization
+# ---------------------------------------------------------------------
+
+# Plot the defined model to check geometry (this is an axes mdoel)
+mod1 = opsv.plot_model()
+fig1 = mod1.get_figure()
+plt.title("2-DOF Lollipop Model Geometry")
+fig1.savefig("figure1.png", dpi=200)
+print("figure 1 written")
+# interactive display
+# plt.show(block=False)
+
+# Plot the mode shape for the first mode (this is a figure)
+fig2 = opsv.plot_mode_shape(1, 2.0)  # Scaling factor of 2.0 for visibility
+plt.title("Mode Shape 1")
+plt.savefig("figure2.png", dpi=200)
+print("figure 2 written")
+# plt.show()
+
 
  
  
-Design properties.
+
+2.2.4 | Model plots and output
+--------------------------------------------------------------------------------
  
-    Function Arguments Dictionary : post1 (units: inch, pounds)
-    ===========================================================================
-    h_1 = 42.  # post height 
-    P_1 = 200  # concentrated load  
-    b_1 = 3.5  # post width 
-    d_1 = 3.5  # post depth 
-    E_1 = 1.5*(10**6)  # modulus of elasticity 
-    F_b = 1000  # allowable bending stress 
-    C_D = 1.0   # load duration factor 
-    C_M = 0.85  # wet service factor 
-    C_F = 1.0   # size factor 
-    C_t = 1.0   # temperature factor 
-    C_i = 0.8   # incising factor 
-    C_r = 1.0   # repetitive member factor 
-    C_c = 1.0   # curvature factor 
-    C_L = 1.0   # beam stability factor 
-    C_b = 1.0   # bearing area factor 
-    deflect_limit = 360.0 # max allowable deflection ln_1/deflect_limit
-    ===========================================================================
+ 
+Model Plots
 
 
  
-Design Results
-┌  Eq-1 | Check Deck Beam
-│
-│       nds_post_check | units: inch, pounds
-└
+          ----------------------------------------
+Fig. 1 - OPS Model  | Fig. 2 - OPS First Mode 
+files: rvsrc/img/figure1.png, rvsrc/img/figure2.png 
+          ----------------------------------------
 
 
-Post Check Results:
-===============================    
-P: 200.00
-fb: 1175.51
-Fb_prime: 680.00
-E_prime: 1275000.00
-stress_ratio: Not OK
-deflection: 1.55
-deflection_ratio:  Not OK
+ 
+ 
+Model Output
 
 
+ 
+
+ [file: rvsrc/output.txt]
+
+
+Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
 
  
  

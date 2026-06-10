@@ -1,10 +1,10 @@
 # %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
-rv.V("""Summary
+rv.I("""Analysis Programs
     
     This report division includes RISA and OpenSees analysis and illustrates
-    methods for running and including outputs from external programs.
+    methods for running and importing outputs from external programs.
     
     - _[U] RISA-3D, https://risa.com/products/risa-3d | for determining connections forces 
 
@@ -48,5 +48,5 @@ rv.D("""Publish Doc
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 
-    | PUBLISH | Analysis Programs | pdf
+    | PUBLISH | Analysis | pdf
     """)

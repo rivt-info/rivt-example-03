@@ -28,17 +28,17 @@ regen_pdf = false
 title = Tree Fort Design 
 subtitle =rivt report
 client = Report Example
-project_ref = Proj. 0001
+project_ref = Proj. 0002
 authors = R Holland 
 copyright = StL
 version = 1.0.0a12
-;----- logo, header, footer files are in *page* folder, size is % page width
+;----- put logo, header, footer files in *page* folder, size is % page width
 coverlogo = tree1.png
 coverlogo_size = 50
 running_logo = rivt02.png 
 running_label = rivt
 ;----- underline links in PDF - true or false
-pdf_link = true 
+pdf_link = false 
 ;----- page size letter, legal, A4 - margins top, right, bottom and left
 pdf_pagesize = letter
 pdf_margins = 1in, 1in, 1in, 1in 

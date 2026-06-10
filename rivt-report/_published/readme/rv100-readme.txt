@@ -1,31 +1,49 @@
 
---------------------------------------------------------------------------------
-Standards and Loads | R Holland | v-1.0.0a11 | 2026-06-09 - 04:05AM
---------------------------------------------------------------------------------
-
-
-1.0.1 | Summary
+1.0.1 | Report Summary
 --------------------------------------------------------------------------------
  
-This report covers the structural design of a treehouse in Novato,
-California. The treehouse is supported by a mature maple tree with an
-24-inch diameter trunk. The design is based on the requirements of the
-California Building Code (CBC).
+This report covers the structural design of a tree fort in Novato,
+California, following the California Building Code (CBC). The fort is
+supported by a mature tree with a 24-inch diameter trunk.
+ 
+The report illustrates the use of tags, commands and scripts including:
+ 
+- a rivt-report.py script that assembles the report.
+ 
+- shell commands that  run an external program [ref: <OpenSees Analysis>] .
+ 
+- external urls and section links between documents.
+ 
+- various forms of math symbols.
+ 
+- external function importing and processing.
+ 
+- the use of AI in preparing
+ 
+          ----------------------------------------
+Fig. 1 - Tree Fort [file: rvsrc/img/iso1.png |   ]
+          ----------------------------------------
+
+ 
+ 
+
+1.0.2 | Design Sections
+--------------------------------------------------------------------------------
  
 The design report is organized into the following sections:
  
           ----------------------------------------
-Fig. 1 - Report Flow Chart [file: rvsrc/img/outputa.jpg   ]
+Fig. 2 - Report Flow Chart [file: rvsrc/img/outputa.jpg |   ]
           ----------------------------------------
 
  
  
 
-1.0.2 | Drawing Symbols
+1.0.3 | Drawing Symbols
 --------------------------------------------------------------------------------
  
 
-Table 1: Drawing Abbreviations**
+Table 1: Drawing Abbreviations
 ============ ==============================================
 Abbreviation   Definition
 ============ ==============================================

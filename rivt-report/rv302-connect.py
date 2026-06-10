@@ -3,7 +3,7 @@ import rivtlib.rvapi as rv
 
 rv.I("""Strut to Tree Connection
 
-    Use Simpson Strong Tie online tool
+    Use Simpson Strong Tie online selection tool.
 
     | IMAGE | rvsrc/img/ss12.jpg | Option 1, 100, num, time 
     
@@ -11,7 +11,7 @@ rv.I("""Strut to Tree Connection
 
     """)
 
-rv.I("""Top rail Corner
+rv.I("""Top rail Corner | pdfpage
 
     Use AWC online connection tool.
 

@@ -44,7 +44,7 @@
 
 .. class:: center  
 
-   :stext:`Proj. 0001`
+   :stext:`Proj. 0002`
 
 .. raw:: pdf
 

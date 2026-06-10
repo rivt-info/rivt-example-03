@@ -155,3 +155,9 @@ hr {
 .admonition .admonition-title {
     border: none !important;
 }
+
+    {
+    reference: {
+        "textColor": hwb(200 15% 27%);
+    }
+}

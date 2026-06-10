@@ -1,7 +1,2 @@
-06-03 18:03  rivt-report-1   INFO     rst files written: Tree Fort Design
-06-03 18:03  rivt-report-1   INFO     rst files written: Tree Fort Design
-06-03 18:03  rivt-report-1   INFO     rst files written: Tree Fort Design
-06-03 18:03  rivt-report-1   INFO     rst files written: Tree Fort Design
-06-03 18:03  rivt-report-1   INFO     rst files written: Tree Fort Design
-06-03 18:03  rivt-report-1   INFO     rst files written: Tree Fort Design
-06-03 18:03  rivt-report-1   INFO     README report : Tree Fort Design
+06-10 00:35  rivt-report-1   INFO     rst files written: Tree Fort Design
+06-10 00:35  rivt-report-1   INFO     README report : Tree Fort Design

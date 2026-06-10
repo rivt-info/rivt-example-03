@@ -93,11 +93,12 @@ fig1 = mod1.get_figure()
 plt.title("2-DOF Lollipop Model Geometry")
 fig1.savefig("figure1.png", dpi=200)
 print("figure 1 written")
-plt.show(block=False)
+# interactive display
+# plt.show(block=False)
 
 # Plot the mode shape for the first mode (this is a figure)
 fig2 = opsv.plot_mode_shape(1, 2.0)  # Scaling factor of 2.0 for visibility
 plt.title("Mode Shape 1")
 plt.savefig("figure2.png", dpi=200)
 print("figure 2 written")
-plt.show()
+# plt.show()
