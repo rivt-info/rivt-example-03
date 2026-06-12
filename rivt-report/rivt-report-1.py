@@ -16,7 +16,7 @@ iniS = """
 ;------- report file name including the extension - pdf, html, txt
 ;----------------------------------------------------------------
 ;---
-rept_filename = rivt-treefort-report.txt
+rept_filename = rivt-treefort-report.html
 ;---
 ;----------------------------------------------------------------
 ;------- comma separated list of doc numbers to exclude eg. rv102, rv204
@@ -42,7 +42,7 @@ coverlogo_size = 50
 running_logo = rivt02.png 
 running_label = rivt
 ;----- table of contents levels: = 1 shows subdivisions, = 2 includes sections. 
-toc_level = 2
+toc_level = 1
 ;----- underline links in PDF - true or false
 pdf_link = false 
 ;----- page size letter, legal, A4 - margins top, right, bottom and left

@@ -1,4 +1,620 @@
 
+================================================================================
+Tree Fort | R Holland | 1.0.0a12 | 2026-06-12
+================================================================================
+
+
+Table of Contents
+==================
+1.0  Standards and Loads
+1.1  Building Standards
+1.2  Loads
+2.0  Analysis
+2.1  RISA Analysis
+2.2  Open Sees Analysis
+3.0  Component Design
+3.1  Member Design
+3.2  Connection Design
+
+
+
+--------------------------------------------------------------------------------
+Standards and Loads | R Holland | v-1.0.0a11 | 2026-06-11 - 07:28PM
+--------------------------------------------------------------------------------
+
+
+1.0 | Report Summary
+================================================================================
+ 
+This report covers the structural design of a tree fort in Novato,
+California, following the California Building Code (CBC). The fort is
+supported by a mature tree with a 24-inch diameter trunk.
+ 
+The report illustrates the use of tags, commands and scripts including:
+ 
+- a rivt-report.py script that assembles the report.
+ 
+- shell commands that  run an external program [ref: <OpenSees Analysis>] .
+ 
+- external urls and section links between documents.
+ 
+- various forms of math symbols.
+ 
+- external function importing and processing.
+ 
+- the use of AI in preparing
+ 
+          ----------------------------------------
+Fig. 1 - Tree Fort [file: rvsrc/img/iso1.png  ]
+          ----------------------------------------
+
+ 
+ 
+
+1.0 - 2 | Design Sections
+--------------------------------------------------------------------------------
+ 
+The design report is organized into the following sections:
+ 
+          ----------------------------------------
+Fig. 2 - Report Flow Chart [file: rvsrc/img/outputa.jpg  ]
+          ----------------------------------------
+
+ 
+ 
+
+1.0 - 3 | Drawing Symbols
+--------------------------------------------------------------------------------
+ 
+
+Table 1: Drawing Abbreviations
+============ ==============================================
+Abbreviation   Definition
+============ ==============================================
+ASD           Allowable Stress Design
+ACI           American Concrete Institute
+AISC          American Institute of Steel Construction
+AISI          American Iron and Steel Institute
+ASTM          American Society for Testing and Materials
+AWS           American Welding Society
+AB            Anchor Bolt
+BDRY          Boundry
+CBC           Califiornia Building Code
+CRC           Califiornia Residential Code
+CIP           Cast-In-Place
+CLR           Clear
+CONC          Concrete
+CMU           Concrete Masonry Unit
+CRSI          Concrete Reinforcing Steel Institute
+CONST JT      Construction Joint
+CONT          Continuous
+CJ            Control Joint
+D-C           Demand-Capacity (ratio)
+DIA           Diameter
+DIM           Dimension
+EA            Each
+EF            Each Face
+EJ            Expansion Joint
+ES            Each Side
+EW            Each Way
+EXP Bolt      Expansion Bolt
+EXP JT        Expansion Joint
+FTG           Footing
+FND           Foundation
+GALV          Galvanized
+GA            Gauge
+GR            Grade
+HT            Height
+IN            Inch
+ID            Inside Diameter
+ICBO          International Conference of Building Officials
+K             Kip (1000 Pounds)
+LWC           Light Weight Concrete
+LRFD          Load and Resistance Factor Design
+NWC           Normal Weight Concrete
+NIC           Not in Contract
+OC            On Center
+OD            Outside Diameter
+OPNG          Opening
+PVC           Polyvinyl Chloride
+PSF           Pounds per Square Foot
+PSI           Pounds per Square Inch
+R             Radius
+REINF         Reinforced
+SIM           Similar
+SOG           Slab on Grade
+SL            Splice Length
+SQ            Square
+STD           Standard
+SDI           Steel Deck Institute
+SF            Step Footing or Square Foot
+SYM           Symmetrical
+THK           Thick or Thickness
+T&B           Top and Bottom
+T&G           Tongue and Groove
+TOC           Top of Concrete
+TOF           Top of Foundation
+TOS           Top of Steel
+TOW           Top of Wall
+TYP           Typical
+UNO           Unless Noted Otherwise
+WWF           Welded Wire Fabric
+W/            With
+WP            Working Point
+============ ==============================================
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+Building Standards | R Holland | v-1.0.0a11 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+1.1 | Summary
+================================================================================
+ 
+The design loads are based on the standards of the California Building
+Code (CBC) outlined below.  Standard math symbols are profided for reference.
+ 
+
+Table 1: California Building Standards
+
+================  ========================================  ========================================
+Standard          Organization                              Description & Application
+================  ========================================  ========================================
+CBC Chapter 23    California Building Standards Commission  Governs the structural use of wood,
+                                                            including lumber, glulam, timber poles,
+                                                            and diaphragms.
+CRC Chapters 5-8  California Building Standards Commission  Covers prescriptive construction
+                                                            requirements for one- and two-family
+                                                            light-frame wood structures.
+AWC NDS           American Wood Council                     Foundational national standard for ASD
+                                                            and LRFD design of timber structures.
+AWC WFCM          American Wood Council                     Design criteria for conventional light-
+                                                            frame wood construction to meet wind and
+                                                            seismic loads.
+ANSI/APA PRG 320  APA â€“ The Engineered Wood Association   Standard for Performance-Rated CLT,
+                                                            essential for tall wood/mass timber
+                                                            buildings.
+ICC 400           International Code Council                Design and construction standard for log
+                                                            structures.
+ASTM Standards    ASTM International                        Includes testing and evaluation methods
+                                                            such as ASTM D3957 (structural logs) and
+                                                            ASTM D7672 (rim boards).
+AWPA U1 / M4      American Wood Protection Association      Standards for preservative treatment and
+                                                            use of wood poles, piles, and lumber in
+                                                            permanent installations.
+================  ========================================  ========================================
+
+ 
+ 
+ 
+
+Table 2: Math Abbreviations
+================== ============================================================
+Abbreviation        Definition
+================== ============================================================
+:math:`D`            dead load
+:math:`L`            live load
+:math:`D_m`          module dead load
+:math:`E`            earthquake load
+:math:`F_a`          acceleration site coefficient
+:math:`F_v`          velocity site coefficient
+:math:`F_N`          normal wind force
+:math:`GC_{Ms}`      net moment static coefficient
+:math:`GC_{Md}`     net moment dynamic coefficient
+:math:`GC_M`         net moment coefficient
+:math:`GC_P`         net pressure coefficient
+:math:`GC_{Ps}`      net static pressure coefficient
+:math:`GC_{Pd}`      net dynamic pressure coefficient
+:math:`k_1`         hazard coefficient
+:math:`k_2`         terrain and structure coefficient
+:math:`k_3`         topography coefficient
+:math:`K_{zt}`      topographic Factor
+:math:`K_z`         velocity pressure exposure coefficient
+:math:`MRI`         mean return interval
+:math:`p_d`         net design wind pressure on module - Pa
+:math:`SDOF`        single degree of freedom
+:math:`S_s`         short period mapped acceleration
+:math:`S_D{S}`     site design response acceleration
+:math:`S_1`         1 second period mapped acceleration
+:math:`S_M{S}`     short period parameter
+:math:`S_{M1}`      1 second period parameter
+:math:`T`           fundamental period of structure
+:math:`M_{tor}`     wind moment about panel center
+:math:`T_0`         short period spectral cap
+:math:`T_S`         long period spectral cap
+:math:`V_b`         basic wind speed
+:math:`V_B`         seismic design base shear
+:math:`W`           wind load / seismic weight of structure
+:math:`F_b`         NDS - Reference bending design value
+:math:`F_t`         NDS - Reference tension design value
+:math:`F_v`         NDS - Reference shear design value
+:math:`F_{Cperp}`   NDS - Reference compression perpendicular to grain
+:math:`F_c`         NDS - Reference compression parallel to grain
+:math:`E`           NDS - Modulus of elasticity
+:math:`E_{min}`     NDS - Reference modulus for stability and stiffness
+:math:`G`           NDS - Specific gravity
+:math:`C_D`         NDS - Load duration factor
+:math:`C_M`         NDS - Wet service factor
+:math:`C_F`         NDS - Size factor
+:math:`C_{fu}`      NDS - Flat use factor
+:math:`C_i`         NDS - Incising factor
+:math:`C_r`         NDS - Repetitive member factor
+:math:`C_t`         NDS - Temperature factor
+:math:`C_c`         NDS - Curvature factor
+:math:`C_l`         NDS - Column stability factor
+:math:`C_L`         NDS - Beam stability factor
+:math:`C_p`         NDS - Column stability factor
+:math:`C_b`         NDS - Bearing area factor
+:math:`C_T`         NDS - Buckling stiffness factor
+:math:`C_{s}`       NDS - Slenderness factor
+:math:`C_{T}`       NDS - Buckling stiffness factor
+:math:`F'_{b}`      NDS - Adjusted bending design value
+:math:`F'_{t}`      NDS - Adjusted tension design value
+:math:`F'_{v}`      NDS - Adjusted shear design value
+:math:`F'_{Cperp}`  NDS - Adjusted compression perpendicular
+:math:`F'_{c}`      NDS - Adjusted compression parallel to grain
+:math:`E'`          NDS - Adjusted modulus of elasticity
+:math:`E'_{min}`    NDS - Adjusted modulus ofor stability and stiffness
+================== ============================================================
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+Loads | R Holland | v-1.0.0a11 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+1.2 | Load Combinations and Geometry
+================================================================================
+ 
+ 
+          ----------------------------------------
+Fig. 1 - Tree Fort Plan [file: rvsrc/img/tree4.png  ]
+          ----------------------------------------
+
+ 
+ 
+
+Table 1: ASCE 7-05 Load Effects
+=============   ==============================================
+Equation No.    Load Combination
+=============   ==============================================
+16-1            1.4(D+F)
+16-2            1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)
+16-3            1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)
+=============   ==============================================
+ 
+
+1.2 - 2 | Unit Loads
+--------------------------------------------------------------------------------
+ 
+ 
+Unit weights imported from csv file created by AI.
+
+
+ 
+
+Table 2: Unit Weights - Doug Fir
+
+=========  ================  ================  ==========  ===================  ====================  ==================
+Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Volume_ft3_per_ft    Density_lb_per_ft3    Weight_lb_per_ft
+=========  ================  ================  ==========  ===================  ====================  ==================
+2x2        1.5               1.5               2.25        0.015625             34                    0.53125
+2x4        1.5               3.5               5.25        0.0364583            34                    1.23958
+2x6        1.5               5.5               8.25        0.0572917            34                    1.94875
+2x8        1.5               7.25              10.875      0.0755208            34                    2.56771
+2x10       1.5               9.25              13.875      0.0963542            34                    3.275
+2x12       1.5               11.25             16.875      0.117188             34                    3.98438
+4x4        3.5               3.5               12.25       0.0850694            34                    2.89236
+=========  ================  ================  ==========  ===================  ====================  ==================
+
+ 
+ 
+Variables assigned by inline definitions.
+
+
+ 
+
+Table 3: Member Nominal Loads and Properties
+==========  ============  =============  =====================
+variable    value         [value]        description
+==========  ============  =============  =====================
+D_1         2.00 plf      0.00 klf       2x6 planks DL
+D_2         2.60 plf      0.00 klf       2x8 joists DL
+D_3         2.90 plf      0.00 klf       4x4 posts and struts
+E_1         29000.00 ksi  199947.96 MPA  modulus of elasticity
+LL_1        40.00 psf     1.92 kPA       ASCE7-05 floor LL
+HL_1        20.00 psf     0.96 kPA       ASCE7-05 HL
+==========  ============  =============  =====================
+ 
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+Analysis | R Holland | v-1.0.0a12 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+2.0 | Analysis Programs
+================================================================================
+ 
+This report division includes RISA and OpenSees analysis and illustrates
+methods for running and importing outputs from external programs.
+ 
+-  RISA-3D <https://risa.com/products/risa-3d> for determining connections forces
+ 
+ 
+-  OpenSees <https://opensees.berkeley.edu> for determing the period of the tree fort system.
+ 
+ 
+          ----------------------------------------
+Fig. 1 - Report Flow Chart [file: rvsrc/img/outputb.jpg  ]
+          ----------------------------------------
+
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+RISA Analysis | R Holland | v-1.0.0a12 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+2.1 | Applied deck forces - RISA model
+================================================================================
+ 
+ 
+          ----------------------------------------
+Fig. 1 - Risa Model [file: rvsrc/img/risa4.png  ]
+          ----------------------------------------
+
+ 
+ 
+
+2.1 - 2 | Resultant axial forces - RISA model
+--------------------------------------------------------------------------------
+ 
+          ----------------------------------------
+Fig. 2 - Strut Axial Forces [file: rvsrc/img/risa6.png  ]
+          ----------------------------------------
+
+ 
+ 
+
+2.1 - 3 | Top rail shear reactions - RISA model
+--------------------------------------------------------------------------------
+ 
+Under the California Building Code (CBC), handrails and guards (railings)
+must resist a uniform load of 50 plf and a concentrated point load of 200
+lbs, both applied horizontally to the top rail. Intermediate rails,
+balusters, and infill panels must separately withstand a concentrated load
+of 50 lbs.
+ 
+  =======  <-- Top Rail 
+     |     <-- Lateral Load (P) 
+     |  
+     | 
+     | 
+     |  Height (h) 
+     | 
+     | 
+     | 
+     | 
+===========  <-- Fixed Support / Deck Surface 
+ 
+ 
+Structural Schematic of Railing and Loads Drawn by AI 
+
+ 
+ 
+          ----------------------------------------
+Fig. 3 - Rail Lateral Forces [file: rvsrc/img/risa9.png  ]
+          ----------------------------------------
+
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+Open Sees Analysis | R Holland | v-1.0.0a12 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+2.2 | OpenSees Analysis
+================================================================================
+ 
+This section analyzes the period of the tree and tree fort system. The
+OpenSees model is schematically shown below:
+ 
+        y 
+        ^ 
+        | 
+    m2  o  Node 3 (Branches) 
+        | 
+    k2  |   Spring 2 (upper trunk) 
+        | 
+    m1  o  Node 2 (Tree Fort) 
+        | 
+    k1  |   Spring 1 (lower trunk) 
+        | 
+        o  Node 1 (Fixed Base) 
+    ----------- 
+    (Ground) 
+ 
+ 
+AI schematic model of tree + tree-fort system 
+
+ 
+ 
+
+2.2 - 2 | osp-mod1 Model values
+--------------------------------------------------------------------------------
+ 
+ 
+==========  =======  =========  =================================
+variable    value    [value]    description
+==========  =======  =========  =================================
+mass1       1.5      1.5        mass of tree fort, kN/g
+mass2       3.5      3.5        mass of branches, kN/g
+trk1        1100     1100       lower tree trunk stiffness, kN/cm
+trk2        2100     2100       upper tree trunk stiffness, kN/cm
+==========  =======  =========  =================================
+ 
+ 
+
+2.2 - 3 | Insert ops-mod1 Output
+--------------------------------------------------------------------------------
+ 
+Model Input
+ 
+
+ [file: rvsrc/scripts/opsmod1.py]
+
+
+
+import openseespy.opensees as ops
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+import opsvis as opsv
+# ---------------------------------------------------------------------
+# 1. Model Initialization
+# ---------------------------------------------------------------------
+ops.wipe()
+ops.model("BasicBuilder", "-ndm", 2, "-ndf", 2)
+
+# ---------------------------------------------------------------------
+# 2. Define Parameters
+# ---------------------------------------------------------------------
+# Mass values (e.g., in tons)
+m1 = 1.5
+m2 = 3.5
+
+# Stiffness values (e.g., in kN/m)
+k1 = 1100.0
+k2 = 2100.0
+
+# ---------------------------------------------------------------------
+# 3. Create Nodes
+# ---------------------------------------------------------------------
+# Base node (fixed)
+ops.node(1, 0.0, 0.0)
+
+# Node 1
+ops.node(2, 0.0, 2.0)
+
+# Node 2
+ops.node(3, 0.0, 4.0)
+
+# Fix the base node in both X and Y directions
+ops.fix(1, 1, 1)
+# Restrain vertical (Y) displacement and rotation at mass nodes
+# to represent a pure 2D shear/lateral lollipop system
+ops.fix(2, 0, 1)  # Free in X, Fixed in Y
+ops.fix(3, 0, 1)  # Free in X, Fixed in Y
+# ---------------------------------------------------------------------
+# 4. Assign Masses
+# ---------------------------------------------------------------------
+
+ops.mass(2, m1, 0.0)
+ops.mass(3, m2, 0.0)
+
+# ---------------------------------------------------------------------
+# 5. Define Elements
+# ---------------------------------------------------------------------
+# Use elastic truss elements to represent the lateral springs
+# Assign high axial stiffness (E * A) and 0.0 length
+EA = 1e8
+
+# Spring 1 between Node 1 and Node 2
+ops.uniaxialMaterial("Elastic", 1, 1100.0)
+ops.element("Truss", 1, 1, 2, EA, 1)
+
+# Spring 2 between Node 2 and Node 3
+ops.uniaxialMaterial("Elastic", 2, 2100.0)
+ops.element("Truss", 2, 2, 3, EA, 2)
+
+# ---------------------------------------------------------------------
+# 6. Eigenvalue Analysis & Results Output
+# ---------------------------------------------------------------------
+num_modes = 1
+eigenvalues = ops.eigen(num_modes)
+
+periods = []
+frequencies = []
+outL = []
+for i in range(num_modes):
+    lamb = eigenvalues[i]
+    omega = math.sqrt(lamb)
+    freq = omega / (2 * math.pi)
+    period = 2 * math.pi / omega
+    periods.append(period)
+    frequencies.append(freq)
+    resS = f'Mode {i + 1}: Period = {period:.4f} s | Frequency = {freq:.4f} Hz'
+    outL.append(resS)
+outS = chr(10).join(item for item in outL)
+with open("output.txt", 'w') as f1:
+    f1.write(outS)
+print("text output written")
+# ---------------------------------------------------------------------
+# 7. Model Visualization
+# ---------------------------------------------------------------------
+
+# Plot the defined model to check geometry (this is an axes mdoel)
+mod1 = opsv.plot_model()
+fig1 = mod1.get_figure()
+plt.title("2-DOF Lollipop Model Geometry")
+fig1.savefig("figure1.png", dpi=200)
+print("figure 1 written")
+# interactive display
+# plt.show(block=False)
+
+# Plot the mode shape for the first mode (this is a figure)
+fig2 = opsv.plot_mode_shape(1, 2.0)  # Scaling factor of 2.0 for visibility
+plt.title("Mode Shape 1")
+plt.savefig("figure2.png", dpi=200)
+print("figure 2 written")
+# plt.show()
+
+
+ 
+ 
+
+2.2 - 4 | Model plots and output
+--------------------------------------------------------------------------------
+ 
+ 
+Model Plots
+
+
+ 
+          ----------------------------------------
+Fig. 1 - OPS Model  | Fig. 2 - OPS First Mode 
+files: rvsrc/img/figure1.png, rvsrc/img/figure2.png 
+          ----------------------------------------
+
+
+ 
+ 
+Model Output
+
+
+ 
+
+ [file: rvsrc/output.txt]
+
+
+Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
+
+ 
+ 
+
+
 --------------------------------------------------------------------------------
 Component Design | R Holland | v-1.0.0a12 | 2026-06-11 - 07:37PM
 --------------------------------------------------------------------------------
@@ -33,3 +649,154 @@ Fig. 3 - Dimensions [file: rvsrc/img/dim1.png  ]
  
  
  
+
+
+--------------------------------------------------------------------------------
+Member Design | R Holland | v-1.0.0a12 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+3.1 | Deck Design Properties
+================================================================================
+ 
+Import deck loads and functions.
+
+
+ 
+
+Table 1: Load values from rv102-loads.py (rv_stor/v102-2.csv)
+==========  ============  =============  =====================
+variable    value         [value]        description
+==========  ============  =============  =====================
+D_1         2.00 plf      0.00 klf       2x6 planks DL
+D_2         2.60 plf      0.00 klf       2x8 joists DL
+D_3         2.90 plf      0.00 klf       4x4 posts and struts
+E_1         29000.00 ksi  199947.96 MPA  modulus of elasticity
+LL_1        40.00 psf     1.92 kPA       ASCE7-05 floor LL
+HL_1        20.00 psf     0.96 kPA       ASCE7-05 HL
+==========  ============  =============  =====================
+
+
+ 
+ 
+
+Table 2: Import Functions (rvsrc/scripts/checks.py)
+
+=========================  ========================================
+Function                   Docstring
+=========================  ========================================
+nds_beam_check(** kwargs)  Check stress and deflection for a simply
+                           supported wood beam using NDS.
+nds_post_check(** kwargs)  Check stress at cantilever post
+=========================  ========================================
+
+ 
+ 
+
+3.1 - 2 | Deck Design Summary
+--------------------------------------------------------------------------------
+ 
+Design properties as dictionary for checking function nds_beam_chk
+ 
+    Function Arguments Dictionary : beam1 (units: inch, pounds)
+    ===========================================================================
+    ln_1 = 4*12.  # beam span 
+    w_1 = 45*.5/12  # uniform linear load  
+    b_1 = 5.5  # beam width 
+    d_1 = 1.5  # beam depth 
+    E_1 = 1.5*(10**6)  # modulus of elasticity 
+    F_b = 1000 # allowable bending stress 
+    C_D = 1.0  # load duration factor 
+    C_M = 0.85 # wet service factor 
+    C_F = 1.0  # size factor 
+    C_t = 1.0  # temperature factor 
+    C_i = 0.8  # incising factor 
+    C_r = 1.0  # repetitive member factor 
+    C_c = 1.0  # curvature factor 
+    C_L = 1.0  # beam stability factor 
+    C_b = 1.0  # bearing area factor 
+    deflect_limit = 240.0 # max allowable deflection ln_1/deflect_limit
+    ===========================================================================
+
+
+ 
+ 
+Design Results
+
+
+ 
+┌  Eq-1 | Check Deck Beam
+│
+│       nds_beam_check | units: inch, pounds
+└
+
+
+Beam Check Results:
+===============================    
+total UDL: 1.88
+fb: 261.82
+Fb_prime: 680.00
+E_prime: 1275000.00
+stress_ratio: 0.39
+deflection: 0.07
+deflection_ratio:  0.20
+
+
+
+ 
+ 
+
+3.1 - 3 | Strut
+--------------------------------------------------------------------------------
+ 
+Check strut D/C ratio with BeamChek 2023
+ 
+          ----------------------------------------
+Fig. 1 - Strut Check [file: rvsrc/img/bmck1.jpg  ]
+          ----------------------------------------
+
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+Connection Design | R Holland | v-1.0.0a11 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+3.2 | Strut to Tree Connection
+================================================================================
+ 
+Use Simpson Strong Tie online selection tool.
+ 
+          ----------------------------------------
+Fig. 1 - Option 1 [file: rvsrc/img/ss12.jpg | time: no time  ]
+          ----------------------------------------
+
+ 
+          ----------------------------------------
+Fig. 2 - Option 2 [file: rvsrc/img/ss14.jpg | time: no time  ]
+          ----------------------------------------
+
+ 
+ 
+
+3.2 - 2 | Top rail Corner
+--------------------------------------------------------------------------------
+ 
+Use AWC online connection tool.
+ 
+          ----------------------------------------
+Fig. 3 - Top Rail - Corner Plate Input [file: rvsrc/img/awc4.jpg  ]
+          ----------------------------------------
+
+ 
+          ----------------------------------------
+Fig. 4 - Top Rail - Corner Plate Capacity [file: rvsrc/img/awc5.jpg  ]
+          ----------------------------------------
+
+ 
+Use 4-#8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
+ 
+ 
+

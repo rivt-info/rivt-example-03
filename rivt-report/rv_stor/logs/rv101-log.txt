@@ -1,9 +1,9 @@
-06-12 10:39  rv101-standards   INFO     Doc start
-06-12 10:39  rv101-standards   INFO     rivtlib version: 1.0.0a5
-06-12 10:39  rv101-standards   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv101-standards.bak
-06-12 10:39  rv101-standards   INFO     Summary
-06-12 10:39  rv101-standards   INFO     SECTION 1.1 - type I
-06-12 10:39  rv101-standards   INFO     command : TABLE
-06-12 10:39  rv101-standards   INFO     tag : _[T]
-06-12 10:39  rv101-standards   INFO     SECTION : Publish Doc
-06-12 10:39  rv101-standards   INFO     block tag : METADATA]]
+06-12 14:42  rv101-standards   INFO     Doc start
+06-12 14:42  rv101-standards   INFO     rivtlib version: 1.0.0a5
+06-12 14:42  rv101-standards   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv101-standards.bak
+06-12 14:42  rv101-standards   INFO     Summary
+06-12 14:42  rv101-standards   INFO     SECTION 1.1 - type I
+06-12 14:42  rv101-standards   INFO     command : TABLE
+06-12 14:42  rv101-standards   INFO     tag : _[T]
+06-12 14:42  rv101-standards   INFO     SECTION : Publish Doc
+06-12 14:42  rv101-standards   INFO     block tag : METADATA]]

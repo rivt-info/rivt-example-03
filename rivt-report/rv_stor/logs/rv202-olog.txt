@@ -17,3 +17,11 @@ written for each rivt file: Tree Fort
 >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
 >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
 >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py

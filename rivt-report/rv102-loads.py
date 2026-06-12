@@ -69,6 +69,7 @@ rv.D("""Publish Doc
     toc_level = 1
     
     [process]
+    doc_verbose = true; if false, minimum output during doc processing
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 
