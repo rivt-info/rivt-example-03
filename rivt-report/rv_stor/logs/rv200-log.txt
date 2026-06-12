@@ -1,10 +1,10 @@
-06-12 15:57  rv200-programs   INFO     Doc start
-06-12 15:57  rv200-programs   INFO     rivtlib version: 1.0.0a5
-06-12 15:57  rv200-programs   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv200-programs.bak
-06-12 15:57  rv200-programs   INFO     Analysis Programs
-06-12 15:57  rv200-programs   INFO     SECTION 2.0 - type I
-06-12 15:57  rv200-programs   INFO     tag : _[U]
-06-12 15:57  rv200-programs   INFO     tag : _[U]
-06-12 15:57  rv200-programs   INFO     command : IMAGE
-06-12 15:57  rv200-programs   INFO     SECTION : Publish Doc
-06-12 15:57  rv200-programs   INFO     block tag : METADATA]]
+06-12 16:01  rv200-programs   INFO     Doc start
+06-12 16:01  rv200-programs   INFO     rivtlib version: 1.0.0a5
+06-12 16:01  rv200-programs   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv200-programs.bak
+06-12 16:01  rv200-programs   INFO     Analysis Programs
+06-12 16:01  rv200-programs   INFO     SECTION 2.0 - type I
+06-12 16:01  rv200-programs   INFO     tag : _[U]
+06-12 16:01  rv200-programs   INFO     tag : _[U]
+06-12 16:01  rv200-programs   INFO     command : IMAGE
+06-12 16:01  rv200-programs   INFO     SECTION : Publish Doc
+06-12 16:01  rv200-programs   INFO     block tag : METADATA]]
