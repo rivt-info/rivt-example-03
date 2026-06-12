@@ -1,20 +1,20 @@
-06-10 00:34  rv102-loads   INFO     Doc start
-06-10 00:34  rv102-loads   INFO     rivtlib version: 1.0.0a5
-06-10 00:34  rv102-loads   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv102-loads.bak
-06-10 00:34  rv102-loads   INFO     Load Combinations and Geometry 
-06-10 00:34  rv102-loads   INFO     SECTION 1.2.1 - type I
-06-10 00:34  rv102-loads   INFO     command : IMAGE
-06-10 00:34  rv102-loads   DEBUG    STREAM b'IHDR' 16 13
-06-10 00:34  rv102-loads   DEBUG    STREAM b'sRGB' 41 1
-06-10 00:34  rv102-loads   DEBUG    STREAM b'gAMA' 54 4
-06-10 00:34  rv102-loads   DEBUG    STREAM b'pHYs' 70 9
-06-10 00:34  rv102-loads   DEBUG    STREAM b'IDAT' 91 29050
-06-10 00:34  rv102-loads   INFO     tag : _[T]
-06-10 00:34  rv102-loads   INFO     Unit Loads 
-06-10 00:34  rv102-loads   INFO     SECTION 1.2.2 - type V
-06-10 00:34  rv102-loads   INFO     tag : _[B]
-06-10 00:34  rv102-loads   INFO     command : TABLE
-06-10 00:34  rv102-loads   INFO     tag : _[B]
-06-10 00:34  rv102-loads   INFO     tag : _[T]
-06-10 00:34  rv102-loads   INFO     SECTION : Publish Doc
-06-10 00:34  rv102-loads   INFO     block tag : METADATA]]
+06-12 10:39  rv102-loads   INFO     Doc start
+06-12 10:39  rv102-loads   INFO     rivtlib version: 1.0.0a5
+06-12 10:39  rv102-loads   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv102-loads.bak
+06-12 10:39  rv102-loads   INFO     Load Combinations and Geometry 
+06-12 10:39  rv102-loads   INFO     SECTION 1.2 - type I
+06-12 10:39  rv102-loads   INFO     command : IMAGE
+06-12 10:39  rv102-loads   DEBUG    STREAM b'IHDR' 16 13
+06-12 10:39  rv102-loads   DEBUG    STREAM b'sRGB' 41 1
+06-12 10:39  rv102-loads   DEBUG    STREAM b'gAMA' 54 4
+06-12 10:39  rv102-loads   DEBUG    STREAM b'pHYs' 70 9
+06-12 10:39  rv102-loads   DEBUG    STREAM b'IDAT' 91 29050
+06-12 10:39  rv102-loads   INFO     tag : _[T]
+06-12 10:39  rv102-loads   INFO     Unit Loads 
+06-12 10:39  rv102-loads   INFO     SECTION 1.2 - 2 - type V
+06-12 10:39  rv102-loads   INFO     tag : _[B]
+06-12 10:39  rv102-loads   INFO     command : TABLE
+06-12 10:39  rv102-loads   INFO     tag : _[B]
+06-12 10:39  rv102-loads   INFO     tag : _[T]
+06-12 10:39  rv102-loads   INFO     SECTION : Publish Doc
+06-12 10:39  rv102-loads   INFO     block tag : METADATA]]

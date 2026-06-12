@@ -1,0 +1,81 @@
+:orphan:
+
+
+.. raw:: pdf
+
+   PageBreak
+
+      
+
+
+
+.. _Strut to Tree Connection:
+
+**3.2** | Strut to Tree Connection
+================================================================================
+ 
+Use Simpson Strong Tie online selection tool.
+ 
+
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/ss12.jpg
+   :width: 100%
+   :align: center
+
+   **Fig. 1** - Option 1   | time: no time 
+    
+
+
+ 
+
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/ss14.jpg
+   :width: 100%
+   :align: center
+
+   **Fig. 2** - Option 2   | time: no time 
+    
+
+
+ 
+ 
+
+
+--------------
+
+
+
+.. raw:: pdf
+
+   PageBreak
+
+
+
+.. _Top rail Corner:
+
+**3.2 - 2** | Top rail Corner
+--------------------------------------------------------------------------------
+ 
+Use AWC online connection tool.
+ 
+
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/awc4.jpg
+   :width: 100%
+   :align: center
+
+   **Fig. 3** - Top Rail - Corner Plate Input   
+    
+
+
+ 
+
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/awc5.jpg
+   :width: 100%
+   :align: center
+
+   **Fig. 4** - Top Rail - Corner Plate Capacity   
+    
+
+
+ 
+Use 4-#8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
+ 
+ 

@@ -1,28 +1,33 @@
 
-3.0.1 | Component Design
+--------------------------------------------------------------------------------
+Component Design | R Holland | v-1.0.0a12 | 2026-06-11 - 07:37PM
+--------------------------------------------------------------------------------
+
+
+3.0 | Component Design
+================================================================================
+ 
+This division covers the design of structural components.
+ 
+          ----------------------------------------
+Fig. 1 - Report Flow Chart [file: rvsrc/img/outputc.jpg  ]
+          ----------------------------------------
+
+ 
+ 
+
+3.0 - 2 | Geometry and Components
 --------------------------------------------------------------------------------
  
-This division covers design of Tree Fort sructural components.
  
           ----------------------------------------
-Fig. 1 - Report Flow Chart [file: rvsrc/img/outputc.jpg |   ]
-          ----------------------------------------
-
- 
- 
-
-3.0.2 | Geometry and Components
---------------------------------------------------------------------------------
- 
- 
-          ----------------------------------------
-Fig. 2 - Component Labels [file: rvsrc/img/members1.png |   ]
+Fig. 2 - Component Labels [file: rvsrc/img/members1.png  ]
           ----------------------------------------
 
  
  
           ----------------------------------------
-Fig. 3 - Dimensions [file: rvsrc/img/dim1.png |   ]
+Fig. 3 - Dimensions [file: rvsrc/img/dim1.png  ]
           ----------------------------------------
 
  

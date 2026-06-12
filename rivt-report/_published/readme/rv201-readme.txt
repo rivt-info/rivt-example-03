@@ -1,26 +1,31 @@
 
-2.1.1 | Applied deck forces - RISA model
+--------------------------------------------------------------------------------
+RISA Analysis | R Holland | v-1.0.0a12 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+2.1 | Applied deck forces - RISA model
+================================================================================
+ 
+ 
+          ----------------------------------------
+Fig. 1 - Risa Model [file: rvsrc/img/risa4.png  ]
+          ----------------------------------------
+
+ 
+ 
+
+2.1 - 2 | Resultant axial forces - RISA model
 --------------------------------------------------------------------------------
  
- 
           ----------------------------------------
-Fig. 1 - Risa Model [file: rvsrc/img/risa4.png |   ]
-          ----------------------------------------
-
- 
- 
-
-2.1.2 | Resultant axial forces - RISA model
---------------------------------------------------------------------------------
- 
-          ----------------------------------------
-Fig. 2 - Strut Axial Forces [file: rvsrc/img/risa6.png |   ]
+Fig. 2 - Strut Axial Forces [file: rvsrc/img/risa6.png  ]
           ----------------------------------------
 
  
  
 
-2.1.3 | Top rail shear reactions - RISA model
+2.1 - 3 | Top rail shear reactions - RISA model
 --------------------------------------------------------------------------------
  
 Under the California Building Code (CBC), handrails and guards (railings)
@@ -47,7 +52,7 @@ Structural Schematic of Railing and Loads Drawn by AI
  
  
           ----------------------------------------
-Fig. 3 - Rail Lateral Forces [file: rvsrc/img/risa9.png |   ]
+Fig. 3 - Rail Lateral Forces [file: rvsrc/img/risa9.png  ]
           ----------------------------------------
 
  

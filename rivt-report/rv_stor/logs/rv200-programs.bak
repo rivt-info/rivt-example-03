@@ -12,7 +12,7 @@ rv.I("""Analysis Programs
     - _[U] OpenSees, https://opensees.berkeley.edu | for determing the period of the tree fort system.
       
     
-    | IMAGE | rvsrc/img/outputb.jpg | Report Flow Chart, 80, num, not 
+    | IMAGE | rvsrc/img/outputb.jpg | Report Flow Chart, 60, num, not 
     
     """)
 

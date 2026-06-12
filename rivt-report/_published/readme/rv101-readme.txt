@@ -1,6 +1,11 @@
 
-1.1.1 | Summary
 --------------------------------------------------------------------------------
+Building Standards | R Holland | v-1.0.0a11 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+1.1 | Summary
+================================================================================
  
 The design loads are based on the standards of the California Building
 Code (CBC) outlined below.  Standard math symbols are profided for reference.

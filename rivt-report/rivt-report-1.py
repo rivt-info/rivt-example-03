@@ -14,21 +14,25 @@ docs are always regenerated. See https://www.rivt.info for more details.
 iniS = """
 [settings]
 ;------- report file name including the extension - pdf, html, txt
-;-----------------------------------------
-rept_filename = rivt-treefort-report.pdf
-;------------------------------------------
-;------- comma separated list of excluded doc numbers eg. rv102, rv204
+;----------------------------------------------------------------
+;---
+rept_filename = rivt-treefort-report.txt
+;---
+;----------------------------------------------------------------
+;------- comma separated list of doc numbers to exclude eg. rv102, rv204
 exclude = -- 
 ;-------  rivt writes config files, false allows for manual editing
 auto_cfg = true
 ;------- regenerate pdf doc files 
 regen_pdf = false 
+;------- generate report - verbose output
+rep_verbose = true
 
 [format]
-title = Tree Fort Design 
-subtitle =rivt report
+title = Tree Fort
+subtitle = Structural Design
 client = Report Example
-project_ref = Proj. 0002
+project_ref = Proj. 0003
 authors = R Holland 
 copyright = StL
 version = 1.0.0a12
@@ -37,6 +41,8 @@ coverlogo = tree1.png
 coverlogo_size = 50
 running_logo = rivt02.png 
 running_label = rivt
+;----- table of contents levels: = 1 shows subdivisions, = 2 includes sections. 
+toc_level = 2
 ;----- underline links in PDF - true or false
 pdf_link = false 
 ;----- page size letter, legal, A4 - margins top, right, bottom and left

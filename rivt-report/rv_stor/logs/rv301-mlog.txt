@@ -1,1 +1,18 @@
 rst written for each rivt file: Tree Fort Design
+txt written for each rivt file: Tree Fort
+txt written for each rivt file: Tree Fort
+written for each rivt file: Tree Fort
+written for each rivt file: Tree Fort
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py

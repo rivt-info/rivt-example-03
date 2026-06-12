@@ -1,30 +1,30 @@
-06-10 00:34  rv201-risa   INFO     Doc start
-06-10 00:34  rv201-risa   INFO     rivtlib version: 1.0.0a5
-06-10 00:34  rv201-risa   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv201-risa.bak
-06-10 00:34  rv201-risa   INFO     Applied deck forces - RISA model 
-06-10 00:34  rv201-risa   INFO     SECTION 2.1.1 - type I
-06-10 00:34  rv201-risa   INFO     command : IMAGE
-06-10 00:34  rv201-risa   DEBUG    STREAM b'IHDR' 16 13
-06-10 00:34  rv201-risa   DEBUG    STREAM b'sRGB' 41 1
-06-10 00:34  rv201-risa   DEBUG    STREAM b'gAMA' 54 4
-06-10 00:34  rv201-risa   DEBUG    STREAM b'pHYs' 70 9
-06-10 00:34  rv201-risa   DEBUG    STREAM b'IDAT' 91 65445
-06-10 00:34  rv201-risa   INFO     Resultant axial forces - RISA model | pdfpage
-06-10 00:34  rv201-risa   INFO     SECTION 2.1.2 - type I
-06-10 00:34  rv201-risa   INFO     command : IMAGE
-06-10 00:34  rv201-risa   DEBUG    STREAM b'IHDR' 16 13
-06-10 00:34  rv201-risa   DEBUG    STREAM b'sRGB' 41 1
-06-10 00:34  rv201-risa   DEBUG    STREAM b'gAMA' 54 4
-06-10 00:34  rv201-risa   DEBUG    STREAM b'pHYs' 70 9
-06-10 00:34  rv201-risa   DEBUG    STREAM b'IDAT' 91 65445
-06-10 00:34  rv201-risa   INFO     Top rail shear reactions - RISA model | pdfpage
-06-10 00:34  rv201-risa   INFO     SECTION 2.1.3 - type I
-06-10 00:34  rv201-risa   INFO     tag : _[[MARKUP]]
-06-10 00:34  rv201-risa   INFO     command : IMAGE
-06-10 00:34  rv201-risa   DEBUG    STREAM b'IHDR' 16 13
-06-10 00:34  rv201-risa   DEBUG    STREAM b'sRGB' 41 1
-06-10 00:34  rv201-risa   DEBUG    STREAM b'gAMA' 54 4
-06-10 00:34  rv201-risa   DEBUG    STREAM b'pHYs' 70 9
-06-10 00:34  rv201-risa   DEBUG    STREAM b'IDAT' 91 65445
-06-10 00:34  rv201-risa   INFO     SECTION : Publish Doc 
-06-10 00:34  rv201-risa   INFO     block tag : METADATA]]
+06-12 10:39  rv201-risa   INFO     Doc start
+06-12 10:39  rv201-risa   INFO     rivtlib version: 1.0.0a5
+06-12 10:39  rv201-risa   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv201-risa.bak
+06-12 10:39  rv201-risa   INFO     Applied deck forces - RISA model 
+06-12 10:39  rv201-risa   INFO     SECTION 2.1 - type I
+06-12 10:39  rv201-risa   INFO     command : IMAGE
+06-12 10:39  rv201-risa   DEBUG    STREAM b'IHDR' 16 13
+06-12 10:39  rv201-risa   DEBUG    STREAM b'sRGB' 41 1
+06-12 10:39  rv201-risa   DEBUG    STREAM b'gAMA' 54 4
+06-12 10:39  rv201-risa   DEBUG    STREAM b'pHYs' 70 9
+06-12 10:39  rv201-risa   DEBUG    STREAM b'IDAT' 91 65445
+06-12 10:39  rv201-risa   INFO     Resultant axial forces - RISA model | pdfpage
+06-12 10:39  rv201-risa   INFO     SECTION 2.1 - 2 - type I
+06-12 10:39  rv201-risa   INFO     command : IMAGE
+06-12 10:39  rv201-risa   DEBUG    STREAM b'IHDR' 16 13
+06-12 10:39  rv201-risa   DEBUG    STREAM b'sRGB' 41 1
+06-12 10:39  rv201-risa   DEBUG    STREAM b'gAMA' 54 4
+06-12 10:39  rv201-risa   DEBUG    STREAM b'pHYs' 70 9
+06-12 10:39  rv201-risa   DEBUG    STREAM b'IDAT' 91 65445
+06-12 10:39  rv201-risa   INFO     Top rail shear reactions - RISA model | pdfpage
+06-12 10:39  rv201-risa   INFO     SECTION 2.1 - 3 - type I
+06-12 10:39  rv201-risa   INFO     tag : _[[MARKUP]]
+06-12 10:39  rv201-risa   INFO     command : IMAGE
+06-12 10:39  rv201-risa   DEBUG    STREAM b'IHDR' 16 13
+06-12 10:39  rv201-risa   DEBUG    STREAM b'sRGB' 41 1
+06-12 10:39  rv201-risa   DEBUG    STREAM b'gAMA' 54 4
+06-12 10:39  rv201-risa   DEBUG    STREAM b'pHYs' 70 9
+06-12 10:39  rv201-risa   DEBUG    STREAM b'IDAT' 91 65445
+06-12 10:39  rv201-risa   INFO     SECTION : Publish Doc 
+06-12 10:39  rv201-risa   INFO     block tag : METADATA]]

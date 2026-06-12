@@ -155,6 +155,7 @@ rv.D("""Publish Doc
     
     [process]
     auto_cfg = true ; if false, config files are not updated from rivt file
+    doc_verbose = true; if false, minimum output during doc processing
     _[[END]]
 
     | PUBLISH | Standards and Loads | pdf

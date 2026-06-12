@@ -53,3 +53,33 @@ rst written for each rivt file: Tree Fort Design
 rst written for each rivt file: Tree Fort Design
 rst written for each rivt file: Tree Fort Design
 rst written for each rivt file: Tree Fort Design
+txt written for each rivt file: Tree Fort
+txt written for each rivt file: Tree Fort
+txt written for each rivt file: Tree Fort
+txt written for each rivt file: Tree Fort
+txt written for each rivt file: Tree Fort
+written for each rivt file: Tree Fort
+written for each rivt file: Tree Fort
+written for each rivt file: Tree Fort
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py

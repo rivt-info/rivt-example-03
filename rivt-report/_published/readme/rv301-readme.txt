@@ -1,6 +1,11 @@
 
-3.1.1 | Deck Design Properties
 --------------------------------------------------------------------------------
+Member Design | R Holland | v-1.0.0a12 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+3.1 | Deck Design Properties
+================================================================================
  
 Import deck loads and functions.
 
@@ -36,7 +41,7 @@ nds_post_check(** kwargs)  Check stress at cantilever post
  
  
 
-3.1.2 | Deck Design Summary
+3.1 - 2 | Deck Design Summary
 --------------------------------------------------------------------------------
  
 Design properties as dictionary for checking function nds_beam_chk
@@ -89,13 +94,13 @@ deflection_ratio:  0.20
  
  
 
-3.1.3 | Strut
+3.1 - 3 | Strut
 --------------------------------------------------------------------------------
  
 Check strut D/C ratio with BeamChek 2023
  
           ----------------------------------------
-Fig. 1 - Strut Check [file: rvsrc/img/bmck1.jpg |   ]
+Fig. 1 - Strut Check [file: rvsrc/img/bmck1.jpg  ]
           ----------------------------------------
 
  

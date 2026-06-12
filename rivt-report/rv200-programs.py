@@ -12,7 +12,7 @@ rv.I("""Analysis Programs
     - _[U] OpenSees, https://opensees.berkeley.edu | for determing the period of the tree fort system.
       
     
-    | IMAGE | rvsrc/img/outputb.jpg | Report Flow Chart, 80, num, not 
+    | IMAGE | rvsrc/img/outputb.jpg | Report Flow Chart, 60, num, not 
     
     """)
 
@@ -43,6 +43,8 @@ rv.D("""Publish Doc
     pdf_pagesize = letter
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = true
+    ;----- table of contents levels: = 1 shows subdivisions, = 2 includes sections. 
+    toc_level = 1
     
     [process]
     auto_cfg = true ; if false, config files are not updated from rivt file

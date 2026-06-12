@@ -152,9 +152,12 @@ rv.D("""Publish Doc
     pdf_pagesize = letter
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = true
+    ;----- table of contents levels: = 1 shows subdivisions, = 2 includes sections. 
+    toc_level = 1
     
     [process]
     auto_cfg = true ; if false, config files are not updated from rivt file
+    doc_verbose = true; if false, minimum output during doc processing
     _[[END]]
 
     | PUBLISH | Standards and Loads | pdf

@@ -9,19 +9,19 @@ rv.I("""OpenSees Analysis
             y
             ^
             |
-        m2  o  Node 3 (Top mass)
+        m2  o  Node 3 (Branches)
             |
-        k2  |   Spring 2 (Between m1 and m2)
+        k2  |   Spring 2 (upper trunk)
             |
-        m1  o  Node 2 (Middle mass)
+        m1  o  Node 2 (Tree Fort)
             |
-        k1  |   Spring 1 (Between base and m1)
+        k1  |   Spring 1 (lower trunk)
             |
             o  Node 1 (Fixed Base)
         -----------
         (Ground)
 
-    Schematic model of tree and tree-fort system by AI
+    AI schematic model of tree + tree-fort system
     _[[END]]
 
     """)
@@ -223,6 +223,8 @@ rv.D("""Publish Doc
     pdf_pagesize = letter
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = true
+    ;----- table of contents levels: = 1 shows subdivisions, = 2 includes sections. 
+    toc_level = 1
     
     [process]
     auto_cfg = true ; if false, config files are not updated from rivt file

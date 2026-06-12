@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>D.1 Doc A-2 &#8212;  </title>
+    <title>1.2 | Load Combinations and Geometry &#8212;  </title>
   
   
   
@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=46ccb42c" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=f3a4f08f" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -59,8 +59,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rv102-loads';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="D.2 Doc B-1" href="rv201-members.html" />
-    <link rel="prev" title="D.1 Doc A-1" href="rv101-standards.html" />
+    <link rel="next" title="2.0 | Analysis Programs" href="rv200-programs.html" />
+    <link rel="prev" title="1.1 | Summary" href="rv101-standards.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -146,15 +146,22 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="rv101-standards.html">
-    D.1 Doc A-1
+  <a class="nav-link nav-internal" href="rv100-stdlds.html">
+    1.0 | Report Summary
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rv201-members.html">
-    D.2 Doc B-1
+  <a class="nav-link nav-internal" href="rv200-programs.html">
+    2.0 | Analysis Programs
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rv300-design.html">
+    3.0 | Component Design
   </a>
 </li>
 
@@ -201,7 +208,7 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="Sections">
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
       <span class="fa-solid fa-outdent"></span>
     </button>
   
@@ -232,15 +239,22 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="rv101-standards.html">
-    D.1 Doc A-1
+  <a class="nav-link nav-internal" href="rv100-stdlds.html">
+    1.0 | Report Summary
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="rv201-members.html">
-    D.2 Doc B-1
+  <a class="nav-link nav-internal" href="rv200-programs.html">
+    2.0 | Analysis Programs
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rv300-design.html">
+    3.0 | Component Design
   </a>
 </li>
 
@@ -272,7 +286,8 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">D.1 Doc A-2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv101-standards.html"><strong>1.1</strong> | Summary</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>1.2</strong> | Load Combinations and Geometry</a></li>
 </ul>
 </div>
 </nav></div>
@@ -314,9 +329,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="rv101-standards.html" class="nav-link">D.1 Doc A-1</a></li>
+    <li class="breadcrumb-item"><a href="rv100-stdlds.html" class="nav-link"><strong>1.0</strong> | Report Summary</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">D.1 Doc A-2</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>1.2</strong> | Load Combinations and Geometry</span></li>
   </ul>
 </nav>
 </div>
@@ -333,14 +348,113 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="d-1-doc-a-2">
-<h1>D.1 Doc A-2<a class="headerlink" href="#d-1-doc-a-2" title="Link to this heading">#</a></h1>
-<section id="loads">
-<h2><strong>2.1</strong> Loads<a class="headerlink" href="#loads" title="Link to this heading">#</a></h2>
-<p>Successive value definitions are formatted as a table. Variable
-values are defined with the define operator. The line tag [T] labels and
-numbers the table.</p>
-<p><strong>Table 1</strong>: Define Unit Loads</p>
+  <section id="load-combinations-and-geometry">
+<span id="id1"></span><h1><strong>1.2</strong> | Load Combinations and Geometry<a class="headerlink" href="#load-combinations-and-geometry" title="Link to this heading">#</a></h1>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/tree4.png"><img alt="_images/tree4.png" src="_images/tree4.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Fig. 1</strong> - Tree Fort Plan</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Table 1</strong>: ASCE 7-05 Load Effects</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Equation No.</p></th>
+<th class="head"><p>Load Combination</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>16-1</p></td>
+<td><p>1.4(D+F)</p></td>
+</tr>
+<tr class="row-odd"><td><p>16-2</p></td>
+<td><p>1.2(D+F+T) + 1.6(L+H) + 0.5(Lr or S or R)</p></td>
+</tr>
+<tr class="row-even"><td><p>16-3</p></td>
+<td><p>1.2(D+F+T) + 1.6(Lr or S or R) + (f1L or 0.8W)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<section id="unit-loads">
+<span id="id2"></span><h2><strong>1.2 - 2</strong> | Unit Loads<a class="headerlink" href="#unit-loads" title="Link to this heading">#</a></h2>
+<p><strong>Unit weights imported from csv file created by AI.</strong></p>
+<p><strong>Table 2</strong>: Unit Weights - Doug Fir</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Nominal</p></th>
+<th class="head"><p>ActualWidth_in</p></th>
+<th class="head"><p>ActualDepth_in</p></th>
+<th class="head"><p>Area_in2</p></th>
+<th class="head"><p>Volume_ft3_per_ft</p></th>
+<th class="head"><p>Density_lb_per_ft3</p></th>
+<th class="head"><p>Weight_lb_per_ft</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2x2</p></td>
+<td><p>1.5</p></td>
+<td><p>1.5</p></td>
+<td><p>2.25</p></td>
+<td><p>0.015625</p></td>
+<td><p>34</p></td>
+<td><p>0.53125</p></td>
+</tr>
+<tr class="row-odd"><td><p>2x4</p></td>
+<td><p>1.5</p></td>
+<td><p>3.5</p></td>
+<td><p>5.25</p></td>
+<td><p>0.0364583</p></td>
+<td><p>34</p></td>
+<td><p>1.23958</p></td>
+</tr>
+<tr class="row-even"><td><p>2x6</p></td>
+<td><p>1.5</p></td>
+<td><p>5.5</p></td>
+<td><p>8.25</p></td>
+<td><p>0.0572917</p></td>
+<td><p>34</p></td>
+<td><p>1.94875</p></td>
+</tr>
+<tr class="row-odd"><td><p>2x8</p></td>
+<td><p>1.5</p></td>
+<td><p>7.25</p></td>
+<td><p>10.875</p></td>
+<td><p>0.0755208</p></td>
+<td><p>34</p></td>
+<td><p>2.56771</p></td>
+</tr>
+<tr class="row-even"><td><p>2x10</p></td>
+<td><p>1.5</p></td>
+<td><p>9.25</p></td>
+<td><p>13.875</p></td>
+<td><p>0.0963542</p></td>
+<td><p>34</p></td>
+<td><p>3.275</p></td>
+</tr>
+<tr class="row-odd"><td><p>2x12</p></td>
+<td><p>1.5</p></td>
+<td><p>11.25</p></td>
+<td><p>16.875</p></td>
+<td><p>0.117188</p></td>
+<td><p>34</p></td>
+<td><p>3.98438</p></td>
+</tr>
+<tr class="row-even"><td><p>4x4</p></td>
+<td><p>3.5</p></td>
+<td><p>3.5</p></td>
+<td><p>12.25</p></td>
+<td><p>0.0850694</p></td>
+<td><p>34</p></td>
+<td><p>2.89236</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Variables assigned by inline definitions.</strong></p>
+<p><strong>Table 3</strong>: Member Nominal Loads and Properties</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>variable</p></th>
@@ -351,49 +465,34 @@ numbers the table.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>D_1</p></td>
-<td><p>3.80 psf</p></td>
-<td><p>0.18 kPA</p></td>
-<td><p>joists DL</p></td>
+<td><p>2.00 plf</p></td>
+<td><p>0.00 klf</p></td>
+<td><p>2x6 planks DL</p></td>
 </tr>
 <tr class="row-odd"><td><p>D_2</p></td>
-<td><p>2.10 psf</p></td>
-<td><p>0.10 kPA</p></td>
-<td><p>plywood DL</p></td>
+<td><p>2.60 plf</p></td>
+<td><p>0.00 klf</p></td>
+<td><p>2x8 joists DL</p></td>
 </tr>
 <tr class="row-even"><td><p>D_3</p></td>
-<td><p>10.00 psf</p></td>
-<td><p>0.48 kPA</p></td>
-<td><p>partitions DL</p></td>
-</tr>
-<tr class="row-odd"><td><p>D_4</p></td>
-<td><p>3.00 klf</p></td>
-<td><p>43.78 kN_m</p></td>
-<td><p>fixed machinery DL</p></td>
-</tr>
-<tr class="row-even"><td><p>L_1</p></td>
-<td><p>40.00 psf</p></td>
-<td><p>1.92 kPA</p></td>
-<td><p>ASCE7-O5 LL</p></td>
-</tr>
-<tr class="row-odd"><td><p>b_1</p></td>
-<td><p>10.00 inch</p></td>
-<td><p>254.00 mm</p></td>
-<td><p>beam width</p></td>
-</tr>
-<tr class="row-even"><td><p>h_1</p></td>
-<td><p>18.00 inch</p></td>
-<td><p>457.20 mm</p></td>
-<td><p>beam depth</p></td>
+<td><p>2.90 plf</p></td>
+<td><p>0.00 klf</p></td>
+<td><p>4x4 posts and struts</p></td>
 </tr>
 <tr class="row-odd"><td><p>E_1</p></td>
 <td><p>29000.00 ksi</p></td>
 <td><p>199947.96 MPA</p></td>
 <td><p>modulus of elasticity</p></td>
 </tr>
-<tr class="row-even"><td><p>Fb_1</p></td>
-<td><p>20000.00 lb_in2</p></td>
-<td><p>137.90 MPA</p></td>
-<td><p>allowable stress</p></td>
+<tr class="row-even"><td><p>LL_1</p></td>
+<td><p>40.00 psf</p></td>
+<td><p>1.92 kPA</p></td>
+<td><p>ASCE7-05 floor LL</p></td>
+</tr>
+<tr class="row-odd"><td><p>HL_1</p></td>
+<td><p>20.00 psf</p></td>
+<td><p>0.96 kPA</p></td>
+<td><p>ASCE7-05 HL</p></td>
 </tr>
 </tbody>
 </table>
@@ -417,15 +516,15 @@ numbers the table.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">D.1 Doc A-1</p>
+        <p class="prev-next-title"><strong>1.1</strong> | Summary</p>
       </div>
     </a>
     <a class="right-next"
-       href="rv201-members.html"
+       href="rv200-programs.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">D.2 Doc B-1</p>
+        <p class="prev-next-title"><strong>2.0</strong> | Analysis Programs</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -444,11 +543,11 @@ numbers the table.</p>
 <div
     id="pst-page-navigation-heading-2"
     class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Sections
+    <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loads"><strong>2.1</strong> Loads</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-loads"><strong>1.2 - 2</strong> | Unit Loads</a></li>
 </ul>
   </nav></div>
 
@@ -490,7 +589,7 @@ numbers the table.</p>
 <!-- _templates/rv-title.html -->
 <div class="footer-item">
 <p class="rvtitle">
-    Treehouse Design  v.1.0.0a12 
+    Tree Fort  v.1.0.0a12 
 </p>
 </div></div>
       
@@ -503,7 +602,7 @@ numbers the table.</p>
 <!-- _templates/rv-date.html -->
 <div class="footer-item">
 <p class="rvdate">
-    2026-05-23
+    2026-06-11
 </p>
 </div></div>
       

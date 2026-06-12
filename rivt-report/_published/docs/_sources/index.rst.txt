@@ -12,7 +12,7 @@
 
 |    
 
-.. image:: ../rvsrc/img/tree1.png
+.. image:: ./_static/tree1.png
     :width: 50%
     :align: center        
     :alt: rivt logo
@@ -27,19 +27,19 @@
     <div style="text-align: center;">
 
     
-    rivt Report
+    Structural Design
     
     <br><br>
 
-    <p class="big-text">Treehouse Design</p>
+    <p class="big-text">Tree Fort</p>
         
     <br><br><br>
     
-    <p class="medium-text">Example report</p>
+    <p class="medium-text">Report Example</p>
    
     <br><br><br>
 
-    Proj. 0001
+    Proj. 0003
             
     
     </div>
@@ -47,10 +47,10 @@
 
 .. toctree::
     :hidden:
-    :maxdepth: 3
+    :maxdepth: 2
 
-
-    rv101-standards.rst
-    rv201-members.rst
+    rv100-stdlds.rst
+    rv200-programs.rst
+    rv300-design.rst
 
     

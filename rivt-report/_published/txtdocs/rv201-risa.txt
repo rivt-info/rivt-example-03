@@ -1,0 +1,59 @@
+
+--------------------------------------------------------------------------------
+RISA Analysis | R Holland | v-1.0.0a12 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+2.1 | Applied deck forces - RISA model
+================================================================================
+ 
+ 
+          ----------------------------------------
+Fig. 1 - Risa Model 
+          ----------------------------------------
+
+ 
+ 
+
+2.1 - 2 | Resultant axial forces - RISA model
+--------------------------------------------------------------------------------
+ 
+          ----------------------------------------
+Fig. 2 - Strut Axial Forces 
+          ----------------------------------------
+
+ 
+ 
+
+2.1 - 3 | Top rail shear reactions - RISA model
+--------------------------------------------------------------------------------
+ 
+Under the California Building Code (CBC), handrails and guards (railings)
+must resist a uniform load of 50 plf and a concentrated point load of 200
+lbs, both applied horizontally to the top rail. Intermediate rails,
+balusters, and infill panels must separately withstand a concentrated load
+of 50 lbs.
+ 
+  =======  <-- Top Rail 
+     |     <-- Lateral Load (P) 
+     |  
+     | 
+     | 
+     |  Height (h) 
+     | 
+     | 
+     | 
+     | 
+===========  <-- Fixed Support / Deck Surface 
+ 
+ 
+Structural Schematic of Railing and Loads Drawn by AI 
+
+ 
+ 
+          ----------------------------------------
+Fig. 3 - Rail Lateral Forces 
+          ----------------------------------------
+
+ 
+ 

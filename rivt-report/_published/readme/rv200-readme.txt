@@ -1,6 +1,11 @@
 
-2.0.1 | Analysis Programs
 --------------------------------------------------------------------------------
+Analysis | R Holland | v-1.0.0a12 | 2026-06-11 - 07:19PM
+--------------------------------------------------------------------------------
+
+
+2.0 | Analysis Programs
+================================================================================
  
 This report division includes RISA and OpenSees analysis and illustrates
 methods for running and importing outputs from external programs.
@@ -12,7 +17,7 @@ methods for running and importing outputs from external programs.
  
  
           ----------------------------------------
-Fig. 1 - Report Flow Chart [file: rvsrc/img/outputb.jpg |   ]
+Fig. 1 - Report Flow Chart [file: rvsrc/img/outputb.jpg  ]
           ----------------------------------------
 
  

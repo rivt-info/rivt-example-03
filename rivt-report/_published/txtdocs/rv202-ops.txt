@@ -1,11 +1,11 @@
 
 --------------------------------------------------------------------------------
-Open Sees Analysis | R Holland | v-1.0.0a12 | 2026-06-09 - 07:54PM
+Open Sees Analysis | R Holland | v-1.0.0a12 | 2026-06-11 - 07:19PM
 --------------------------------------------------------------------------------
 
 
-2.2.1 | OpenSees Analysis
---------------------------------------------------------------------------------
+2.2 | OpenSees Analysis
+================================================================================
  
 This section analyzes the period of the tree and tree fort system. The
 OpenSees model is schematically shown below:
@@ -13,22 +13,25 @@ OpenSees model is schematically shown below:
         y 
         ^ 
         | 
-    m2  o  Node 3 (Top mass) 
+    m2  o  Node 3 (Branches) 
         | 
-    k2  |   Spring 2 (Between m1 and m2) 
+    k2  |   Spring 2 (upper trunk) 
         | 
-    m1  o  Node 2 (Middle mass) 
+    m1  o  Node 2 (Tree Fort) 
         | 
-    k1  |   Spring 1 (Between base and m1) 
+    k1  |   Spring 1 (lower trunk) 
         | 
         o  Node 1 (Fixed Base) 
     ----------- 
     (Ground) 
+ 
+ 
+AI schematic model of tree + tree-fort system 
 
  
  
 
-2.2.2 | osp-mod1 Model values
+2.2 - 2 | osp-mod1 Model values
 --------------------------------------------------------------------------------
  
  
@@ -43,7 +46,7 @@ trk2        2100     2100       upper tree trunk stiffness, kN/cm
  
  
 
-2.2.3 | Insert ops-mod1 Output
+2.2 - 3 | Insert ops-mod1 Output
 --------------------------------------------------------------------------------
  
 Model Input
@@ -157,14 +160,25 @@ print("figure 2 written")
 
  
  
+
+2.2 - 4 | Model plots and output
+--------------------------------------------------------------------------------
+ 
+ 
 Model Plots
+
+
  
           ----------------------------------------
 Fig. 1 - OPS Model  | Fig. 2 - OPS First Mode 
           ----------------------------------------
 
+
+ 
  
 Model Output
+
+
  
 
 Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
