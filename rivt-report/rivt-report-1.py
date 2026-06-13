@@ -5,8 +5,8 @@ Run this Python script in the rivt-report folder to write reports to the
 _published folder. Copy and rename this file to save custom report settings
 (e.g. rivt-folder-new.py).
 
-To save execution tme the script does not regenerate individual PDF docs unless
-specified in the settings. HTML and text docs are always regenerated.
+To save execution time the script does not regenerate individual PDF docs
+unless specified in the settings. HTML and text docs are always regenerated.
 See https://www.rivt.info for more details."""
 
 import os
@@ -51,6 +51,7 @@ pdf_pagesize = letter
 pdf_margins = 1in, 1in, 1in, 1in 
 """
 # ============================================================================
-# the following lines are required after the settings
+
+# the following lines are required after settings
 os.environ["reportset"] = reportset
-import rivtlib.rvreport
+import rivtlib.rvreport  # noqa: E402, F401
