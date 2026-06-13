@@ -96,7 +96,7 @@ Design properties as dictionary for checking function nds_beam_chk
 
 .. code-block:: text 
 
-      nds_beam_check | units: inch, pounds
+      function: nds_beam_check | args: beam1 | units: inch, pounds
            
            Beam Check Results:
            ===============================    
@@ -132,7 +132,7 @@ Check strut D/C ratio with BeamChek 2023
    :width: 80%
    :align: center
 
-   **Fig. 1** - Strut Check   
+   **Fig. 1** - Screenshot: Strut Check   
     
 
 

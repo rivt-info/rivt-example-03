@@ -5,9 +5,9 @@ rv.I("""Strut to Tree Connection
 
     Use Simpson Strong Tie online selection tool.
 
-    | IMAGE | rvsrc/img/ss12.jpg | Option 1, 100, num, time 
+    | IMAGE | rvsrc/img/ss12.jpg | Screenshot: Option 1, 100, num, time 
     
-    | IMAGE | rvsrc/img/ss14.jpg | Option 2, 100, num, time 
+    | IMAGE | rvsrc/img/ss14.jpg | Screenshot: Option 2, 100, num, time 
 
     """)
 
@@ -15,9 +15,9 @@ rv.I("""Top rail Corner | pdfpage
 
     Use AWC online connection tool.
 
-    | IMAGE | rvsrc/img/awc4.jpg | Top Rail - Corner Plate Input, 100, num, not 
+    | IMAGE | rvsrc/img/awc4.jpg | Screenshot: Top Rail - Corner Plate Input, 100, num, not 
 
-    | IMAGE | rvsrc/img/awc5.jpg | Top Rail - Corner Plate Capacity, 100, num, not
+    | IMAGE | rvsrc/img/awc5.jpg | Screenshot: Top Rail - Corner Plate Capacity, 100, num, not
  
     Use 4-#8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
 
@@ -25,6 +25,8 @@ rv.I("""Top rail Corner | pdfpage
 
 # %% rv.D("""Publish Doc
 rv.D("""Publish Doc
+
+    | PUBLISH | Connection Design | pdf
 
     _[[METADATA]] 
     [doc]
@@ -59,6 +61,5 @@ rv.D("""Publish Doc
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 
-    | PUBLISH | Connection Design | pdf
 
     """)

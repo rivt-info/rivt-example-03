@@ -20,7 +20,7 @@ The report illustrates the use of tags, commands and scripts including:
  
 - a rivt-report.py script that assembles the report.
  
-- shell commands that  **<** :ref:`run an external program <OpenSees Analysis>` **>** .
+- shell commands that run an  **<** :ref:`external program <OpenSees Analysis>` **>** .
  
 - external urls and section links between documents.
  

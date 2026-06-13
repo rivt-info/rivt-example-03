@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-Member Design | R Holland | v-1.0.0a12 | 2026-06-12 - 10:53AM
+Member Design | R Holland | v-1.0.0a12 | 2026-06-12 - 11:07PM
 --------------------------------------------------------------------------------
 
 
@@ -74,7 +74,7 @@ Design Results
  
 ┌  Eq-1 | Check Deck Beam
 │
-│       nds_beam_check | units: inch, pounds
+│    function: nds_beam_check | args: beam1 | units: inch, pounds
 └
 
 
@@ -99,7 +99,7 @@ deflection_ratio:  0.20
 Check strut D/C ratio with BeamChek 2023
  
           ----------------------------------------
-Fig. 1 - Strut Check 
+Fig. 1 - Screenshot: Strut Check 
           ----------------------------------------
 
  

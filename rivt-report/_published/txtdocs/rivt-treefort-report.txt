@@ -1,6 +1,6 @@
 
 ================================================================================
-Tree Fort | R Holland | 1.0.0a12 | 2026-06-12 - 10:53AM
+Tree Fort | R Holland | 1.0.0a12 | 2026-06-12 - 11:07PM
 ================================================================================
 
 
@@ -19,7 +19,7 @@ Table of Contents
 
 
 --------------------------------------------------------------------------------
-Standards and Loads | R Holland | v-1.0.0a11 | 2026-06-12 - 10:52AM
+Standards and Loads | R Holland | v-1.0.0a11 | 2026-06-12 - 11:06PM
 --------------------------------------------------------------------------------
 
 
@@ -34,7 +34,7 @@ The report illustrates the use of tags, commands and scripts including:
  
 - a rivt-report.py script that assembles the report.
  
-- shell commands that  run an external program [ref: <OpenSees Analysis>] .
+- shell commands that run an  external program [ref: <OpenSees Analysis>] .
  
 - external urls and section links between documents.
  
@@ -146,7 +146,7 @@ WP            Working Point
  
 
 --------------------------------------------------------------------------------
-Building Standards | R Holland | v-1.0.0a11 | 2026-06-12 - 10:52AM
+Building Standards | R Holland | v-1.0.0a11 | 2026-06-12 - 11:06PM
 --------------------------------------------------------------------------------
 
 
@@ -264,7 +264,7 @@ Abbreviation        Definition
  
 
 --------------------------------------------------------------------------------
-Loads | R Holland | v-1.0.0a11 | 2026-06-12 - 10:52AM
+Loads | R Holland | v-1.0.0a11 | 2026-06-12 - 11:06PM
 --------------------------------------------------------------------------------
 
 
@@ -337,7 +337,7 @@ HL_1        20.00 psf     0.96 kPA       ASCE7-05 HL
  
 
 --------------------------------------------------------------------------------
-Analysis | R Holland | v-1.0.0a12 | 2026-06-12 - 10:52AM
+Analysis | R Holland | v-1.0.0a12 | 2026-06-12 - 11:06PM
 --------------------------------------------------------------------------------
 
 
@@ -361,7 +361,7 @@ Fig. 1 - Report Flow Chart
  
 
 --------------------------------------------------------------------------------
-RISA Analysis | R Holland | v-1.0.0a12 | 2026-06-12 - 10:52AM
+RISA Analysis | R Holland | v-1.0.0a12 | 2026-06-12 - 11:06PM
 --------------------------------------------------------------------------------
 
 
@@ -420,7 +420,7 @@ Fig. 3 - Rail Lateral Forces
  
 
 --------------------------------------------------------------------------------
-Open Sees Analysis | R Holland | v-1.0.0a12 | 2026-06-12 - 10:52AM
+Open Sees Analysis | R Holland | v-1.0.0a12 | 2026-06-12 - 11:07PM
 --------------------------------------------------------------------------------
 
 
@@ -607,7 +607,7 @@ Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
  
 
 --------------------------------------------------------------------------------
-Component Design | R Holland | v-1.0.0a12 | 2026-06-12 - 10:53AM
+Component Design | R Holland | v-1.0.0a12 | 2026-06-12 - 11:07PM
 --------------------------------------------------------------------------------
 
 
@@ -642,7 +642,7 @@ Fig. 3 - Dimensions
  
 
 --------------------------------------------------------------------------------
-Member Design | R Holland | v-1.0.0a12 | 2026-06-12 - 10:53AM
+Member Design | R Holland | v-1.0.0a12 | 2026-06-12 - 11:07PM
 --------------------------------------------------------------------------------
 
 
@@ -716,7 +716,7 @@ Design Results
  
 ┌  Eq-1 | Check Deck Beam
 │
-│       nds_beam_check | units: inch, pounds
+│    function: nds_beam_check | args: beam1 | units: inch, pounds
 └
 
 
@@ -741,14 +741,14 @@ deflection_ratio:  0.20
 Check strut D/C ratio with BeamChek 2023
  
           ----------------------------------------
-Fig. 1 - Strut Check 
+Fig. 1 - Screenshot: Strut Check 
           ----------------------------------------
 
  
  
 
 --------------------------------------------------------------------------------
-Connection Design | R Holland | v-1.0.0a11 | 2026-06-12 - 10:53AM
+Connection Design | R Holland | v-1.0.0a11 | 2026-06-12 - 11:07PM
 --------------------------------------------------------------------------------
 
 
@@ -758,12 +758,12 @@ Connection Design | R Holland | v-1.0.0a11 | 2026-06-12 - 10:53AM
 Use Simpson Strong Tie online selection tool.
  
           ----------------------------------------
-Fig. 1 - Option 1 | time: no time 
+Fig. 1 - Screenshot: Option 1 | time: no time 
           ----------------------------------------
 
  
           ----------------------------------------
-Fig. 2 - Option 2 | time: no time 
+Fig. 2 - Screenshot: Option 2 | time: no time 
           ----------------------------------------
 
  
@@ -775,12 +775,12 @@ Fig. 2 - Option 2 | time: no time
 Use AWC online connection tool.
  
           ----------------------------------------
-Fig. 3 - Top Rail - Corner Plate Input 
+Fig. 3 - Screenshot: Top Rail - Corner Plate Input 
           ----------------------------------------
 
  
           ----------------------------------------
-Fig. 4 - Top Rail - Corner Plate Capacity 
+Fig. 4 - Screenshot: Top Rail - Corner Plate Capacity 
           ----------------------------------------
 
  

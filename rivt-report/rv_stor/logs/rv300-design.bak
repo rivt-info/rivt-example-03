@@ -22,6 +22,8 @@ rv.I("""Geometry and Components | pdfpage
 
 rv.D("""Publish Doc 
 
+    | PUBLISH | Component Design | pdf
+
     _[[METADATA]] 
     [doc]
     authors = R Holland
@@ -55,6 +57,5 @@ rv.D("""Publish Doc
     doc_verbose = true; if false, minimum output during doc processing
     _[[END]]
 
-    | PUBLISH | Component Design | pdf
 
     """)

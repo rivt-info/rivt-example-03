@@ -1,13 +1,13 @@
-06-12 16:01  rv302-connect   INFO     Doc start
-06-12 16:01  rv302-connect   INFO     rivtlib version: 1.0.0a5
-06-12 16:01  rv302-connect   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv302-connect.bak
-06-12 16:01  rv302-connect   INFO     Strut to Tree Connection
-06-12 16:01  rv302-connect   INFO     SECTION 3.2 - type I
-06-12 16:01  rv302-connect   INFO     command : IMAGE
-06-12 16:01  rv302-connect   INFO     command : IMAGE
-06-12 16:01  rv302-connect   INFO     Top rail Corner | pdfpage
-06-12 16:01  rv302-connect   INFO     SECTION 3.2 - 2 - type I
-06-12 16:01  rv302-connect   INFO     command : IMAGE
-06-12 16:01  rv302-connect   INFO     command : IMAGE
-06-12 16:01  rv302-connect   INFO     SECTION : Publish Doc
-06-12 16:01  rv302-connect   INFO     block tag : METADATA]]
+06-12 23:07  rv302-connect   INFO     Doc start
+06-12 23:07  rv302-connect   INFO     rivtlib version: 1.0.0a5
+06-12 23:07  rv302-connect   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv302-connect.bak
+06-12 23:07  rv302-connect   INFO     Strut to Tree Connection
+06-12 23:07  rv302-connect   INFO     SECTION 3.2 - type I
+06-12 23:07  rv302-connect   INFO     command : IMAGE
+06-12 23:07  rv302-connect   INFO     command : IMAGE
+06-12 23:07  rv302-connect   INFO     Top rail Corner | pdfpage
+06-12 23:07  rv302-connect   INFO     SECTION 3.2 - 2 - type I
+06-12 23:07  rv302-connect   INFO     command : IMAGE
+06-12 23:07  rv302-connect   INFO     command : IMAGE
+06-12 23:07  rv302-connect   INFO     SECTION : Publish Doc
+06-12 23:07  rv302-connect   INFO     block tag : METADATA]]

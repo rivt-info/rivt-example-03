@@ -18,6 +18,8 @@ rv.I("""Analysis Programs
 
 rv.D("""Publish Doc
 
+    | PUBLISH | Analysis | pdf
+
     _[[METADATA]] 
     [doc]
     authors = R Holland
@@ -51,5 +53,5 @@ rv.D("""Publish Doc
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 
-    | PUBLISH | Analysis | pdf
+
     """)

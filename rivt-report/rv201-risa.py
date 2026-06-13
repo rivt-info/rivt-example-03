@@ -45,6 +45,8 @@ rv.I("""Top rail shear reactions - RISA model | pdfpage
 
 rv.D("""Publish Doc 
 
+    | PUBLISH | RISA Analysis | pdf
+
     _[[METADATA]] 
     [doc]
     authors = R Holland
@@ -78,5 +80,4 @@ rv.D("""Publish Doc
     auto_cfg = true ; if false, config files are not updated from rivt file
     _[[END]]
 
-    | PUBLISH | RISA Analysis | pdf
     """)

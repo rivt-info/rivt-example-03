@@ -46,7 +46,7 @@ rv.I("""Strut
 
     Check strut D/C ratio with BeamChek 2023
 
-    | IMAGE | rvsrc/img/bmck1.jpg | Strut Check, 80, num, not
+    | IMAGE | rvsrc/img/bmck1.jpg | Screenshot: Strut Check, 80, num, not
     
     """)
 

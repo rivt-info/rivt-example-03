@@ -19,7 +19,7 @@ Use Simpson Strong Tie online selection tool.
    :width: 100%
    :align: center
 
-   **Fig. 1** - Option 1   | time: no time 
+   **Fig. 1** - Screenshot: Option 1   | time: no time 
     
 
 
@@ -29,7 +29,7 @@ Use Simpson Strong Tie online selection tool.
    :width: 100%
    :align: center
 
-   **Fig. 2** - Option 2   | time: no time 
+   **Fig. 2** - Screenshot: Option 2   | time: no time 
     
 
 
@@ -59,7 +59,7 @@ Use AWC online connection tool.
    :width: 100%
    :align: center
 
-   **Fig. 3** - Top Rail - Corner Plate Input   
+   **Fig. 3** - Screenshot: Top Rail - Corner Plate Input   
     
 
 
@@ -69,7 +69,7 @@ Use AWC online connection tool.
    :width: 100%
    :align: center
 
-   **Fig. 4** - Top Rail - Corner Plate Capacity   
+   **Fig. 4** - Screenshot: Top Rail - Corner Plate Capacity   
     
 
 

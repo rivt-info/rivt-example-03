@@ -16,7 +16,7 @@ iniS = """
 ;------- report file name including the extension - pdf, html, txt
 ;----------------------------------------------------------------
 ;---
-rept_filename = rivt-treefort-report.html
+rept_filename = rivt-treefort-report.txt
 ;---
 ;----------------------------------------------------------------
 ;------- comma separated list of doc numbers to exclude eg. rv102, rv204

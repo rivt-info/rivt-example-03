@@ -29,3 +29,6 @@ written for each rivt file: Tree Fort
 >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-risa.py
 >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-risa.py
 >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-risa.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-risa.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-risa.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-risa.py
