@@ -1,19 +1,19 @@
-06-12 23:06  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv100-stdlds.py
+06-13 00:14  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv100-stdlds.py
 
-06-12 23:06  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+06-13 00:14  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
 
-06-12 23:06  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv102-loads.py
+06-13 00:15  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv102-loads.py
 
-06-12 23:06  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv200-programs.py
+06-13 00:15  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv200-programs.py
 
-06-12 23:06  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-risa.py
+06-13 00:15  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-risa.py
 
-06-12 23:07  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+06-13 00:15  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
 
-06-12 23:07  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv300-design.py
+06-13 00:15  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv300-design.py
 
-06-12 23:07  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
+06-13 00:15  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-members.py
 
-06-12 23:07  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv302-connect.py
+06-13 00:15  rivt-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv302-connect.py
 
-06-12 23:07  rivt-report-1   INFO     |||||||||| README report : Tree Fort
+06-13 00:15  rivt-report-1   INFO     |||||||||| README report : Tree Fort
