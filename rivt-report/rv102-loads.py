@@ -1,5 +1,6 @@
 import rivtlib.rvapi as rv
 
+# %% rv.I("""Load Combinations and Geometry 
 rv.I("""Load Combinations and Geometry 
 
 
@@ -17,10 +18,11 @@ rv.I("""Load Combinations and Geometry
     """)
 
 
+# %% rv.V("""Unit Loads 
 rv.V("""Unit Loads 
 
 
-    Unit weights imported from csv file created by AI. _[B]
+    Unit weights imported from csv file - table created by AI. _[B]
 
     | TABLE | rvsrc/data/df-wts.csv | Unit Weights - Doug Fir, 25, head, num 
 
@@ -28,16 +30,17 @@ rv.V("""Unit Loads
     Variables assigned by inline definitions. _[B]
 
     Member Nominal Loads and Properties _[T]
-    D_1 ==: 2.0 * plf | plf, klf, 2 | 2x6 planks DL         
-    D_2 ==: 2.6 * plf | plf, klf, 2 | 2x8 joists DL         
-    D_3 ==: 2.9 * plf | plf, klf, 2 | 4x4 posts and struts
-    E_1 ==: 29000 * ksi | ksi, MPA, 2 | modulus of elasticity
-    LL_1 ==: 40 * psf | psf, kPA, 2 | ASCE7-05 floor LL
-    HL_1 ==: 20 * psf | psf, kPA, 2 | ASCE7-05 HL
+    D_1 ==: 2.0 * p_ft | p_ft, kN_m, 2 | 2x6 planks DL         
+    D_2 ==: 2.6 * p_ft | p_ft, kN_m, 2 | 2x8 joists DL         
+    D_3 ==: 2.9 * p_ft | p_ft, kN_m, 2 | 4x4 posts and struts
+    E_1 ==: 29000 * k_si | k_si, MPA, 2 | modulus of elasticity
+    LL_1 ==: 40 * p_sf | p_sf, kPA, 2 | ASCE7-05 floor LL
+    HL_1 ==: 20 * p_sf | p_sf, kPA, 2 | ASCE7-05 HL
     
     
     """)
 
+# %% rv.D("""Publish Doc
 rv.D("""Publish Doc
 
     _[[METADATA]] 

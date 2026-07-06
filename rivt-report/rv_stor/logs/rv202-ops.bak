@@ -2,10 +2,10 @@ import rivtlib.rvapi as rv
 
 rv.I("""OpenSees Analysis
 
-    This section analyzes the period of the tree and tree fort system. The
+    This section analyzes the period of the tree + tree fort system. The
     OpenSees model is schematically shown below:
 
-    _[[MARKUP]]  literal 
+    _[[TEXT]]  text
             y
             ^
             |
@@ -198,7 +198,7 @@ rv.I("""Model plots and output | pdfpage
 
 rv.D("""Publish Doc
 
-    | PUBLISH | Open Sees Analysis | pdf
+    | PUBLISH | Open Sees Analysis | html
     
     _[[METADATA]] 
     [doc]

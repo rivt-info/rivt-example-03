@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-Connection Design | R Holland | v-1.0.0a11 | 2026-06-11 - 07:19PM
+| rivt | Connection Design | R Holland | v-1.0.0a11 | 2026-06-26 - 11:48PM
 --------------------------------------------------------------------------------
 
 
@@ -10,12 +10,12 @@ Connection Design | R Holland | v-1.0.0a11 | 2026-06-11 - 07:19PM
 Use Simpson Strong Tie online selection tool.
  
           ----------------------------------------
-Fig. 1 - Option 1 [file: rvsrc/img/ss12.jpg | time: no time  ]
+Fig. 1 - Screenshot: Option 1 [file: rvsrc/img/ss12.jpg | time: no time  ]
           ----------------------------------------
 
  
           ----------------------------------------
-Fig. 2 - Option 2 [file: rvsrc/img/ss14.jpg | time: no time  ]
+Fig. 2 - Screenshot: Option 2 [file: rvsrc/img/ss14.jpg | time: no time  ]
           ----------------------------------------
 
  
@@ -27,12 +27,12 @@ Fig. 2 - Option 2 [file: rvsrc/img/ss14.jpg | time: no time  ]
 Use AWC online connection tool.
  
           ----------------------------------------
-Fig. 3 - Top Rail - Corner Plate Input [file: rvsrc/img/awc4.jpg  ]
+Fig. 3 - Screenshot: Top Rail - Corner Plate Input [file: rvsrc/img/awc4.jpg  ]
           ----------------------------------------
 
  
           ----------------------------------------
-Fig. 4 - Top Rail - Corner Plate Capacity [file: rvsrc/img/awc5.jpg  ]
+Fig. 4 - Screenshot: Top Rail - Corner Plate Capacity [file: rvsrc/img/awc5.jpg  ]
           ----------------------------------------
 
  

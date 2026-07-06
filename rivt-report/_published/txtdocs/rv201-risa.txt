@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-RISA Analysis | R Holland | v-1.0.0a12 | 2026-06-13 - 12:37PM
+RISA Analysis | R Holland | v-1.0.0a12 | 2026-06-26 - 11:35PM
 --------------------------------------------------------------------------------
 
 
@@ -34,20 +34,19 @@ lbs, both applied horizontally to the top rail. Intermediate rails,
 balusters, and infill panels must separately withstand a concentrated load
 of 50 lbs.
  
-  =======  <-- Top Rail 
-     |     <-- Lateral Load (P) 
-     |  
+  =======  <-- Top Rail
+     |     <-- Lateral Load (P)
      | 
-     | 
-     |  Height (h) 
-     | 
-     | 
-     | 
-     | 
-===========  <-- Fixed Support / Deck Surface 
- 
- 
-Structural Schematic of Railing and Loads Drawn by AI 
+     |
+     |
+     |  Height (h)
+     |
+     |
+     |
+     |
+===========  <-- Fixed Support / Deck Surface
+
+Structural Schematic of Railing and Loads Drawn by AI
 
  
  

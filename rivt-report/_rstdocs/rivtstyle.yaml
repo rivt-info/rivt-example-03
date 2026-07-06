@@ -13,7 +13,7 @@ fontsAlias:
   fontSansBoldItalic: DejaVuSans-BoldOblique
   fontSansItalic: DejaVuSans-Oblique
 pageSetup:
-  firstTemplate: noHead
+  firstTemplate: coverPage
   height: null
   margin-bottom: 4mm
   margin-gutter: 1mm
@@ -67,8 +67,21 @@ styles:
     strike: false
     textColor: black
     wordWrap: null
-    linkUnderline: true
+  ref:
+    fontName: fontSansBold
+    textColor: blue
+  url:
+    parent: bodytext
+    textColor: blue
+  internal_link:
+    parent: bodytext
+    textColor: blue
     linkColor: blue
+    fontName: fontSansBold
+  link:
+    linkUnderline: false
+    linkColor: blue
+    textColor: blue
   tableofcontents:
     parent: normal
   big-text:
@@ -107,11 +120,11 @@ styles:
     leftIndent: 0
     parent: literal
     fontName: fontMonoBold
-  compgreen:
+  rolgreen:
     textColor: green
     alignment: TA_RIGHT
     fontName: fontSansBold
-  compred:
+  rolred:
     textColor: red
     alignment: TA_RIGHT
     fontName: fontSansBold
@@ -271,8 +284,8 @@ styles:
     spaceBefore: 12
   table:
     alignment: TA_LEFT
-    spaceBefore: 4
-    spaceAfter: 10
+    spaceBefore: 1
+    spaceAfter: 1
     borderPadding: 5
     leftPadding: 6
     rightPadding: 6
@@ -304,7 +317,7 @@ styles:
     borderPadding: 0
     backColor: "#c5d1c5"
     borderColor: darkgray
-    fontName: fontSansBold
+    fontName: fontMonoBold
   tip-heading:
     parent: admonition-heading
   title:
@@ -320,50 +333,54 @@ styles:
   toc:
     parent: normal
     fontSize: 100%
+    leftIndent: 10
   toc1:
     fontName: fontSansBold
-    parent: toc
-  toc10:
-    leftIndent: 100
-    parent: toc
-  toc11:
-    leftIndent: 100
-    parent: toc
-  toc12:
-    leftIndent: 100
-    parent: toc
-  toc13:
-    leftIndent: 100
-    parent: toc
-  toc14:
-    leftIndent: 100
-    parent: toc
-  toc15:
-    leftIndent: 100
+    leftIndent: 0
     parent: toc
   toc2:
-    leftIndent: 20
+    fontName: fontSansBold
+    leftIndent: 0
     parent: toc
   toc3:
-    leftIndent: 40
+    fontName: fontSansBold
+    leftIndent: 0
     parent: toc
   toc4:
-    leftIndent: 60
+    leftIndent: 0
     parent: toc
   toc5:
-    leftIndent: 80
+    leftIndent: 0
     parent: toc
   toc6:
-    leftIndent: 100
+    leftIndent: 0
     parent: toc
   toc7:
-    leftIndent: 100
+    leftIndent: 0
     parent: toc
   toc8:
-    leftIndent: 100
+    leftIndent: 0
     parent: toc
   toc9:
-    leftIndent: 100
+    leftIndent: 0
+    parent: toc
+  toc10:
+    leftIndent: 0
+    parent: toc
+  toc11:
+    leftIndent: 0
+    parent: toc
+  toc12:
+    leftIndent: 0
+    parent: toc
+  toc13:
+    leftIndent: 0
+    parent: toc
+  toc14:
+    leftIndent: 0
+    parent: toc
+  toc15:
+    leftIndent: 0
     parent: toc
   topic-title:
     parent: heading3

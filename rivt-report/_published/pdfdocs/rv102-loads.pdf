@@ -26,7 +26,11 @@ endobj
 5 0 obj
 <<
 /Annots [ 2 0 R 3 0 R ] /Contents 28 0 R /MediaBox [ 0 0 612 792 ] /Parent 27 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
+/ExtGState <<
+/gRLs0 <<
+/CA 0
+>>
+>> /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
 /FormXob.3cff7741ddae0e7620eba4bc59927e53 4 0 R
 >>
 >> /Rotate 0 
@@ -54,7 +58,11 @@ endobj
 8 0 obj
 <<
 /Contents 29 0 R /MediaBox [ 0 0 612 792 ] /Parent 27 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
+/ExtGState <<
+/gRLs0 <<
+/CA 0
+>>
+>> /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
 /FormXob.3cff7741ddae0e7620eba4bc59927e53 4 0 R /FormXob.6cacfa51a4dac070c2d1acebb5b94616 6 0 R
 >>
 >> /Rotate 0 /Trans <<
@@ -66,7 +74,11 @@ endobj
 9 0 obj
 <<
 /Contents 30 0 R /MediaBox [ 0 0 612 792 ] /Parent 27 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
+/ExtGState <<
+/gRLs0 <<
+/CA 0
+>>
+>> /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] /XObject <<
 /FormXob.3cff7741ddae0e7620eba4bc59927e53 4 0 R
 >>
 >> /Rotate 0 /Trans <<
@@ -1693,7 +1705,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author () /CreationDate (D:20260612225701-07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260612225701-07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author () /CreationDate (D:20260626231459-07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260626231459-07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
@@ -1719,7 +1731,7 @@ endobj
 endobj
 28 0 obj
 <<
-/Length 1604
+/Length 1614
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -1791,7 +1803,7 @@ q
 q
 1 0 0 1 6 3 cm
 q
-BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (2026-06-12       ) Tj /F1+0 9 Tf 12 TL (|) Tj /F2+0 9 Tf 12 TL (       R Holland) Tj T* ET
+BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (2026-06-26       ) Tj /F1+0 9 Tf 12 TL (|) Tj /F2+0 9 Tf 12 TL (       R Holland) Tj T* ET
 Q
 Q
 q
@@ -1814,7 +1826,8 @@ Q
 q
 1 J
 1 j
-1 1 1 RG
+0 0 0 RG
+/gRLs0 gs
 .25 w
 n 0 18 m 524.126 18 l S
 n 0 0 m 524.126 0 l S
@@ -1831,7 +1844,7 @@ endstream
 endobj
 29 0 obj
 <<
-/Length 8143
+/Length 8171
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -1986,7 +1999,7 @@ q
 1 0 0 1 51.35433 210.7053 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F1+0 9 Tf 12 TL (Unit weights imported from csv file created by AI.) Tj T* ET
+BT 1 0 0 1 0 3 Tm /F1+0 9 Tf 12 TL (Unit weights imported from csv file - table created by AI.) Tj T* ET
 Q
 Q
 q
@@ -2346,7 +2359,8 @@ Q
 q
 1 J
 1 j
-1 1 1 RG
+0 0 0 RG
+/gRLs0 gs
 .25 w
 n 0 25 m 524.126 25 l S
 n 0 0 m 524.126 0 l S
@@ -2368,7 +2382,7 @@ q
 q
 1 0 0 1 6 3 cm
 q
-BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (2026-06-12       ) Tj /F1+0 9 Tf 12 TL (|) Tj /F2+0 9 Tf 12 TL (       R Holland) Tj T* ET
+BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (2026-06-26       ) Tj /F1+0 9 Tf 12 TL (|) Tj /F2+0 9 Tf 12 TL (       R Holland) Tj T* ET
 Q
 Q
 q
@@ -2391,7 +2405,8 @@ Q
 q
 1 J
 1 j
-1 1 1 RG
+0 0 0 RG
+/gRLs0 gs
 .25 w
 n 0 18 m 524.126 18 l S
 n 0 0 m 524.126 0 l S
@@ -2408,7 +2423,7 @@ endstream
 endobj
 30 0 obj
 <<
-/Length 8663
+/Length 8687
 >>
 stream
 1 0 0 1 0 0 cm 
@@ -2708,7 +2723,7 @@ q
 1 0 0 1 6 111 cm
 q
 .772549 .819608 .772549 rg
-n 0 0 79.45107 12 re f*
+n 0 0 77.84666 12 re f*
 Q
 q
 0 0 0 rg
@@ -2716,10 +2731,10 @@ BT 1 0 0 1 0 3 Tm /F1+0 9 Tf 12 TL (variable) Tj T* ET
 Q
 Q
 q
-1 0 0 1 97.45107 111 cm
+1 0 0 1 95.84666 111 cm
 q
 .772549 .819608 .772549 rg
-n 0 0 97.74128 12 re f*
+n 0 0 104.8007 12 re f*
 Q
 q
 0 0 0 rg
@@ -2727,10 +2742,10 @@ BT 1 0 0 1 0 3 Tm /F1+0 9 Tf 12 TL (value) Tj T* ET
 Q
 Q
 q
-1 0 0 1 207.1924 111 cm
+1 0 0 1 212.6473 111 cm
 q
 .772549 .819608 .772549 rg
-n 0 0 106.8864 12 re f*
+n 0 0 104.8007 12 re f*
 Q
 q
 0 0 0 rg
@@ -2738,10 +2753,10 @@ BT 1 0 0 1 0 3 Tm /F1+0 9 Tf 12 TL ([value]) Tj T* ET
 Q
 Q
 q
-1 0 0 1 326.0787 111 cm
+1 0 0 1 329.448 111 cm
 q
 .772549 .819608 .772549 rg
-n 0 0 180.0472 12 re f*
+n 0 0 176.678 12 re f*
 Q
 q
 0 0 0 rg
@@ -2757,21 +2772,21 @@ BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (D_1) Tj T* ET
 Q
 Q
 q
-1 0 0 1 97.45107 93 cm
+1 0 0 1 95.84666 93 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (2.00 plf) Tj T* ET
+BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (2.00 lb_ft) Tj T* ET
 Q
 Q
 q
-1 0 0 1 207.1924 93 cm
+1 0 0 1 212.6473 93 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (0.00 klf) Tj T* ET
+BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (0.03 kN_m) Tj T* ET
 Q
 Q
 q
-1 0 0 1 326.0787 93 cm
+1 0 0 1 329.448 93 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (2x6 planks DL) Tj T* ET
@@ -2785,21 +2800,21 @@ BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (D_2) Tj T* ET
 Q
 Q
 q
-1 0 0 1 97.45107 75 cm
+1 0 0 1 95.84666 75 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (2.60 plf) Tj T* ET
+BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (2.60 lb_ft) Tj T* ET
 Q
 Q
 q
-1 0 0 1 207.1924 75 cm
+1 0 0 1 212.6473 75 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (0.00 klf) Tj T* ET
+BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (0.04 kN_m) Tj T* ET
 Q
 Q
 q
-1 0 0 1 326.0787 75 cm
+1 0 0 1 329.448 75 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (2x8 joists DL) Tj T* ET
@@ -2813,21 +2828,21 @@ BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (D_3) Tj T* ET
 Q
 Q
 q
-1 0 0 1 97.45107 57 cm
+1 0 0 1 95.84666 57 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (2.90 plf) Tj T* ET
+BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (2.90 lb_ft) Tj T* ET
 Q
 Q
 q
-1 0 0 1 207.1924 57 cm
+1 0 0 1 212.6473 57 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (0.00 klf) Tj T* ET
+BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (0.04 kN_m) Tj T* ET
 Q
 Q
 q
-1 0 0 1 326.0787 57 cm
+1 0 0 1 329.448 57 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (4x4 posts and struts) Tj T* ET
@@ -2841,21 +2856,21 @@ BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (E_1) Tj T* ET
 Q
 Q
 q
-1 0 0 1 97.45107 39 cm
+1 0 0 1 95.84666 39 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (29000.00 ksi) Tj T* ET
+BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (29000.00 k_si) Tj T* ET
 Q
 Q
 q
-1 0 0 1 207.1924 39 cm
+1 0 0 1 212.6473 39 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (199947.96 MPA) Tj T* ET
 Q
 Q
 q
-1 0 0 1 326.0787 39 cm
+1 0 0 1 329.448 39 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (modulus of elasticity) Tj T* ET
@@ -2869,21 +2884,21 @@ BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (LL_1) Tj T* ET
 Q
 Q
 q
-1 0 0 1 97.45107 21 cm
+1 0 0 1 95.84666 21 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (40.00 psf) Tj T* ET
+BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (40.00 p_sf) Tj T* ET
 Q
 Q
 q
-1 0 0 1 207.1924 21 cm
+1 0 0 1 212.6473 21 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (1.92 kPA) Tj T* ET
 Q
 Q
 q
-1 0 0 1 326.0787 21 cm
+1 0 0 1 329.448 21 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (ASCE7-05 floor LL) Tj T* ET
@@ -2897,21 +2912,21 @@ BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (HL_1) Tj T* ET
 Q
 Q
 q
-1 0 0 1 97.45107 3 cm
+1 0 0 1 95.84666 3 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (20.00 psf) Tj T* ET
+BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (20.00 p_sf) Tj T* ET
 Q
 Q
 q
-1 0 0 1 207.1924 3 cm
+1 0 0 1 212.6473 3 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (0.96 kPA) Tj T* ET
 Q
 Q
 q
-1 0 0 1 326.0787 3 cm
+1 0 0 1 329.448 3 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 3 Tm /F2+0 9 Tf 12 TL (ASCE7-05 HL) Tj T* ET
@@ -2979,7 +2994,8 @@ Q
 q
 1 J
 1 j
-1 1 1 RG
+0 0 0 RG
+/gRLs0 gs
 .25 w
 n 0 25 m 524.126 25 l S
 n 0 0 m 524.126 0 l S
@@ -3001,7 +3017,7 @@ q
 q
 1 0 0 1 6 3 cm
 q
-BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (2026-06-12       ) Tj /F1+0 9 Tf 12 TL (|) Tj /F2+0 9 Tf 12 TL (       R Holland) Tj T* ET
+BT 1 0 0 1 0 3 Tm 12 TL 0 0 0 rg /F2+0 9 Tf 12 TL (2026-06-26       ) Tj /F1+0 9 Tf 12 TL (|) Tj /F2+0 9 Tf 12 TL (       R Holland) Tj T* ET
 Q
 Q
 q
@@ -3024,7 +3040,8 @@ Q
 q
 1 J
 1 j
-1 1 1 RG
+0 0 0 RG
+/gRLs0 gs
 .25 w
 n 0 18 m 524.126 18 l S
 n 0 0 m 524.126 0 l S
@@ -3067,39 +3084,39 @@ xref
 0000000287 00000 n 
 0000000453 00000 n 
 0000006108 00000 n 
-0000006390 00000 n 
-0000034945 00000 n 
-0000035535 00000 n 
-0000035841 00000 n 
-0000036099 00000 n 
-0000038048 00000 n 
-0000073244 00000 n 
-0000073514 00000 n 
-0000074868 00000 n 
-0000076802 00000 n 
-0000112334 00000 n 
-0000112593 00000 n 
-0000113932 00000 n 
-0000115878 00000 n 
-0000141842 00000 n 
-0000142105 00000 n 
-0000143474 00000 n 
-0000143580 00000 n 
-0000143835 00000 n 
-0000143909 00000 n 
-0000144069 00000 n 
+0000006426 00000 n 
+0000034981 00000 n 
+0000035571 00000 n 
+0000035913 00000 n 
+0000036207 00000 n 
+0000038156 00000 n 
+0000073352 00000 n 
+0000073622 00000 n 
+0000074976 00000 n 
+0000076910 00000 n 
+0000112442 00000 n 
+0000112701 00000 n 
+0000114040 00000 n 
+0000115986 00000 n 
+0000141950 00000 n 
+0000142213 00000 n 
+0000143582 00000 n 
+0000143688 00000 n 
+0000143943 00000 n 
+0000144017 00000 n 
 0000144177 00000 n 
-0000144249 00000 n 
-0000145905 00000 n 
-0000154100 00000 n 
-0000162815 00000 n 
-0000162874 00000 n 
-0000162908 00000 n 
-0000162942 00000 n 
+0000144285 00000 n 
+0000144357 00000 n 
+0000146023 00000 n 
+0000154246 00000 n 
+0000162985 00000 n 
+0000163044 00000 n 
+0000163078 00000 n 
+0000163112 00000 n 
 trailer
 <<
 /ID 
-[<2b8d916b1bab7e7566b968f9f50c14f6><2b8d916b1bab7e7566b968f9f50c14f6>]
+[<2a61c457d195dbc458173d16231db5bf><2a61c457d195dbc458173d16231db5bf>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 23 0 R
@@ -3107,5 +3124,5 @@ trailer
 /Size 35
 >>
 startxref
-162976
+163146
 %%EOF

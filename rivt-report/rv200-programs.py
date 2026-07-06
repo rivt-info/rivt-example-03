@@ -1,6 +1,7 @@
-# %% rv.V("""Loads and Geometry
+
 import rivtlib.rvapi as rv
 
+# %% rv.I("""Analysis Programs
 rv.I("""Analysis Programs
     
     This report division includes RISA and OpenSees analysis and illustrates
@@ -16,6 +17,7 @@ rv.I("""Analysis Programs
     
     """)
 
+# %% rv.D("""Publish Doc
 rv.D("""Publish Doc
 
     | PUBLISH | Analysis | pdf

@@ -1,6 +1,6 @@
 
 ================================================================================
-Tree Fort | R Holland | 1.0.0a12 | 2026-06-13 - 12:37PM
+| rivt report | Tree Fort | R Holland | 1.0.0a12 | 2026-06-26 - 11:35PM
 ================================================================================
 
 
@@ -19,7 +19,7 @@ Table of Contents
 
 
 --------------------------------------------------------------------------------
-Standards and Loads | R Holland | v-1.0.0a11 | 2026-06-13 - 12:37PM
+Standards and Loads | R Holland | v-1.0.0a11 | 2026-06-26 - 11:34PM
 --------------------------------------------------------------------------------
 
 
@@ -146,7 +146,7 @@ WP            Working Point
  
 
 --------------------------------------------------------------------------------
-Building Standards | R Holland | v-1.0.0a11 | 2026-06-13 - 12:37PM
+Building Standards | R Holland | v-1.0.0a11 | 2026-06-26 - 11:34PM
 --------------------------------------------------------------------------------
 
 
@@ -264,7 +264,7 @@ Abbreviation        Definition
  
 
 --------------------------------------------------------------------------------
-Loads | R Holland | v-1.0.0a11 | 2026-06-13 - 12:37PM
+Loads | R Holland | v-1.0.0a11 | 2026-06-26 - 11:34PM
 --------------------------------------------------------------------------------
 
 
@@ -293,7 +293,7 @@ Equation No.    Load Combination
 --------------------------------------------------------------------------------
  
  
-Unit weights imported from csv file created by AI.
+Unit weights imported from csv file - table created by AI.
 
 
  
@@ -322,22 +322,22 @@ Variables assigned by inline definitions.
  
 
 Table 3: Member Nominal Loads and Properties
-==========  ============  =============  =====================
-variable    value         [value]        description
-==========  ============  =============  =====================
-D_1         2.00 plf      0.00 klf       2x6 planks DL
-D_2         2.60 plf      0.00 klf       2x8 joists DL
-D_3         2.90 plf      0.00 klf       4x4 posts and struts
-E_1         29000.00 ksi  199947.96 MPA  modulus of elasticity
-LL_1        40.00 psf     1.92 kPA       ASCE7-05 floor LL
-HL_1        20.00 psf     0.96 kPA       ASCE7-05 HL
-==========  ============  =============  =====================
+==========  =============  =============  =====================
+variable    value          [value]        description
+==========  =============  =============  =====================
+D_1         2.00 lb_ft     0.03 kN_m      2x6 planks DL
+D_2         2.60 lb_ft     0.04 kN_m      2x8 joists DL
+D_3         2.90 lb_ft     0.04 kN_m      4x4 posts and struts
+E_1         29000.00 k_si  199947.96 MPA  modulus of elasticity
+LL_1        40.00 p_sf     1.92 kPA       ASCE7-05 floor LL
+HL_1        20.00 p_sf     0.96 kPA       ASCE7-05 HL
+==========  =============  =============  =====================
  
  
  
 
 --------------------------------------------------------------------------------
-Analysis | R Holland | v-1.0.0a12 | 2026-06-13 - 12:37PM
+Analysis | R Holland | v-1.0.0a12 | 2026-06-26 - 11:34PM
 --------------------------------------------------------------------------------
 
 
@@ -361,7 +361,7 @@ Fig. 1 - Report Flow Chart
  
 
 --------------------------------------------------------------------------------
-RISA Analysis | R Holland | v-1.0.0a12 | 2026-06-13 - 12:37PM
+RISA Analysis | R Holland | v-1.0.0a12 | 2026-06-26 - 11:35PM
 --------------------------------------------------------------------------------
 
 
@@ -395,20 +395,19 @@ lbs, both applied horizontally to the top rail. Intermediate rails,
 balusters, and infill panels must separately withstand a concentrated load
 of 50 lbs.
  
-  =======  <-- Top Rail 
-     |     <-- Lateral Load (P) 
-     |  
+  =======  <-- Top Rail
+     |     <-- Lateral Load (P)
      | 
-     | 
-     |  Height (h) 
-     | 
-     | 
-     | 
-     | 
-===========  <-- Fixed Support / Deck Surface 
- 
- 
-Structural Schematic of Railing and Loads Drawn by AI 
+     |
+     |
+     |  Height (h)
+     |
+     |
+     |
+     |
+===========  <-- Fixed Support / Deck Surface
+
+Structural Schematic of Railing and Loads Drawn by AI
 
  
  
@@ -420,33 +419,32 @@ Fig. 3 - Rail Lateral Forces
  
 
 --------------------------------------------------------------------------------
-Open Sees Analysis | R Holland | v-1.0.0a12 | 2026-06-13 - 12:37PM
+Open Sees Analysis | R Holland | v-1.0.0a12 | 2026-06-26 - 11:35PM
 --------------------------------------------------------------------------------
 
 
 2.2 | OpenSees Analysis
 ================================================================================
  
-This section analyzes the period of the tree and tree fort system. The
+This section analyzes the period of the tree + tree fort system. The
 OpenSees model is schematically shown below:
  
-        y 
-        ^ 
-        | 
-    m2  o  Node 3 (Branches) 
-        | 
-    k2  |   Spring 2 (upper trunk) 
-        | 
-    m1  o  Node 2 (Tree Fort) 
-        | 
-    k1  |   Spring 1 (lower trunk) 
-        | 
-        o  Node 1 (Fixed Base) 
-    ----------- 
-    (Ground) 
- 
- 
-AI schematic model of tree + tree-fort system 
+        y
+        ^
+        |
+    m2  o  Node 3 (Branches)
+        |
+    k2  |   Spring 2 (upper trunk)
+        |
+    m1  o  Node 2 (Tree Fort)
+        |
+    k1  |   Spring 1 (lower trunk)
+        |
+        o  Node 1 (Fixed Base)
+    -----------
+    (Ground)
+
+AI schematic model of tree + tree-fort system
 
  
  
@@ -471,113 +469,6 @@ trk2        2100     2100       upper tree trunk stiffness, kN/cm
  
 Model Input
  
-
-
-import openseespy.opensees as ops
-import numpy as np
-import math
-import matplotlib.pyplot as plt
-import opsvis as opsv
-# ---------------------------------------------------------------------
-# 1. Model Initialization
-# ---------------------------------------------------------------------
-ops.wipe()
-ops.model("BasicBuilder", "-ndm", 2, "-ndf", 2)
-
-# ---------------------------------------------------------------------
-# 2. Define Parameters
-# ---------------------------------------------------------------------
-# Mass values (e.g., in tons)
-m1 = 1.5
-m2 = 3.5
-
-# Stiffness values (e.g., in kN/m)
-k1 = 1100.0
-k2 = 2100.0
-
-# ---------------------------------------------------------------------
-# 3. Create Nodes
-# ---------------------------------------------------------------------
-# Base node (fixed)
-ops.node(1, 0.0, 0.0)
-
-# Node 1
-ops.node(2, 0.0, 2.0)
-
-# Node 2
-ops.node(3, 0.0, 4.0)
-
-# Fix the base node in both X and Y directions
-ops.fix(1, 1, 1)
-# Restrain vertical (Y) displacement and rotation at mass nodes
-# to represent a pure 2D shear/lateral lollipop system
-ops.fix(2, 0, 1)  # Free in X, Fixed in Y
-ops.fix(3, 0, 1)  # Free in X, Fixed in Y
-# ---------------------------------------------------------------------
-# 4. Assign Masses
-# ---------------------------------------------------------------------
-
-ops.mass(2, m1, 0.0)
-ops.mass(3, m2, 0.0)
-
-# ---------------------------------------------------------------------
-# 5. Define Elements
-# ---------------------------------------------------------------------
-# Use elastic truss elements to represent the lateral springs
-# Assign high axial stiffness (E * A) and 0.0 length
-EA = 1e8
-
-# Spring 1 between Node 1 and Node 2
-ops.uniaxialMaterial("Elastic", 1, 1100.0)
-ops.element("Truss", 1, 1, 2, EA, 1)
-
-# Spring 2 between Node 2 and Node 3
-ops.uniaxialMaterial("Elastic", 2, 2100.0)
-ops.element("Truss", 2, 2, 3, EA, 2)
-
-# ---------------------------------------------------------------------
-# 6. Eigenvalue Analysis & Results Output
-# ---------------------------------------------------------------------
-num_modes = 1
-eigenvalues = ops.eigen(num_modes)
-
-periods = []
-frequencies = []
-outL = []
-for i in range(num_modes):
-    lamb = eigenvalues[i]
-    omega = math.sqrt(lamb)
-    freq = omega / (2 * math.pi)
-    period = 2 * math.pi / omega
-    periods.append(period)
-    frequencies.append(freq)
-    resS = f'Mode {i + 1}: Period = {period:.4f} s | Frequency = {freq:.4f} Hz'
-    outL.append(resS)
-outS = chr(10).join(item for item in outL)
-with open("output.txt", 'w') as f1:
-    f1.write(outS)
-print("text output written")
-# ---------------------------------------------------------------------
-# 7. Model Visualization
-# ---------------------------------------------------------------------
-
-# Plot the defined model to check geometry (this is an axes mdoel)
-mod1 = opsv.plot_model()
-fig1 = mod1.get_figure()
-plt.title("2-DOF Lollipop Model Geometry")
-fig1.savefig("figure1.png", dpi=200)
-print("figure 1 written")
-# interactive display
-# plt.show(block=False)
-
-# Plot the mode shape for the first mode (this is a figure)
-fig2 = opsv.plot_mode_shape(1, 2.0)  # Scaling factor of 2.0 for visibility
-plt.title("Mode Shape 1")
-plt.savefig("figure2.png", dpi=200)
-print("figure 2 written")
-# plt.show()
-
-
  
  
 
@@ -600,14 +491,11 @@ Model Output
 
 
  
-
-Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
-
  
  
 
 --------------------------------------------------------------------------------
-Component Design | R Holland | v-1.0.0a12 | 2026-06-13 - 12:37PM
+Component Design | R Holland | v-1.0.0a12 | 2026-06-26 - 11:35PM
 --------------------------------------------------------------------------------
 
 
@@ -642,7 +530,7 @@ Fig. 3 - Dimensions
  
 
 --------------------------------------------------------------------------------
-Member Design | R Holland | v-1.0.0a12 | 2026-06-13 - 12:37PM
+Member Design | R Holland | v-1.0.0a12 | 2026-06-26 - 11:35PM
 --------------------------------------------------------------------------------
 
 
@@ -655,22 +543,21 @@ Import deck loads and functions.
  
 
 Table 1: Load values from rv102-loads.py (rv_stor/v102-2.csv)
-==========  ============  =============  =====================
-variable    value         [value]        description
-==========  ============  =============  =====================
-D_1         2.00 plf      0.00 klf       2x6 planks DL
-D_2         2.60 plf      0.00 klf       2x8 joists DL
-D_3         2.90 plf      0.00 klf       4x4 posts and struts
-E_1         29000.00 ksi  199947.96 MPA  modulus of elasticity
-LL_1        40.00 psf     1.92 kPA       ASCE7-05 floor LL
-HL_1        20.00 psf     0.96 kPA       ASCE7-05 HL
-==========  ============  =============  =====================
+==========  =============  =============  =====================
+variable    value          [value]        description
+==========  =============  =============  =====================
+D_1         2.00 lb_ft     0.03 kN_m      2x6 planks DL
+D_2         2.60 lb_ft     0.04 kN_m      2x8 joists DL
+D_3         2.90 lb_ft     0.04 kN_m      4x4 posts and struts
+E_1         29000.00 k_si  199947.96 MPA  modulus of elasticity
+LL_1        40.00 p_sf     1.92 kPA       ASCE7-05 floor LL
+HL_1        20.00 p_sf     0.96 kPA       ASCE7-05 HL
+==========  =============  =============  =====================
 
  
  
 
-Table 2: Import Functions (rvsrc/scripts/checks.py)
-
+Table 2: (from file)
 =========================  ========================================
 Function                   Docstring
 =========================  ========================================
@@ -689,21 +576,21 @@ Design properties as dictionary for checking function nds_beam_chk
  
     Function Arguments Dictionary : beam1 (units: inch, pounds)
     ===========================================================================
-    ln_1 = 4*12.  # beam span 
-    w_1 = 45*.5/12  # uniform linear load  
-    b_1 = 5.5  # beam width 
-    d_1 = 1.5  # beam depth 
-    E_1 = 1.5*(10**6)  # modulus of elasticity 
-    F_b = 1000 # allowable bending stress 
-    C_D = 1.0  # load duration factor 
-    C_M = 0.85 # wet service factor 
-    C_F = 1.0  # size factor 
-    C_t = 1.0  # temperature factor 
-    C_i = 0.8  # incising factor 
-    C_r = 1.0  # repetitive member factor 
-    C_c = 1.0  # curvature factor 
-    C_L = 1.0  # beam stability factor 
-    C_b = 1.0  # bearing area factor 
+    ln_1 = 4*12.  # beam span
+    w_1 = 45*.5/12  # uniform linear load 
+    b_1 = 5.5  # beam width
+    d_1 = 1.5  # beam depth
+    E_1 = 1.5*(10**6)  # modulus of elasticity
+    F_b = 1000 # allowable bending stress
+    C_D = 1.0  # load duration factor
+    C_M = 0.85 # wet service factor
+    C_F = 1.0  # size factor
+    C_t = 1.0  # temperature factor
+    C_i = 0.8  # incising factor
+    C_r = 1.0  # repetitive member factor
+    C_c = 1.0  # curvature factor
+    C_L = 1.0  # beam stability factor
+    C_b = 1.0  # bearing area factor
     deflect_limit = 240.0 # max allowable deflection ln_1/deflect_limit
     ===========================================================================
 
@@ -714,7 +601,7 @@ Design Results
 
 
  
-┌  Eq-1 | Check Deck Beam
+┌  Eq-1 | Check Deck Beam Function
 │
 │    function: nds_beam_check | args: beam1 | units: inch, pounds
 └
@@ -748,7 +635,7 @@ Fig. 1 - Screenshot: Strut Check
  
 
 --------------------------------------------------------------------------------
-Connection Design | R Holland | v-1.0.0a11 | 2026-06-13 - 12:37PM
+Connection Design | R Holland | v-1.0.0a11 | 2026-06-26 - 11:35PM
 --------------------------------------------------------------------------------
 
 

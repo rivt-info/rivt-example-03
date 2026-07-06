@@ -1,5 +1,6 @@
 import rivtlib.rvapi as rv
 
+# %% rv.I("""Applied deck forces - RISA model 
 rv.I("""Applied deck forces - RISA model 
 
 
@@ -7,12 +8,14 @@ rv.I("""Applied deck forces - RISA model
 
     """)
 
+# %% rv.I("""Resultant axial forces - RISA model | pdfpage
 rv.I("""Resultant axial forces - RISA model | pdfpage
 
     | IMAGE | rvsrc/img/risa6.png | Strut Axial Forces, 70, num, not
 
     """)
 
+# %% rv.I("""Top rail shear reactions - RISA model | pdfpage
 rv.I("""Top rail shear reactions - RISA model | pdfpage
 
     Under the California Building Code (CBC), handrails and guards (railings)
@@ -21,7 +24,7 @@ rv.I("""Top rail shear reactions - RISA model | pdfpage
     balusters, and infill panels must separately withstand a concentrated load
     of 50 lbs.
 
-    _[[MARKUP]] literal
+    _[[TEXT]] text
       =======  <-- Top Rail
          |     <-- Lateral Load (P)
          | 
@@ -43,9 +46,10 @@ rv.I("""Top rail shear reactions - RISA model | pdfpage
     """)
 
 
+# %% rv.D("""Publish Doc 
 rv.D("""Publish Doc 
 
-    | PUBLISH | RISA Analysis | pdf
+    | PUBLISH | RISA Analysis | txt
 
     _[[METADATA]] 
     [doc]

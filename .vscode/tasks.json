@@ -2,29 +2,22 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Run mmd File",
+      "label": "doc types",
       "type": "shell",
-      "command": "mmdc -i ${file} -o ${input:output1} -w 1200 -H 800 --scale 2 ",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "command": "${workspaceFolder}/rivt-report/rvsrc/scripts/pub_doc_types.cmd",
+      "args": [
+        "${file}"
+      ],
       "options": {
-        "cwd": "${fileDirname}"
-      },
-      "presentation": {
-        "reveal": "always",
-        "panel": "shared",
-        "clear": true
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "C:\\Windows\\System32\\cmd.exe",
+          "args": [
+            "/d",
+            "/c"
+          ]
+        }
       }
     }
-  ],
-  "inputs": [
-    {
-      "id": "output1",
-      "type": "promptString",
-      "description": "Enter mermaid output file (png):",
-      "default": "v1.0.0"
-    },
   ]
 }

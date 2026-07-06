@@ -2,6 +2,7 @@
 
 import rivtlib.rvapi as rv
 
+# %% rv.I("""Summary
 rv.I("""Summary
 
     The design loads are based on the standards of the California Building
@@ -83,7 +84,7 @@ rv.I("""Summary
     """)
 
 
-# %% doc
+# %% # %% doc
 rv.D("""Publish Doc
 
     _[[METADATA]] 

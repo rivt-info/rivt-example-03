@@ -1,7 +1,4 @@
 {
-    "editor.mouseWheelZoom": true,
-    "terminal.integrated.mouseWheelZoom": true,
-    "workbench.editor.tabSizing": "shrink",
     "window.title": "${dirty}${activeEditorLong}${separator}${separator} profile: ${profileName}${separator} repo: ${activeRepositoryName}",
     "settings.cycle": [
         {
@@ -20,6 +17,8 @@
             ]
         }
     ],
+    "notebook.markup.fontSize": 13,
+    "notebook.output.fontSize": 13,
     "python.terminal.activateEnvironment": true,
     "python.defaultInterpreterPath": "C:/Users/rhh2/Python314",
     "editor.colorDecoratorsActivatedOn": "clickAndHover",
@@ -93,7 +92,7 @@
                 "name": "FoldAll",
                 "color": "orange",
                 "useVsCodeApi": true,
-                "command": "editor.foldAll"
+                "command": "editor.foldLevel2"
             },
             {
                 "name": "Unfold",
@@ -262,27 +261,11 @@
             "color": "#0f8f69",
         },
         {
-            "text": "| FUNCTION |",
-            "color": "#0f8f69",
-        },
-        {
             "text": "| PYTHON |",
             "color": "#0f8f69",
         },
         {
             "text": "| MARKUP |",
-            "color": "#0f8f69",
-        },
-        {
-            "text": "| SHELL |",
-            "color": "#0f8f69",
-        },
-        {
-            "text": "| READ |",
-            "color": "#0f8f69",
-        },
-        {
-            "text": "| COPY |",
             "color": "#0f8f69",
         },
         {
@@ -343,7 +326,7 @@
             "isWholeLine": true,
         },
         {
-            "text": "_[[MARKUP]]",
+            "text": "_[[BOX]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
@@ -353,7 +336,37 @@
             "isWholeLine": true,
         },
         {
+            "text": "_[[TOPIC]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[INDENT]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[ITALLIC]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[TEXT]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
             "text": "_[[PYTHON]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[SCRIPT]]",
+            "color": "#4989a2",
+            "isWholeLine": true,
+        },
+        {
+            "text": "_[[LAYOUT]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
@@ -373,20 +386,15 @@
             "isWholeLine": true,
         },
         {
-            "text": "_[[ARGS]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
-            "text": "_[[WRITE]]",
+            "text": "_[[NEWPAGE]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
     ],
+    "terminal.integrated.defaultLocation": "view",
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.scrollback": 5000,
-    "terminal.integrated.defaultLocation": "editor",
     "workbench.editor.empty.hint": "hidden",
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "left",
@@ -412,7 +420,6 @@
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.stickyScroll.enabled": false,
     },
-    "ruff.format.preview": true,
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "jupyter.askForKernelRestart": false,
     "python.analysis.enablePytestSupport": false,
@@ -463,6 +470,7 @@
     "editor.parameterHints.cycle": false,
     "editor.hover.enabled": "off",
     "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
     "editor.renderWhitespace": "none",
     "editor.suggest.showTypeParameters": false,
     "editor.fontSize": 16,
@@ -518,25 +526,20 @@
     "window.zoomLevel": 1,
     "favorites.resources": [
         {
-            "filePath": "rivt-report\\_published",
-            "group": "Default"
-        },
-        {
-            "filePath": "rivt-report\\_rstdocs",
-            "group": "Default"
-        },
-        {
             "filePath": "rivt-report\\_published\\pdfdocs",
             "group": "Default"
         },
         {
-            "filePath": "rivt-report\\rvsrc",
+            "filePath": "rivt-report\\rv_stor",
             "group": "Default"
         },
         {
-            "filePath": "rivt-report",
+            "filePath": "rivt-report\\_published\\txtdocs",
+            "group": "Default"
+        },
+        {
+            "filePath": "rivt-report\\_published\\readme",
             "group": "Default"
         }
     ],
-    "favorites.sortOrder": "MANUAL",
 }

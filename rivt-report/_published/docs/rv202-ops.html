@@ -350,7 +350,7 @@
                   
   <section id="opensees-analysis">
 <span id="id1"></span><h1><strong>2.2</strong> | OpenSees Analysis<a class="headerlink" href="#opensees-analysis" title="Link to this heading">#</a></h1>
-<p>This section analyzes the period of the tree and tree fort system. The
+<p>This section analyzes the period of the tree + tree fort system. The
 OpenSees model is schematically shown below:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>        y
         ^
@@ -366,7 +366,6 @@ OpenSees model is schematically shown below:</p>
         o  Node 1 (Fixed Base)
     -----------
     (Ground)
-
 
 AI schematic model of tree + tree-fort system
 </pre></div>
@@ -411,111 +410,6 @@ AI schematic model of tree + tree-fort system
 <section id="insert-ops-mod1-output">
 <span id="id3"></span><h2><strong>2.2 - 3</strong> | Insert ops-mod1 Output<a class="headerlink" href="#insert-ops-mod1-output" title="Link to this heading">#</a></h2>
 <p>Model Input</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">openseespy.opensees</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ops</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">opsvis</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">opsv</span>
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="c1"># 1. Model Initialization</span>
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">wipe</span><span class="p">()</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">model</span><span class="p">(</span><span class="s2">&quot;BasicBuilder&quot;</span><span class="p">,</span> <span class="s2">&quot;-ndm&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;-ndf&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="c1"># 2. Define Parameters</span>
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="c1"># Mass values (e.g., in tons)</span>
-<span class="n">m1</span> <span class="o">=</span> <span class="mf">1.5</span>
-<span class="n">m2</span> <span class="o">=</span> <span class="mf">3.5</span>
-
-<span class="c1"># Stiffness values (e.g., in kN/m)</span>
-<span class="n">k1</span> <span class="o">=</span> <span class="mf">1100.0</span>
-<span class="n">k2</span> <span class="o">=</span> <span class="mf">2100.0</span>
-
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="c1"># 3. Create Nodes</span>
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="c1"># Base node (fixed)</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
-
-<span class="c1"># Node 1</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">)</span>
-
-<span class="c1"># Node 2</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">)</span>
-
-<span class="c1"># Fix the base node in both X and Y directions</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">fix</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="c1"># Restrain vertical (Y) displacement and rotation at mass nodes</span>
-<span class="c1"># to represent a pure 2D shear/lateral lollipop system</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">fix</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Free in X, Fixed in Y</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">fix</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Free in X, Fixed in Y</span>
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="c1"># 4. Assign Masses</span>
-<span class="c1"># ---------------------------------------------------------------------</span>
-
-<span class="n">ops</span><span class="o">.</span><span class="n">mass</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">m1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">mass</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">m2</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
-
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="c1"># 5. Define Elements</span>
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="c1"># Use elastic truss elements to represent the lateral springs</span>
-<span class="c1"># Assign high axial stiffness (E * A) and 0.0 length</span>
-<span class="n">EA</span> <span class="o">=</span> <span class="mf">1e8</span>
-
-<span class="c1"># Spring 1 between Node 1 and Node 2</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">uniaxialMaterial</span><span class="p">(</span><span class="s2">&quot;Elastic&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1100.0</span><span class="p">)</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">element</span><span class="p">(</span><span class="s2">&quot;Truss&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">EA</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="c1"># Spring 2 between Node 2 and Node 3</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">uniaxialMaterial</span><span class="p">(</span><span class="s2">&quot;Elastic&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">2100.0</span><span class="p">)</span>
-<span class="n">ops</span><span class="o">.</span><span class="n">element</span><span class="p">(</span><span class="s2">&quot;Truss&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">EA</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="c1"># 6. Eigenvalue Analysis &amp; Results Output</span>
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="n">num_modes</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">eigenvalues</span> <span class="o">=</span> <span class="n">ops</span><span class="o">.</span><span class="n">eigen</span><span class="p">(</span><span class="n">num_modes</span><span class="p">)</span>
-
-<span class="n">periods</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">frequencies</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">outL</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_modes</span><span class="p">):</span>
-    <span class="n">lamb</span> <span class="o">=</span> <span class="n">eigenvalues</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="n">omega</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">lamb</span><span class="p">)</span>
-    <span class="n">freq</span> <span class="o">=</span> <span class="n">omega</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
-    <span class="n">period</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">omega</span>
-    <span class="n">periods</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
-    <span class="n">frequencies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span>
-    <span class="n">resS</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Mode </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s1">: Period = </span><span class="si">{</span><span class="n">period</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1"> s | Frequency = </span><span class="si">{</span><span class="n">freq</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1"> Hz&#39;</span>
-    <span class="n">outL</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">resS</span><span class="p">)</span>
-<span class="n">outS</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">outL</span><span class="p">)</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f1</span><span class="p">:</span>
-    <span class="n">f1</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">outS</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;text output written&quot;</span><span class="p">)</span>
-<span class="c1"># ---------------------------------------------------------------------</span>
-<span class="c1"># 7. Model Visualization</span>
-<span class="c1"># ---------------------------------------------------------------------</span>
-
-<span class="c1"># Plot the defined model to check geometry (this is an axes mdoel)</span>
-<span class="n">mod1</span> <span class="o">=</span> <span class="n">opsv</span><span class="o">.</span><span class="n">plot_model</span><span class="p">()</span>
-<span class="n">fig1</span> <span class="o">=</span> <span class="n">mod1</span><span class="o">.</span><span class="n">get_figure</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;2-DOF Lollipop Model Geometry&quot;</span><span class="p">)</span>
-<span class="n">fig1</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;figure1.png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;figure 1 written&quot;</span><span class="p">)</span>
-<span class="c1"># interactive display</span>
-<span class="c1"># plt.show(block=False)</span>
-
-<span class="c1"># Plot the mode shape for the first mode (this is a figure)</span>
-<span class="n">fig2</span> <span class="o">=</span> <span class="n">opsv</span><span class="o">.</span><span class="n">plot_mode_shape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">)</span>  <span class="c1"># Scaling factor of 2.0 for visibility</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Mode Shape 1&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;figure2.png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;figure 2 written&quot;</span><span class="p">)</span>
-<span class="c1"># plt.show()</span>
-</pre></div>
-</div>
 <hr class="docutils" />
 </section>
 <section id="model-plots-and-output">
@@ -548,9 +442,6 @@ AI schematic model of tree + tree-fort system
 </table>
 </div>
 <p><strong>Model Output</strong></p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
-</pre></div>
-</div>
 </section>
 </section>
 
@@ -658,7 +549,7 @@ AI schematic model of tree + tree-fort system
 <!-- _templates/rv-date.html -->
 <div class="footer-item">
 <p class="rvdate">
-    2026-06-12
+    2026-06-26
 </p>
 </div></div>
       

@@ -1,43 +1,3 @@
-import rivtlib.rvapi as rv
-
-rv.I("""OpenSees Analysis
-
-    This section analyzes the period of the tree + tree fort system. The
-    OpenSees model is schematically shown below:
-
-    _[[TEXT]]  text
-            y
-            ^
-            |
-        m2  o  Node 3 (Branches)
-            |
-        k2  |   Spring 2 (upper trunk)
-            |
-        m1  o  Node 2 (Tree Fort)
-            |
-        k1  |   Spring 1 (lower trunk)
-            |
-            o  Node 1 (Fixed Base)
-        -----------
-        (Ground)
-
-    AI schematic model of tree + tree-fort system
-    _[[END]]
-
-    """)
-
-
-rv.V("""osp-mod1 Model values
-
-
-    mass1 ==: 1.5 | --, --, 2 |  mass of tree fort, kN/g
-    mass2 ==: 3.5 | --, --, 2 |  mass of branches, kN/g
-    trk1 ==: 1100.0 | --, --, 2 |  lower tree trunk stiffness, kN/cm
-    trk2 ==: 2100.0 | --, --, 2 |  upper tree trunk stiffness, kN/cm
-
-    """)
-
-rv.T("""OpenSees ops-mod1 Model
 
     This section writes the OpenSees input file based on rivt calculations and
     runs a shell command in a virtual Python environment for version 3.12 - the
@@ -155,7 +115,7 @@ rv.T("""OpenSees ops-mod1 Model
     _[[WRITE]] rvsrc/scripts/ops1.cmd
     cd "%USERPROFILE%"
     cd py312
-    call scripts\\activate
+    call scripts\activate
     python opsmod1.py
     _[[END]]
 
@@ -171,66 +131,4 @@ rv.T("""OpenSees ops-mod1 Model
 
     | COPY | %userprofile%/py312/ | -rvsrc- | *.txt
 
-    """)
-
-rv.I("""Insert ops-mod1 Output
-
-    **Model Input**
-
-    | MARKUP | rvsrc/scripts/opsmod1.py | python
-
-    """)
-
-rv.I("""Model plots and output | pdfpage
-
     
-    Model Plots _[B]
-
-    | IMAGE2 | rvsrc/img/figure1.png, rvsrc/img/figure2.png | OPS Model, OPS First Mode,45,45,num,num
-
-
-    Model Output _[B]
-
-    | MARKUP | rvsrc/output.txt | literal
-
-    """)
-
-
-rv.D("""Publish Doc
-
-    | PUBLISH | Open Sees Analysis | html
-    
-    _[[METADATA]] 
-    [doc]
-    authors = R Holland
-    version = 1.0.0a12
-    repo = https://github.com/rivt-info/rivt-single-doc
-    license = https://opensource.org/license/mit/
-    copyright = --
-    fork1_authors = --
-    fork1_version = --
-    fork1_repo = --
-    fork1_license = https://opensource.org/license/mit/
-
-    [layout]
-    coverlogo = tree1.png
-    coverlogo_size = 70
-    runninglogo = logo2.png
-    runninglabel = rivt
-    coverpage = false
-    subtitle =  Doc Example
-    copyright = --
-    client = user manual
-    project_ref = proj. 0001
-    pdf_pagesize = letter
-    pdf_margins = 1in, 1in, 1in, 1in 
-    pdf_link_underline = true
-    ;----- table of contents levels: = 1 shows subdivisions, = 2 includes sections. 
-    toc_level = 1
-    
-    [process]
-    doc_verbose = true; if false, minimum output during doc processing
-    auto_cfg = true ; if false, config files are not updated from rivt file
-    _[[END]]
-
-    """)

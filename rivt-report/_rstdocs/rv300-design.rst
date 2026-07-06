@@ -1,57 +1,4 @@
-.. |s| unicode:: 0xA0 
-
-
-
-.. |blklogo| image:: ./_static/logo2.png
-   :height: 100px
-   :alt: logo
-
-
-    
-.. header::
-    .. list-table::
-        :class: header-box
-        :align: left
-        :widths: 90 10
-        
-        * - **Component Design** - v1.0.0a12 |s| |s| |s| |s|  **###Section###**
-          - p. **###Page###**   
-
-          
-
-.. footer:: 
-    .. list-table::
-        :class: footer-box
-        :align: left
-        :widths: 84 22 16
-        
-        * - 2026-06-13 |s| |s| |s| **|** |s| |s| |s| R Holland        
-          - **rivt**        
-          - |blklogo|
-
-
-                  
-
-.. raw:: pdf
-
-   PageBreak noHead
-      
-**Component Design** - v1.0.0a12
-
---------------------
-
-|
-
-.. contents:: Table of Contents
-  :depth: 1
-
-  
-.. raw:: pdf
  
-   PageBreak mainPage
-   SetPageCounter 1
-
-
 .. raw:: pdf
 
    PageBreak
@@ -119,3 +66,12 @@ This division covers the design of structural components.
  
  
  
+
+.. toctree::
+    :hidden:
+    :maxdepth: 2
+
+    rv301-members.rst
+    rv302-connect.rst
+
+    

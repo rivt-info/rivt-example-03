@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-Loads | R Holland | v-1.0.0a11 | 2026-06-11 - 07:19PM
+| rivt | Loads | R Holland | v-1.0.0a11 | 2026-06-26 - 11:48PM
 --------------------------------------------------------------------------------
 
 
@@ -29,7 +29,7 @@ Equation No.    Load Combination
 --------------------------------------------------------------------------------
  
  
-Unit weights imported from csv file created by AI.
+Unit weights imported from csv file - table created by AI.
 
 
  
@@ -56,16 +56,16 @@ Variables assigned by inline definitions.
  
 
 Table 3: Member Nominal Loads and Properties
-==========  ============  =============  =====================
-variable    value         [value]        description
-==========  ============  =============  =====================
-D_1         2.00 plf      0.00 klf       2x6 planks DL
-D_2         2.60 plf      0.00 klf       2x8 joists DL
-D_3         2.90 plf      0.00 klf       4x4 posts and struts
-E_1         29000.00 ksi  199947.96 MPA  modulus of elasticity
-LL_1        40.00 psf     1.92 kPA       ASCE7-05 floor LL
-HL_1        20.00 psf     0.96 kPA       ASCE7-05 HL
-==========  ============  =============  =====================
+==========  =============  =============  =====================
+variable    value          [value]        description
+==========  =============  =============  =====================
+D_1         2.00 lb_ft     0.03 kN_m      2x6 planks DL
+D_2         2.60 lb_ft     0.04 kN_m      2x8 joists DL
+D_3         2.90 lb_ft     0.04 kN_m      4x4 posts and struts
+E_1         29000.00 k_si  199947.96 MPA  modulus of elasticity
+LL_1        40.00 p_sf     1.92 kPA       ASCE7-05 floor LL
+HL_1        20.00 p_sf     0.96 kPA       ASCE7-05 HL
+==========  =============  =============  =====================
  
  
  
