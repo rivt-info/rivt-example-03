@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-| rivt | Analysis | R Holland | v-1.0.0a12 | 2026-06-26 - 11:48PM
+| rivt | Analysis | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
 --------------------------------------------------------------------------------
 
 
@@ -10,10 +10,10 @@
 This report division includes RISA and OpenSees analysis and illustrates
 methods for running and importing outputs from external programs.
  
--  RISA-3D <https://risa.com/products/risa-3d> for determining connections forces
+-  RISA-3D https://risa.com/products/risa-3d for determining connections forces
  
  
--  OpenSees <https://opensees.berkeley.edu> for determing the period of the tree fort system.
+-  OpenSees https://opensees.berkeley.edu for determing the period of the tree fort system.
  
  
           ----------------------------------------

@@ -103,3 +103,7 @@ written for each rivt file: Tree Fort
 >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv200-programs.py
 >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv200-programs.py
 >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv200-programs.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv200-programs.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv200-programs.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv200-programs.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv200-programs.py

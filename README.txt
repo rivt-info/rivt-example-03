@@ -1,6 +1,6 @@
 
 ================================================================================
-| rivt report | Tree Fort v-1.0.0a12 | R Holland | 2026-06-26
+| rivt report | Tree Fort v-1.0.0a13 | R Holland | 2026-07-10
 ================================================================================
 
 
@@ -19,7 +19,7 @@ Table of Contents
 
 
 --------------------------------------------------------------------------------
-| rivt | Standards and Loads | R Holland | v-1.0.0a11 | 2026-06-26 - 11:48PM
+| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
 --------------------------------------------------------------------------------
 
 
@@ -147,7 +147,7 @@ WP            Working Point
 
 
 --------------------------------------------------------------------------------
-| rivt | Building Standards | R Holland | v-1.0.0a11 | 2026-06-26 - 11:48PM
+| rivt | Building Standards | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
 --------------------------------------------------------------------------------
 
 
@@ -264,7 +264,7 @@ Abbreviation        Definition
 
 
 --------------------------------------------------------------------------------
-| rivt | Loads | R Holland | v-1.0.0a11 | 2026-06-26 - 11:48PM
+| rivt | Loads | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
 --------------------------------------------------------------------------------
 
 
@@ -336,7 +336,7 @@ HL_1        20.00 p_sf     0.96 kPA       ASCE7-05 HL
 
 
 --------------------------------------------------------------------------------
-| rivt | Analysis | R Holland | v-1.0.0a12 | 2026-06-26 - 11:48PM
+| rivt | Analysis | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
 --------------------------------------------------------------------------------
 
 
@@ -346,10 +346,10 @@ HL_1        20.00 p_sf     0.96 kPA       ASCE7-05 HL
 This report division includes RISA and OpenSees analysis and illustrates
 methods for running and importing outputs from external programs.
  
--  RISA-3D <https://risa.com/products/risa-3d> for determining connections forces
+-  RISA-3D https://risa.com/products/risa-3d for determining connections forces
  
  
--  OpenSees <https://opensees.berkeley.edu> for determing the period of the tree fort system.
+-  OpenSees https://opensees.berkeley.edu for determing the period of the tree fort system.
  
  
           ----------------------------------------
@@ -361,7 +361,7 @@ Fig. 1 - Report Flow Chart [file: rvsrc/img/outputb.jpg  ]
 
 
 --------------------------------------------------------------------------------
-| rivt | RISA Analysis | R Holland | v-1.0.0a12 | 2026-06-26 - 11:48PM
+| rivt | RISA Analysis | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
 --------------------------------------------------------------------------------
 
 
@@ -420,7 +420,7 @@ Fig. 3 - Rail Lateral Forces [file: rvsrc/img/risa9.png  ]
 
 
 --------------------------------------------------------------------------------
-| rivt | Open Sees Analysis | R Holland | v-1.0.0a12 | 2026-06-26 - 11:48PM
+| rivt | Open Sees Analysis | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
 --------------------------------------------------------------------------------
 
 
@@ -498,7 +498,7 @@ Model Output
 
 
 --------------------------------------------------------------------------------
-| rivt | Component Design | R Holland | v-1.0.0a12 | 2026-06-26 - 11:48PM
+| rivt | Component Design | R Holland | v-1.0.0a13 | 2026-07-10 - 07:24PM
 --------------------------------------------------------------------------------
 
 
@@ -534,7 +534,7 @@ Fig. 3 - Dimensions [file: rvsrc/img/dim1.png  ]
 
 
 --------------------------------------------------------------------------------
-| rivt | Member Design | R Holland | v-1.0.0a12 | 2026-06-26 - 11:48PM
+| rivt | Member Design | R Holland | v-1.0.0a13 | 2026-07-10 - 07:24PM
 --------------------------------------------------------------------------------
 
 
@@ -642,7 +642,7 @@ Fig. 1 - Screenshot: Strut Check [file: rvsrc/img/bmck1.jpg  ]
 
 
 --------------------------------------------------------------------------------
-| rivt | Connection Design | R Holland | v-1.0.0a11 | 2026-06-26 - 11:48PM
+| rivt | Connection Design | R Holland | v-1.0.0a13 | 2026-07-10 - 07:24PM
 --------------------------------------------------------------------------------
 
 
