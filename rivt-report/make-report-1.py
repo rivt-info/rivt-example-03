@@ -18,12 +18,13 @@ import importlib
 
 # ==== Modify report settings between the double lines ========================
 # ==== Edit typeS list with desired output formats ["txt","pdf","html"] =======
-# ==== Update rept_filename, do not modify variable in braces {} ==============
+# ==== Update rept_filename, must start with rivt- , do not modify .{typeS} ===
 for typeS in ["txt"]:  
     reportsetS = f"""
     [report]
     ;-----------------------------------------
     rept_filename = rivt-treefort-report.{typeS}
+    version = 1.0.0a13
     exclude = -- ; comma separated doc numbers to exclude eg. rv102, rv204
     [process]
     ;-----------------------------------------
@@ -43,7 +44,6 @@ for typeS in ["txt"]:
     coverlogo_size = 50
     running_logo = rivt02.png 
     running_label = rivt
-    version = 1.0.0a13
     ;---------------- PDF settings
     ; colors: red, blue, green, black, gray, brown, maroon, gray, olive, cyan
     ; margins: top, right, bottom, left    page size: letter, legal, A4 

@@ -326,11 +326,6 @@
             "isWholeLine": true,
         },
         {
-            "text": "_[[BOX]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
             "text": "_[[TABLE]]",
             "color": "#4989a2",
             "isWholeLine": true,
@@ -341,27 +336,12 @@
             "isWholeLine": true,
         },
         {
-            "text": "_[[INDENT]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
-            "text": "_[[ITALLIC]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
             "text": "_[[TEXT]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
         {
             "text": "_[[PYTHON]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
-            "text": "_[[SCRIPT]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
