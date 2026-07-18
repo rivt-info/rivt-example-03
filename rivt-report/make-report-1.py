@@ -19,12 +19,12 @@ import importlib
 # ==== Modify report settings between the double lines ========================
 # ==== Edit typeS list with desired output formats ["txt","pdf","html"] =======
 # ==== Update rept_filename, must start with rivt- , do not modify .{typeS} ===
-for typeS in ["txt"]:  
+for typeS in ["txt"]:  # ["txt","pdf","html"]
     reportsetS = f"""
     [report]
     ;-----------------------------------------
     rept_filename = rivt-treefort-report.{typeS}
-    version = 1.0.0a13
+    version = 1.0.0a17
     exclude = -- ; comma separated doc numbers to exclude eg. rv102, rv204
     [process]
     ;-----------------------------------------

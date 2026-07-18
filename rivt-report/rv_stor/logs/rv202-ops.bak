@@ -1,6 +1,6 @@
 import rivtlib.rvapi as rv
 
-rv.I("""OpenSees Analysis
+rv.I(r"""OpenSees Analysis
 
     This section analyzes the period of the tree + tree fort system. The
     OpenSees model is schematically shown below:
@@ -21,14 +21,13 @@ rv.I("""OpenSees Analysis
         -----------
         (Ground)
 
-    AI schematic model of tree + tree-fort system
+    Schematic model of Tree Fort
     _[[END]]
 
     """)
 
 
-rv.V("""osp-mod1 Model values
-
+rv.V(r"""osp-mod1 Model values
 
     mass1 ==: 1.5 | --, --, 2 |  mass of tree fort, kN/g
     mass2 ==: 3.5 | --, --, 2 |  mass of branches, kN/g
@@ -37,7 +36,7 @@ rv.V("""osp-mod1 Model values
 
     """)
 
-rv.T("""OpenSees ops-mod1 Model
+rv.R(r"""OpenSees ops-mod1 Model
 
     This section writes the OpenSees input file based on rivt calculations and
     runs a shell command in a virtual Python environment for version 3.12 - the
@@ -173,15 +172,15 @@ rv.T("""OpenSees ops-mod1 Model
 
     """)
 
-rv.I("""Insert ops-mod1 Output
+rv.I(r"""ops-mod1 Input
 
     **Model Input**
 
-    | MARKUP | rvsrc/scripts/opsmod1.py | python
+    | TEXT | rvsrc/scripts/opsmod1.py | python
 
     """)
 
-rv.I("""Model plots and output | pdfpage
+rv.I(r"""Model plots and output | pdfpage
 
     
     Model Plots _[B]
@@ -191,14 +190,14 @@ rv.I("""Model plots and output | pdfpage
 
     Model Output _[B]
 
-    | MARKUP | rvsrc/output.txt | literal
+    | TEXT | rvsrc/output.txt | text
 
     """)
 
 
-rv.D("""Publish Doc
+rv.D(r"""Publish Doc
 
-    | PUBLISH | Open Sees Analysis | html
+    | PUBLISH | Open Sees Analysis | pdf
     
     _[[METADATA]] 
     [process]
@@ -209,7 +208,7 @@ rv.D("""Publish Doc
     ;-----------------------------------------
     authors = R Holland
     version = 1.0.0a13
-    repo = https://github.com/rivt-info/rivt-single-doc
+    repo = https://github.com/rivt-info/rivt-example-03
     license = https://opensource.org/license/mit/
     copyright = --
     fork1_authors = --
@@ -237,7 +236,7 @@ rv.D("""Publish Doc
     pdf_margins = 1in, 1in, 1in, 1in 
     ;----------------------- TOC levels
     ;--- 1: include subdivisions   2: include subdivisions and sections
-    toc_level = 1
+    toc_level = 2
     _[[END]]
 
     """)

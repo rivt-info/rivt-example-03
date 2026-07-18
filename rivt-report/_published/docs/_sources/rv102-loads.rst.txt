@@ -6,10 +6,9 @@
       
 
 
-
 .. _Load Combinations and Geometry:
 
-**1.2** | Load Combinations and Geometry
+**1.2-1** | Load Combinations and Geometry
 ================================================================================
  
  
@@ -38,13 +37,13 @@ Equation No.    Load Combination
  
 
 
---------------
+-------------------------
 
 
 
 .. _Unit Loads:
 
-**1.2 - 2** | Unit Loads
+**1.2-2** | Unit Loads
 --------------------------------------------------------------------------------
  
  

@@ -30,23 +30,6 @@
     ],
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "fsdeploy.deployOnSave": true,
-    "fsdeploy.nodes": [
-        {
-            "source": "C:/git/rivt-example-01-git",
-            "target": "E:/OneDrive/StL-rivt/rivt-example-01",
-            "include": "**/*.*",
-            "exclude": ".git,.gitignore",
-            "deleteTargetOnDeploy": true,
-        },
-        {
-            "source": "C:/git/rivt-example-01-git",
-            "target": "E:/OneDrive/StL-rivt/rivt-example-01",
-            "include": "**/*.*",
-            "exclude": ".git,.gitignore",
-            "deleteTargetOnDeploy": true,
-        }
-    ],
     "actionButtons": {
         "defaultColor": "#ff0034",
         "reloadButton": "♻️",
@@ -81,12 +64,6 @@
                 "color": "red",
                 "useVsCodeApi": true,
                 "command": "workbench.action.gotoLine",
-            },
-            {
-                "name": "RunCell",
-                "color": "red",
-                "useVsCodeApi": true,
-                "command": "jupyter.runcurrentcell",
             },
             {
                 "name": "FoldAll",
@@ -346,7 +323,7 @@
             "isWholeLine": true,
         },
         {
-            "text": "_[[LAYOUT]]",
+            "text": "_[[WRITE]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
@@ -356,17 +333,7 @@
             "isWholeLine": true,
         },
         {
-            "text": "_[[ENDNOTES]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
             "text": "_[[END]]",
-            "color": "#4989a2",
-            "isWholeLine": true,
-        },
-        {
-            "text": "_[[NEWPAGE]]",
             "color": "#4989a2",
             "isWholeLine": true,
         },
@@ -400,19 +367,11 @@
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.stickyScroll.enabled": false,
     },
-    "jupyter.interactiveWindow.textEditor.executeSelection": true,
-    "jupyter.askForKernelRestart": false,
     "python.analysis.enablePytestSupport": false,
     "notebook.defaultFormatter": "charliermarsh.ruff",
     "notebook.outline.showCodeCells": true,
     "notebook.output.textLineLimit": 400,
-    "jupyter.themeMatplotlibPlots": true,
     "python.terminal.executeInFileDir": true,
-    "jupyter.widgetScriptSources": [
-        "jsdelivr.com",
-        "unpkg.com"
-    ],
-    "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
     "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
     "insertDateString.formatDate": "MM-DD-YYYY",
     "seito-openfile.searchSubFoldersOfWorkspaceFolders": [],
@@ -422,22 +381,43 @@
     "editor.parameterHints.enabled": false,
     "editor.foldingStrategy": "auto",
     "editor.tokenColorCustomizations": {
-        "[*Dark*]": {
-            "textMateRules": [
-                {
-                    "scope": [
-                        "string.quoted.multi.python",
-                        "meta.function-call.arguments.python",
-                        "meta.function-call.python",
-                        "meta.member.access.python",
-                        "source.python"
-                    ],
-                    "settings": {
-                        "foreground": "#bfc0c0"
-                    }
+        "textMateRules": [
+            {
+                "scope": "string.quoted.single.python",
+                "settings": {
+                    "foreground": "#61786d"
+                }
+            },
+            {
+                "scope": "string.quoted.double.python",
+                "settings": {
+                    "foreground": "#61786d"
+                }
+            },
+            {
+                "scope": [
+                    "string.quoted.docstring.multi.python",
+                    "string.quoted.multi.python"
+                ],
+                "settings": {
+                    "foreground": "#74ae8f",
+                    "fontStyle": "italic"
                 },
-            ]
-        }
+            },
+            {
+                "name": "Python Triple Quoted Raw Strings",
+                "scope": [
+                    "string.regexp.unquoted.triple.python",
+                    "string.regexp.unquoted.raw.python",
+                    "string.regexp.unquoted",
+                    "string.regexp",
+                    "constant.character.escape.regexp"
+                ],
+                "settings": {
+                    "foreground": "#bfc0c0"
+                }
+            },
+        ]
     },
     "editor.rulers": [
         {

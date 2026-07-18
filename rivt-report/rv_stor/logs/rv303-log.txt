@@ -1,0 +1,18 @@
+07-18 02:58  rv303-members   INFO     Doc start
+07-18 02:58  rv303-members   INFO     rivtlib version: 1.0.0a5
+07-18 02:58  rv303-members   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv303-members.bak
+07-18 02:58  rv303-members   INFO     Deck Design Properties
+07-18 02:58  rv303-members   INFO     SECTION 3.3-1 - type V
+07-18 02:58  rv303-members   INFO     tag : _[B]
+07-18 02:58  rv303-members   INFO     command : VALTABLE
+07-18 02:58  rv303-members   INFO     command : PYTHON
+07-18 02:58  rv303-members   INFO     Deck Design Summary
+07-18 02:58  rv303-members   INFO     SECTION 3.3-2 - type V
+07-18 02:58  rv303-members   INFO     tag : _[[ARGS]]
+07-18 02:58  rv303-members   INFO     tag : _[B]
+07-18 02:58  rv303-members   INFO     command : FUNCTION
+07-18 02:58  rv303-members   INFO     Strut
+07-18 02:58  rv303-members   INFO     SECTION 3.3-3 - type I
+07-18 02:58  rv303-members   INFO     command : IMAGE
+07-18 02:58  rv303-members   INFO     SECTION : Publish Doc 
+07-18 02:58  rv303-members   INFO     block tag : METADATA]]

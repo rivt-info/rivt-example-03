@@ -1,29 +1,29 @@
 
 ================================================================================
-| rivt report | Tree Fort v-1.0.0a13 | R Holland | 2026-07-10
+| rivt report | Tree Fort v-1.0.0a17 | R Holland | 2026-07-18
 ================================================================================
 
 
 Table of Contents
 ==================
-1.0  Standards and Loads
 1.1  Building Standards
 1.2  Loads
-2.0  Analysis
-2.1  RISA Analysis
+1.3  Standards and Loads
+2.1  Analysis
 2.2  Open Sees Analysis
-3.0  Component Design
-3.1  Member Design
+2.3  RISA Analysis
+3.1  Component Design
 3.2  Connection Design
+3.3  Member Design
 
 
 
 --------------------------------------------------------------------------------
-| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
+| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-14 - 05:56PM
 --------------------------------------------------------------------------------
 
 
-1.0 | Report Summary
+1.0-1 | Report Summary
 ================================================================================
  
 This report covers the structural design of a tree fort in Novato,
@@ -51,7 +51,7 @@ Fig. 1 - Tree Fort [file: rvsrc/img/iso1.png  ]
  
  
 
-1.0 - 2 | Design Sections
+1.0-2 | Design Sections
 --------------------------------------------------------------------------------
  
 The design report is organized into the following sections:
@@ -63,7 +63,7 @@ Fig. 2 - Report Flow Chart [file: rvsrc/img/outputa.jpg  ]
  
  
 
-1.0 - 3 | Drawing Symbols
+1.0-3 | Drawing Symbols
 --------------------------------------------------------------------------------
  
 
@@ -147,11 +147,11 @@ WP            Working Point
 
 
 --------------------------------------------------------------------------------
-| rivt | Building Standards | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
+| rivt | Building Standards | R Holland | v-1.0.0a13 | 2026-07-18 - 02:57AM
 --------------------------------------------------------------------------------
 
 
-1.1 | Summary
+1.1-1 | Summary
 ================================================================================
  
 The design loads are based on the standards of the California Building
@@ -264,11 +264,11 @@ Abbreviation        Definition
 
 
 --------------------------------------------------------------------------------
-| rivt | Loads | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
+| rivt | Loads | R Holland | v-1.0.0a13 | 2026-07-18 - 02:57AM
 --------------------------------------------------------------------------------
 
 
-1.2 | Load Combinations and Geometry
+1.2-1 | Load Combinations and Geometry
 ================================================================================
  
  
@@ -289,7 +289,7 @@ Equation No.    Load Combination
 =============   ==============================================
  
 
-1.2 - 2 | Unit Loads
+1.2-2 | Unit Loads
 --------------------------------------------------------------------------------
  
  
@@ -336,11 +336,139 @@ HL_1        20.00 p_sf     0.96 kPA       ASCE7-05 HL
 
 
 --------------------------------------------------------------------------------
-| rivt | Analysis | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
+| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-18 - 02:57AM
 --------------------------------------------------------------------------------
 
 
-2.0 | Analysis Programs
+1.3-1 | Report Summary
+================================================================================
+ 
+This report covers the structural design of a tree fort in Novato,
+California, following the California Building Code (CBC). The fort is
+supported by a mature tree with a 24-inch diameter trunk.
+ 
+The report illustrates the use of tags, commands and scripts including:
+ 
+- a rivt-report.py script that assembles the report.
+ 
+- shell commands that run an  external program [ref: <OpenSees Analysis>] .
+ 
+- external urls and section links between documents.
+ 
+- various forms of math symbols.
+ 
+- external function importing and processing.
+ 
+- the use of AI in preparing
+ 
+          ----------------------------------------
+Fig. 1 - Tree Fort [file: rvsrc/img/iso1.png  ]
+          ----------------------------------------
+
+ 
+ 
+
+1.3-2 | Design Sections
+--------------------------------------------------------------------------------
+ 
+The design report is organized into the following sections:
+ 
+          ----------------------------------------
+Fig. 2 - Report Flow Chart [file: rvsrc/img/outputa.jpg  ]
+          ----------------------------------------
+
+ 
+ 
+
+1.3-3 | Drawing Symbols
+--------------------------------------------------------------------------------
+ 
+
+Table 1: Drawing Abbreviations
+============ ==============================================
+Abbreviation   Definition
+============ ==============================================
+ASD           Allowable Stress Design
+ACI           American Concrete Institute
+AISC          American Institute of Steel Construction
+AISI          American Iron and Steel Institute
+ASTM          American Society for Testing and Materials
+AWS           American Welding Society
+AB            Anchor Bolt
+BDRY          Boundry
+CBC           Califiornia Building Code
+CRC           Califiornia Residential Code
+CIP           Cast-In-Place
+CLR           Clear
+CONC          Concrete
+CMU           Concrete Masonry Unit
+CRSI          Concrete Reinforcing Steel Institute
+CONST JT      Construction Joint
+CONT          Continuous
+CJ            Control Joint
+D-C           Demand-Capacity (ratio)
+DIA           Diameter
+DIM           Dimension
+EA            Each
+EF            Each Face
+EJ            Expansion Joint
+ES            Each Side
+EW            Each Way
+EXP Bolt      Expansion Bolt
+EXP JT        Expansion Joint
+FTG           Footing
+FND           Foundation
+GALV          Galvanized
+GA            Gauge
+GR            Grade
+HT            Height
+IN            Inch
+ID            Inside Diameter
+ICBO          International Conference of Building Officials
+K             Kip (1000 Pounds)
+LWC           Light Weight Concrete
+LRFD          Load and Resistance Factor Design
+NWC           Normal Weight Concrete
+NIC           Not in Contract
+OC            On Center
+OD            Outside Diameter
+OPNG          Opening
+PVC           Polyvinyl Chloride
+PSF           Pounds per Square Foot
+PSI           Pounds per Square Inch
+R             Radius
+REINF         Reinforced
+SIM           Similar
+SOG           Slab on Grade
+SL            Splice Length
+SQ            Square
+STD           Standard
+SDI           Steel Deck Institute
+SF            Step Footing or Square Foot
+SYM           Symmetrical
+THK           Thick or Thickness
+T&B           Top and Bottom
+T&G           Tongue and Groove
+TOC           Top of Concrete
+TOF           Top of Foundation
+TOS           Top of Steel
+TOW           Top of Wall
+TYP           Typical
+UNO           Unless Noted Otherwise
+WWF           Welded Wire Fabric
+W/            With
+WP            Working Point
+============ ==============================================
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+| rivt | Analysis | R Holland | v-1.0.0a13 | 2026-07-14 - 05:56PM
+--------------------------------------------------------------------------------
+
+
+2.0-1 | Analysis Programs
 ================================================================================
  
 This report division includes RISA and OpenSees analysis and illustrates
@@ -361,11 +489,223 @@ Fig. 1 - Report Flow Chart [file: rvsrc/img/outputb.jpg  ]
 
 
 --------------------------------------------------------------------------------
-| rivt | RISA Analysis | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
+| rivt | Analysis | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
 --------------------------------------------------------------------------------
 
 
-2.1 | Applied deck forces - RISA model
+2.1-1 | Analysis Programs
+================================================================================
+ 
+This report division includes RISA and OpenSees analysis and illustrates
+methods for running and importing outputs from external programs.
+ 
+-  RISA-3D https://risa.com/products/risa-3d for determining connections forces
+ 
+ 
+-  OpenSees https://opensees.berkeley.edu for determing the period of the tree fort system.
+ 
+ 
+          ----------------------------------------
+Fig. 1 - Report Flow Chart [file: rvsrc/img/outputb.jpg  ]
+          ----------------------------------------
+
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+| rivt | Open Sees Analysis | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+--------------------------------------------------------------------------------
+
+
+2.2-1 | OpenSees Analysis
+================================================================================
+ 
+This section analyzes the period of the tree + tree fort system. The
+OpenSees model is schematically shown below:
+ 
+        y
+        ^
+        |
+    m2  o  Node 3 (Branches)
+        |
+    k2  |   Spring 2 (upper trunk)
+        |
+    m1  o  Node 2 (Tree Fort)
+        |
+    k1  |   Spring 1 (lower trunk)
+        |
+        o  Node 1 (Fixed Base)
+    -----------
+    (Ground)
+
+Schematic model of Tree Fort
+
+ 
+ 
+
+2.2-2 | osp-mod1 Model values
+--------------------------------------------------------------------------------
+ 
+==========  =======  =========  =================================
+variable    value    [value]    description
+==========  =======  =========  =================================
+mass1       1.5      1.5        mass of tree fort, kN/g
+mass2       3.5      3.5        mass of branches, kN/g
+trk1        1100     1100       lower tree trunk stiffness, kN/cm
+trk2        2100     2100       upper tree trunk stiffness, kN/cm
+==========  =======  =========  =================================
+ 
+ 
+
+2.2-3 | ops-mod1 Input
+--------------------------------------------------------------------------------
+ 
+Model Input
+ 
+Python:  [file: rvsrc/scripts/opsmod1.py]
+
+
+import openseespy.opensees as ops
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+import opsvis as opsv
+# ---------------------------------------------------------------------
+# 1. Model Initialization
+# ---------------------------------------------------------------------
+ops.wipe()
+ops.model("BasicBuilder", "-ndm", 2, "-ndf", 2)
+
+# ---------------------------------------------------------------------
+# 2. Define Parameters
+# ---------------------------------------------------------------------
+# Mass values (e.g., in tons)
+m1 = 1.5
+m2 = 3.5
+
+# Stiffness values (e.g., in kN/m)
+k1 = 1100.0
+k2 = 2100.0
+
+# ---------------------------------------------------------------------
+# 3. Create Nodes
+# ---------------------------------------------------------------------
+# Base node (fixed)
+ops.node(1, 0.0, 0.0)
+
+# Node 1
+ops.node(2, 0.0, 2.0)
+
+# Node 2
+ops.node(3, 0.0, 4.0)
+
+# Fix the base node in both X and Y directions
+ops.fix(1, 1, 1)
+# Restrain vertical (Y) displacement and rotation at mass nodes
+# to represent a pure 2D shear/lateral lollipop system
+ops.fix(2, 0, 1)  # Free in X, Fixed in Y
+ops.fix(3, 0, 1)  # Free in X, Fixed in Y
+# ---------------------------------------------------------------------
+# 4. Assign Masses
+# ---------------------------------------------------------------------
+
+ops.mass(2, m1, 0.0)
+ops.mass(3, m2, 0.0)
+
+# ---------------------------------------------------------------------
+# 5. Define Elements
+# ---------------------------------------------------------------------
+# Use elastic truss elements to represent the lateral springs
+# Assign high axial stiffness (E * A) and 0.0 length
+EA = 1e8
+
+# Spring 1 between Node 1 and Node 2
+ops.uniaxialMaterial("Elastic", 1, 1100.0)
+ops.element("Truss", 1, 1, 2, EA, 1)
+
+# Spring 2 between Node 2 and Node 3
+ops.uniaxialMaterial("Elastic", 2, 2100.0)
+ops.element("Truss", 2, 2, 3, EA, 2)
+
+# ---------------------------------------------------------------------
+# 6. Eigenvalue Analysis & Results Output
+# ---------------------------------------------------------------------
+num_modes = 1
+eigenvalues = ops.eigen(num_modes)
+
+periods = []
+frequencies = []
+outL = []
+for i in range(num_modes):
+    lamb = eigenvalues[i]
+    omega = math.sqrt(lamb)
+    freq = omega / (2 * math.pi)
+    period = 2 * math.pi / omega
+    periods.append(period)
+    frequencies.append(freq)
+    resS = f'Mode {i + 1}: Period = {period:.4f} s | Frequency = {freq:.4f} Hz'
+    outL.append(resS)
+outS = chr(10).join(item for item in outL)
+with open("output.txt", 'w') as f1:
+    f1.write(outS)
+print("text output written")
+# ---------------------------------------------------------------------
+# 7. Model Visualization
+# ---------------------------------------------------------------------
+
+# Plot the defined model to check geometry (this is an axes mdoel)
+mod1 = opsv.plot_model()
+fig1 = mod1.get_figure()
+plt.title("2-DOF Lollipop Model Geometry")
+fig1.savefig("figure1.png", dpi=200)
+print("figure 1 written")
+# interactive display
+# plt.show(block=False)
+
+# Plot the mode shape for the first mode (this is a figure)
+fig2 = opsv.plot_mode_shape(1, 2.0)  # Scaling factor of 2.0 for visibility
+plt.title("Mode Shape 1")
+plt.savefig("figure2.png", dpi=200)
+print("figure 2 written")
+# plt.show()
+ 
+ 
+
+2.2-4 | Model plots and output
+--------------------------------------------------------------------------------
+ 
+ 
+Model Plots
+
+
+ 
+          ----------------------------------------
+Fig. 1 - OPS Model  | Fig. 2 - OPS First Mode 
+files: rvsrc/img/figure1.png, rvsrc/img/figure2.png 
+          ----------------------------------------
+
+
+ 
+ 
+Model Output
+
+
+ 
+Python:  [file: rvsrc/output.txt]
+
+
+Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+| rivt | RISA Analysis | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+--------------------------------------------------------------------------------
+
+
+2.3-1 | Applied deck forces - RISA model
 ================================================================================
  
  
@@ -376,7 +716,7 @@ Fig. 1 - Risa Model [file: rvsrc/img/risa4.png  ]
  
  
 
-2.1 - 2 | Resultant axial forces - RISA model
+2.3-2 | Resultant axial forces - RISA model
 --------------------------------------------------------------------------------
  
           ----------------------------------------
@@ -386,7 +726,7 @@ Fig. 2 - Strut Axial Forces [file: rvsrc/img/risa6.png  ]
  
  
 
-2.1 - 3 | Top rail shear reactions - RISA model
+2.3-3 | Top rail shear reactions - RISA model
 --------------------------------------------------------------------------------
  
 Under the California Building Code (CBC), handrails and guards (railings)
@@ -420,89 +760,11 @@ Fig. 3 - Rail Lateral Forces [file: rvsrc/img/risa9.png  ]
 
 
 --------------------------------------------------------------------------------
-| rivt | Open Sees Analysis | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
+| rivt | Component Design | R Holland | v-1.0.0a13 | 2026-07-14 - 05:57PM
 --------------------------------------------------------------------------------
 
 
-2.2 | OpenSees Analysis
-================================================================================
- 
-This section analyzes the period of the tree + tree fort system. The
-OpenSees model is schematically shown below:
- 
-        y
-        ^
-        |
-    m2  o  Node 3 (Branches)
-        |
-    k2  |   Spring 2 (upper trunk)
-        |
-    m1  o  Node 2 (Tree Fort)
-        |
-    k1  |   Spring 1 (lower trunk)
-        |
-        o  Node 1 (Fixed Base)
-    -----------
-    (Ground)
-
-AI schematic model of tree + tree-fort system
-
- 
- 
-
-2.2 - 2 | osp-mod1 Model values
---------------------------------------------------------------------------------
- 
- 
-==========  =======  =========  =================================
-variable    value    [value]    description
-==========  =======  =========  =================================
-mass1       1.5      1.5        mass of tree fort, kN/g
-mass2       3.5      3.5        mass of branches, kN/g
-trk1        1100     1100       lower tree trunk stiffness, kN/cm
-trk2        2100     2100       upper tree trunk stiffness, kN/cm
-==========  =======  =========  =================================
- 
- 
-
-2.2 - 3 | Insert ops-mod1 Output
---------------------------------------------------------------------------------
- 
-Model Input
- 
- 
- 
-
-2.2 - 4 | Model plots and output
---------------------------------------------------------------------------------
- 
- 
-Model Plots
-
-
- 
-          ----------------------------------------
-Fig. 1 - OPS Model  | Fig. 2 - OPS First Mode 
-files: rvsrc/img/figure1.png, rvsrc/img/figure2.png 
-          ----------------------------------------
-
-
- 
- 
-Model Output
-
-
- 
- 
- 
-
-
---------------------------------------------------------------------------------
-| rivt | Component Design | R Holland | v-1.0.0a13 | 2026-07-10 - 07:24PM
---------------------------------------------------------------------------------
-
-
-3.0 | Component Design
+3.0-1 | Component Design
 ================================================================================
  
 This division covers the design of structural components.
@@ -514,7 +776,7 @@ Fig. 1 - Report Flow Chart [file: rvsrc/img/outputc.jpg  ]
  
  
 
-3.0 - 2 | Geometry and Components
+3.0-2 | Geometry and Components
 --------------------------------------------------------------------------------
  
  
@@ -534,11 +796,89 @@ Fig. 3 - Dimensions [file: rvsrc/img/dim1.png  ]
 
 
 --------------------------------------------------------------------------------
-| rivt | Member Design | R Holland | v-1.0.0a13 | 2026-07-10 - 07:24PM
+| rivt | Component Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
 --------------------------------------------------------------------------------
 
 
-3.1 | Deck Design Properties
+3.1-1 | Component Design
+================================================================================
+ 
+This division covers the design of members and connections.
+ 
+          ----------------------------------------
+Fig. 1 - Report Flow Chart [file: rvsrc/img/outputc.jpg  ]
+          ----------------------------------------
+
+ 
+ 
+
+3.1-2 | Geometry and Components
+--------------------------------------------------------------------------------
+ 
+ 
+          ----------------------------------------
+Fig. 2 - Component Labels [file: rvsrc/img/members1.png  ]
+          ----------------------------------------
+
+ 
+ 
+          ----------------------------------------
+Fig. 3 - Dimensions [file: rvsrc/img/dim1.png  ]
+          ----------------------------------------
+
+ 
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+| rivt | Connection Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+--------------------------------------------------------------------------------
+
+
+3.2-1 | Strut to Tree Connection
+================================================================================
+ 
+Use Simpson Strong Tie online selection tool.
+ 
+          ----------------------------------------
+Fig. 1 - Screenshot: Option 1 [file: rvsrc/img/ss12.jpg | time: no time  ]
+          ----------------------------------------
+
+ 
+          ----------------------------------------
+Fig. 2 - Screenshot: Option 2 [file: rvsrc/img/ss14.jpg | time: no time  ]
+          ----------------------------------------
+
+ 
+ 
+
+3.2-2 | Top rail Corner
+--------------------------------------------------------------------------------
+ 
+Use AWC online connection tool.
+ 
+          ----------------------------------------
+Fig. 3 - Screenshot: Top Rail - Corner Plate Input [file: rvsrc/img/awc4.jpg  ]
+          ----------------------------------------
+
+ 
+          ----------------------------------------
+Fig. 4 - Screenshot: Top Rail - Corner Plate Capacity [file: rvsrc/img/awc5.jpg  ]
+          ----------------------------------------
+
+ 
+Use 4-#8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
+ 
+ 
+
+
+--------------------------------------------------------------------------------
+| rivt | Member Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+--------------------------------------------------------------------------------
+
+
+3.3-1 | Deck Design Properties
 ================================================================================
  
 Import deck loads and functions.
@@ -546,7 +886,7 @@ Import deck loads and functions.
 
  
 
-Table 1: Load values from rv102-loads.py (rv_stor/v102-2.csv)
+Table 1: Load values from rv102-loads.py (rv_stor/vals/v102-2.csv)
 ==========  =============  =============  =====================
 variable    value          [value]        description
 ==========  =============  =============  =====================
@@ -575,7 +915,7 @@ nds_post_check(** kwargs)  Check stress at cantilever post
  
  
 
-3.1 - 2 | Deck Design Summary
+3.3-2 | Deck Design Summary
 --------------------------------------------------------------------------------
  
 Design properties as dictionary for checking function nds_beam_chk
@@ -628,7 +968,7 @@ deflection_ratio:  0.20
  
  
 
-3.1 - 3 | Strut
+3.3-3 | Strut
 --------------------------------------------------------------------------------
  
 Check strut D/C ratio with BeamChek 2023
@@ -637,48 +977,6 @@ Check strut D/C ratio with BeamChek 2023
 Fig. 1 - Screenshot: Strut Check [file: rvsrc/img/bmck1.jpg  ]
           ----------------------------------------
 
- 
- 
-
-
---------------------------------------------------------------------------------
-| rivt | Connection Design | R Holland | v-1.0.0a13 | 2026-07-10 - 07:24PM
---------------------------------------------------------------------------------
-
-
-3.2 | Strut to Tree Connection
-================================================================================
- 
-Use Simpson Strong Tie online selection tool.
- 
-          ----------------------------------------
-Fig. 1 - Screenshot: Option 1 [file: rvsrc/img/ss12.jpg | time: no time  ]
-          ----------------------------------------
-
- 
-          ----------------------------------------
-Fig. 2 - Screenshot: Option 2 [file: rvsrc/img/ss14.jpg | time: no time  ]
-          ----------------------------------------
-
- 
- 
-
-3.2 - 2 | Top rail Corner
---------------------------------------------------------------------------------
- 
-Use AWC online connection tool.
- 
-          ----------------------------------------
-Fig. 3 - Screenshot: Top Rail - Corner Plate Input [file: rvsrc/img/awc4.jpg  ]
-          ----------------------------------------
-
- 
-          ----------------------------------------
-Fig. 4 - Screenshot: Top Rail - Corner Plate Capacity [file: rvsrc/img/awc5.jpg  ]
-          ----------------------------------------
-
- 
-Use 4-#8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
  
  
 

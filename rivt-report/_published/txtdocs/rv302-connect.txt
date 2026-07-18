@@ -1,10 +1,10 @@
 
 --------------------------------------------------------------------------------
-Connection Design | R Holland | v-1.0.0a13 | 2026-07-10 - 07:24PM
+Connection Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
 --------------------------------------------------------------------------------
 
 
-3.2 | Strut to Tree Connection
+3.2-1 | Strut to Tree Connection
 ================================================================================
  
 Use Simpson Strong Tie online selection tool.
@@ -21,7 +21,7 @@ Fig. 2 - Screenshot: Option 2 | time: no time
  
  
 
-3.2 - 2 | Top rail Corner
+3.2-2 | Top rail Corner
 --------------------------------------------------------------------------------
  
 Use AWC online connection tool.

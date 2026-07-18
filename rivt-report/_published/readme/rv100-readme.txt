@@ -1,10 +1,10 @@
 
 --------------------------------------------------------------------------------
-| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
+| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-14 - 05:56PM
 --------------------------------------------------------------------------------
 
 
-1.0 | Report Summary
+1.0-1 | Report Summary
 ================================================================================
  
 This report covers the structural design of a tree fort in Novato,
@@ -32,7 +32,7 @@ Fig. 1 - Tree Fort [file: rvsrc/img/iso1.png  ]
  
  
 
-1.0 - 2 | Design Sections
+1.0-2 | Design Sections
 --------------------------------------------------------------------------------
  
 The design report is organized into the following sections:
@@ -44,7 +44,7 @@ Fig. 2 - Report Flow Chart [file: rvsrc/img/outputa.jpg  ]
  
  
 
-1.0 - 3 | Drawing Symbols
+1.0-3 | Drawing Symbols
 --------------------------------------------------------------------------------
  
 

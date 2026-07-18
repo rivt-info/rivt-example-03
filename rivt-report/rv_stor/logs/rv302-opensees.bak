@@ -1,7 +1,7 @@
 import rivtlib.rvapi as rv
 
 
-rv.I("""OpenSees Analysis
+rv.I(r"""OpenSees Analysis
 
     This section analyzes the period of the tree - tree fort system. The
     OpenSees model is schematically shown below:
@@ -26,8 +26,7 @@ rv.I("""OpenSees Analysis
     """)
 
 
-rv.V("""osp-mod1 Model values
-
+rv.V(r"""osp-mod1 Model values
 
     mass1 ==: 1.5 | --, --, 2 |  mass of tree fort, kN/g
     mass2 ==: 3.5 | --, --, 2 |  mass of branches, kN/g
@@ -36,7 +35,7 @@ rv.V("""osp-mod1 Model values
 
     """)
 
-rv.T("""OpenSees ops-mod1 Model
+rv.R(r"""OpenSees ops-mod1 Model
 
     This section writes the OpenSees input file based on rivt calculations and
     runs a shell command in a virtual Python environment for version 3.12 - the
@@ -171,7 +170,7 @@ rv.T("""OpenSees ops-mod1 Model
 
     """)
 
-rv.I("""Insert ops-mod1 Output
+rv.I(r"""Insert ops-mod1 Output
 
     **Model Input**
 
@@ -188,8 +187,8 @@ rv.I("""Insert ops-mod1 Output
 
     """)
 
-# %% rv.D("""Publish Doc
-rv.D("""Publish Doc
+# %% rv.D(r"""Publish Doc
+rv.D(r"""Publish Doc
 
     _[[METADATA]] 
     [doc]

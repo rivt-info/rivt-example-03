@@ -1,6 +1,6 @@
 import rivtlib.rvapi as rv
 
-rv.I("""Component Design
+rv.I(r"""Component Design
 
     This division covers the design of structural components.
 
@@ -9,7 +9,7 @@ rv.I("""Component Design
     """)
 
 
-rv.I("""Geometry and Components | pdfpage
+rv.I(r"""Geometry and Components | pdfpage
 
 
     | IMAGE | rvsrc/img/members1.png | Component Labels, 80, num, not   
@@ -20,7 +20,7 @@ rv.I("""Geometry and Components | pdfpage
     
     """)
 
-rv.D("""Publish Doc 
+rv.D(r"""Publish Doc 
 
     | PUBLISH | Component Design | pdf
 
@@ -33,7 +33,7 @@ rv.D("""Publish Doc
     ;-----------------------------------------
     authors = R Holland
     version = 1.0.0a13
-    repo = https://github.com/rivt-info/rivt-single-doc
+    repo = https://github.com/rivt-info/rivt-example-03
     license = https://opensource.org/license/mit/
     copyright = --
     fork1_authors = --

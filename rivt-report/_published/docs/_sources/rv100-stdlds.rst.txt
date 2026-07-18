@@ -6,10 +6,9 @@
       
 
 
-
 .. _Report Summary:
 
-**1.0** | Report Summary
+**1.0-1** | Report Summary
 ================================================================================
  
 This report covers the structural design of a tree fort in Novato,
@@ -43,7 +42,7 @@ The report illustrates the use of tags, commands and scripts including:
  
 
 
---------------
+-------------------------
 
 
 
@@ -55,7 +54,7 @@ The report illustrates the use of tags, commands and scripts including:
 
 .. _Design Sections:
 
-**1.0 - 2** | Design Sections
+**1.0-2** | Design Sections
 --------------------------------------------------------------------------------
  
 The design report is organized into the following sections:
@@ -73,7 +72,7 @@ The design report is organized into the following sections:
  
 
 
---------------
+-------------------------
 
 
 
@@ -85,7 +84,7 @@ The design report is organized into the following sections:
 
 .. _Drawing Symbols:
 
-**1.0 - 3** | Drawing Symbols
+**1.0-3** | Drawing Symbols
 --------------------------------------------------------------------------------
  
 

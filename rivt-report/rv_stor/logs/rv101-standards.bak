@@ -2,13 +2,13 @@
 
 import rivtlib.rvapi as rv
 
-# %% rv.I("""Summary
-rv.I("""Summary
+# %% rv.I(r"""Summary
+rv.I(r"""Summary
 
     The design loads are based on the standards of the California Building
     Code (CBC) outlined below.  Standard math symbols are profided for reference.
 
-    | TABLE | rvsrc/data/bldgstd.csv | California Building Standards, 40, head, num 
+    | TABLE | rvsrc/vals/bldgstd.csv | California Building Standards, 40, head, num 
     
 
 
@@ -85,7 +85,7 @@ rv.I("""Summary
 
 
 # %% # %% doc
-rv.D("""Publish Doc
+rv.D(r"""Publish Doc
 
     | PUBLISH | Building Standards | pdf
 
@@ -98,7 +98,7 @@ rv.D("""Publish Doc
     ;-----------------------------------------
     authors = R Holland
     version = 1.0.0a13
-    repo = https://github.com/rivt-info/rivt-single-doc
+    repo = https://github.com/rivt-info/rivt-example-03
     license = https://opensource.org/license/mit/
     copyright = --
     fork1_authors = --

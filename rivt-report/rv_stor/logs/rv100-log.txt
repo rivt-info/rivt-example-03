@@ -1,20 +1,20 @@
-07-10 19:23  rv100-stdlds   INFO     Doc start
-07-10 19:23  rv100-stdlds   INFO     rivtlib version: 1.0.0a5
-07-10 19:23  rv100-stdlds   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv100-stdlds.bak
-07-10 19:23  rv100-stdlds   INFO     Report Summary
-07-10 19:23  rv100-stdlds   INFO     SECTION 1.0 - type I
-07-10 19:23  rv100-stdlds   INFO     tag : _[S]
-07-10 19:23  rv100-stdlds   INFO     command : IMAGE
-07-10 19:23  rv100-stdlds   DEBUG    STREAM b'IHDR' 16 13
-07-10 19:23  rv100-stdlds   DEBUG    STREAM b'eXIf' 41 14
-07-10 19:23  rv100-stdlds   DEBUG    STREAM b'oFFs' 67 9
-07-10 19:23  rv100-stdlds   DEBUG    b'oFFs' 67 9 (unknown)
-07-10 19:23  rv100-stdlds   DEBUG    STREAM b'IDAT' 88 8192
-07-10 19:23  rv100-stdlds   INFO     Design Sections | pdfpage
-07-10 19:23  rv100-stdlds   INFO     SECTION 1.0 - 2 - type I
-07-10 19:23  rv100-stdlds   INFO     command : IMAGE
-07-10 19:23  rv100-stdlds   INFO     Drawing Symbols | pdfpage
-07-10 19:23  rv100-stdlds   INFO     SECTION 1.0 - 3 - type I
-07-10 19:23  rv100-stdlds   INFO     tag : _[T]
-07-10 19:23  rv100-stdlds   INFO     SECTION : Publish Doc
-07-10 19:23  rv100-stdlds   INFO     block tag : METADATA]]
+07-14 17:56  rv100-stdlds   INFO     Doc start
+07-14 17:56  rv100-stdlds   INFO     rivtlib version: 1.0.0a5
+07-14 17:56  rv100-stdlds   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv100-stdlds.bak
+07-14 17:56  rv100-stdlds   INFO     Report Summary
+07-14 17:56  rv100-stdlds   INFO     SECTION 1.0-1 - type I
+07-14 17:56  rv100-stdlds   INFO     tag : _[S]
+07-14 17:56  rv100-stdlds   INFO     command : IMAGE
+07-14 17:56  rv100-stdlds   DEBUG    STREAM b'IHDR' 16 13
+07-14 17:56  rv100-stdlds   DEBUG    STREAM b'eXIf' 41 14
+07-14 17:56  rv100-stdlds   DEBUG    STREAM b'oFFs' 67 9
+07-14 17:56  rv100-stdlds   DEBUG    b'oFFs' 67 9 (unknown)
+07-14 17:56  rv100-stdlds   DEBUG    STREAM b'IDAT' 88 8192
+07-14 17:56  rv100-stdlds   INFO     Design Sections | pdfpage
+07-14 17:56  rv100-stdlds   INFO     SECTION 1.0-2 - type I
+07-14 17:56  rv100-stdlds   INFO     command : IMAGE
+07-14 17:56  rv100-stdlds   INFO     Drawing Symbols | pdfpage
+07-14 17:56  rv100-stdlds   INFO     SECTION 1.0-3 - type I
+07-14 17:56  rv100-stdlds   INFO     tag : _[T]
+07-14 17:56  rv100-stdlds   INFO     SECTION : Publish Doc
+07-14 17:56  rv100-stdlds   INFO     block tag : METADATA]]

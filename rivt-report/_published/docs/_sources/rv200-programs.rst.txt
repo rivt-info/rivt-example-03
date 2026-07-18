@@ -6,19 +6,18 @@
       
 
 
-
 .. _Analysis Programs:
 
-**2.0** | Analysis Programs
+**2.0-1** | Analysis Programs
 ================================================================================
  
 This report division includes RISA and OpenSees analysis and illustrates
 methods for running and importing outputs from external programs.
  
--  **<** `RISA-3D <https://risa.com/products/risa-3d>`__ **>** for determining connections forces
+-  `RISA-3D <https://risa.com/products/risa-3d>`_ for determining connections forces
  
  
--  **<** `OpenSees <https://opensees.berkeley.edu>`__ **>** for determing the period of the tree fort system.
+-  `OpenSees <https://opensees.berkeley.edu>`_ for determing the period of the tree fort system.
  
  
 

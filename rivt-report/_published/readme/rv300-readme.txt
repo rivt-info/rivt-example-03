@@ -1,10 +1,10 @@
 
 --------------------------------------------------------------------------------
-| rivt | Component Design | R Holland | v-1.0.0a13 | 2026-07-10 - 07:24PM
+| rivt | Component Design | R Holland | v-1.0.0a13 | 2026-07-14 - 05:57PM
 --------------------------------------------------------------------------------
 
 
-3.0 | Component Design
+3.0-1 | Component Design
 ================================================================================
  
 This division covers the design of structural components.
@@ -16,7 +16,7 @@ Fig. 1 - Report Flow Chart [file: rvsrc/img/outputc.jpg  ]
  
  
 
-3.0 - 2 | Geometry and Components
+3.0-2 | Geometry and Components
 --------------------------------------------------------------------------------
  
  

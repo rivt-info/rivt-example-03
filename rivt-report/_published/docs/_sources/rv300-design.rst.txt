@@ -6,10 +6,9 @@
       
 
 
-
 .. _Component Design:
 
-**3.0** | Component Design
+**3.0-1** | Component Design
 ================================================================================
  
 This division covers the design of structural components.
@@ -27,7 +26,7 @@ This division covers the design of structural components.
  
 
 
---------------
+-------------------------
 
 
 
@@ -39,7 +38,7 @@ This division covers the design of structural components.
 
 .. _Geometry and Components:
 
-**3.0 - 2** | Geometry and Components
+**3.0-2** | Geometry and Components
 --------------------------------------------------------------------------------
  
  

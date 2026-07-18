@@ -1,7 +1,7 @@
 import rivtlib.rvapi as rv
 
 
-rv.I("""Strut to Tree Connection
+rv.I(r"""Strut to Tree Connection
 
     Use Simpson Strong Tie online selection tool.
 
@@ -11,7 +11,7 @@ rv.I("""Strut to Tree Connection
 
     """)
 
-rv.I("""Top rail Corner | pdfpage
+rv.I(r"""Top rail Corner | pdfpage
 
     Use AWC online connection tool.
 
@@ -23,8 +23,8 @@ rv.I("""Top rail Corner | pdfpage
 
     """)
 
-# %% rv.D("""Publish Doc
-rv.D("""Publish Doc
+# %% rv.D(r"""Publish Doc
+rv.D(r"""Publish Doc
 
     | PUBLISH | Connection Design | pdf
 

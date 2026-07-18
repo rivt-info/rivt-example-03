@@ -49,8 +49,8 @@
     :hidden:
     :maxdepth: 2
 
-    rv100-stdlds.rst
-    rv200-programs.rst
-    rv300-design.rst
+    rv101-standards.rst
+    rv201-programs.rst
+    rv301-design.rst
 
     

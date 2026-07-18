@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>2.2 | OpenSees Analysis &#8212;  </title>
+    <title>Open Sees Analysis &#8212;  </title>
   
   
   
@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=f3a4f08f" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=dc902e91" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -45,7 +45,7 @@
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=cec3f662"></script>
+    <script src="_static/documentation_options.js?v=6abb727b"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -59,8 +59,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rv202-ops';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="3.0 | Component Design" href="rv300-design.html" />
-    <link rel="prev" title="2.1 | Applied deck forces - RISA model" href="rv201-risa.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -118,7 +116,7 @@
     
   
 
-<a class="navbar-brand logo" href="index.html">
+<a class="navbar-brand logo" href="#">
   
   
   
@@ -127,8 +125,8 @@
     
     
     
-    <img src="_static/rivt02.png" class="logo__image only-dark" alt=""/>
-    <img src="_static/rivt02.png" class="logo__image only-light pst-js-only" alt=""/>
+    <img src="_static/logo2.png" class="logo__image only-dark" alt=""/>
+    <img src="_static/logo2.png" class="logo__image only-light pst-js-only" alt=""/>
   
   
     <p class="title logo__title">rivt</p>
@@ -145,26 +143,6 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rv100-stdlds.html">
-    1.0 | Report Summary
-  </a>
-</li>
-
-
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="rv200-programs.html">
-    2.0 | Analysis Programs
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rv300-design.html">
-    3.0 | Component Design
-  </a>
-</li>
-
   </ul>
 </nav></div>
       
@@ -222,8 +200,10 @@
       
       
       
+        
+      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
   
@@ -238,26 +218,6 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rv100-stdlds.html">
-    1.0 | Report Summary
-  </a>
-</li>
-
-
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="rv200-programs.html">
-    2.0 | Analysis Programs
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="rv300-design.html">
-    3.0 | Component Design
-  </a>
-</li>
-
   </ul>
 </nav></div>
           
@@ -280,19 +240,6 @@
     
   </div>
   
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<nav class="bd-docs-nav bd-links"
-     aria-label="Section Navigation">
-  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rv201-risa.html"><strong>2.1</strong> | Applied deck forces - RISA model</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>2.2</strong> | OpenSees Analysis</a></li>
-</ul>
-</div>
-</nav></div>
-    </div>
-  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -313,34 +260,7 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
-<div class="header-article-items header-article__inner">
-  
-    <div class="header-article-items__start">
-      
-        <div class="header-article-item">
-
-<nav aria-label="Breadcrumb" class="d-print-none">
-  <ul class="bd-breadcrumbs">
-    
-    <li class="breadcrumb-item breadcrumb-home">
-      <a href="index.html" class="nav-link" aria-label="Home">
-        <i class="fa-solid fa-home"></i>
-      </a>
-    </li>
-    
-    <li class="breadcrumb-item"><a href="rv200-programs.html" class="nav-link"><strong>2.0</strong> | Analysis Programs</a></li>
-    
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>2.2</strong> | OpenSees Analysis</span></li>
-  </ul>
-</nav>
-</div>
-      
-    </div>
-  
-  
-</div>
-</div>
+              <div class="bd-header-article d-print-none"></div>
               
               
               
@@ -348,8 +268,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="opensees-analysis">
-<span id="id1"></span><h1><strong>2.2</strong> | OpenSees Analysis<a class="headerlink" href="#opensees-analysis" title="Link to this heading">#</a></h1>
+  <section id="open-sees-analysis">
+<h1><strong>Open Sees Analysis</strong><a class="headerlink" href="#open-sees-analysis" title="Link to this heading">#</a></h1>
+</section>
+<section id="opensees-analysis">
+<span id="id1"></span><h1><strong>2.2-1</strong> | OpenSees Analysis<a class="headerlink" href="#opensees-analysis" title="Link to this heading">#</a></h1>
 <p>This section analyzes the period of the tree + tree fort system. The
 OpenSees model is schematically shown below:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>        y
@@ -372,7 +295,7 @@ AI schematic model of tree + tree-fort system
 </div>
 <hr class="docutils" />
 <section id="osp-mod1-model-values">
-<span id="id2"></span><h2><strong>2.2 - 2</strong> | osp-mod1 Model values<a class="headerlink" href="#osp-mod1-model-values" title="Link to this heading">#</a></h2>
+<span id="id2"></span><h2><strong>2.2-2</strong> | osp-mod1 Model values<a class="headerlink" href="#osp-mod1-model-values" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>variable</p></th>
@@ -408,12 +331,117 @@ AI schematic model of tree + tree-fort system
 <hr class="docutils" />
 </section>
 <section id="insert-ops-mod1-output">
-<span id="id3"></span><h2><strong>2.2 - 3</strong> | Insert ops-mod1 Output<a class="headerlink" href="#insert-ops-mod1-output" title="Link to this heading">#</a></h2>
+<span id="id3"></span><h2><strong>2.2-3</strong> | Insert ops-mod1 Output<a class="headerlink" href="#insert-ops-mod1-output" title="Link to this heading">#</a></h2>
 <p>Model Input</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">openseespy.opensees</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ops</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">opsvis</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">opsv</span>
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="c1"># 1. Model Initialization</span>
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">wipe</span><span class="p">()</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">model</span><span class="p">(</span><span class="s2">&quot;BasicBuilder&quot;</span><span class="p">,</span> <span class="s2">&quot;-ndm&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;-ndf&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="c1"># 2. Define Parameters</span>
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="c1"># Mass values (e.g., in tons)</span>
+<span class="n">m1</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">m2</span> <span class="o">=</span> <span class="mf">3.5</span>
+
+<span class="c1"># Stiffness values (e.g., in kN/m)</span>
+<span class="n">k1</span> <span class="o">=</span> <span class="mf">1100.0</span>
+<span class="n">k2</span> <span class="o">=</span> <span class="mf">2100.0</span>
+
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="c1"># 3. Create Nodes</span>
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="c1"># Base node (fixed)</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+
+<span class="c1"># Node 1</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">)</span>
+
+<span class="c1"># Node 2</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">node</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">)</span>
+
+<span class="c1"># Fix the base node in both X and Y directions</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">fix</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1"># Restrain vertical (Y) displacement and rotation at mass nodes</span>
+<span class="c1"># to represent a pure 2D shear/lateral lollipop system</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">fix</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Free in X, Fixed in Y</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">fix</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Free in X, Fixed in Y</span>
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="c1"># 4. Assign Masses</span>
+<span class="c1"># ---------------------------------------------------------------------</span>
+
+<span class="n">ops</span><span class="o">.</span><span class="n">mass</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">m1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">mass</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">m2</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="c1"># 5. Define Elements</span>
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="c1"># Use elastic truss elements to represent the lateral springs</span>
+<span class="c1"># Assign high axial stiffness (E * A) and 0.0 length</span>
+<span class="n">EA</span> <span class="o">=</span> <span class="mf">1e8</span>
+
+<span class="c1"># Spring 1 between Node 1 and Node 2</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">uniaxialMaterial</span><span class="p">(</span><span class="s2">&quot;Elastic&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1100.0</span><span class="p">)</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">element</span><span class="p">(</span><span class="s2">&quot;Truss&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">EA</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Spring 2 between Node 2 and Node 3</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">uniaxialMaterial</span><span class="p">(</span><span class="s2">&quot;Elastic&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">2100.0</span><span class="p">)</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">element</span><span class="p">(</span><span class="s2">&quot;Truss&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">EA</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="c1"># 6. Eigenvalue Analysis &amp; Results Output</span>
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="n">num_modes</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">eigenvalues</span> <span class="o">=</span> <span class="n">ops</span><span class="o">.</span><span class="n">eigen</span><span class="p">(</span><span class="n">num_modes</span><span class="p">)</span>
+
+<span class="n">periods</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">frequencies</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">outL</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_modes</span><span class="p">):</span>
+    <span class="n">lamb</span> <span class="o">=</span> <span class="n">eigenvalues</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">omega</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">lamb</span><span class="p">)</span>
+    <span class="n">freq</span> <span class="o">=</span> <span class="n">omega</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+    <span class="n">period</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">omega</span>
+    <span class="n">periods</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">period</span><span class="p">)</span>
+    <span class="n">frequencies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">freq</span><span class="p">)</span>
+    <span class="n">resS</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Mode </span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s1">: Period = </span><span class="si">{</span><span class="n">period</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1"> s | Frequency = </span><span class="si">{</span><span class="n">freq</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1"> Hz&#39;</span>
+    <span class="n">outL</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">resS</span><span class="p">)</span>
+<span class="n">outS</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">outL</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f1</span><span class="p">:</span>
+    <span class="n">f1</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">outS</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;text output written&quot;</span><span class="p">)</span>
+<span class="c1"># ---------------------------------------------------------------------</span>
+<span class="c1"># 7. Model Visualization</span>
+<span class="c1"># ---------------------------------------------------------------------</span>
+
+<span class="c1"># Plot the defined model to check geometry (this is an axes mdoel)</span>
+<span class="n">mod1</span> <span class="o">=</span> <span class="n">opsv</span><span class="o">.</span><span class="n">plot_model</span><span class="p">()</span>
+<span class="n">fig1</span> <span class="o">=</span> <span class="n">mod1</span><span class="o">.</span><span class="n">get_figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;2-DOF Lollipop Model Geometry&quot;</span><span class="p">)</span>
+<span class="n">fig1</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;figure1.png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;figure 1 written&quot;</span><span class="p">)</span>
+<span class="c1"># interactive display</span>
+<span class="c1"># plt.show(block=False)</span>
+
+<span class="c1"># Plot the mode shape for the first mode (this is a figure)</span>
+<span class="n">fig2</span> <span class="o">=</span> <span class="n">opsv</span><span class="o">.</span><span class="n">plot_mode_shape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">)</span>  <span class="c1"># Scaling factor of 2.0 for visibility</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Mode Shape 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;figure2.png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;figure 2 written&quot;</span><span class="p">)</span>
+<span class="c1"># plt.show()</span>
+</pre></div>
+</div>
 <hr class="docutils" />
 </section>
 <section id="model-plots-and-output">
-<span id="id4"></span><h2><strong>2.2 - 4</strong> | Model plots and output<a class="headerlink" href="#model-plots-and-output" title="Link to this heading">#</a></h2>
+<span id="id4"></span><h2><strong>2.2-4</strong> | Model plots and output<a class="headerlink" href="#model-plots-and-output" title="Link to this heading">#</a></h2>
 <p><strong>Model Plots</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
@@ -442,6 +470,9 @@ AI schematic model of tree + tree-fort system
 </table>
 </div>
 <p><strong>Model Output</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -455,24 +486,6 @@ AI schematic model of tree + tree-fort system
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="rv201-risa.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>2.1</strong> | Applied deck forces - RISA model</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="rv300-design.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>3.0</strong> | Component Design</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -492,10 +505,15 @@ AI schematic model of tree + tree-fort system
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osp-mod1-model-values"><strong>2.2 - 2</strong> | osp-mod1 Model values</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#insert-ops-mod1-output"><strong>2.2 - 3</strong> | Insert ops-mod1 Output</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-plots-and-output"><strong>2.2 - 4</strong> | Model plots and output</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Open Sees Analysis</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#opensees-analysis"><strong>2.2-1</strong> | OpenSees Analysis</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osp-mod1-model-values"><strong>2.2-2</strong> | osp-mod1 Model values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#insert-ops-mod1-output"><strong>2.2-3</strong> | Insert ops-mod1 Output</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-plots-and-output"><strong>2.2-4</strong> | Model plots and output</a></li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
@@ -522,9 +540,9 @@ AI schematic model of tree + tree-fort system
         <div class="footer-item">
 <!-- _templates/rv-author.html -->
 <div class="footer-item">
-<p class="rvauthor">
-    R Holland
-</p>
+    <p class="rvauthor">
+        R Holland
+    </p>
 </div></div>
       
     </div>
@@ -535,9 +553,9 @@ AI schematic model of tree + tree-fort system
         <div class="footer-item">
 <!-- _templates/rv-title.html -->
 <div class="footer-item">
-<p class="rvtitle">
-    Tree Fort  v.1.0.0a12 
-</p>
+    <p class="rvtitle">
+        Open Sees Analysis  &nbsp;&nbsp;  v.1.0.0a13 
+    </p>
 </div></div>
       
     </div>
@@ -548,9 +566,9 @@ AI schematic model of tree + tree-fort system
         <div class="footer-item">
 <!-- _templates/rv-date.html -->
 <div class="footer-item">
-<p class="rvdate">
-    2026-06-26
-</p>
+    <p class="rvdate">
+        2026-07-15
+    </p>
 </div></div>
       
     </div>

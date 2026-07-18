@@ -6,10 +6,9 @@
       
 
 
-
 .. _Strut to Tree Connection:
 
-**3.2** | Strut to Tree Connection
+**3.2-1** | Strut to Tree Connection
 ================================================================================
  
 Use Simpson Strong Tie online selection tool.
@@ -37,7 +36,7 @@ Use Simpson Strong Tie online selection tool.
  
 
 
---------------
+-------------------------
 
 
 
@@ -49,7 +48,7 @@ Use Simpson Strong Tie online selection tool.
 
 .. _Top rail Corner:
 
-**3.2 - 2** | Top rail Corner
+**3.2-2** | Top rail Corner
 --------------------------------------------------------------------------------
  
 Use AWC online connection tool.

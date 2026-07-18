@@ -10,7 +10,7 @@ import rivtlib.rvapi as rv
 # rv addtag = false
 # a true setting adds the API tag to each section number - default false
 
-rv.I("""Summary
+rv.I(r"""Summary
 
     The structural design of several components of a treehouse platform is
     provided.
@@ -21,7 +21,7 @@ rv.I("""Summary
     """)
 
 
-rv.I("""Load Combinations and Geometry 
+rv.I(r"""Load Combinations and Geometry 
 
     Dead and live load contributions to beam UDL.
 
@@ -43,7 +43,7 @@ rv.I("""Load Combinations and Geometry
     """)
 
 # %%
-rv.V("""Loads and Geometry 
+rv.V(r"""Loads and Geometry 
 
     Beam Loads and Properties _[T]
     D_1 := 3.8*PSF | KPA, 2 | joists DL         
@@ -69,7 +69,7 @@ rv.V("""Loads and Geometry
     """)
 
 # %%
-rv.S("""Publish Doc
+rv.S(r"""Publish Doc
 
     _[[METADATA]] 
     [doc]

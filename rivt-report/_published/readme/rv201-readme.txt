@@ -1,57 +1,23 @@
 
 --------------------------------------------------------------------------------
-| rivt | RISA Analysis | R Holland | v-1.0.0a13 | 2026-07-10 - 07:23PM
+| rivt | Analysis | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
 --------------------------------------------------------------------------------
 
 
-2.1 | Applied deck forces - RISA model
+2.1-1 | Analysis Programs
 ================================================================================
  
+This report division includes RISA and OpenSees analysis and illustrates
+methods for running and importing outputs from external programs.
  
-          ----------------------------------------
-Fig. 1 - Risa Model [file: rvsrc/img/risa4.png  ]
-          ----------------------------------------
-
- 
- 
-
-2.1 - 2 | Resultant axial forces - RISA model
---------------------------------------------------------------------------------
- 
-          ----------------------------------------
-Fig. 2 - Strut Axial Forces [file: rvsrc/img/risa6.png  ]
-          ----------------------------------------
-
+-  RISA-3D https://risa.com/products/risa-3d for determining connections forces
  
  
-
-2.1 - 3 | Top rail shear reactions - RISA model
---------------------------------------------------------------------------------
- 
-Under the California Building Code (CBC), handrails and guards (railings)
-must resist a uniform load of 50 plf and a concentrated point load of 200
-lbs, both applied horizontally to the top rail. Intermediate rails,
-balusters, and infill panels must separately withstand a concentrated load
-of 50 lbs.
- 
-  =======  <-- Top Rail
-     |     <-- Lateral Load (P)
-     | 
-     |
-     |
-     |  Height (h)
-     |
-     |
-     |
-     |
-===========  <-- Fixed Support / Deck Surface
-
-Structural Schematic of Railing and Loads Drawn by AI
-
+-  OpenSees https://opensees.berkeley.edu for determing the period of the tree fort system.
  
  
           ----------------------------------------
-Fig. 3 - Rail Lateral Forces [file: rvsrc/img/risa9.png  ]
+Fig. 1 - Report Flow Chart [file: rvsrc/img/outputb.jpg  ]
           ----------------------------------------
 
  
