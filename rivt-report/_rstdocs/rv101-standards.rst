@@ -1,17 +1,21 @@
+ 
+.. raw:: pdf
 
---------------------------------------------------------------------------------
-| rivt | Building Standards | R Holland | v-1.0.0a13 | 2026-07-18 - 03:38AM
---------------------------------------------------------------------------------
+   PageBreak
+
+      
 
 
-1.1-1 | Summary
+.. _Summary:
+
+**1.1-1** | Summary
 ================================================================================
  
 The design loads are based on the standards of the California Building
 Code (CBC) outlined below.  Standard math symbols are profided for reference.
  
 
-Table 1: California Building Standards
+**Table 1**: California Building Standards
 
 ================  ========================================  ========================================
 Standard          Organization                              Description & Application
@@ -44,7 +48,9 @@ AWPA U1 / M4      American Wood Protection Association      Standards for preser
  
  
 
-Table 2: Math Abbreviations
+**Table 2**: Math Abbreviations
+
+
 ================== ============================================================
 Abbreviation        Definition
 ================== ============================================================
@@ -84,8 +90,8 @@ Abbreviation        Definition
 :math:`F_b`         NDS - Reference bending design value
 :math:`F_t`         NDS - Reference tension design value
 :math:`F_v`         NDS - Reference shear design value
-:math:`F_{Cperp}`   NDS - Reference compression perpendicular to grain
-:math:`F_c`         NDS - Reference compression parallel to grain
+:math:`F_{Cperp}`   NDS - Reference compression perpendicular to grain 
+:math:`F_c`         NDS - Reference compression parallel to grain 
 :math:`E`           NDS - Modulus of elasticity
 :math:`E_{min}`     NDS - Reference modulus for stability and stiffness
 :math:`G`           NDS - Specific gravity
@@ -107,10 +113,19 @@ Abbreviation        Definition
 :math:`F'_{b}`      NDS - Adjusted bending design value
 :math:`F'_{t}`      NDS - Adjusted tension design value
 :math:`F'_{v}`      NDS - Adjusted shear design value
-:math:`F'_{Cperp}`  NDS - Adjusted compression perpendicular
-:math:`F'_{c}`      NDS - Adjusted compression parallel to grain
+:math:`F'_{Cperp}`  NDS - Adjusted compression perpendicular 
+:math:`F'_{c}`      NDS - Adjusted compression parallel to grain 
 :math:`E'`          NDS - Adjusted modulus of elasticity
 :math:`E'_{min}`    NDS - Adjusted modulus ofor stability and stiffness
 ================== ============================================================
  
  
+
+.. toctree::
+    :hidden:
+    :maxdepth: 2
+
+    rv102-loads.rst
+    rv103-stdlds.rst
+
+    

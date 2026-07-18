@@ -7,10 +7,8 @@ _published folder. Copy and rename this file to save custom report settings
 
 To save execution time the script does not regenerate individual PDF docs
 unless specified in the settings. HTML and text docs are always regenerated.
-See https://www.rivt.info for more details.
-
-The report may be published in each format in a single compilation. 
-"""
+See https://www.rivt.info for more details. The report may be published in each
+format in a single runby including it in the typeS list. """
 
 import os
 import sys
@@ -19,7 +17,7 @@ import importlib
 # ==== Modify report settings between the double lines ========================
 # ==== Edit typeS list with desired output formats ["txt","pdf","html"] =======
 # ==== Update rept_filename, must start with rivt- , do not modify .{typeS} ===
-for typeS in ["txt"]:  # ["txt","pdf","html"]
+for typeS in ["html"]:  # options: ["txt","pdf","html"]
     reportsetS = f"""
     [report]
     ;-----------------------------------------

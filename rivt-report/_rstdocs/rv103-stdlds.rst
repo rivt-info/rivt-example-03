@@ -1,10 +1,14 @@
+ 
+.. raw:: pdf
 
---------------------------------------------------------------------------------
-| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-18 - 03:38AM
---------------------------------------------------------------------------------
+   PageBreak
+
+      
 
 
-1.3-1 | Report Summary
+.. _Report Summary:
+
+**1.3-1** | Report Summary
 ================================================================================
  
 This report covers the structural design of a tree fort in Novato,
@@ -15,7 +19,7 @@ The report illustrates the use of tags, commands and scripts including:
  
 - a rivt-report.py script that assembles the report.
  
-- shell commands that run an  external program [ref: <OpenSees Analysis>] .
+- shell commands that run an  **<** :ref:`external program <OpenSees Analysis>` **>** .
  
 - external urls and section links between documents.
  
@@ -25,30 +29,68 @@ The report illustrates the use of tags, commands and scripts including:
  
 - the use of AI in preparing
  
-          ----------------------------------------
-Fig. 1 - Tree Fort [file: rvsrc/img/iso1.png  ]
-          ----------------------------------------
+
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/iso1.png
+   :width: 100%
+   :align: center
+
+   **Fig. 1** - Tree Fort   
+    
+
 
  
  
 
-1.3-2 | Design Sections
+
+-------------------------
+
+
+
+.. raw:: pdf
+
+   PageBreak
+
+
+
+.. _Design Sections:
+
+**1.3-2** | Design Sections
 --------------------------------------------------------------------------------
  
 The design report is organized into the following sections:
  
-          ----------------------------------------
-Fig. 2 - Report Flow Chart [file: rvsrc/img/outputa.jpg  ]
-          ----------------------------------------
+
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/outputa.jpg
+   :width: 65%
+   :align: center
+
+   **Fig. 2** - Report Flow Chart   
+    
+
 
  
  
 
-1.3-3 | Drawing Symbols
+
+-------------------------
+
+
+
+.. raw:: pdf
+
+   PageBreak
+
+
+
+.. _Drawing Symbols:
+
+**1.3-3** | Drawing Symbols
 --------------------------------------------------------------------------------
  
 
-Table 1: Drawing Abbreviations
+**Table 1**: Drawing Abbreviations
+
+
 ============ ==============================================
 Abbreviation   Definition
 ============ ==============================================

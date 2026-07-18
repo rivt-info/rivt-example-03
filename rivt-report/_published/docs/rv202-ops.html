@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>Open Sees Analysis &#8212;  </title>
+    <title>2.2-1 | OpenSees Analysis &#8212;  </title>
   
   
   
@@ -45,7 +45,7 @@
 
     <script src="_static/jquery.js?v=5d32c60e"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="_static/documentation_options.js?v=6abb727b"></script>
+    <script src="_static/documentation_options.js?v=96ca68dc"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -59,6 +59,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rv202-ops';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2.3-1 | Applied deck forces - RISA model" href="rv203-risa.html" />
+    <link rel="prev" title="2.1-1 | Analysis Programs" href="rv201-programs.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -116,7 +118,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -125,8 +127,8 @@
     
     
     
-    <img src="_static/logo2.png" class="logo__image only-dark" alt=""/>
-    <img src="_static/logo2.png" class="logo__image only-light pst-js-only" alt=""/>
+    <img src="_static/rivt02.png" class="logo__image only-dark" alt=""/>
+    <img src="_static/rivt02.png" class="logo__image only-light pst-js-only" alt=""/>
   
   
     <p class="title logo__title">rivt</p>
@@ -143,6 +145,26 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rv101-standards.html">
+    1.1-1 | Summary
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rv201-programs.html">
+    2.1-1 | Analysis Programs
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rv301-design.html">
+    3.1-1 | Component Design
+  </a>
+</li>
+
   </ul>
 </nav></div>
       
@@ -200,10 +222,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -218,6 +238,26 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rv101-standards.html">
+    1.1-1 | Summary
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="rv201-programs.html">
+    2.1-1 | Analysis Programs
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="rv301-design.html">
+    3.1-1 | Component Design
+  </a>
+</li>
+
   </ul>
 </nav></div>
           
@@ -240,6 +280,19 @@
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>2.2-1</strong> | OpenSees Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv203-risa.html"><strong>2.3-1</strong> | Applied deck forces - RISA model</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
       <div class="sidebar-primary-item">
@@ -260,7 +313,34 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="rv201-programs.html" class="nav-link"><strong>2.1-1</strong> | Analysis Programs</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>2.2-1</strong> | OpenSees Analysis</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
               
               
               
@@ -268,10 +348,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="open-sees-analysis">
-<h1><strong>Open Sees Analysis</strong><a class="headerlink" href="#open-sees-analysis" title="Link to this heading">#</a></h1>
-</section>
-<section id="opensees-analysis">
+  <section id="opensees-analysis">
 <span id="id1"></span><h1><strong>2.2-1</strong> | OpenSees Analysis<a class="headerlink" href="#opensees-analysis" title="Link to this heading">#</a></h1>
 <p>This section analyzes the period of the tree + tree fort system. The
 OpenSees model is schematically shown below:</p>
@@ -290,7 +367,7 @@ OpenSees model is schematically shown below:</p>
     -----------
     (Ground)
 
-AI schematic model of tree + tree-fort system
+Schematic model of Tree Fort
 </pre></div>
 </div>
 <hr class="docutils" />
@@ -330,8 +407,8 @@ AI schematic model of tree + tree-fort system
 </div>
 <hr class="docutils" />
 </section>
-<section id="insert-ops-mod1-output">
-<span id="id3"></span><h2><strong>2.2-3</strong> | Insert ops-mod1 Output<a class="headerlink" href="#insert-ops-mod1-output" title="Link to this heading">#</a></h2>
+<section id="ops-mod1-input">
+<span id="id3"></span><h2><strong>2.2-3</strong> | ops-mod1 Input<a class="headerlink" href="#ops-mod1-input" title="Link to this heading">#</a></h2>
 <p>Model Input</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">openseespy.opensees</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ops</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -486,6 +563,24 @@ AI schematic model of tree + tree-fort system
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="rv201-programs.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>2.1-1</strong> | Analysis Programs</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="rv203-risa.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>2.3-1</strong> | Applied deck forces - RISA model</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -505,15 +600,10 @@ AI schematic model of tree + tree-fort system
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Open Sees Analysis</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#opensees-analysis"><strong>2.2-1</strong> | OpenSees Analysis</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osp-mod1-model-values"><strong>2.2-2</strong> | osp-mod1 Model values</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#insert-ops-mod1-output"><strong>2.2-3</strong> | Insert ops-mod1 Output</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ops-mod1-input"><strong>2.2-3</strong> | ops-mod1 Input</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-plots-and-output"><strong>2.2-4</strong> | Model plots and output</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
@@ -540,9 +630,9 @@ AI schematic model of tree + tree-fort system
         <div class="footer-item">
 <!-- _templates/rv-author.html -->
 <div class="footer-item">
-    <p class="rvauthor">
-        R Holland
-    </p>
+<p class="rvauthor">
+    R Holland
+</p>
 </div></div>
       
     </div>
@@ -553,9 +643,9 @@ AI schematic model of tree + tree-fort system
         <div class="footer-item">
 <!-- _templates/rv-title.html -->
 <div class="footer-item">
-    <p class="rvtitle">
-        Open Sees Analysis  &nbsp;&nbsp;  v.1.0.0a13 
-    </p>
+<p class="rvtitle">
+    Tree Fort  v.1.0.0a17 
+</p>
 </div></div>
       
     </div>
@@ -566,9 +656,9 @@ AI schematic model of tree + tree-fort system
         <div class="footer-item">
 <!-- _templates/rv-date.html -->
 <div class="footer-item">
-    <p class="rvdate">
-        2026-07-15
-    </p>
+<p class="rvdate">
+    2026-07-18
+</p>
 </div></div>
       
     </div>

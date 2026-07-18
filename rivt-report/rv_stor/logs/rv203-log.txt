@@ -1,30 +1,30 @@
-07-18 02:58  rv203-risa   INFO     Doc start
-07-18 02:58  rv203-risa   INFO     rivtlib version: 1.0.0a5
-07-18 02:58  rv203-risa   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv203-risa.bak
-07-18 02:58  rv203-risa   INFO     Applied deck forces - RISA model 
-07-18 02:58  rv203-risa   INFO     SECTION 2.3-1 - type I
-07-18 02:58  rv203-risa   INFO     command : IMAGE
-07-18 02:58  rv203-risa   DEBUG    STREAM b'IHDR' 16 13
-07-18 02:58  rv203-risa   DEBUG    STREAM b'sRGB' 41 1
-07-18 02:58  rv203-risa   DEBUG    STREAM b'gAMA' 54 4
-07-18 02:58  rv203-risa   DEBUG    STREAM b'pHYs' 70 9
-07-18 02:58  rv203-risa   DEBUG    STREAM b'IDAT' 91 65445
-07-18 02:58  rv203-risa   INFO     Resultant axial forces - RISA model | pdfpage
-07-18 02:58  rv203-risa   INFO     SECTION 2.3-2 - type I
-07-18 02:58  rv203-risa   INFO     command : IMAGE
-07-18 02:58  rv203-risa   DEBUG    STREAM b'IHDR' 16 13
-07-18 02:58  rv203-risa   DEBUG    STREAM b'sRGB' 41 1
-07-18 02:58  rv203-risa   DEBUG    STREAM b'gAMA' 54 4
-07-18 02:58  rv203-risa   DEBUG    STREAM b'pHYs' 70 9
-07-18 02:58  rv203-risa   DEBUG    STREAM b'IDAT' 91 65445
-07-18 02:58  rv203-risa   INFO     Top rail shear reactions - RISA model | pdfpage
-07-18 02:58  rv203-risa   INFO     SECTION 2.3-3 - type I
-07-18 02:58  rv203-risa   INFO     tag : _[[TEXT]]
-07-18 02:58  rv203-risa   INFO     command : IMAGE
-07-18 02:58  rv203-risa   DEBUG    STREAM b'IHDR' 16 13
-07-18 02:58  rv203-risa   DEBUG    STREAM b'sRGB' 41 1
-07-18 02:58  rv203-risa   DEBUG    STREAM b'gAMA' 54 4
-07-18 02:58  rv203-risa   DEBUG    STREAM b'pHYs' 70 9
-07-18 02:58  rv203-risa   DEBUG    STREAM b'IDAT' 91 65445
-07-18 02:58  rv203-risa   INFO     SECTION : Publish Doc 
-07-18 02:58  rv203-risa   INFO     block tag : METADATA]]
+07-18 03:38  rv203-risa   INFO     Doc start
+07-18 03:38  rv203-risa   INFO     rivtlib version: 1.0.0a5
+07-18 03:38  rv203-risa   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv203-risa.bak
+07-18 03:38  rv203-risa   INFO     Applied deck forces - RISA model 
+07-18 03:38  rv203-risa   INFO     SECTION 2.3-1 - type I
+07-18 03:38  rv203-risa   INFO     command : IMAGE
+07-18 03:38  rv203-risa   DEBUG    STREAM b'IHDR' 16 13
+07-18 03:38  rv203-risa   DEBUG    STREAM b'sRGB' 41 1
+07-18 03:38  rv203-risa   DEBUG    STREAM b'gAMA' 54 4
+07-18 03:38  rv203-risa   DEBUG    STREAM b'pHYs' 70 9
+07-18 03:38  rv203-risa   DEBUG    STREAM b'IDAT' 91 65445
+07-18 03:38  rv203-risa   INFO     Resultant axial forces - RISA model | pdfpage
+07-18 03:38  rv203-risa   INFO     SECTION 2.3-2 - type I
+07-18 03:38  rv203-risa   INFO     command : IMAGE
+07-18 03:38  rv203-risa   DEBUG    STREAM b'IHDR' 16 13
+07-18 03:38  rv203-risa   DEBUG    STREAM b'sRGB' 41 1
+07-18 03:38  rv203-risa   DEBUG    STREAM b'gAMA' 54 4
+07-18 03:38  rv203-risa   DEBUG    STREAM b'pHYs' 70 9
+07-18 03:38  rv203-risa   DEBUG    STREAM b'IDAT' 91 65445
+07-18 03:38  rv203-risa   INFO     Top rail shear reactions - RISA model | pdfpage
+07-18 03:38  rv203-risa   INFO     SECTION 2.3-3 - type I
+07-18 03:38  rv203-risa   INFO     tag : _[[TEXT]]
+07-18 03:38  rv203-risa   INFO     command : IMAGE
+07-18 03:38  rv203-risa   DEBUG    STREAM b'IHDR' 16 13
+07-18 03:38  rv203-risa   DEBUG    STREAM b'sRGB' 41 1
+07-18 03:38  rv203-risa   DEBUG    STREAM b'gAMA' 54 4
+07-18 03:38  rv203-risa   DEBUG    STREAM b'pHYs' 70 9
+07-18 03:38  rv203-risa   DEBUG    STREAM b'IDAT' 91 65445
+07-18 03:38  rv203-risa   INFO     SECTION : Publish Doc 
+07-18 03:38  rv203-risa   INFO     block tag : METADATA]]

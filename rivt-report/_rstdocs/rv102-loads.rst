@@ -1,21 +1,32 @@
+ 
+.. raw:: pdf
 
---------------------------------------------------------------------------------
-| rivt | Loads | R Holland | v-1.0.0a13 | 2026-07-18 - 03:38AM
---------------------------------------------------------------------------------
+   PageBreak
+
+      
 
 
-1.2-1 | Load Combinations and Geometry
+.. _Load Combinations and Geometry:
+
+**1.2-1** | Load Combinations and Geometry
 ================================================================================
  
  
-          ----------------------------------------
-Fig. 1 - Tree Fort Plan [file: rvsrc/img/tree4.png  ]
-          ----------------------------------------
+
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/tree4.png
+   :width: 50%
+   :align: center
+
+   **Fig. 1** - Tree Fort Plan   
+    
+
 
  
  
 
-Table 1: ASCE 7-05 Load Effects
+**Table 1**: ASCE 7-05 Load Effects
+
+
 =============   ==============================================
 Equation No.    Load Combination
 =============   ==============================================
@@ -25,16 +36,23 @@ Equation No.    Load Combination
 =============   ==============================================
  
 
-1.2-2 | Unit Loads
+
+-------------------------
+
+
+
+.. _Unit Loads:
+
+**1.2-2** | Unit Loads
 --------------------------------------------------------------------------------
  
  
-Unit weights imported from csv file - table created by AI.
+**Unit weights imported from csv file - table created by AI.**
 
 
  
 
-Table 2: Unit Weights - Doug Fir
+**Table 2**: Unit Weights - Doug Fir
 
 =========  ================  ================  ==========  ===================  ====================  ==================
 Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Volume_ft3_per_ft    Density_lb_per_ft3    Weight_lb_per_ft
@@ -50,12 +68,14 @@ Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Volume_ft3_per_ft    
 
  
  
-Variables assigned by inline definitions.
+**Variables assigned by inline definitions.**
 
 
  
 
-Table 3: Member Nominal Loads and Properties
+**Table 3**: Member Nominal Loads and Properties
+
+
 ==========  =============  =============  =====================
 variable    value          [value]        description
 ==========  =============  =============  =====================

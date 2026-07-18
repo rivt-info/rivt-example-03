@@ -1,18 +1,24 @@
+ 
+.. raw:: pdf
 
---------------------------------------------------------------------------------
-| rivt | Member Design | R Holland | v-1.0.0a13 | 2026-07-18 - 03:38AM
---------------------------------------------------------------------------------
+   PageBreak
+
+      
 
 
-3.3-1 | Deck Design Properties
+.. _Deck Design Properties:
+
+**3.3-1** | Deck Design Properties
 ================================================================================
  
-Import deck loads and functions.
+**Import deck loads and functions.**
 
 
  
+|
 
-Table 1: Load values from rv102-loads.py (rv_stor/vals/v102-2.csv)
+**Table 1**: Load values from rv102-loads.py (rv_stor/vals/v102-2.csv)
+
 ==========  =============  =============  =====================
 variable    value          [value]        description
 ==========  =============  =============  =====================
@@ -28,7 +34,8 @@ HL_1        20.00 p_sf     0.96 kPA       ASCE7-05 HL
  
  
 
-Table 2: Import Functions (rvsrc/scripts/checks.py)
+**Table 2**: Import Functions (rvsrc/scripts/checks.py)
+
 
 =========================  ========================================
 Function                   Docstring
@@ -41,11 +48,20 @@ nds_post_check(** kwargs)  Check stress at cantilever post
  
  
 
-3.3-2 | Deck Design Summary
+
+-------------------------
+
+
+
+.. _Deck Design Summary:
+
+**3.3-2** | Deck Design Summary
 --------------------------------------------------------------------------------
  
 Design properties as dictionary for checking function nds_beam_chk
  
+.. code-block:: text 
+
     Function Arguments Dictionary : beam1 (units: inch, pounds)
     ===========================================================================
     ln_1 = 4*12.  # beam span
@@ -66,42 +82,58 @@ Design properties as dictionary for checking function nds_beam_chk
     deflect_limit = 240.0 # max allowable deflection ln_1/deflect_limit
     ===========================================================================
 
-
  
  
-Design Results
-
-
- 
-┌  Eq-1 | Check Deck Beam Function
-│
-│    function: nds_beam_check | args: beam1 | units: inch, pounds
-└
-
-
-Beam Check Results:
-===============================    
-total UDL: 1.88
-fb: 261.82
-Fb_prime: 680.00
-E_prime: 1275000.00
-stress_ratio: 0.39
-deflection: 0.07
-deflection_ratio:  0.20
-
+**Design Results**
 
 
  
+
+
+
+**Eq. 1:**  Check Deck Beam Function
+
+.. code-block:: text 
+
+      function: nds_beam_check | args: beam1 | units: inch, pounds
+           
+           Beam Check Results:
+           ===============================    
+           total UDL: 1.88
+           fb: 261.82
+           Fb_prime: 680.00
+           E_prime: 1275000.00
+           stress_ratio: 0.39
+           deflection: 0.07
+           deflection_ratio:  0.20
+
+
+
+
+
+ 
  
 
-3.3-3 | Strut
+
+-------------------------
+
+
+
+.. _Strut:
+
+**3.3-3** | Strut
 --------------------------------------------------------------------------------
  
 Check strut D/C ratio with BeamChek 2023
  
-          ----------------------------------------
-Fig. 1 - Screenshot: Strut Check [file: rvsrc/img/bmck1.jpg  ]
-          ----------------------------------------
+
+.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/img/bmck1.jpg
+   :width: 80%
+   :align: center
+
+   **Fig. 1** - Screenshot: Strut Check   
+    
+
 
  
  
