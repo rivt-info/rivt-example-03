@@ -14,10 +14,11 @@ import os
 import sys
 import importlib
 
-# ==== Modify report settings between the double lines ========================
+# ==== Modify report settings only between the double lines ====================
+# ==== Update rept_filename if needed and start name with rivt-. 
+# ==== Do not modify .{typeS} variable
 # ==== Edit typeS list with desired output formats ["txt","pdf","html"] =======
-# ==== Update rept_filename, must start with rivt- , do not modify .{typeS} ===
-for typeS in ["html"]:  # options: ["txt","pdf","html"]
+for typeS in ["txt"]:  # options: ["txt","pdf","html"]
     reportsetS = f"""
     [report]
     ;-----------------------------------------

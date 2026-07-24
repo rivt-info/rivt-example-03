@@ -1,13 +1,13 @@
 
 --------------------------------------------------------------------------------
-| rivt | Analysis | R Holland | v-1.0.0a13 | 2026-07-18 - 03:38AM
+| rivt | Analysis | R Holland | v-1.0.0a13 | 2026-07-24 - 01:25AM
 --------------------------------------------------------------------------------
 
 
 2.1-1 | Analysis Programs
 ================================================================================
  
-This report division includes RISA and OpenSees analysis and illustrates
+This division includes RISA and OpenSees analysis and illustrates
 methods for running and importing outputs from external programs.
  
 -  RISA-3D https://risa.com/products/risa-3d for determining connections forces
@@ -17,7 +17,7 @@ methods for running and importing outputs from external programs.
  
  
           ----------------------------------------
-Fig. 1 - Report Flow Chart [file: rvsrc/img/outputb.jpg  ]
+Fig. 1 - Report Flow Chart [file: outputb.jpg  ]
           ----------------------------------------
 
  

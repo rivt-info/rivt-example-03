@@ -1,0 +1,23 @@
+07-24 01:47  rv202-ops   INFO     Doc start
+07-24 01:47  rv202-ops   INFO     rivtlib version: 1.0.0a5
+07-24 01:47  rv202-ops   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\_rvstor\logs\rv202-ops.bak
+07-24 01:47  rv202-ops   INFO     OpenSees Analysis
+07-24 01:47  rv202-ops   INFO     SECTION 2.2-1 - type I
+07-24 01:47  rv202-ops   INFO     command : 
+07-24 01:47  rv202-ops   INFO     command : 
+07-24 01:47  rv202-ops   INFO     command : 
+07-24 01:47  rv202-ops   INFO     command : 
+07-24 01:47  rv202-ops   INFO     command : 
+07-24 01:47  rv202-ops   INFO     tag : _[[END]]
+07-24 01:47  rv202-ops   INFO     OpenSees values
+07-24 01:47  rv202-ops   INFO     SECTION 2.2-2 - type V
+07-24 01:47  rv202-ops   INFO     OpenSees Model Input | n | subpython | opsmod1.py
+07-24 01:47  rv202-ops   INFO     SECTION 2.2-3 - type T
+07-24 01:47  rv202-ops   INFO     OpenSees Shell
+07-24 01:47  rv202-ops   INFO     SECTION 2.2-4 - type R
+07-24 01:47  rv202-ops   INFO     Model plots and output | pdfpage
+07-24 01:47  rv202-ops   INFO     SECTION 2.2-5 - type I
+07-24 01:47  rv202-ops   INFO     tag : _[B]
+07-24 01:47  rv202-ops   INFO     command : IMAGE2
+07-24 01:47  rv202-ops   INFO     tag : _[B]
+07-24 01:47  rv202-ops   INFO     command : TEXT

@@ -1,3 +1,4 @@
+# opensees model for a 2-DOF lollipop system
 
 import openseespy.opensees as ops
 import numpy as np
@@ -14,12 +15,12 @@ ops.model("BasicBuilder", "-ndm", 2, "-ndf", 2)
 # 2. Define Parameters
 # ---------------------------------------------------------------------
 # Mass values (e.g., in tons)
-m1 = 1.5
-m2 = 3.5
+m1 = {mass1}
+m2 = {mass2}
 
 # Stiffness values (e.g., in kN/m)
-k1 = 1100.0
-k2 = 2100.0
+k1 = {trk1}
+k2 = {trk2}
 
 # ---------------------------------------------------------------------
 # 3. Create Nodes
@@ -54,11 +55,11 @@ ops.mass(3, m2, 0.0)
 EA = 1e8
 
 # Spring 1 between Node 1 and Node 2
-ops.uniaxialMaterial("Elastic", 1, 1100.0)
+ops.uniaxialMaterial("Elastic", 1, {trk1})
 ops.element("Truss", 1, 1, 2, EA, 1)
 
 # Spring 2 between Node 2 and Node 3
-ops.uniaxialMaterial("Elastic", 2, 2100.0)
+ops.uniaxialMaterial("Elastic", 2, {trk2})
 ops.element("Truss", 2, 2, 3, EA, 2)
 
 # ---------------------------------------------------------------------
@@ -77,7 +78,7 @@ for i in range(num_modes):
     period = 2 * math.pi / omega
     periods.append(period)
     frequencies.append(freq)
-    resS = f'Mode {i + 1}: Period = {period:.4f} s | Frequency = {freq:.4f} Hz'
+    resS = f'Mode {{i + 1}}: Period = {{period:.4f}} s | Frequency = {{freq:.4f}} Hz'
     outL.append(resS)
 outS = chr(10).join(item for item in outL)
 with open("output.txt", 'w') as f1:

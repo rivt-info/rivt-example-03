@@ -29,7 +29,7 @@ rv.I(r"""Report Summary
 
     - the use of AI in preparing
 
-    | IMAGE | rvsrc/img/iso1.png | Tree Fort, 100, num, not
+    | IMAGE | iso1.png | Tree Fort, 100, num, not
 
     """)
 
@@ -38,7 +38,7 @@ rv.I(r"""Design Sections | pdfpage
 
     The design report is organized into the following sections:
 
-    | IMAGE | rvsrc/img/outputa.jpg | Report Flow Chart, 65, num, not
+    | IMAGE | outputa.jpg | Report Flow Chart, 65, num, not
 
     """)
 
@@ -127,7 +127,7 @@ rv.I(r"""Drawing Symbols | pdfpage
 # %% rv.D(r"""Publish Doc
 rv.D(r"""Publish Doc
 
-    | PUBLISH | Standards and Loads | pdf
+    | PUBLISH | Standards and Loads | txt
 
     _[[METADATA]] 
     [process]

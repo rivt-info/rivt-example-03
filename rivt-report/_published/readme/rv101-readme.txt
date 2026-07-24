@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-| rivt | Building Standards | R Holland | v-1.0.0a13 | 2026-07-18 - 03:38AM
+| rivt | Building Standards | R Holland | v-1.0.0a13 | 2026-07-23 - 04:10PM
 --------------------------------------------------------------------------------
 
 
@@ -40,7 +40,6 @@ AWPA U1 / M4      American Wood Protection Association      Standards for preser
                                                             permanent installations.
 ================  ========================================  ========================================
 
- 
  
  
 
@@ -112,5 +111,4 @@ Abbreviation        Definition
 :math:`E'`          NDS - Adjusted modulus of elasticity
 :math:`E'_{min}`    NDS - Adjusted modulus ofor stability and stiffness
 ================== ============================================================
- 
  

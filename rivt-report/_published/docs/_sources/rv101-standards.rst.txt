@@ -1,3 +1,6 @@
+**Building Standards**
+================================================================================
+
  
 .. raw:: pdf
 
@@ -44,7 +47,6 @@ AWPA U1 / M4      American Wood Protection Association      Standards for preser
                                                             permanent installations.
 ================  ========================================  ========================================
 
- 
  
  
 
@@ -119,13 +121,3 @@ Abbreviation        Definition
 :math:`E'_{min}`    NDS - Adjusted modulus ofor stability and stiffness
 ================== ============================================================
  
- 
-
-.. toctree::
-    :hidden:
-    :maxdepth: 2
-
-    rv102-loads.rst
-    rv103-stdlds.rst
-
-    

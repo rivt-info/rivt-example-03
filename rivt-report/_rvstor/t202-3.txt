@@ -1,0 +1,26 @@
+
+    This section writes the OpenSees input file based on rivt calculations and
+    runs a shell command in a virtual Python environment for Python-3.12 - the
+    version compatible with OpenSeesPy.
+    
+    _[[WRITE]] ops1.cmd
+    cd "%USERPROFILE%"
+    cd py312
+    call scripts\\activate
+    python opsmod1.py
+    _[[END]]
+
+    Copy command to OpenSees folder
+
+    | COPY |  -rvsrc-/scripts | %userprofile%/py312/ | opsmod1.py
+
+    Run shell command
+
+    | SHELL | -rvsrc-/scripts | ops1.cmd
+
+    Copy images and text from OpenSees analysis
+
+    | COPY | %userprofile%/py312/ | -rvsrc-/img | *.png
+
+    | COPY | %userprofile%/py312/ | -rvsrc- | *.txt
+    

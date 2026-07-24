@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-Building Standards | R Holland | v-1.0.0a13 | 2026-07-18 - 02:57AM
+Building Standards | R Holland | v-1.0.0a13 | 2026-07-23 - 04:09PM
 --------------------------------------------------------------------------------
 
 
@@ -11,7 +11,7 @@ The design loads are based on the standards of the California Building
 Code (CBC) outlined below.  Standard math symbols are profided for reference.
  
 
-Table 1: California Building Standards [file: rvsrc/vals/bldgstd.csv]
+Table 1: California Building Standards [file: bldgstd.csv]
 
 
 
@@ -42,7 +42,6 @@ AWPA U1 / M4      American Wood Protection Association      Standards for preser
                                                             permanent installations.
 ================  ========================================  ========================================
 
- 
  
  
 
@@ -114,5 +113,4 @@ Abbreviation        Definition
 :math:`E'`          NDS - Adjusted modulus of elasticity
 :math:`E'_{min}`    NDS - Adjusted modulus ofor stability and stiffness
 ================== ============================================================
- 
  

@@ -8,9 +8,8 @@ rv.I(r"""Summary
     The design loads are based on the standards of the California Building
     Code (CBC) outlined below.  Standard math symbols are profided for reference.
 
-    | TABLE | rvsrc/vals/bldgstd.csv | California Building Standards, 40, head, num 
+    | TABLE | bldgstd.csv | California Building Standards, 40, head, num 
     
-
 
     Math Abbreviations _[T]
     ================== ============================================================
@@ -80,14 +79,13 @@ rv.I(r"""Summary
     :math:`E'`          NDS - Adjusted modulus of elasticity
     :math:`E'_{min}`    NDS - Adjusted modulus ofor stability and stiffness
     ================== ============================================================
-    
     """)
 
 
 # %% # %% doc
 rv.D(r"""Publish Doc
 
-    | PUBLISH | Building Standards | pdf
+    | PUBLISH | Building Standards | txt
 
     _[[METADATA]] 
     [process]

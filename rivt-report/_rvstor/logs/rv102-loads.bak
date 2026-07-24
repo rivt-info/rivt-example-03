@@ -4,7 +4,7 @@ import rivtlib.rvapi as rv
 rv.I(r"""Load Combinations and Geometry 
 
 
-    | IMAGE | rvsrc/img/tree4.png | Tree Fort Plan, 50, num, not
+    | IMAGE | tree4.png | Tree Fort Plan, 50, num, not
 
 
     ASCE 7-05 Load Effects _[T]
@@ -24,7 +24,7 @@ rv.V(r"""Unit Loads
 
     Unit weights imported from csv file - table created by AI. _[B]
 
-    | TABLE | rvsrc/vals/df-wts.csv | Unit Weights - Doug Fir, 25, head, num 
+    | TABLE | df-wts.csv | Unit Weights - Doug Fir, 25, head, num 
 
 
     Variables assigned by inline definitions. _[B]
@@ -43,7 +43,7 @@ rv.V(r"""Unit Loads
 # %% rv.D(r"""Publish Doc
 rv.D(r"""Publish Doc
 
-    | PUBLISH | Loads | pdf
+    | PUBLISH | Loads | txt
 
     _[[METADATA]] 
     [process]

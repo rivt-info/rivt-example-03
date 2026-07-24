@@ -75,18 +75,20 @@ rv.R(r"""OpenSees Shell
     | COPY | %userprofile%/py312/ | -rvsrc-/data | *.txt
     """)
 
+rv.I(r"""Model plots and output | pdfpage
 
-rv.T(r"""Model output and plots | p | text | output.txt
     
-    """)
-
-rv.I(r"""Model Plots and Output | | | 
-
     Model Plots _[B]
 
     | IMAGE2 | rvsrc/img/figure1.png, rvsrc/img/figure2.png | OPS Model, OPS First Mode,45,45,num,num
 
+
+    Model Output _[B]
+
+    | TEXT | rvsrc/output.txt | text
+
     """)
+
 
 rv.D(r"""Publish Doc
 

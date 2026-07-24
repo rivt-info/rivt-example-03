@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-Loads | R Holland | v-1.0.0a13 | 2026-07-18 - 02:57AM
+Loads | R Holland | v-1.0.0a13 | 2026-07-23 - 04:11PM
 --------------------------------------------------------------------------------
 
 
@@ -34,7 +34,7 @@ Unit weights imported from csv file - table created by AI.
 
  
 
-Table 2: Unit Weights - Doug Fir [file: rvsrc/vals/df-wts.csv]
+Table 2: Unit Weights - Doug Fir [file: df-wts.csv]
 
 
 

@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-18 - 03:38AM
+| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-23 - 04:12PM
 --------------------------------------------------------------------------------
 
 
@@ -26,7 +26,7 @@ The report illustrates the use of tags, commands and scripts including:
 - the use of AI in preparing
  
           ----------------------------------------
-Fig. 1 - Tree Fort [file: rvsrc/img/iso1.png  ]
+Fig. 1 - Tree Fort [file: iso1.png  ]
           ----------------------------------------
 
  
@@ -38,7 +38,7 @@ Fig. 1 - Tree Fort [file: rvsrc/img/iso1.png  ]
 The design report is organized into the following sections:
  
           ----------------------------------------
-Fig. 2 - Report Flow Chart [file: rvsrc/img/outputa.jpg  ]
+Fig. 2 - Report Flow Chart [file: outputa.jpg  ]
           ----------------------------------------
 
  

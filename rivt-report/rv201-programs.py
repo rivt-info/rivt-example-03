@@ -4,7 +4,7 @@ import rivtlib.rvapi as rv
 # %% rv.I(r"""Analysis Programs
 rv.I(r"""Analysis Programs
     
-    This report division includes RISA and OpenSees analysis and illustrates
+    This division includes RISA and OpenSees analysis and illustrates
     methods for running and importing outputs from external programs.
     
     - _[U] RISA-3D, https://risa.com/products/risa-3d | for determining connections forces 
@@ -13,7 +13,7 @@ rv.I(r"""Analysis Programs
     - _[U] OpenSees, https://opensees.berkeley.edu | for determing the period of the tree fort system.
       
     
-    | IMAGE | rvsrc/img/outputb.jpg | Report Flow Chart, 60, num, not 
+    | IMAGE | outputb.jpg | Report Flow Chart, 60, num, not 
     
     """)
 
