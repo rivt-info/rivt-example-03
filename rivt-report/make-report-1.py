@@ -1,7 +1,7 @@
 #! python
 """generate a rivt report
 
-Run this Python script in the rivt-report folder to write reports to the
+Run this Python script in the rivt-report folder. It writes reports to the
 _published folder. Copy and rename this file to save custom report settings
 (e.g. make-report-new.py).
 
