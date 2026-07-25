@@ -5,10 +5,10 @@ rv.V(r"""Deck Design Properties
     
     Import deck loads and functions. _[B]
 
-    | VALTABLE | rv_stor/vals/v102-2.csv | Load values from rv102-loads.py, 40
+    | VALDATA | v102-2.csv | Values from rv102-loads.py, 40
      
 
-    | PYTHON | rvsrc/scripts/checks.py | Import Functions
+    | PYTHON | checks.py | Import Functions
 
     """)
 
@@ -49,7 +49,7 @@ rv.I(r"""Strut
 
     Check strut D/C ratio with BeamChek 2023
 
-    | IMAGE | rvsrc/img/bmck1.jpg | Screenshot: Strut Check, 80, num, not
+    | IMAGE | bmck1.jpg | Screenshot: Strut Check, 80, num, not
     
     """)
 

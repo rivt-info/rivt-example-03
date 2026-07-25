@@ -1,4 +1,4 @@
-# opensees model for a 2-DOF lollipop system
+# opensees model for a 2-DOF system
 
 import openseespy.opensees as ops
 import numpy as np

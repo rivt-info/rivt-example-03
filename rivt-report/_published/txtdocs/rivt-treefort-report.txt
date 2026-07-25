@@ -1,6 +1,6 @@
 
 ================================================================================
-| rivt report | Tree Fort | R Holland | 1.0.0a17 | 2026-07-23 - 02:05PM
+| rivt report | Tree Fort | R Holland | 1.0.0a17 | 2026-07-25 - 05:46AM
 ================================================================================
 
 
@@ -19,7 +19,7 @@ Table of Contents
 
 
 --------------------------------------------------------------------------------
-Building Standards | R Holland | v-1.0.0a13 | 2026-07-18 - 02:57AM
+Building Standards | R Holland | v-1.0.0a13 | 2026-07-25 - 05:45AM
 --------------------------------------------------------------------------------
 
 
@@ -30,7 +30,7 @@ The design loads are based on the standards of the California Building
 Code (CBC) outlined below.  Standard math symbols are profided for reference.
  
 
-Table 1: California Building Standards [file: rvsrc/vals/bldgstd.csv]
+Table 1: California Building Standards [file: bldgstd.csv]
 
 
 
@@ -61,7 +61,6 @@ AWPA U1 / M4      American Wood Protection Association      Standards for preser
                                                             permanent installations.
 ================  ========================================  ========================================
 
- 
  
  
 
@@ -134,10 +133,9 @@ Abbreviation        Definition
 :math:`E'_{min}`    NDS - Adjusted modulus ofor stability and stiffness
 ================== ============================================================
  
- 
 
 --------------------------------------------------------------------------------
-Loads | R Holland | v-1.0.0a13 | 2026-07-18 - 02:57AM
+Loads | R Holland | v-1.0.0a13 | 2026-07-25 - 05:45AM
 --------------------------------------------------------------------------------
 
 
@@ -171,7 +169,7 @@ Unit weights imported from csv file - table created by AI.
 
  
 
-Table 2: Unit Weights - Doug Fir [file: rvsrc/vals/df-wts.csv]
+Table 2: Unit Weights - Doug Fir [file: df-wts.csv]
 
 
 
@@ -210,7 +208,7 @@ HL_1        20.00 p_sf     0.96 kPA       ASCE7-05 HL
  
 
 --------------------------------------------------------------------------------
-Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-18 - 02:57AM
+Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-25 - 05:45AM
 --------------------------------------------------------------------------------
 
 
@@ -337,14 +335,14 @@ WP            Working Point
  
 
 --------------------------------------------------------------------------------
-Analysis | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+Analysis | R Holland | v-1.0.0a13 | 2026-07-25 - 05:46AM
 --------------------------------------------------------------------------------
 
 
 2.1-1 | Analysis Programs
 ================================================================================
  
-This report division includes RISA and OpenSees analysis and illustrates
+This division includes RISA and OpenSees analysis and illustrates
 methods for running and importing outputs from external programs.
  
 -  RISA-3D https://risa.com/products/risa-3d for determining connections forces
@@ -361,37 +359,35 @@ Fig. 1 - Report Flow Chart
  
 
 --------------------------------------------------------------------------------
-Open Sees Analysis | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+Open Sees Analysis | R Holland | v-1.0.0a13 | 2026-07-25 - 05:46AM
 --------------------------------------------------------------------------------
 
 
 2.2-1 | OpenSees Analysis
 ================================================================================
- 
-This section analyzes the period of the tree + tree fort system. The
-OpenSees model is schematically shown below:
- 
-        y
-        ^
-        |
-    m2  o  Node 3 (Branches)
-        |
-    k2  |   Spring 2 (upper trunk)
-        |
-    m1  o  Node 2 (Tree Fort)
-        |
-    k1  |   Spring 1 (lower trunk)
-        |
-        o  Node 1 (Fixed Base)
-    -----------
-    (Ground)
 
-Schematic model of Tree Fort
+2.2-1 | OpenSees Analysis
+================================================================================
 
- 
- 
+    This section analyzes the period of the tree + tree fort system. 
+    The OpenSees 2 DOF model is shown schematically.
 
-2.2-2 | osp-mod1 Model values
+            y
+            ^
+            |
+        m2  o  Node 3 (Branches)
+            |
+        k2  |   Spring 2 (upper trunk)
+            |
+        m1  o  Node 2 (Tree Fort)
+            |
+        k1  |   Spring 1 (lower trunk)
+            |
+            o  Node 1 (Fixed Base)
+        -----------
+        (Ground)
+    
+2.2-2 | OpenSees values
 --------------------------------------------------------------------------------
  
 ==========  =======  =========  =================================
@@ -403,124 +399,155 @@ trk1        1100     1100       lower tree trunk stiffness, kN/cm
 trk2        2100     2100       upper tree trunk stiffness, kN/cm
 ==========  =======  =========  =================================
  
- 
 
-2.2-3 | ops-mod1 Input
+2.2-3 | OpenSees Model Input
+--------------------------------------------------------------------------------
+
+2.2-3 | OpenSees Model Input
+--------------------------------------------------------------------------------
+    
+    This is the Python code for a 2 DOF model of the tree fort with substituted
+    values from the rivt file. The OpenSees file with substitutions is written
+    to _rvstor/data.
+    
+
+   # opensees model for a 2-DOF system
+
+   import openseespy.opensees as ops
+   import numpy as np
+   import math
+   import matplotlib.pyplot as plt
+   import opsvis as opsv
+   # ---------------------------------------------------------------------
+   # 1. Model Initialization
+   # ---------------------------------------------------------------------
+   ops.wipe()
+   ops.model("BasicBuilder", "-ndm", 2, "-ndf", 2)
+
+   # ---------------------------------------------------------------------
+   # 2. Define Parameters
+   # ---------------------------------------------------------------------
+   # Mass values (e.g., in tons)
+   m1 = 1.5
+   m2 = 3.5
+
+   # Stiffness values (e.g., in kN/m)
+   k1 = 1100.0
+   k2 = 2100.0
+
+   # ---------------------------------------------------------------------
+   # 3. Create Nodes
+   # ---------------------------------------------------------------------
+   # Base node (fixed)
+   ops.node(1, 0.0, 0.0)
+
+   # Node 1
+   ops.node(2, 0.0, 2.0)
+
+   # Node 2
+   ops.node(3, 0.0, 4.0)
+
+   # Fix the base node in both X and Y directions
+   ops.fix(1, 1, 1)
+   # Restrain vertical (Y) displacement and rotation at mass nodes
+   # to represent a pure 2D shear/lateral lollipop system
+   ops.fix(2, 0, 1)  # Free in X, Fixed in Y
+   ops.fix(3, 0, 1)  # Free in X, Fixed in Y
+   # ---------------------------------------------------------------------
+   # 4. Assign Masses
+   # ---------------------------------------------------------------------
+
+   ops.mass(2, m1, 0.0)
+   ops.mass(3, m2, 0.0)
+
+   # ---------------------------------------------------------------------
+   # 5. Define Elements
+   # ---------------------------------------------------------------------
+   # Use elastic truss elements to represent the lateral springs
+   # Assign high axial stiffness (E * A) and 0.0 length
+   EA = 1e8
+
+   # Spring 1 between Node 1 and Node 2
+   ops.uniaxialMaterial("Elastic", 1, 1100.0)
+   ops.element("Truss", 1, 1, 2, EA, 1)
+
+   # Spring 2 between Node 2 and Node 3
+   ops.uniaxialMaterial("Elastic", 2, 2100.0)
+   ops.element("Truss", 2, 2, 3, EA, 2)
+
+   # ---------------------------------------------------------------------
+   # 6. Eigenvalue Analysis & Results Output
+   # ---------------------------------------------------------------------
+   num_modes = 1
+   eigenvalues = ops.eigen(num_modes)
+
+   periods = []
+   frequencies = []
+   outL = []
+   for i in range(num_modes):
+       lamb = eigenvalues[i]
+       omega = math.sqrt(lamb)
+       freq = omega / (2 * math.pi)
+       period = 2 * math.pi / omega
+       periods.append(period)
+       frequencies.append(freq)
+       resS = f'Mode {i + 1}: Period = {period:.4f} s | Frequency = {freq:.4f} Hz'
+       outL.append(resS)
+   outS = chr(10).join(item for item in outL)
+   with open("output.txt", 'w') as f1:
+       f1.write(outS)
+   print("text output written")
+   # ---------------------------------------------------------------------
+   # 7. Model Visualization
+   # ---------------------------------------------------------------------
+
+   # Plot the defined model to check geometry (this is an axes mdoel)
+   mod1 = opsv.plot_model()
+   fig1 = mod1.get_figure()
+   plt.title("2-DOF Lollipop Model Geometry")
+   fig1.savefig("figure1.png", dpi=200)
+   print("figure 1 written")
+   # interactive display
+   # plt.show(block=False)
+
+   # Plot the mode shape for the first mode (this is a figure)
+   fig2 = opsv.plot_mode_shape(1, 2.0)  # Scaling factor of 2.0 for visibility
+   plt.title("Mode Shape 1")
+   plt.savefig("figure2.png", dpi=200)
+   print("figure 2 written")
+   # plt.show()
+
+
+2.2-4 | OpenSees Shell
+--------------------------------------------------------------------------------
+
+2.2-4 | OpenSees Shell
+--------------------------------------------------------------------------------
+The model is run in a virtual environment with Python 3.12 and OpenSeesPyinstalled. The model calculates the natural frequencies and mode shapes ofthe system. This section runs a shell command in a virtual Python environment forPython-3.12 - the version compatible with OpenSeesPy.File written to: /_rvstore/data/ops1.cmd
+
+   cd "%USERPROFILE%"
+   cd py312
+   call scripts\\activate
+   python opsmod1.py
+
+
+Copied opsmod1.py from .../rivt-report/rvsrc/scripts to .../C:\/Users/rhh2
+
+Run shell command _[B]Run "c:\git\rivt-example-03-git\rivt-report\rvsrc\scripts\ops1.cmd"
+
+Copy images and text from OpenSees analysis _[B]Copied *.png from .../rivt-report/rvsrc/scripts to .../-rvsrc-
+
+Copied *.txt from .../rivt-report/rvsrc/scripts to .../-rvsrc-
+
+
+2.2-5 | Model Plots and Output
 --------------------------------------------------------------------------------
  
-Model Input
- 
+Analysis Output
 
-import openseespy.opensees as ops
-import numpy as np
-import math
-import matplotlib.pyplot as plt
-import opsvis as opsv
-# ---------------------------------------------------------------------
-# 1. Model Initialization
-# ---------------------------------------------------------------------
-ops.wipe()
-ops.model("BasicBuilder", "-ndm", 2, "-ndf", 2)
-
-# ---------------------------------------------------------------------
-# 2. Define Parameters
-# ---------------------------------------------------------------------
-# Mass values (e.g., in tons)
-m1 = 1.5
-m2 = 3.5
-
-# Stiffness values (e.g., in kN/m)
-k1 = 1100.0
-k2 = 2100.0
-
-# ---------------------------------------------------------------------
-# 3. Create Nodes
-# ---------------------------------------------------------------------
-# Base node (fixed)
-ops.node(1, 0.0, 0.0)
-
-# Node 1
-ops.node(2, 0.0, 2.0)
-
-# Node 2
-ops.node(3, 0.0, 4.0)
-
-# Fix the base node in both X and Y directions
-ops.fix(1, 1, 1)
-# Restrain vertical (Y) displacement and rotation at mass nodes
-# to represent a pure 2D shear/lateral lollipop system
-ops.fix(2, 0, 1)  # Free in X, Fixed in Y
-ops.fix(3, 0, 1)  # Free in X, Fixed in Y
-# ---------------------------------------------------------------------
-# 4. Assign Masses
-# ---------------------------------------------------------------------
-
-ops.mass(2, m1, 0.0)
-ops.mass(3, m2, 0.0)
-
-# ---------------------------------------------------------------------
-# 5. Define Elements
-# ---------------------------------------------------------------------
-# Use elastic truss elements to represent the lateral springs
-# Assign high axial stiffness (E * A) and 0.0 length
-EA = 1e8
-
-# Spring 1 between Node 1 and Node 2
-ops.uniaxialMaterial("Elastic", 1, 1100.0)
-ops.element("Truss", 1, 1, 2, EA, 1)
-
-# Spring 2 between Node 2 and Node 3
-ops.uniaxialMaterial("Elastic", 2, 2100.0)
-ops.element("Truss", 2, 2, 3, EA, 2)
-
-# ---------------------------------------------------------------------
-# 6. Eigenvalue Analysis & Results Output
-# ---------------------------------------------------------------------
-num_modes = 1
-eigenvalues = ops.eigen(num_modes)
-
-periods = []
-frequencies = []
-outL = []
-for i in range(num_modes):
-    lamb = eigenvalues[i]
-    omega = math.sqrt(lamb)
-    freq = omega / (2 * math.pi)
-    period = 2 * math.pi / omega
-    periods.append(period)
-    frequencies.append(freq)
-    resS = f'Mode {i + 1}: Period = {period:.4f} s | Frequency = {freq:.4f} Hz'
-    outL.append(resS)
-outS = chr(10).join(item for item in outL)
-with open("output.txt", 'w') as f1:
-    f1.write(outS)
-print("text output written")
-# ---------------------------------------------------------------------
-# 7. Model Visualization
-# ---------------------------------------------------------------------
-
-# Plot the defined model to check geometry (this is an axes mdoel)
-mod1 = opsv.plot_model()
-fig1 = mod1.get_figure()
-plt.title("2-DOF Lollipop Model Geometry")
-fig1.savefig("figure1.png", dpi=200)
-print("figure 1 written")
-# interactive display
-# plt.show(block=False)
-
-# Plot the mode shape for the first mode (this is a figure)
-fig2 = opsv.plot_mode_shape(1, 2.0)  # Scaling factor of 2.0 for visibility
-plt.title("Mode Shape 1")
-plt.savefig("figure2.png", dpi=200)
-print("figure 2 written")
-# plt.show()
 
  
- 
-
-2.2-4 | Model plots and output
---------------------------------------------------------------------------------
- 
+Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
  
 Model Plots
 
@@ -532,17 +559,9 @@ Fig. 1 - OPS Model  | Fig. 2 - OPS First Mode
 
 
  
- 
-Model Output
-
-
- 
-Mode 1: Period = 11.7548 s | Frequency = 0.0851 Hz
- 
- 
 
 --------------------------------------------------------------------------------
-RISA Analysis | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+RISA Analysis | R Holland | v-1.0.0a13 | 2026-07-25 - 05:46AM
 --------------------------------------------------------------------------------
 
 
@@ -577,30 +596,12 @@ balusters, and infill panels must separately withstand a concentrated load
 of 50 lbs.
  
   =======  <-- Top Rail
-     |     <-- Lateral Load (P)
-     | 
-     |
-     |
-     |  Height (h)
-     |
-     |
-     |
-     |
 ===========  <-- Fixed Support / Deck Surface
-
+ 
 Structural Schematic of Railing and Loads Drawn by AI
 
- 
- 
-          ----------------------------------------
-Fig. 3 - Rail Lateral Forces 
-          ----------------------------------------
-
- 
- 
-
 --------------------------------------------------------------------------------
-Component Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+Component Design | R Holland | v-1.0.0a13 | 2026-07-25 - 05:46AM
 --------------------------------------------------------------------------------
 
 
@@ -635,7 +636,7 @@ Fig. 3 - Dimensions
  
 
 --------------------------------------------------------------------------------
-Connection Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+Connection Design | R Holland | v-1.0.0a13 | 2026-07-25 - 05:46AM
 --------------------------------------------------------------------------------
 
 
@@ -645,12 +646,12 @@ Connection Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
 Use Simpson Strong Tie online selection tool.
  
           ----------------------------------------
-Fig. 1 - Screenshot: Option 1 | time: no time 
+Fig. 1 - Screen: Option 1 | time: no time 
           ----------------------------------------
 
  
           ----------------------------------------
-Fig. 2 - Screenshot: Option 2 | time: no time 
+Fig. 2 - Screen: Option 2 | time: no time 
           ----------------------------------------
 
  
@@ -662,21 +663,21 @@ Fig. 2 - Screenshot: Option 2 | time: no time
 Use AWC online connection tool.
  
           ----------------------------------------
-Fig. 3 - Screenshot: Top Rail - Corner Plate Input 
+Fig. 3 - Screen: Top Rail - Corner Plate Input 
           ----------------------------------------
 
  
           ----------------------------------------
-Fig. 4 - Screenshot: Top Rail - Corner Plate Capacity 
+Fig. 4 - Screen: Top Rail - Corner Plate Capacity 
           ----------------------------------------
 
  
-Use 4-#8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
+Use 4-no. 8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
  
  
 
 --------------------------------------------------------------------------------
-Member Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+Member Design | R Holland | v-1.0.0a13 | 2026-07-25 - 05:46AM
 --------------------------------------------------------------------------------
 
 
@@ -688,7 +689,7 @@ Import deck loads and functions.
 
  
 
-Table 1: Load values from rv102-loads.py (rv_stor/vals/v102-2.csv)
+Table 1: Values from rv102-loads.py (v102-2.csv)
 ==========  =============  =============  =====================
 variable    value          [value]        description
 ==========  =============  =============  =====================
@@ -747,24 +748,6 @@ Design Results
 
 
  
-┌  Eq-1 | Check Deck Beam Function
-│
-│    function: nds_beam_check | args: beam1 | units: inch, pounds
-└
-
-
-Beam Check Results:
-===============================    
-total UDL: 1.88
-fb: 261.82
-Fb_prime: 680.00
-E_prime: 1275000.00
-stress_ratio: 0.39
-deflection: 0.07
-deflection_ratio:  0.20
-
-
-
  
  
 

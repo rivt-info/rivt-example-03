@@ -4,7 +4,7 @@ rv.I(r"""Component Design
 
     This division covers the design of members and connections.
 
-    | IMAGE | rvsrc/img/outputc.jpg | Report Flow Chart, 80, num, not   
+    | IMAGE | outputc.jpg | Report Flow Chart, 80, num, not   
     
     """)
 
@@ -12,10 +12,10 @@ rv.I(r"""Component Design
 rv.I(r"""Geometry and Components | pdfpage
 
 
-    | IMAGE | rvsrc/img/members1.png | Component Labels, 80, num, not   
+    | IMAGE | members1.png | Component Labels, 80, num, not   
 
 
-    | IMAGE | rvsrc/img/dim1.png | Dimensions, 60, num, not   
+    | IMAGE | dim1.png | Dimensions, 60, num, not   
 
     
     """)

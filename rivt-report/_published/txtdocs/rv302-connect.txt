@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-Connection Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+Connection Design | R Holland | v-1.0.0a13 | 2026-07-25 - 05:46AM
 --------------------------------------------------------------------------------
 
 
@@ -10,12 +10,12 @@ Connection Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
 Use Simpson Strong Tie online selection tool.
  
           ----------------------------------------
-Fig. 1 - Screenshot: Option 1 | time: no time 
+Fig. 1 - Screen: Option 1 | time: no time 
           ----------------------------------------
 
  
           ----------------------------------------
-Fig. 2 - Screenshot: Option 2 | time: no time 
+Fig. 2 - Screen: Option 2 | time: no time 
           ----------------------------------------
 
  
@@ -27,15 +27,15 @@ Fig. 2 - Screenshot: Option 2 | time: no time
 Use AWC online connection tool.
  
           ----------------------------------------
-Fig. 3 - Screenshot: Top Rail - Corner Plate Input 
+Fig. 3 - Screen: Top Rail - Corner Plate Input 
           ----------------------------------------
 
  
           ----------------------------------------
-Fig. 4 - Screenshot: Top Rail - Corner Plate Capacity 
+Fig. 4 - Screen: Top Rail - Corner Plate Capacity 
           ----------------------------------------
 
  
-Use 4-#8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
+Use 4-no. 8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
  
  

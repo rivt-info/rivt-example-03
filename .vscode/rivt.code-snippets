@@ -23,7 +23,7 @@
         "description": "API Run - full",
         "scope": "python",
         "body": [
-            "rv.R(r\"\"\"${1:label} | ${2:shmpn} | ${3|rvt|} | ${4:file}",
+            "rv.R(r\"\"\"${1:label} | ${2:shmpn} | ${3:file}",
             "",
             "    ${0:text}",
             "    \"\"\")"
@@ -45,7 +45,7 @@
         "description": "API Insert - full",
         "scope": "python",
         "body": [
-            "rv.I(r\"\"\"${1:label} | ${2:shmpn} | ${3|rvt|} | ${4:file}",
+            "rv.I(r\"\"\"${1:label} | ${2:shmpn} | ${3:file}",
             "",
             "    ${0:text}",
             "    \"\"\")"
@@ -67,7 +67,7 @@
         "description": "Values API method",
         "scope": "python",
         "body": [
-            "rv.V(r\"\"\"${1:label} | ${2:shmpn} | ${3|rvt|} | ${4:file}",
+            "rv.V(r\"\"\"${1:label} | ${2:shmpn}  ${3:file}",
             "",
             "    ${0:text}",
             "    ",
@@ -90,7 +90,7 @@
         "description": "Doc API method",
         "scope": "python",
         "body": [
-            "rv.D(r\"\"\"${1:label} | ${2:shmpn} | ${3|rvt|} | ${4:file}",
+            "rv.D(r\"\"\"${1:label} | ${2:shmpn} | ${3:file}",
             "",
             "    ${0:text}",
             "    \"\"\")"
@@ -175,6 +175,14 @@
         "scope": "python",
         "body": [
             "| TABLE | ${1:file} | ${2:title}, ${3:max-col-width}, ${4|head,nohead|}, ${4|num,nonum|}, ${0:} "
+        ]
+    },
+    "cmd text ( |te )": {
+        "prefix": "|te",
+        "description": "command insert text from file API rv.I and rv.V",
+        "scope": "python",
+        "body": [
+            "| TEXT | ${1:file} | ${2|text, wrap, italic, bold|}"
         ]
     },
     "tag center ( _ce )": {
@@ -271,10 +279,21 @@
     },
     "endnotes ( [no  )": {
         "prefix": "[no",
-        "description": "endnotes block tag",
+        "description": "block tag endnotes",
         "scope": "python",
         "body": [
             "_[[ENDNOTES]]",
+            "${0:text}",
+            "",
+            "_[[END]]"
+        ]
+    },
+    "write ( [wr )": {
+        "prefix": "[wr",
+        "description": "block tag write",
+        "scope": "python",
+        "body": [
+            "_[[WRITE]] ${1:file name}",
             "${0:text}",
             "",
             "_[[END]]"

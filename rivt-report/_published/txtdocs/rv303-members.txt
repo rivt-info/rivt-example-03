@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-Member Design | R Holland | v-1.0.0a13 | 2026-07-18 - 02:58AM
+Member Design | R Holland | v-1.0.0a13 | 2026-07-25 - 05:46AM
 --------------------------------------------------------------------------------
 
 
@@ -12,7 +12,7 @@ Import deck loads and functions.
 
  
 
-Table 1: Load values from rv102-loads.py (rv_stor/vals/v102-2.csv)
+Table 1: Values from rv102-loads.py (v102-2.csv)
 ==========  =============  =============  =====================
 variable    value          [value]        description
 ==========  =============  =============  =====================
@@ -71,24 +71,6 @@ Design Results
 
 
  
-┌  Eq-1 | Check Deck Beam Function
-│
-│    function: nds_beam_check | args: beam1 | units: inch, pounds
-└
-
-
-Beam Check Results:
-===============================    
-total UDL: 1.88
-fb: 261.82
-Fb_prime: 680.00
-E_prime: 1275000.00
-stress_ratio: 0.39
-deflection: 0.07
-deflection_ratio:  0.20
-
-
-
  
  
 

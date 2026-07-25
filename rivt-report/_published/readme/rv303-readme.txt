@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-| rivt | Member Design | R Holland | v-1.0.0a13 | 2026-07-18 - 03:38AM
+| rivt | Member Design | R Holland | v-1.0.0a13 | 2026-07-25 - 06:26AM
 --------------------------------------------------------------------------------
 
 
@@ -12,7 +12,7 @@ Import deck loads and functions.
 
  
 
-Table 1: Load values from rv102-loads.py (rv_stor/vals/v102-2.csv)
+Table 1: Values from rv102-loads.py (v102-2.csv)
 ==========  =============  =============  =====================
 variable    value          [value]        description
 ==========  =============  =============  =====================
@@ -28,7 +28,7 @@ HL_1        20.00 p_sf     0.96 kPA       ASCE7-05 HL
  
  
 
-Table 2: Import Functions (rvsrc/scripts/checks.py)
+Table 2: Import Functions (checks.py)
 
 =========================  ========================================
 Function                   Docstring
@@ -73,24 +73,6 @@ Design Results
 
 
  
-┌  Eq-1 | Check Deck Beam Function
-│
-│    function: nds_beam_check | args: beam1 | units: inch, pounds
-└
-
-
-Beam Check Results:
-===============================    
-total UDL: 1.88
-fb: 261.82
-Fb_prime: 680.00
-E_prime: 1275000.00
-stress_ratio: 0.39
-deflection: 0.07
-deflection_ratio:  0.20
-
-
-
  
  
 
@@ -100,7 +82,7 @@ deflection_ratio:  0.20
 Check strut D/C ratio with BeamChek 2023
  
           ----------------------------------------
-Fig. 1 - Screenshot: Strut Check [file: rvsrc/img/bmck1.jpg  ]
+Fig. 1 - Screenshot: Strut Check [file: bmck1.jpg  ]
           ----------------------------------------
 
  

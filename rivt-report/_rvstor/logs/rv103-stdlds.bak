@@ -19,7 +19,7 @@ rv.I(r"""Report Summary
 
     - a rivt-report.py script that assembles the report.
 
-    - shell commands that run an _[S] external program, OpenSees Analysis |.
+    - shell commands that run an _[S] external program, OpenSees Shell |.
 
     - external urls and section links between documents.
 

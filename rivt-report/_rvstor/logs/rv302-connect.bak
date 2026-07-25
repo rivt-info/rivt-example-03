@@ -5,9 +5,9 @@ rv.I(r"""Strut to Tree Connection
 
     Use Simpson Strong Tie online selection tool.
 
-    | IMAGE | rvsrc/img/ss12.jpg | Screenshot: Option 1, 100, num, time 
+    | IMAGE | ss12.jpg | Screen: Option 1, 100, num, time 
     
-    | IMAGE | rvsrc/img/ss14.jpg | Screenshot: Option 2, 100, num, time 
+    | IMAGE | ss14.jpg | Screen: Option 2, 100, num, time 
 
     """)
 
@@ -15,11 +15,11 @@ rv.I(r"""Top rail Corner | pdfpage
 
     Use AWC online connection tool.
 
-    | IMAGE | rvsrc/img/awc4.jpg | Screenshot: Top Rail - Corner Plate Input, 100, num, not 
+    | IMAGE | awc4.jpg | Screen: Top Rail - Corner Plate Input, 100, num, not 
 
-    | IMAGE | rvsrc/img/awc5.jpg | Screenshot: Top Rail - Corner Plate Capacity, 100, num, not
+    | IMAGE | awc5.jpg | Screen: Top Rail - Corner Plate Capacity, 100, num, not
  
-    Use 4-#8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
+    Use 4-no. 8 screws = 55 lbs * 4 = Capacity 220 lbs | Demand = 200 lbs.
 
     """)
 

@@ -85,7 +85,7 @@ rv.I(r"""Summary
 # %% # %% doc
 rv.D(r"""Publish Doc
 
-    | PUBLISH | Building Standards | html
+    | PUBLISH | Building Standards | txt
 
     _[[METADATA]] 
     [process]

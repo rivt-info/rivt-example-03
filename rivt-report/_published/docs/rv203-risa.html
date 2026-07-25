@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>2.3-1 | Applied deck forces - RISA model &#8212;  </title>
+    <title>2.3-1 | Applied Deck and Railing forces - RISA model &#8212;  </title>
   
   
   
@@ -287,7 +287,7 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="rv202-ops.html"><strong>2.2-1</strong> | OpenSees Analysis</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>2.3-1</strong> | Applied deck forces - RISA model</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>2.3-1</strong> | Applied Deck and Railing forces - RISA model</a></li>
 </ul>
 </div>
 </nav></div>
@@ -331,7 +331,7 @@
     
     <li class="breadcrumb-item"><a href="rv201-programs.html" class="nav-link"><strong>2.1-1</strong> | Analysis Programs</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>2.3-1</strong> | Applied deck forces - RISA model</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>2.3-1</strong> | Applied Deck and Railing forces - RISA model</span></li>
   </ul>
 </nav>
 </div>
@@ -348,8 +348,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="applied-deck-forces-risa-model">
-<span id="id1"></span><h1><strong>2.3-1</strong> | Applied deck forces - RISA model<a class="headerlink" href="#applied-deck-forces-risa-model" title="Link to this heading">#</a></h1>
+  <section id="applied-deck-and-railing-forces-risa-model">
+<span id="id1"></span><h1><strong>2.3-1</strong> | Applied Deck and Railing forces - RISA model<a class="headerlink" href="#applied-deck-and-railing-forces-risa-model" title="Link to this heading">#</a></h1>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="_images/risa4.png"><img alt="_images/risa4.png" src="_images/risa4.png" style="width: 70%;" />
 </a>
@@ -357,26 +357,36 @@
 <p><span class="caption-text"><strong>Fig. 1</strong> - Risa Model</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/risa9.png"><img alt="_images/risa9.png" src="_images/risa9.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><strong>Fig. 2</strong> - Rail Lateral Forces</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <hr class="docutils" />
 <section id="resultant-axial-forces-risa-model">
 <span id="id2"></span><h2><strong>2.3-2</strong> | Resultant axial forces - RISA model<a class="headerlink" href="#resultant-axial-forces-risa-model" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="_images/risa6.png"><img alt="_images/risa6.png" src="_images/risa6.png" style="width: 70%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><strong>Fig. 2</strong> - Strut Axial Forces</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text"><strong>Fig. 3</strong> - Strut Axial Forces</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
 </section>
 <section id="top-rail-shear-reactions-risa-model">
 <span id="id3"></span><h2><strong>2.3-3</strong> | Top rail shear reactions - RISA model<a class="headerlink" href="#top-rail-shear-reactions-risa-model" title="Link to this heading">#</a></h2>
-<p>Under the California Building Code (CBC), handrails and guards (railings)
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Under the California Building Code (CBC), handrails and guard railings
 must resist a uniform load of 50 plf and a concentrated point load of 200
 lbs, both applied horizontally to the top rail. Intermediate rails,
 balusters, and infill panels must separately withstand a concentrated load
-of 50 lbs.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>  =======  &lt;-- Top Rail
+of 50 lbs.
+
+Structural Schematic of Railing and Loads (drawn by AI)
+
+  =======  &lt;-- Top Rail
      |     &lt;-- Lateral Load (P)
      |
      |
@@ -387,17 +397,8 @@ of 50 lbs.</p>
      |
      |
 ===========  &lt;-- Fixed Support / Deck Surface
-
-Structural Schematic of Railing and Loads Drawn by AI
 </pre></div>
 </div>
-<figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="_images/risa9.png"><img alt="_images/risa9.png" src="_images/risa9.png" style="width: 60%;" />
-</a>
-<figcaption>
-<p><span class="caption-text"><strong>Fig. 3</strong> - Rail Lateral Forces</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
 </section>
 </section>
 
@@ -504,7 +505,7 @@ Structural Schematic of Railing and Loads Drawn by AI
 <!-- _templates/rv-date.html -->
 <div class="footer-item">
 <p class="rvdate">
-    2026-07-18
+    2026-07-25
 </p>
 </div></div>
       

@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-23 - 04:12PM
+| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-25 - 06:26AM
 --------------------------------------------------------------------------------
 
 
@@ -15,7 +15,7 @@ The report illustrates the use of tags, commands and scripts including:
  
 - a rivt-report.py script that assembles the report.
  
-- shell commands that run an  external program [ref: <OpenSees Analysis>] .
+- shell commands that run an  external program [ref: <OpenSees Shell>] .
  
 - external urls and section links between documents.
  

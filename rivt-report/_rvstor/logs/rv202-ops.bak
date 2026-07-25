@@ -1,12 +1,12 @@
 import rivtlib.rvapi as rv
 
-# %% rv.I(r"""OpenSees Analysis
-rv.I(r"""OpenSees Analysis
 
-    This section analyzes the period of the tree + tree fort system. The
-    OpenSees model is schematically shown below:
+# %% rv.T(r"""OpenSees Analysis | -- |  | text 
+rv.T(r"""OpenSees Analysis | -- |  | text 
 
-    _[[TEXT]]  text
+    This section analyzes the period of the tree + tree fort system. 
+    The OpenSees 2 DOF model is shown schematically.
+
             y
             ^
             |
@@ -21,9 +21,6 @@ rv.I(r"""OpenSees Analysis
             o  Node 1 (Fixed Base)
         -----------
         (Ground)
-
-    Schematic model of Tree Fort
-    _[[END]]
     """)
 
 # %% rv.V(r"""OpenSees values
@@ -37,21 +34,20 @@ rv.V(r"""OpenSees values
 
 
 # %% rv.T(r"""OpenSees Model Input | n | subpython | opsmod1.py
-rv.T(r"""OpenSees Model Input | n | subpython | opsmod1.py
+rv.T(r"""OpenSees Model Input | -- | opsmod1.py | subpython
     
     This is the Python code for a 2 DOF model of the tree fort with substituted
-    values from the rivt file. The model is run in a virtual environment with
-    Python 3.12 and OpenSeesPy installed. The model calculates the natural
-    frequencies and mode shapes of the system.
-    
+    values from the rivt file. The OpenSees file with substitutions is written
+    to _rvstor/data.
     """)
 
 # %% rv.R(r"""OpenSees Shell
 rv.R(r"""OpenSees Shell
 
-    This section writes the OpenSees input file based on rivt calculations and
-    runs a shell command in a virtual Python environment for Python-3.12 - the
-    version compatible with OpenSeesPy.
+    The model is run in a virtual environment with Python 3.12 and OpenSeesPy
+    installed. The model calculates the natural frequencies and mode shapes of
+    the system. This section runs a shell command in a virtual Python environment for
+    Python-3.12 - the version compatible with OpenSeesPy.
     
     _[[WRITE]] ops1.cmd
     cd "%USERPROFILE%"
@@ -60,39 +56,35 @@ rv.R(r"""OpenSees Shell
     python opsmod1.py
     _[[END]]
 
-    Copy command to OpenSees folder
+    | COPY | scripts | %userprofile%/py312/ | opsmod1.py
 
-    | COPY |  -rvsrc-/scripts | %userprofile%/py312/ | opsmod1.py
+    Run shell command _[B]
 
-    Run shell command
+    | SHELL | scripts | ops1.cmd
 
-    | SHELL | -rvsrc-/scripts | ops1.cmd
-
-    Copy images and text from OpenSees analysis
+    Copy images and text from OpenSees analysis _[B]
 
     | COPY | %userprofile%/py312/ | -rvsrc-/image | *.png
 
     | COPY | %userprofile%/py312/ | -rvsrc-/data | *.txt
     """)
 
-rv.I(r"""Model plots and output | pdfpage
+# %% rv.I(r"""Model Plots and Output 
+rv.I(r"""Model Plots and Output 
 
-    
+    Analysis Output _[B]
+
+    | TEXT | output.txt | text
+
     Model Plots _[B]
 
-    | IMAGE2 | rvsrc/img/figure1.png, rvsrc/img/figure2.png | OPS Model, OPS First Mode,45,45,num,num
-
-
-    Model Output _[B]
-
-    | TEXT | rvsrc/output.txt | text
-
+    | IMAGE2 | figure1.png, figure2.png | OPS Model, OPS First Mode,45,45,num,num
     """)
 
-
+# %% rv.D(r"""Publish Doc
 rv.D(r"""Publish Doc
 
-    | PUBLISH | Open Sees Analysis | txt
+    | PUBLISH | Open Sees Analysis | pdf
     
     _[[METADATA]] 
     [process]

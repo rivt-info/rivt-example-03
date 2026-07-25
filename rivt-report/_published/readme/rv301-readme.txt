@@ -1,6 +1,6 @@
 
 --------------------------------------------------------------------------------
-| rivt | Component Design | R Holland | v-1.0.0a13 | 2026-07-18 - 03:38AM
+| rivt | Component Design | R Holland | v-1.0.0a13 | 2026-07-25 - 06:26AM
 --------------------------------------------------------------------------------
 
 
@@ -10,7 +10,7 @@
 This division covers the design of members and connections.
  
           ----------------------------------------
-Fig. 1 - Report Flow Chart [file: rvsrc/img/outputc.jpg  ]
+Fig. 1 - Report Flow Chart [file: outputc.jpg  ]
           ----------------------------------------
 
  
@@ -21,13 +21,13 @@ Fig. 1 - Report Flow Chart [file: rvsrc/img/outputc.jpg  ]
  
  
           ----------------------------------------
-Fig. 2 - Component Labels [file: rvsrc/img/members1.png  ]
+Fig. 2 - Component Labels [file: members1.png  ]
           ----------------------------------------
 
  
  
           ----------------------------------------
-Fig. 3 - Dimensions [file: rvsrc/img/dim1.png  ]
+Fig. 3 - Dimensions [file: dim1.png  ]
           ----------------------------------------
 
  

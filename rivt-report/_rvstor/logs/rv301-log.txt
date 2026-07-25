@@ -1,20 +1,20 @@
-07-18 03:38  rv301-design   INFO     Doc start
-07-18 03:38  rv301-design   INFO     rivtlib version: 1.0.0a5
-07-18 03:38  rv301-design   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\rv_stor\logs\rv301-design.bak
-07-18 03:38  rv301-design   INFO     Component Design
-07-18 03:38  rv301-design   INFO     SECTION 3.1-1 - type I
-07-18 03:38  rv301-design   INFO     command : IMAGE
-07-18 03:38  rv301-design   INFO     Geometry and Components | pdfpage
-07-18 03:38  rv301-design   INFO     SECTION 3.1-2 - type I
-07-18 03:38  rv301-design   INFO     command : IMAGE
-07-18 03:38  rv301-design   DEBUG    STREAM b'IHDR' 16 13
-07-18 03:38  rv301-design   DEBUG    STREAM b'eXIf' 41 14
-07-18 03:38  rv301-design   DEBUG    STREAM b'oFFs' 67 9
-07-18 03:38  rv301-design   DEBUG    b'oFFs' 67 9 (unknown)
-07-18 03:38  rv301-design   DEBUG    STREAM b'IDAT' 88 8192
-07-18 03:38  rv301-design   INFO     command : IMAGE
-07-18 03:38  rv301-design   DEBUG    STREAM b'IHDR' 16 13
-07-18 03:38  rv301-design   DEBUG    STREAM b'tRNS' 41 6
-07-18 03:38  rv301-design   DEBUG    STREAM b'IDAT' 59 8192
-07-18 03:38  rv301-design   INFO     SECTION : Publish Doc 
-07-18 03:38  rv301-design   INFO     block tag : METADATA]]
+07-25 06:26  rv301-design   INFO     Doc start
+07-25 06:26  rv301-design   INFO     rivtlib version: 1.0.0a5
+07-25 06:26  rv301-design   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\_rvstor\logs\rv301-design.bak
+07-25 06:26  rv301-design   INFO     Component Design
+07-25 06:26  rv301-design   INFO     SECTION 3.1-1 - type I
+07-25 06:26  rv301-design   INFO     command : IMAGE
+07-25 06:26  rv301-design   INFO     Geometry and Components | pdfpage
+07-25 06:26  rv301-design   INFO     SECTION 3.1-2 - type I
+07-25 06:26  rv301-design   INFO     command : IMAGE
+07-25 06:26  rv301-design   DEBUG    STREAM b'IHDR' 16 13
+07-25 06:26  rv301-design   DEBUG    STREAM b'eXIf' 41 14
+07-25 06:26  rv301-design   DEBUG    STREAM b'oFFs' 67 9
+07-25 06:26  rv301-design   DEBUG    b'oFFs' 67 9 (unknown)
+07-25 06:26  rv301-design   DEBUG    STREAM b'IDAT' 88 8192
+07-25 06:26  rv301-design   INFO     command : IMAGE
+07-25 06:26  rv301-design   DEBUG    STREAM b'IHDR' 16 13
+07-25 06:26  rv301-design   DEBUG    STREAM b'tRNS' 41 6
+07-25 06:26  rv301-design   DEBUG    STREAM b'IDAT' 59 8192
+07-25 06:26  rv301-design   INFO     SECTION : Publish Doc 
+07-25 06:26  rv301-design   INFO     block tag : METADATA]]
