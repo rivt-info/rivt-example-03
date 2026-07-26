@@ -1,21 +1,21 @@
 
 --------------------------------------------------------------------------------
-| rivt | Loads | R Holland | v-1.0.0a13 | 2026-07-25 - 06:25AM
+| rivt | Loads | R Holland | v-1.0.0a13 | 2026-07-26 - 12:27AM
 --------------------------------------------------------------------------------
 
 
 1.2-1 | Load Combinations and Geometry
-================================================================================
+================================================================================]
  
  
           ----------------------------------------
-Fig. 1 - Tree Fort Plan [file: tree4.png  ]
+Fig. 1.1 - Tree Fort Plan [file: tree4.png  ]
           ----------------------------------------
 
  
  
 
-Table 1: ASCE 7-05 Load Effects
+Table 1.1: ASCE 7-05 Load Effects
 =============   ==============================================
 Equation No.    Load Combination
 =============   ==============================================
@@ -34,7 +34,7 @@ Unit weights imported from csv file - table created by AI.
 
  
 
-Table 2: Unit Weights - Doug Fir
+Table 2.1: Unit Weights - Doug Fir
 
 =========  ================  ================  ==========  ===================  ====================  ==================
 Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Volume_ft3_per_ft    Density_lb_per_ft3    Weight_lb_per_ft
@@ -55,7 +55,7 @@ Variables assigned by inline definitions.
 
  
 
-Table 3: Member Nominal Loads and Properties
+Table 2.2: Member Nominal Loads and Properties
 ==========  =============  =============  =====================
 variable    value          [value]        description
 ==========  =============  =============  =====================

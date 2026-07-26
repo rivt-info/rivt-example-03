@@ -12,7 +12,7 @@
         "description": "API Run - short",
         "scope": "python",
         "body": [
-            "rv.R(r\"\"\"${1:section-label} ",
+            "rv.R(\"\"\"${1:section-label} ",
             "",
             "    ${0:text}",
             "    \"\"\")"
@@ -23,7 +23,7 @@
         "description": "API Run - full",
         "scope": "python",
         "body": [
-            "rv.R(r\"\"\"${1:label} | ${2:shmpn} | ${3:file}",
+            "rv.R(\"\"\"${1:label} | ${2:shmpn} | ${3:file}",
             "",
             "    ${0:text}",
             "    \"\"\")"
@@ -34,7 +34,7 @@
         "description": "API Insert - short",
         "scope": "python",
         "body": [
-            "rv.I(r\"\"\"${1:section-label} ",
+            "rv.I(\"\"\"${1:section-label} ",
             "",
             "    ${0:text}",
             "    \"\"\")"
@@ -45,7 +45,7 @@
         "description": "API Insert - full",
         "scope": "python",
         "body": [
-            "rv.I(r\"\"\"${1:label} | ${2:shmpn} | ${3:file}",
+            "rv.I(\"\"\"${1:label} | ${2:shmpn} | ${3:file}",
             "",
             "    ${0:text}",
             "    \"\"\")"
@@ -56,7 +56,7 @@
         "description": "Values API method",
         "scope": "python",
         "body": [
-            "rv.V(r\"\"\"${1:section-label} ",
+            "rv.V(\"\"\"${1:section-label} ",
             "",
             "    ${0:text}",
             "    \"\"\")"
@@ -67,7 +67,7 @@
         "description": "Values API method",
         "scope": "python",
         "body": [
-            "rv.V(r\"\"\"${1:label} | ${2:shmpn}  ${3:file}",
+            "rv.V(\"\"\"${1:label} | ${2:shmpn}  ${3:file}",
             "",
             "    ${0:text}",
             "    ",
@@ -79,7 +79,7 @@
         "description": "Text API method",
         "scope": "python",
         "body": [
-            "rv.T(r\"\"\"${1:label} | ${2:shmpn} | ${3|PYTHON,python,text,note,rst,boldn,italicn|} | ${4:file}",
+            "rv.T(\"\"\"${1:label} | ${2:shmpn} | ${3|PYTHON,python,text,note,rst,boldn,italicn|} | ${4:file}",
             "    ",
             "    ${0:text} ",
             "    \"\"\")"
@@ -90,7 +90,7 @@
         "description": "Doc API method",
         "scope": "python",
         "body": [
-            "rv.D(r\"\"\"${1:label} | ${2:shmpn} | ${3:file}",
+            "rv.D(\"\"\"${1:label} | ${2:shmpn} | ${3:file}",
             "",
             "    ${0:text}",
             "    \"\"\")"
@@ -142,7 +142,7 @@
         "description": "insert image",
         "scope": "python",
         "body": [
-            "| IMAGE | rvsrc/img/${1:path} | ${2:caption}, ${3:scale}, ${4|num,non|}, ${5|time,not|} ${0}"
+            "| IMAGE | ${1:file} | ${2:caption}, ${3:scale}, ${4|num,non|}, ${5|time,not|} ${0}"
         ]
     },
     "cmd image2 ( |i2 )": {
@@ -150,7 +150,7 @@
         "description": "insert side by side images",
         "scope": "python",
         "body": [
-            "| IMAGE2 | src/${1:path},src/${2:path} | ${3:caption}, ${4:caption}, ${5:scale}, ${6:scale}, ${7|num,non|}, ${8|num,non|}  ${0}"
+            "| IMAGE2 | ${1:file}, ${2:file} | ${3:caption}, ${4:caption}, ${5:scale}, ${6:scale}, ${7|num,non|}, ${8|num,non|}  ${0}"
         ]
     },
     "cmd attachpdf(  |at  )": {
@@ -185,12 +185,20 @@
             "| TEXT | ${1:file} | ${2|text, wrap, italic, bold|}"
         ]
     },
-    "tag center ( _ce )": {
+    "tag bold center ( _ce )": {
         "prefix": "_ce",
-        "description": "tag center line",
+        "description": "tag bold line and center",
         "scope": "python",
         "body": [
             "_[C]"
+        ]
+    },
+    "tag bold ( _bo )": {
+        "prefix": "_bo",
+        "description": "tag bold line",
+        "scope": "python",
+        "body": [
+            "_[B]"
         ]
     },
     "tag right ( _ri )": {

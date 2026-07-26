@@ -1,11 +1,11 @@
 
 --------------------------------------------------------------------------------
-| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-25 - 06:26AM
+| rivt | Standards and Loads | R Holland | v-1.0.0a13 | 2026-07-26 - 12:27AM
 --------------------------------------------------------------------------------
 
 
 1.3-1 | Report Summary
-================================================================================
+================================================================================]
  
 This report covers the structural design of a tree fort in Novato,
 California, following the California Building Code (CBC). The fort is
@@ -26,7 +26,7 @@ The report illustrates the use of tags, commands and scripts including:
 - the use of AI in preparing
  
           ----------------------------------------
-Fig. 1 - Tree Fort [file: iso1.png  ]
+Fig. 1.1 - Tree Fort [file: iso1.png  ]
           ----------------------------------------
 
  
@@ -38,7 +38,7 @@ Fig. 1 - Tree Fort [file: iso1.png  ]
 The design report is organized into the following sections:
  
           ----------------------------------------
-Fig. 2 - Report Flow Chart [file: outputa.jpg  ]
+Fig. 2.1 - Report Flow Chart [file: outputa.jpg  ]
           ----------------------------------------
 
  
@@ -48,7 +48,7 @@ Fig. 2 - Report Flow Chart [file: outputa.jpg  ]
 --------------------------------------------------------------------------------
  
 
-Table 1: Drawing Abbreviations
+Table 3.1: Drawing Abbreviations
 ============ ==============================================
 Abbreviation   Definition
 ============ ==============================================

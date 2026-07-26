@@ -2,7 +2,7 @@
 
 import rivtlib.rvapi as rv
 
-rv.I(r"""Summary
+rv.I("""Summary
 
     The structural design of several components of a treehouse platform is
     provided.
@@ -12,14 +12,14 @@ rv.I(r"""Summary
 
     """)
 
-rv.I(r"""Summary Codes
+rv.I("""Summary Codes
     
     # insert
     
     """)
 
 
-rv.I(r"""Load Combinations and Geometry 
+rv.I("""Load Combinations and Geometry 
 
     Dead and live load contributions to beam UDL.
 
@@ -41,7 +41,7 @@ rv.I(r"""Load Combinations and Geometry
     """)
 
 # %% values
-rv.V(r"""Loads and Geometry 
+rv.V("""Loads and Geometry 
 
     Beam Loads and Properties _[T]
     D_1 := 3.8*psf | kPA, 2 | joists DL         
@@ -67,7 +67,7 @@ rv.V(r"""Loads and Geometry
     """)
 
 # %% doc
-rv.S(r"""Publish Doc
+rv.S("""Publish Doc
 
     | PUBLISH | rvlocal | rstpdf | rivtdoc1.ini 
     """)

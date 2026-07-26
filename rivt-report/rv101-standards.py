@@ -2,8 +2,8 @@
 
 import rivtlib.rvapi as rv
 
-# %% rv.I(r"""Summary
-rv.I(r"""Summary
+# %% rv.I("""Summary
+rv.I("""Summary
 
     The design loads are based on the standards of the California Building
     Code (CBC) outlined below.  Standard math symbols are profided for reference.
@@ -83,7 +83,7 @@ rv.I(r"""Summary
 
 
 # %% # %% doc
-rv.D(r"""Publish Doc
+rv.D("""Publish Doc
 
     | PUBLISH | Building Standards | txt
 

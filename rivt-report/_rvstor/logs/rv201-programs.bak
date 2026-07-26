@@ -1,8 +1,8 @@
 
 import rivtlib.rvapi as rv
 
-# %% rv.I(r"""Analysis Programs
-rv.I(r"""Analysis Programs
+# %% rv.I("""Analysis Programs
+rv.I("""Analysis Programs
     
     This division includes RISA and OpenSees analysis and illustrates
     methods for running and importing outputs from external programs.
@@ -17,8 +17,8 @@ rv.I(r"""Analysis Programs
     
     """)
 
-# %% rv.D(r"""Publish Doc
-rv.D(r"""Publish Doc
+# %% rv.D("""Publish Doc
+rv.D("""Publish Doc
 
     | PUBLISH | Analysis | pdf
 

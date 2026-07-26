@@ -1,7 +1,7 @@
-# %% rv.V(r"""Loads and Geometry
+# %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
-rv.V(r"""Table 2
+rv.V("""Table 2
     
 
     Define Unit Loads _[T]
@@ -12,7 +12,7 @@ rv.V(r"""Table 2
     
     """)
 
-rv.D(r"""Publish Doc
+rv.D("""Publish Doc
 
     _[[METADATA]] 
     [doc]

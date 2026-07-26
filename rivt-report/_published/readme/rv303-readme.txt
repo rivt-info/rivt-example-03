@@ -1,18 +1,18 @@
 
 --------------------------------------------------------------------------------
-| rivt | Member Design | R Holland | v-1.0.0a13 | 2026-07-25 - 06:26AM
+| rivt | Member Design | R Holland | v-1.0.0a13 | 2026-07-26 - 12:27AM
 --------------------------------------------------------------------------------
 
 
 3.3-1 | Deck Design Properties
-================================================================================
+================================================================================]
  
 Import deck loads and functions.
 
 
  
 
-Table 1: Values from rv102-loads.py (v102-2.csv)
+Table 1.1: Values from rv102-loads.py (v102-2.csv)
 ==========  =============  =============  =====================
 variable    value          [value]        description
 ==========  =============  =============  =====================
@@ -28,7 +28,7 @@ HL_1        20.00 p_sf     0.96 kPA       ASCE7-05 HL
  
  
 
-Table 2: Import Functions (checks.py)
+Table 1.2: Import Functions (checks.py)
 
 =========================  ========================================
 Function                   Docstring
@@ -82,7 +82,7 @@ Design Results
 Check strut D/C ratio with BeamChek 2023
  
           ----------------------------------------
-Fig. 1 - Screenshot: Strut Check [file: bmck1.jpg  ]
+Fig. 3.1 - Screenshot: Strut Check [file: bmck1.jpg  ]
           ----------------------------------------
 
  

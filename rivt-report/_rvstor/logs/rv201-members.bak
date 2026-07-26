@@ -1,7 +1,7 @@
-# %% rv.V(r"""Loads and Geometry
+# %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
-rv.V(r"""Intro
+rv.V("""Intro
     
     Successive value definitions are formatted as a table. Variable
     values are defined with the define operator. The line tag [T] labels and
@@ -21,7 +21,7 @@ rv.V(r"""Intro
     
     """)
 
-rv.D(r"""Publish Doc
+rv.D("""Publish Doc
 
     _[[METADATA]] 
     [doc]

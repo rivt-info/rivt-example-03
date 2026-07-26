@@ -1,7 +1,7 @@
 import rivtlib.rvapi as rv
 
-# %% rv.V(r"""Deck Design Properties
-rv.V(r"""Deck Design Properties
+# %% rv.V("""Deck Design Properties
+rv.V("""Deck Design Properties
     
     Import deck loads and functions. _[B]
 
@@ -13,8 +13,8 @@ rv.V(r"""Deck Design Properties
     """)
 
 
-# %% rv.V(r"""Deck Design Summary
-rv.V(r"""Deck Design Summary
+# %% rv.V("""Deck Design Summary
+rv.V("""Deck Design Summary
 
     Design properties as dictionary for checking function nds_beam_chk
 
@@ -44,8 +44,8 @@ rv.V(r"""Deck Design Summary
 
 """)
 
-# %% rv.I(r"""Strut
-rv.I(r"""Strut
+# %% rv.I("""Strut
+rv.I("""Strut
 
     Check strut D/C ratio with BeamChek 2023
 
@@ -54,8 +54,8 @@ rv.I(r"""Strut
     """)
 
 
-# %% rv.D(r"""Publish Doc 
-rv.D(r"""Publish Doc 
+# %% rv.D("""Publish Doc 
+rv.D("""Publish Doc 
 
     | PUBLISH | Member Design | pdf
     

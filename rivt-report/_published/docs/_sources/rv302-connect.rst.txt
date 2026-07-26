@@ -9,7 +9,7 @@
 .. _Strut to Tree Connection:
 
 **3.2-1** | Strut to Tree Connection
-================================================================================
+================================================================================]
  
 Use Simpson Strong Tie online selection tool.
  
@@ -18,7 +18,7 @@ Use Simpson Strong Tie online selection tool.
    :width: 100%
    :align: center
 
-   **Fig. 1** - Screen: Option 1   | time: no time 
+   **Fig. 1.1** - Screen: Option 1   | time: no time 
     
 
 
@@ -28,7 +28,7 @@ Use Simpson Strong Tie online selection tool.
    :width: 100%
    :align: center
 
-   **Fig. 2** - Screen: Option 2   | time: no time 
+   **Fig. 1.2** - Screen: Option 2   | time: no time 
     
 
 
@@ -52,7 +52,7 @@ Use AWC online connection tool.
    :width: 100%
    :align: center
 
-   **Fig. 3** - Screen: Top Rail - Corner Plate Input   
+   **Fig. 2.1** - Screen: Top Rail - Corner Plate Input   
     
 
 
@@ -62,7 +62,7 @@ Use AWC online connection tool.
    :width: 100%
    :align: center
 
-   **Fig. 4** - Screen: Top Rail - Corner Plate Capacity   
+   **Fig. 2.2** - Screen: Top Rail - Corner Plate Capacity   
     
 
 

@@ -8,8 +8,8 @@ import rivtlib.rvapi as rv
 # rv no_tag = true ; if false, the API type is added to section number (true)
 # rv private = true ; if false, default section heading changed to public (private)
 
-# %% rv.I(r"""Summary
-rv.I(r"""Report Summary
+# %% rv.I("""Summary
+rv.I("""Report Summary
 
     This report covers the structural design of a tree fort in Novato,
     California, following the California Building Code (CBC). The fort is
@@ -33,8 +33,8 @@ rv.I(r"""Report Summary
 
     """)
 
-# %% rv.I(r"""Design Sections | pdfpage
-rv.I(r"""Design Sections | pdfpage
+# %% rv.I("""Design Sections | pdfpage
+rv.I("""Design Sections | pdfpage
 
     The design report is organized into the following sections:
 
@@ -43,8 +43,8 @@ rv.I(r"""Design Sections | pdfpage
     """)
 
 
-# %% rv.I(r"""Drawing Symbols | pdfpage
-rv.I(r"""Drawing Symbols | pdfpage
+# %% rv.I("""Drawing Symbols | pdfpage
+rv.I("""Drawing Symbols | pdfpage
 
     Drawing Abbreviations _[T]
     ============ ==============================================
@@ -124,8 +124,8 @@ rv.I(r"""Drawing Symbols | pdfpage
 
 """)
 
-# %% rv.D(r"""Publish Doc
-rv.D(r"""Publish Doc
+# %% rv.D("""Publish Doc
+rv.D("""Publish Doc
 
     | PUBLISH | Standards and Loads | pdf
 

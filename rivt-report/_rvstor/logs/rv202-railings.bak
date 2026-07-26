@@ -1,8 +1,8 @@
-# %% rv.V(r"""Loads and Geometry
+# %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
 
-rv.I(r"""Introduction
+rv.I("""Introduction
 
     Under the California Building Code (CBC), handrails and guards (railings)
     must resist a uniform load of 50 plf and a concentrated point load of 200
@@ -32,7 +32,7 @@ rv.I(r"""Introduction
     """)
 
 
-rv.V(r"""Railing Design 
+rv.V("""Railing Design 
 
     | PYTHON | rvsrc/scripts/sectprop2.py | Import Functions
 
@@ -64,7 +64,7 @@ rv.V(r"""Railing Design
 """)
 
 
-rv.D(r"""Publish Doc
+rv.D("""Publish Doc
 
     _[[METADATA]] 
     [doc]

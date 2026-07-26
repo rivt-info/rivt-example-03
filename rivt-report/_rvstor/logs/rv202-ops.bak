@@ -1,8 +1,8 @@
 import rivtlib.rvapi as rv
 
 
-# %% rv.T(r"""OpenSees Analysis | -- |  | text 
-rv.T(r"""OpenSees Analysis | -- |  | text 
+# %% rv.T("""OpenSees Analysis | -- |  | text 
+rv.T("""OpenSees Analysis | -- |  | text 
 
     This section analyzes the period of the tree + tree fort system. 
     The OpenSees 2 DOF model is shown schematically.
@@ -23,8 +23,8 @@ rv.T(r"""OpenSees Analysis | -- |  | text
         (Ground)
     """)
 
-# %% rv.V(r"""OpenSees values
-rv.V(r"""OpenSees values
+# %% rv.V("""OpenSees values
+rv.V("""OpenSees values
 
     mass1 ==: 1.5 | --, --, 2 |  mass of tree fort, kN/g
     mass2 ==: 3.5 | --, --, 2 |  mass of branches, kN/g
@@ -33,16 +33,16 @@ rv.V(r"""OpenSees values
     """)
 
 
-# %% rv.T(r"""OpenSees Model Input | n | subpython | opsmod1.py
-rv.T(r"""OpenSees Model Input | -- | opsmod1.py | subpython
+# %% rv.T("""OpenSees Model Input | n | subpython | opsmod1.py
+rv.T("""OpenSees Model Input | -- | opsmod1.py | subpython
     
     This is the Python code for a 2 DOF model of the tree fort with substituted
     values from the rivt file. The OpenSees file with substitutions is written
     to _rvstor/data.
     """)
 
-# %% rv.R(r"""OpenSees Shell
-rv.R(r"""OpenSees Shell
+# %% rv.R("""OpenSees Shell
+rv.R("""OpenSees Shell
 
     The model is run in a virtual environment with Python 3.12 and OpenSeesPy
     installed. The model calculates the natural frequencies and mode shapes of
@@ -69,8 +69,8 @@ rv.R(r"""OpenSees Shell
     | COPY | %userprofile%/py312/ | -rvsrc-/data | *.txt
     """)
 
-# %% rv.I(r"""Model Plots and Output 
-rv.I(r"""Model Plots and Output 
+# %% rv.I("""Model Plots and Output 
+rv.I("""Model Plots and Output 
 
     Analysis Output _[B]
 
@@ -81,10 +81,10 @@ rv.I(r"""Model Plots and Output
     | IMAGE2 | figure1.png, figure2.png | OPS Model, OPS First Mode,45,45,num,num
     """)
 
-# %% rv.D(r"""Publish Doc
-rv.D(r"""Publish Doc
+# %% rv.D("""Publish Doc
+rv.D("""Publish Doc
 
-    | PUBLISH | Open Sees Analysis | pdf
+    | PUBLISH | OpenSees Analysis | pdf
     
     _[[METADATA]] 
     [process]

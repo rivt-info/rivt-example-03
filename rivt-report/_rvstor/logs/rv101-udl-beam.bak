@@ -2,7 +2,7 @@
 # %% Start
 import rivtlib.rvapi as rv
 
-rv.M(r"""Meta Data
+rv.M("""Meta Data
     
     rv_authD = {
         "authors": "rholland",
@@ -17,7 +17,7 @@ rv.M(r"""Meta Data
     
     """)
 
-rv.I(r"""Load Combinations and Geometry 
+rv.I("""Load Combinations and Geometry 
 
     Dead and live load contributions to beam UDL.
 
@@ -36,7 +36,7 @@ rv.I(r"""Load Combinations and Geometry
     """)
 
 # %%
-rv.V(r"""Loads and Geometry | rvlocal 
+rv.V("""Loads and Geometry | rvlocal 
 
     Beam Loads and Properties _[T]
     D_1 := 3.8*PSF | KPA, 2 | joists DL         
@@ -62,7 +62,7 @@ rv.V(r"""Loads and Geometry | rvlocal
     """)
 
 # %%
-rv.S(r"""Publish Doc
+rv.S("""Publish Doc
 
     | DOC | rvlocal | rstpdf | rivtdoc1.ini 
     """)

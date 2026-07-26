@@ -9,8 +9,8 @@ import rivtlib.rvapi as rv
 # rv addtag = false
 # a true setting adds the API tag to each section number - default false
 
-# %% rv.I(r"""Summary
-rv.I(r"""Summary  
+# %% rv.I("""Summary
+rv.I("""Summary  
 
     This rivt file example calculates the maximum stress and deflection in a
     simply supported, uniformly loaded beam. It also serves as an annotated
@@ -27,8 +27,8 @@ rv.I(r"""Summary
 
     """)
 
-# %% rv.I(r"""Load Combinations
-rv.I(r"""Load Combinations 
+# %% rv.I("""Load Combinations
+rv.I("""Load Combinations 
 
     ## Indented comments with double hashes will not appear in the doc
     ## An inline table contained in a TABLE block is written to a CSV file. 
@@ -45,8 +45,8 @@ rv.I(r"""Load Combinations
 
     """)
 
-# %% rv.V(r"""Loads and Geometry
-rv.V(r"""Loads and Geometry 
+# %% rv.V("""Loads and Geometry
+rv.V("""Loads and Geometry 
     
     Successive value definitions are formatted as a table. Variable
     values are defined with the define operator. The line tag [T] labels and
@@ -81,8 +81,8 @@ rv.V(r"""Loads and Geometry
     
     """)
 
-# %% rv.V(r"""Beam Stress
-rv.V(r"""Beam Response
+# %% rv.V("""Beam Stress
+rv.V("""Beam Response
 
     The following lines import the beam geometry from an external file, 
     calculate section properties from imported functions and calculate 
@@ -110,8 +110,8 @@ rv.V(r"""Beam Response
     """)
 
 
-# %% rv.D(r"""Publish Doc
-rv.D(r"""Publish Doc 
+# %% rv.D("""Publish Doc
+rv.D("""Publish Doc 
     
     _[[METADATA]] 
     [doc]

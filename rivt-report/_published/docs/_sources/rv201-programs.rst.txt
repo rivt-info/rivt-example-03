@@ -9,7 +9,7 @@
 .. _Analysis Programs:
 
 **2.1-1** | Analysis Programs
-================================================================================
+================================================================================]
  
 This division includes RISA and OpenSees analysis and illustrates
 methods for running and importing outputs from external programs.
@@ -25,7 +25,7 @@ methods for running and importing outputs from external programs.
    :width: 60%
    :align: center
 
-   **Fig. 1** - Report Flow Chart   
+   **Fig. 1.1** - Report Flow Chart   
     
 
 

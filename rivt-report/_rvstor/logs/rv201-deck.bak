@@ -1,7 +1,7 @@
-# %% rv.V(r"""Loads and Geometry
+# %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
-rv.V(r"""Design Properties
+rv.V("""Design Properties
     
 
 
@@ -16,7 +16,7 @@ rv.V(r"""Design Properties
     """)
 
 
-rv.V(r"""Deck Design Summary
+rv.V("""Deck Design Summary
 
     Design properties.
 
@@ -45,7 +45,7 @@ rv.V(r"""Deck Design Summary
 
 """)
 
-rv.D(r"""Publish Doc 
+rv.D("""Publish Doc 
 
     _[[METADATA]] 
     [doc]

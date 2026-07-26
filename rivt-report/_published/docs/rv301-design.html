@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>3.1-1 | Component Design &#8212;  </title>
+    <title>3.1-2 | Geometry and Components &#8212;  </title>
   
   
   
@@ -59,8 +59,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'rv301-design';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="3.2-1 | Strut to Tree Connection" href="rv302-connect.html" />
-    <link rel="prev" title="2.3-1 | Applied Deck and Railing forces - RISA model" href="rv203-risa.html" />
+    <link rel="next" title="3.2-2 | Top rail Corner" href="rv302-connect.html" />
+    <link rel="prev" title="2.3-2 | Resultant axial forces - RISA model" href="rv203-risa.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -147,21 +147,21 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rv101-standards.html">
-    1.1-1 | Summary
+    <no title>
   </a>
 </li>
 
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rv201-programs.html">
-    2.1-1 | Analysis Programs
+    <no title>
   </a>
 </li>
 
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    3.1-1 | Component Design
+    3.1-2 | Geometry and Components
   </a>
 </li>
 
@@ -208,10 +208,6 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -240,21 +236,21 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rv101-standards.html">
-    1.1-1 | Summary
+    <no title>
   </a>
 </li>
 
 
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="rv201-programs.html">
-    2.1-1 | Analysis Programs
+    <no title>
   </a>
 </li>
 
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="#">
-    3.1-1 | Component Design
+    3.1-2 | Geometry and Components
   </a>
 </li>
 
@@ -286,8 +282,9 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="rv302-connect.html"><strong>3.2-1</strong> | Strut to Tree Connection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rv303-members.html"><strong>3.3-1</strong> | Deck Design Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv302-connect.html"><strong>3.2-2</strong> | Top rail Corner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv303-members.html"><strong>3.3-2</strong> | Deck Design Summary</a></li>
+
 </ul>
 </div>
 </nav></div>
@@ -328,7 +325,7 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>3.1-1</strong> | Component Design</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis"><strong>3.1-2</strong> | Geometry and Components</span></li>
   </ul>
 </nav>
 </div>
@@ -345,36 +342,35 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="component-design">
-<span id="id1"></span><h1><strong>3.1-1</strong> | Component Design<a class="headerlink" href="#component-design" title="Link to this heading">#</a></h1>
+  <p id="component-design"><strong>3.1-1</strong> | Component Design
+================================================================================]</p>
 <p>This division covers the design of members and connections.</p>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="_images/outputc.jpg"><img alt="_images/outputc.jpg" src="_images/outputc.jpg" style="width: 80%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><strong>Fig. 1</strong> - Report Flow Chart</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text"><strong>Fig. 1.1</strong> - Report Flow Chart</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <hr class="docutils" />
 <section id="geometry-and-components">
-<span id="id2"></span><h2><strong>3.1-2</strong> | Geometry and Components<a class="headerlink" href="#geometry-and-components" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id4">
+<span id="id1"></span><h1><strong>3.1-2</strong> | Geometry and Components<a class="headerlink" href="#geometry-and-components" title="Link to this heading">#</a></h1>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/members1.png"><img alt="_images/members1.png" src="_images/members1.png" style="width: 80%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><strong>Fig. 2</strong> - Component Labels</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text"><strong>Fig. 2.1</strong> - Component Labels</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="_images/dim1.png"><img alt="_images/dim1.png" src="_images/dim1.png" style="width: 60%;" />
 </a>
 <figcaption>
-<p><span class="caption-text"><strong>Fig. 3</strong> - Dimensions</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text"><strong>Fig. 2.2</strong> - Dimensions</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="toctree-wrapper compound">
 </div>
-</section>
 </section>
 
 
@@ -393,7 +389,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>2.3-1</strong> | Applied Deck and Railing forces - RISA model</p>
+        <p class="prev-next-title"><strong>2.3-2</strong> | Resultant axial forces - RISA model</p>
       </div>
     </a>
     <a class="right-next"
@@ -401,7 +397,7 @@
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><strong>3.2-1</strong> | Strut to Tree Connection</p>
+        <p class="prev-next-title"><strong>3.2-2</strong> | Top rail Corner</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -411,24 +407,6 @@
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometry-and-components"><strong>3.1-2</strong> | Geometry and Components</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
@@ -479,7 +457,7 @@
 <!-- _templates/rv-date.html -->
 <div class="footer-item">
 <p class="rvdate">
-    2026-07-25
+    2026-07-26
 </p>
 </div></div>
       

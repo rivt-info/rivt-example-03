@@ -1,21 +1,21 @@
 
 --------------------------------------------------------------------------------
-| rivt | Connection Design | R Holland | v-1.0.0a13 | 2026-07-25 - 06:26AM
+| rivt | Connection Design | R Holland | v-1.0.0a13 | 2026-07-26 - 12:27AM
 --------------------------------------------------------------------------------
 
 
 3.2-1 | Strut to Tree Connection
-================================================================================
+================================================================================]
  
 Use Simpson Strong Tie online selection tool.
  
           ----------------------------------------
-Fig. 1 - Screen: Option 1 [file: ss12.jpg | time: no time  ]
+Fig. 1.1 - Screen: Option 1 [file: ss12.jpg | time: no time  ]
           ----------------------------------------
 
  
           ----------------------------------------
-Fig. 2 - Screen: Option 2 [file: ss14.jpg | time: no time  ]
+Fig. 1.2 - Screen: Option 2 [file: ss14.jpg | time: no time  ]
           ----------------------------------------
 
  
@@ -27,12 +27,12 @@ Fig. 2 - Screen: Option 2 [file: ss14.jpg | time: no time  ]
 Use AWC online connection tool.
  
           ----------------------------------------
-Fig. 3 - Screen: Top Rail - Corner Plate Input [file: awc4.jpg  ]
+Fig. 2.1 - Screen: Top Rail - Corner Plate Input [file: awc4.jpg  ]
           ----------------------------------------
 
  
           ----------------------------------------
-Fig. 4 - Screen: Top Rail - Corner Plate Capacity [file: awc5.jpg  ]
+Fig. 2.2 - Screen: Top Rail - Corner Plate Capacity [file: awc5.jpg  ]
           ----------------------------------------
 
  

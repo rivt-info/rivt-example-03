@@ -1,7 +1,7 @@
 import rivtlib.rvapi as rv
 
-# %% rv.I(r"""Load Combinations and Geometry 
-rv.I(r"""Load Combinations and Geometry 
+# %% rv.I("""Load Combinations and Geometry 
+rv.I("""Load Combinations and Geometry 
 
 
     | IMAGE | tree4.png | Tree Fort Plan, 50, num, not
@@ -18,8 +18,8 @@ rv.I(r"""Load Combinations and Geometry
     """)
 
 
-# %% rv.V(r"""Unit Loads 
-rv.V(r"""Unit Loads 
+# %% rv.V("""Unit Loads 
+rv.V("""Unit Loads 
 
 
     Unit weights imported from csv file - table created by AI. _[B]
@@ -40,8 +40,8 @@ rv.V(r"""Unit Loads
     
     """)
 
-# %% rv.D(r"""Publish Doc
-rv.D(r"""Publish Doc
+# %% rv.D("""Publish Doc
+rv.D("""Publish Doc
 
     | PUBLISH | Loads | txt
 

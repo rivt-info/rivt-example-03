@@ -1,6 +1,6 @@
 import rivtlib.rvapi as rv
 
-rv.I(r"""Summary  
+rv.I("""Summary  
 
     The following analysis programs are used in the tree fort design:
 
@@ -15,7 +15,7 @@ rv.I(r"""Summary
     """)
 
 
-rv.D(r"""Publish  
+rv.D("""Publish  
 
     _[[METADATA]] 
     [doc]

@@ -1,7 +1,7 @@
-# %% rv.V(r"""Loads and Geometry
+# %% rv.V("""Loads and Geometry
 import rivtlib.rvapi as rv
 
-rv.V(r"""Summary
+rv.V("""Summary
     
     This report division covers the design of 
     
@@ -12,7 +12,7 @@ rv.V(r"""Summary
     
     """)
 
-rv.D(r"""Publish Doc
+rv.D("""Publish Doc
 
     _[[METADATA]] 
     [doc]

@@ -1,17 +1,17 @@
 
 --------------------------------------------------------------------------------
-| rivt | Building Standards | R Holland | v-1.0.0a13 | 2026-07-25 - 06:25AM
+| rivt | Building Standards | R Holland | v-1.0.0a13 | 2026-07-26 - 12:27AM
 --------------------------------------------------------------------------------
 
 
 1.1-1 | Summary
-================================================================================
+================================================================================]
  
 The design loads are based on the standards of the California Building
 Code (CBC) outlined below.  Standard math symbols are profided for reference.
  
 
-Table 1: California Building Standards
+Table 1.1: California Building Standards
 
 ================  ========================================  ========================================
 Standard          Organization                              Description & Application
@@ -43,7 +43,7 @@ AWPA U1 / M4      American Wood Protection Association      Standards for preser
  
  
 
-Table 2: Math Abbreviations
+Table 1.2: Math Abbreviations
 ================== ============================================================
 Abbreviation        Definition
 ================== ============================================================

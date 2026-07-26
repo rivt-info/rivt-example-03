@@ -1,11 +1,11 @@
 
 --------------------------------------------------------------------------------
-| rivt | Open Sees Analysis | R Holland | v-1.0.0a13 | 2026-07-25 - 06:26AM
+| rivt | OpenSees Analysis | R Holland | v-1.0.0a13 | 2026-07-26 - 12:27AM
 --------------------------------------------------------------------------------
 
 
 2.2-1 | OpenSees Analysis
-================================================================================
+================================================================================]
 
     This section analyzes the period of the tree + tree fort system. 
     The OpenSees 2 DOF model is shown schematically.
@@ -159,7 +159,7 @@ The model is run in a virtual environment with Python 3.12 and OpenSeesPyinstall
 
    cd "%USERPROFILE%"
    cd py312
-   call scripts\\activate
+   call scripts\activate
    python opsmod1.py
 Copied opsmod1.py from .../rivt-report/rvsrc/scripts to .../C:\/Users/rhh2
 Run shell command _[B]Run "c:\git\rivt-example-03-git\rivt-report\rvsrc\scripts\ops1.cmd"
@@ -181,7 +181,7 @@ Model Plots
 
  
           ----------------------------------------
-Fig. 1 - OPS Model  | Fig. 2 - OPS First Mode 
+Fig. 5.1 - OPS Model  | Fig. 5.2 - OPS First Mode 
 files: figure1.png, figure2.png 
           ----------------------------------------
 

@@ -1,6 +1,6 @@
 import rivtlib.rvapi as rv
 
-rv.I(r"""Component Design
+rv.I("""Component Design
 
     This division covers the design of members and connections.
 
@@ -9,7 +9,7 @@ rv.I(r"""Component Design
     """)
 
 
-rv.I(r"""Geometry and Components | pdfpage
+rv.I("""Geometry and Components | pdfpage
 
 
     | IMAGE | members1.png | Component Labels, 80, num, not   
@@ -20,7 +20,7 @@ rv.I(r"""Geometry and Components | pdfpage
     
     """)
 
-rv.D(r"""Publish Doc 
+rv.D("""Publish Doc 
 
     | PUBLISH | Component Design | pdf
 

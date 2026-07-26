@@ -5,8 +5,8 @@ import rivtlib.rvapi as rv
 # rv setpublic: False ; true sets default "private"  header to "public"
 # rv setwidth : 80 ; width of text output, default is 80 characters
 
-# %% rv.I(r"""Summary
-rv.I(r"""Summary  
+# %% rv.I("""Summary
+rv.I("""Summary  
     
     This rivt example calculates the maximum stress and deflection in a simply
     supported, uniformly loaded beam. It also serves as an annotated example of
@@ -24,8 +24,8 @@ rv.I(r"""Summary
 
     """)
 
-# %% rv.I(r"""Load Combinations
-rv.I(r"""Load Combinations 
+# %% rv.I("""Load Combinations
+rv.I("""Load Combinations 
 
     This is an inline table using the restructured text syntax. 
 
@@ -67,8 +67,8 @@ rv.I(r"""Load Combinations
         
     """)
 
-# %% rv.V(r"""Loads and Geometry
-rv.V(r"""Loads and Geometry 
+# %% rv.V("""Loads and Geometry
+rv.V("""Loads and Geometry 
     
     Successive lines of value definiiions are formatted as a table. Variable
     values are defined with the define operator. The line tag [T] labels and
@@ -98,8 +98,8 @@ rv.V(r"""Loads and Geometry
     
     """)
 
-# %% rv.V(r"""Beam Stress
-rv.V(r"""Beam Response
+# %% rv.V("""Beam Stress
+rv.V("""Beam Response
 
 
     | PYTHON | src/sectprop.py | Beam functions
@@ -123,8 +123,8 @@ rv.V(r"""Beam Response
     """)
 
 
-# %% rv.D(r"""Publish Doc
-rv.D(r"""Publish Doc 
+# %% rv.D("""Publish Doc
+rv.D("""Publish Doc 
     
     _[[METADATA]] 
     [doc]

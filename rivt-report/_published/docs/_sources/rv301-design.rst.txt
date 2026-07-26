@@ -9,7 +9,7 @@
 .. _Component Design:
 
 **3.1-1** | Component Design
-================================================================================
+================================================================================]
  
 This division covers the design of members and connections.
  
@@ -18,7 +18,7 @@ This division covers the design of members and connections.
    :width: 80%
    :align: center
 
-   **Fig. 1** - Report Flow Chart   
+   **Fig. 1.1** - Report Flow Chart   
     
 
 
@@ -41,7 +41,7 @@ This division covers the design of members and connections.
    :width: 80%
    :align: center
 
-   **Fig. 2** - Component Labels   
+   **Fig. 2.1** - Component Labels   
     
 
 
@@ -52,7 +52,7 @@ This division covers the design of members and connections.
    :width: 60%
    :align: center
 
-   **Fig. 3** - Dimensions   
+   **Fig. 2.2** - Dimensions   
     
 
 

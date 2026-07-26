@@ -1,14 +1,13 @@
 
 --------------------------------------------------------------------------------
-Open Sees Analysis | R Holland | v-1.0.0a13 | 2026-07-25 - 05:57AM
+OpenSees Analysis | R Holland | v-1.0.0a13 | 2026-07-26 - 12:26AM
 --------------------------------------------------------------------------------
 
 
-2.2-1 | OpenSees Analysis
-================================================================================
+................................................................................]
 
 2.2-1 | OpenSees Analysis
-================================================================================
+================================================================================]
 
     This section analyzes the period of the tree + tree fort system. 
     The OpenSees 2 DOF model is shown schematically.
@@ -28,8 +27,10 @@ Open Sees Analysis | R Holland | v-1.0.0a13 | 2026-07-25 - 05:57AM
         -----------
         (Ground)
     
+................................................................................]
+
 2.2-2 | OpenSees values
---------------------------------------------------------------------------------
+================================================================================]
  
 ==========  =======  =========  =================================
 variable    value    [value]    description
@@ -41,11 +42,10 @@ trk2        2100     2100       upper tree trunk stiffness, kN/cm
 ==========  =======  =========  =================================
  
 
-2.2-3 | OpenSees Model Input
---------------------------------------------------------------------------------
+................................................................................]
 
 2.2-3 | OpenSees Model Input
---------------------------------------------------------------------------------
+================================================================================]
     
     This is the Python code for a 2 DOF model of the tree fort with substituted
     values from the rivt file. The OpenSees file with substitutions is written
@@ -159,16 +159,15 @@ trk2        2100     2100       upper tree trunk stiffness, kN/cm
    # plt.show()
 
 
-2.2-4 | OpenSees Shell
---------------------------------------------------------------------------------
+................................................................................]
 
 2.2-4 | OpenSees Shell
---------------------------------------------------------------------------------
+================================================================================]
 The model is run in a virtual environment with Python 3.12 and OpenSeesPyinstalled. The model calculates the natural frequencies and mode shapes ofthe system. This section runs a shell command in a virtual Python environment forPython-3.12 - the version compatible with OpenSeesPy.File written to: /_rvstore/data/ops1.cmd
 
    cd "%USERPROFILE%"
    cd py312
-   call scripts\\activate
+   call scripts\activate
    python opsmod1.py
 
 
@@ -181,8 +180,10 @@ Copy images and text from OpenSees analysis _[B]Copied *.png from .../rivt-repor
 Copied *.txt from .../rivt-report/rvsrc/scripts to .../-rvsrc-
 
 
+................................................................................]
+
 2.2-5 | Model Plots and Output
---------------------------------------------------------------------------------
+================================================================================]
  
 Analysis Output
 
@@ -195,7 +196,7 @@ Model Plots
 
  
           ----------------------------------------
-Fig. 1 - OPS Model  | Fig. 2 - OPS First Mode 
+Fig. 5.1 - OPS Model  | Fig. 5.2 - OPS First Mode 
           ----------------------------------------
 
 

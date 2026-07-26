@@ -9,7 +9,7 @@
 .. _Applied Deck and Railing forces - RISA model:
 
 **2.3-1** | Applied Deck and Railing forces - RISA model
-================================================================================
+================================================================================]
  
  
 
@@ -17,7 +17,7 @@
    :width: 70%
    :align: center
 
-   **Fig. 1** - Risa Model   
+   **Fig. 1.1** - Risa Model   
     
 
 
@@ -27,7 +27,7 @@
    :width: 60%
    :align: center
 
-   **Fig. 2** - Rail Lateral Forces   
+   **Fig. 1.2** - Rail Lateral Forces   
     
 
 
@@ -49,7 +49,7 @@
    :width: 70%
    :align: center
 
-   **Fig. 3** - Strut Axial Forces   
+   **Fig. 2.1** - Strut Axial Forces   
     
 
 

@@ -1,7 +1,7 @@
 import rivtlib.rvapi as rv
 
-# %% rv.I(r"""Applied deck forces - RISA model 
-rv.I(r"""Applied Deck and Railing forces - RISA model 
+# %% rv.I("""Applied deck forces - RISA model 
+rv.I("""Applied Deck and Railing forces - RISA model 
 
 
     | IMAGE | risa4.png | Risa Model, 70, num, not
@@ -10,15 +10,15 @@ rv.I(r"""Applied Deck and Railing forces - RISA model
 
     """)
 
-# %% rv.I(r"""Resultant axial forces - RISA model | pdfpage
-rv.I(r"""Resultant axial forces - RISA model | pdfpage
+# %% rv.I("""Resultant axial forces - RISA model | pdfpage
+rv.I("""Resultant axial forces - RISA model | pdfpage
 
     | IMAGE | risa6.png | Strut Axial Forces, 70, num, not
 
     """)
 
-# %% rv.I(r"""Top rail shear reactions - RISA model | pdfpage
-rv.T(r"""Top rail shear reactions - RISA model | n | text |
+# %% rv.I("""Top rail shear reactions - RISA model | pdfpage
+rv.T("""Top rail shear reactions - RISA model | n | | text 
 
     Under the California Building Code (CBC), handrails and guard railings
     must resist a uniform load of 50 plf and a concentrated point load of 200
@@ -43,8 +43,8 @@ rv.T(r"""Top rail shear reactions - RISA model | n | text |
     """)
 
 
-# %% rv.D(r"""Publish Doc 
-rv.D(r"""Publish Doc 
+# %% rv.D("""Publish Doc 
+rv.D("""Publish Doc 
 
     | PUBLISH | RISA Analysis | pdf
 

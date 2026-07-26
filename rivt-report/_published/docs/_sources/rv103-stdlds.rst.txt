@@ -9,7 +9,7 @@
 .. _Report Summary:
 
 **1.3-1** | Report Summary
-================================================================================
+================================================================================]
  
 This report covers the structural design of a tree fort in Novato,
 California, following the California Building Code (CBC). The fort is
@@ -34,7 +34,7 @@ The report illustrates the use of tags, commands and scripts including:
    :width: 100%
    :align: center
 
-   **Fig. 1** - Tree Fort   
+   **Fig. 1.1** - Tree Fort   
     
 
 
@@ -58,7 +58,7 @@ The design report is organized into the following sections:
    :width: 65%
    :align: center
 
-   **Fig. 2** - Report Flow Chart   
+   **Fig. 2.1** - Report Flow Chart   
     
 
 
@@ -76,7 +76,7 @@ The design report is organized into the following sections:
 --------------------------------------------------------------------------------
  
 
-**Table 1**: Drawing Abbreviations
+**Table 3.1**: Drawing Abbreviations
 
 
 ============ ==============================================

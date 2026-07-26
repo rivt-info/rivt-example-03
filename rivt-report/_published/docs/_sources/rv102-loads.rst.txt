@@ -9,7 +9,7 @@
 .. _Load Combinations and Geometry:
 
 **1.2-1** | Load Combinations and Geometry
-================================================================================
+================================================================================]
  
  
 
@@ -17,14 +17,14 @@
    :width: 50%
    :align: center
 
-   **Fig. 1** - Tree Fort Plan   
+   **Fig. 1.1** - Tree Fort Plan   
     
 
 
  
  
 
-**Table 1**: ASCE 7-05 Load Effects
+**Table 1.1**: ASCE 7-05 Load Effects
 
 
 =============   ==============================================
@@ -52,7 +52,7 @@ Equation No.    Load Combination
 
  
 
-**Table 2**: Unit Weights - Doug Fir
+**Table 2.1**: Unit Weights - Doug Fir
 
 =========  ================  ================  ==========  ===================  ====================  ==================
 Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Volume_ft3_per_ft    Density_lb_per_ft3    Weight_lb_per_ft
@@ -73,7 +73,7 @@ Nominal    ActualWidth_in    ActualDepth_in    Area_in2    Volume_ft3_per_ft    
 
  
 
-**Table 3**: Member Nominal Loads and Properties
+**Table 2.2**: Member Nominal Loads and Properties
 
 
 ==========  =============  =============  =====================
