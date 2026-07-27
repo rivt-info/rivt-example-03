@@ -9,11 +9,11 @@
 .. _Applied Deck and Railing forces - RISA model:
 
 **2.3-1** | Applied Deck and Railing forces - RISA model
-================================================================================]
+================================================================================
  
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/risa4.png
+.. figure:: ../rvsrc/image/risa4.png
    :width: 70%
    :align: center
 
@@ -23,7 +23,7 @@
 
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/risa9.png
+.. figure:: ../rvsrc/image/risa9.png
    :width: 60%
    :align: center
 
@@ -45,7 +45,7 @@
 --------------------------------------------------------------------------------
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/risa6.png
+.. figure:: ../rvsrc/image/risa6.png
    :width: 70%
    :align: center
 

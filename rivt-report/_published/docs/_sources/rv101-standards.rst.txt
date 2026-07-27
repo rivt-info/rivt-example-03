@@ -9,7 +9,7 @@
 .. _Summary:
 
 **1.1-1** | Summary
-================================================================================]
+================================================================================
  
 The design loads are based on the standards of the California Building
 Code (CBC) outlined below.  Standard math symbols are profided for reference.

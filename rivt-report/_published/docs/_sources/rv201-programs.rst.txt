@@ -9,7 +9,7 @@
 .. _Analysis Programs:
 
 **2.1-1** | Analysis Programs
-================================================================================]
+================================================================================
  
 This division includes RISA and OpenSees analysis and illustrates
 methods for running and importing outputs from external programs.
@@ -21,7 +21,7 @@ methods for running and importing outputs from external programs.
  
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/outputb.jpg
+.. figure:: ../rvsrc/image/outputb.jpg
    :width: 60%
    :align: center
 

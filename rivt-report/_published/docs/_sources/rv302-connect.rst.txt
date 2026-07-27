@@ -9,12 +9,12 @@
 .. _Strut to Tree Connection:
 
 **3.2-1** | Strut to Tree Connection
-================================================================================]
+================================================================================
  
 Use Simpson Strong Tie online selection tool.
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/ss12.jpg
+.. figure:: ../rvsrc/image/ss12.jpg
    :width: 100%
    :align: center
 
@@ -24,7 +24,7 @@ Use Simpson Strong Tie online selection tool.
 
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/ss14.jpg
+.. figure:: ../rvsrc/image/ss14.jpg
    :width: 100%
    :align: center
 
@@ -48,7 +48,7 @@ Use Simpson Strong Tie online selection tool.
 Use AWC online connection tool.
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/awc4.jpg
+.. figure:: ../rvsrc/image/awc4.jpg
    :width: 100%
    :align: center
 
@@ -58,7 +58,7 @@ Use AWC online connection tool.
 
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/awc5.jpg
+.. figure:: ../rvsrc/image/awc5.jpg
    :width: 100%
    :align: center
 

@@ -9,7 +9,7 @@
 .. _Deck Design Properties:
 
 **3.3-1** | Deck Design Properties
-================================================================================]
+================================================================================
  
 **Import deck loads and functions.**
 
@@ -104,7 +104,7 @@ Design properties as dictionary for checking function nds_beam_chk
 Check strut D/C ratio with BeamChek 2023
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/bmck1.jpg
+.. figure:: ../rvsrc/image/bmck1.jpg
    :width: 80%
    :align: center
 

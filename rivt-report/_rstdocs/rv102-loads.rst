@@ -9,11 +9,11 @@
 .. _Load Combinations and Geometry:
 
 **1.2-1** | Load Combinations and Geometry
-================================================================================]
+================================================================================
  
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/tree4.png
+.. figure:: ../rvsrc/image/tree4.png
    :width: 50%
    :align: center
 

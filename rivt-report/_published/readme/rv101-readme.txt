@@ -1,11 +1,11 @@
 
 --------------------------------------------------------------------------------
-| rivt | Building Standards | R Holland | v-1.0.0a13 | 2026-07-26 - 12:27AM
+| rivt | Building Standards | R Holland | v-1.0.0a13 | 2026-07-27 - 01:45PM
 --------------------------------------------------------------------------------
 
 
 1.1-1 | Summary
-================================================================================]
+================================================================================
  
 The design loads are based on the standards of the California Building
 Code (CBC) outlined below.  Standard math symbols are profided for reference.

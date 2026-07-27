@@ -1,19 +1,57 @@
-07-26 00:27  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+07-27 13:44  make-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
 
-07-26 00:27  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv102-loads.py
+07-27 13:44  make-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv102-loads.py
 
-07-26 00:27  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv103-stdlds.py
+07-27 13:44  make-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv103-stdlds.py
 
-07-26 00:27  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-programs.py
+07-27 13:44  make-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-programs.py
 
-07-26 00:27  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+07-27 13:44  make-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
 
-07-26 00:27  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv203-risa.py
+07-27 13:44  make-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv203-risa.py
 
-07-26 00:27  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-design.py
+07-27 13:44  make-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-design.py
 
-07-26 00:27  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv302-connect.py
+07-27 13:44  make-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv302-connect.py
 
-07-26 00:27  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv303-members.py
+07-27 13:44  make-report-1   INFO     >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv303-members.py
 
-07-26 00:27  make-report-1   INFO     [34m|||||||||| README report : [0mTree Fort
+07-27 13:44  make-report-1   INFO     [34m|||||||||| README report : [0mTree Fort
+07-27 13:44  make-report-1   INFO     >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+
+07-27 13:44  make-report-1   INFO     >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv102-loads.py
+
+07-27 13:44  make-report-1   INFO     >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv103-stdlds.py
+
+07-27 13:44  make-report-1   INFO     >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-programs.py
+
+07-27 13:44  make-report-1   INFO     >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+
+07-27 13:45  make-report-1   INFO     >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv203-risa.py
+
+07-27 13:45  make-report-1   INFO     >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-design.py
+
+07-27 13:45  make-report-1   INFO     >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv302-connect.py
+
+07-27 13:45  make-report-1   INFO     >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv303-members.py
+
+07-27 13:45  make-report-1   INFO     [34m|||||||||| README report : [0mTree Fort
+07-27 13:45  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv101-standards.py
+
+07-27 13:45  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv102-loads.py
+
+07-27 13:45  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv103-stdlds.py
+
+07-27 13:45  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv201-programs.py
+
+07-27 13:45  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv202-ops.py
+
+07-27 13:45  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv203-risa.py
+
+07-27 13:45  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv301-design.py
+
+07-27 13:45  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv302-connect.py
+
+07-27 13:45  make-report-1   INFO     >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv303-members.py
+
+07-27 13:45  make-report-1   INFO     [34m|||||||||| README report : [0mTree Fort

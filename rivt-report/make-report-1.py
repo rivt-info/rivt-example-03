@@ -18,7 +18,7 @@ import importlib
 # ==== Update rept_filename if needed and start name with rivt-. 
 # ==== Do not modify .{typeS} variable
 # ==== Edit typeS list with desired output formats ["txt","pdf","html"] =======
-for typeS in ["txt"]:  # 1 or more options: ["txt","pdf","html"]
+for typeS in ["txt","pdf","html"]:  # 1 or more options: ["txt","pdf","html"]
     reportsetS = f"""
     [report]
     ;-----------------------------------------

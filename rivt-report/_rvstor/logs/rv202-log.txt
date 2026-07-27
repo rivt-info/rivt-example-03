@@ -1,27 +1,27 @@
-07-26 00:27  rv202-ops   INFO     Doc start
-07-26 00:27  rv202-ops   INFO     rivtlib version: 1.0.0a5
-07-26 00:27  rv202-ops   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\_rvstor\logs\rv202-ops.bak
-07-26 00:27  rv202-ops   INFO     OpenSees Analysis | -- |  | text 
-07-26 00:27  rv202-ops   INFO     SECTION 2.2-1 - type T
-07-26 00:27  rv202-ops   INFO     OpenSees values
-07-26 00:27  rv202-ops   INFO     SECTION 2.2-2 - type V
-07-26 00:27  rv202-ops   INFO     OpenSees Model Input | -- | opsmod1.py | subpython
-07-26 00:27  rv202-ops   INFO     SECTION 2.2-3 - type T
-07-26 00:27  rv202-ops   INFO     OpenSees Shell
-07-26 00:27  rv202-ops   INFO     SECTION 2.2-4 - type R
-07-26 00:27  rv202-ops   INFO     Model Plots and Output 
-07-26 00:27  rv202-ops   INFO     SECTION 2.2-5 - type I
-07-26 00:27  rv202-ops   INFO     tag : _[B]
-07-26 00:27  rv202-ops   INFO     command : TEXT
-07-26 00:27  rv202-ops   INFO     tag : _[B]
-07-26 00:27  rv202-ops   INFO     command : IMAGE2
-07-26 00:27  rv202-ops   DEBUG    STREAM b'IHDR' 16 13
-07-26 00:27  rv202-ops   DEBUG    STREAM b'tEXt' 41 58
-07-26 00:27  rv202-ops   DEBUG    STREAM b'pHYs' 111 9
-07-26 00:27  rv202-ops   DEBUG    STREAM b'IDAT' 132 32616
-07-26 00:27  rv202-ops   DEBUG    STREAM b'IHDR' 16 13
-07-26 00:27  rv202-ops   DEBUG    STREAM b'tEXt' 41 58
-07-26 00:27  rv202-ops   DEBUG    STREAM b'pHYs' 111 9
-07-26 00:27  rv202-ops   DEBUG    STREAM b'IDAT' 132 33048
-07-26 00:27  rv202-ops   INFO     SECTION : Publish Doc
-07-26 00:27  rv202-ops   INFO     block tag : METADATA]]
+07-27 13:45  rv202-ops   INFO     Doc start
+07-27 13:45  rv202-ops   INFO     rivtlib version: 1.0.0a5
+07-27 13:45  rv202-ops   INFO     rivt backup : c:\git\rivt-example-03-git\rivt-report\_rvstor\logs\rv202-ops.bak
+07-27 13:45  rv202-ops   INFO     OpenSees Analysis | -- |  | text 
+07-27 13:45  rv202-ops   INFO     SECTION 2.2-1 - type T
+07-27 13:45  rv202-ops   INFO     OpenSees values
+07-27 13:45  rv202-ops   INFO     SECTION 2.2-2 - type V
+07-27 13:45  rv202-ops   INFO     OpenSees Model Input | -- | opsmod1.py | subpython
+07-27 13:45  rv202-ops   INFO     SECTION 2.2-3 - type T
+07-27 13:45  rv202-ops   INFO     OpenSees Shell
+07-27 13:45  rv202-ops   INFO     SECTION 2.2-4 - type R
+07-27 13:45  rv202-ops   INFO     Model Plots and Output 
+07-27 13:45  rv202-ops   INFO     SECTION 2.2-5 - type I
+07-27 13:45  rv202-ops   INFO     tag : _[B]
+07-27 13:45  rv202-ops   INFO     command : TEXT
+07-27 13:45  rv202-ops   INFO     tag : _[B]
+07-27 13:45  rv202-ops   INFO     command : IMAGE2
+07-27 13:45  rv202-ops   DEBUG    STREAM b'IHDR' 16 13
+07-27 13:45  rv202-ops   DEBUG    STREAM b'tEXt' 41 58
+07-27 13:45  rv202-ops   DEBUG    STREAM b'pHYs' 111 9
+07-27 13:45  rv202-ops   DEBUG    STREAM b'IDAT' 132 32616
+07-27 13:45  rv202-ops   DEBUG    STREAM b'IHDR' 16 13
+07-27 13:45  rv202-ops   DEBUG    STREAM b'tEXt' 41 58
+07-27 13:45  rv202-ops   DEBUG    STREAM b'pHYs' 111 9
+07-27 13:45  rv202-ops   DEBUG    STREAM b'IDAT' 132 33048
+07-27 13:45  rv202-ops   INFO     SECTION : Publish Doc
+07-27 13:45  rv202-ops   INFO     block tag : METADATA]]

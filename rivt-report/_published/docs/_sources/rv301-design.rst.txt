@@ -9,12 +9,12 @@
 .. _Component Design:
 
 **3.1-1** | Component Design
-================================================================================]
+================================================================================
  
 This division covers the design of members and connections.
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/outputc.jpg
+.. figure:: ../rvsrc/image/outputc.jpg
    :width: 80%
    :align: center
 
@@ -37,7 +37,7 @@ This division covers the design of members and connections.
  
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/members1.png
+.. figure:: ../rvsrc/image/members1.png
    :width: 80%
    :align: center
 
@@ -48,7 +48,7 @@ This division covers the design of members and connections.
  
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/dim1.png
+.. figure:: ../rvsrc/image/dim1.png
    :width: 60%
    :align: center
 

@@ -9,7 +9,7 @@
 .. _Report Summary:
 
 **1.3-1** | Report Summary
-================================================================================]
+================================================================================
  
 This report covers the structural design of a tree fort in Novato,
 California, following the California Building Code (CBC). The fort is
@@ -30,7 +30,7 @@ The report illustrates the use of tags, commands and scripts including:
 - the use of AI in preparing
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/iso1.png
+.. figure:: ../rvsrc/image/iso1.png
    :width: 100%
    :align: center
 
@@ -54,7 +54,7 @@ The report illustrates the use of tags, commands and scripts including:
 The design report is organized into the following sections:
  
 
-.. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/outputa.jpg
+.. figure:: ../rvsrc/image/outputa.jpg
    :width: 65%
    :align: center
 

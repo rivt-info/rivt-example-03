@@ -28,3 +28,6 @@
 >>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv303-members.py
 >>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv303-members.py
 >>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv303-members.py
+>>txt<< generated from: c:\git\rivt-example-03-git\rivt-report\rv303-members.py
+>>pdf<< generated from: c:\git\rivt-example-03-git\rivt-report\rv303-members.py
+>>html<< generated from: c:\git\rivt-example-03-git\rivt-report\rv303-members.py

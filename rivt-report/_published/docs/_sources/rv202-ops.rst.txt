@@ -9,7 +9,7 @@
 .. _OpenSees Analysis:
 
 **2.2-1** | OpenSees Analysis
-================================================================================]
+================================================================================
 
 
 .. code-block:: text 
@@ -242,15 +242,14 @@ Copy images and text from OpenSees analysis _[B]**Copied *.png from .../rivt-rep
     :widths: 45 45
     :header-rows: 0
 
-    * - .. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/figure1.png
-            :width: 100%
+    * - .. figure:: ../rvsrc/image/figure1.png
+          :width: 100%
 
-            **Fig. 5.1 -** OPS Model 
-     
-      - .. figure:: c:/git/rivt-example-03-git/rivt-report/rvsrc/image/figure2.png
-            :width: 100%
+          **Fig. 5.1 -** OPS Model 
+      - .. figure:: ../rvsrc/image/figure2.png
+          :width: 100%
             
-            **Fig. 5.2 -** OPS First Mode 
+          **Fig. 5.2 -** OPS First Mode 
 
                      
 

@@ -1,11 +1,11 @@
 
 --------------------------------------------------------------------------------
-| rivt | Analysis | R Holland | v-1.0.0a13 | 2026-07-26 - 12:27AM
+| rivt | Analysis | R Holland | v-1.0.0a13 | 2026-07-27 - 01:45PM
 --------------------------------------------------------------------------------
 
 
 2.1-1 | Analysis Programs
-================================================================================]
+================================================================================
  
 This division includes RISA and OpenSees analysis and illustrates
 methods for running and importing outputs from external programs.
